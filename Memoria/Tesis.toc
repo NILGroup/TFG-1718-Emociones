@@ -1,0 +1,19 @@
+\select@language {spanish}
+\contentsline {chapter}{Agradecimientos}{\es@scroman {ix}}{chapter*.1}
+\contentsline {chapter}{Resumen}{\es@scroman {xi}}{chapter*.2}
+\contentsline {chapter}{\numberline {1}Introducci\'on}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introducci\'on}{1}{section.1.1}
+\contentsline {section}{Notas bibliogr\'aficas}{1}{section.1.1}
+\contentsline {section}{En el pr\'oximo cap\IeC {\'\i }tulo}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}Estado del arte}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Computaci\'on Afectiva}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Diccionarios Afectivos}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Nuestro diccionario}{3}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Servicios Web}{3}{section.2.2}
+\contentsline {section}{\numberline {2.3}Metodolog\IeC {\'\i }a Scrum}{3}{section.2.3}
+\contentsline {section}{\numberline {2.4}Integraci\'on Continua}{4}{section.2.4}
+\contentsline {section}{Notas bibliogr\'aficas}{4}{section.2.4}
+\contentsline {section}{En el pr\'oximo cap\IeC {\'\i }tulo}{4}{section.2.4}
+\contentsline {chapter}{\numberline {A}As\IeC {\'\i } se hizo...}{5}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Introducci\'on}{5}{section.Alph1.1}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{7}{appendix*.6}
