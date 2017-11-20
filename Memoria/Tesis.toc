@@ -7,13 +7,13 @@
 \contentsline {section}{En el pr\'oximo cap\IeC {\'\i }tulo}{1}{section.1.1}
 \contentsline {chapter}{\numberline {2}Estado del arte}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Computaci\'on Afectiva}{3}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Diccionarios Afectivos}{3}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Nuestro diccionario}{3}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Servicios Web}{3}{section.2.2}
-\contentsline {section}{\numberline {2.3}Metodolog\IeC {\'\i }a Scrum}{3}{section.2.3}
+\contentsline {subsection}{\numberline {2.1.1}Diccionarios Afectivos Existentes}{4}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Nuestro diccionario}{4}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Servicios Web}{4}{section.2.2}
+\contentsline {section}{\numberline {2.3}Metodolog\IeC {\'\i }a Scrum}{4}{section.2.3}
 \contentsline {section}{\numberline {2.4}Integraci\'on Continua}{4}{section.2.4}
-\contentsline {section}{Notas bibliogr\'aficas}{4}{section.2.4}
-\contentsline {section}{En el pr\'oximo cap\IeC {\'\i }tulo}{4}{section.2.4}
-\contentsline {chapter}{\numberline {A}As\IeC {\'\i } se hizo...}{5}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Introducci\'on}{5}{section.Alph1.1}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{7}{appendix*.6}
+\contentsline {section}{Notas bibliogr\'aficas}{5}{section.2.4}
+\contentsline {section}{En el pr\'oximo cap\IeC {\'\i }tulo}{5}{section.2.4}
+\contentsline {chapter}{\numberline {A}As\IeC {\'\i } se hizo...}{7}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Introducci\'on}{7}{section.Alph1.1}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{9}{appendix*.6}
