@@ -7,28 +7,15 @@
 \contentsline {section}{En el pr\'oximo cap\IeC {\'\i }tulo}{1}{section.1.1}
 \contentsline {chapter}{\numberline {2}Estado del arte}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Computaci\'on Afectiva}{3}{section.2.1}
-<<<<<<< HEAD
-\contentsline {subsection}{\numberline {2.1.1}Diccionarios Afectivos}{3}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Nuestro diccionario}{3}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Servicios Web}{3}{section.2.2}
-\contentsline {section}{\numberline {2.3}Metodolog\IeC {\'\i }a Scrum}{4}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Proceso de desarrollo software}{4}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Modelo \'agil: SCRUM}{5}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Integraci\'on Continua}{8}{section.2.4}
-\contentsline {section}{Notas bibliogr\'aficas}{8}{section.2.4}
-\contentsline {section}{En el pr\'oximo cap\IeC {\'\i }tulo}{8}{section.2.4}
-\contentsline {chapter}{\numberline {A}As\IeC {\'\i } se hizo...}{9}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Introducci\'on}{9}{section.Alph1.1}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{11}{appendix*.7}
-=======
-\contentsline {subsection}{\numberline {2.1.1}Diccionarios Afectivos Existentes}{4}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Nuestro diccionario}{4}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Servicios Web}{4}{section.2.2}
-\contentsline {section}{\numberline {2.3}Metodolog\IeC {\'\i }a Scrum}{4}{section.2.3}
-\contentsline {section}{\numberline {2.4}Integraci\'on Continua}{4}{section.2.4}
-\contentsline {section}{Notas bibliogr\'aficas}{5}{section.2.4}
-\contentsline {section}{En el pr\'oximo cap\IeC {\'\i }tulo}{5}{section.2.4}
-\contentsline {chapter}{\numberline {A}As\IeC {\'\i } se hizo...}{7}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Introducci\'on}{7}{section.Alph1.1}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{9}{appendix*.6}
->>>>>>> 11a17ed21d878a092ac7c03c50aacf69a6961cef
+\contentsline {subsection}{\numberline {2.1.1}Diccionarios Afectivos Existentes}{5}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Nuestro diccionario}{5}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Servicios Web}{5}{section.2.2}
+\contentsline {section}{\numberline {2.3}Metodolog\IeC {\'\i }a Scrum}{5}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Proceso de desarrollo software}{5}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Modelo \'agil: SCRUM}{7}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Integraci\'on Continua}{9}{section.2.4}
+\contentsline {section}{Notas bibliogr\'aficas}{10}{section.2.4}
+\contentsline {section}{En el pr\'oximo cap\IeC {\'\i }tulo}{10}{section.2.4}
+\contentsline {chapter}{\numberline {A}As\IeC {\'\i } se hizo...}{11}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Introducci\'on}{11}{section.Alph1.1}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{13}{appendix*.7}
