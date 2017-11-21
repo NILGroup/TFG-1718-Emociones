@@ -10,10 +10,12 @@
 \contentsline {subsection}{\numberline {2.1.1}Diccionarios Afectivos}{3}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Nuestro diccionario}{3}{subsection.2.1.2}
 \contentsline {section}{\numberline {2.2}Servicios Web}{3}{section.2.2}
-\contentsline {section}{\numberline {2.3}Metodolog\IeC {\'\i }a Scrum}{3}{section.2.3}
-\contentsline {section}{\numberline {2.4}Integraci\'on Continua}{4}{section.2.4}
-\contentsline {section}{Notas bibliogr\'aficas}{4}{section.2.4}
-\contentsline {section}{En el pr\'oximo cap\IeC {\'\i }tulo}{4}{section.2.4}
-\contentsline {chapter}{\numberline {A}As\IeC {\'\i } se hizo...}{5}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Introducci\'on}{5}{section.Alph1.1}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{7}{appendix*.6}
+\contentsline {section}{\numberline {2.3}Metodolog\IeC {\'\i }a Scrum}{4}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Proceso de desarrollo software}{4}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Modelo \'agil: SCRUM}{5}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}Integraci\'on Continua}{8}{section.2.4}
+\contentsline {section}{Notas bibliogr\'aficas}{8}{section.2.4}
+\contentsline {section}{En el pr\'oximo cap\IeC {\'\i }tulo}{8}{section.2.4}
+\contentsline {chapter}{\numberline {A}As\IeC {\'\i } se hizo...}{9}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Introducci\'on}{9}{section.Alph1.1}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{11}{appendix*.7}

@@ -1,6 +1,6 @@
 %---------------------------------------------------------------------
 %
-%                          Capítulo 1
+%                          Capítulo 2
 %
 %---------------------------------------------------------------------
 
@@ -31,6 +31,8 @@ La computación emocional es el estudio y el desarrollo de sistemas capaces de pe
 	\label{cap2:subsec:diccionarios}
 	Diccionarios que existen actualmente.
 	
+	
+	
 	\subsection{Nuestro diccionario}
 	\label{cap2:subsec:nuestro_diccionario}
 	El diccionario que vamos a utilizar.
@@ -47,7 +49,84 @@ Aquí va la parte de Servicios Web.
 %-------------------------------------------------------------------
 \label{cap2:sec:scrum}
 
-Explicación metodología Scrum
+	\subsection{Proceso de desarrollo software}
+	\label{cap2:subsec:proceso desarrollo software}
+	Un proceso, es un conjunto de actividades, acciones y/o tareas que se realizan para crear un producto determinado; en nuestro caso un producto software.
+	
+	El proceso de desarrollo software, como esctructura general, consta de cinco grandes actividades: \textbf{comunicación}, \textbf{planeación}, \textbf{modelado}, \textbf{construcción} y \textbf{despliegue}. Estas actividades, siempre se realizan en este orden; pero dependiendo del modelo que se emplee variará el flujo; algunos flujos son: lineal, iterativo, evolutivo o paralelo.
+	
+	El desarrollo de software hace unos años era algo novedoso y tan moderno que no había estrategias claras para crear productos. Por lo que, con motivo de ordenar todo el proceso se crearon diferentes modelos de proceso. Un modelo de proceso no es más que una estructura para realizar las actividades que forman un proceso.
+	
+	Primeramente, se crean los modelos llamados tradicionales son procesos muy controlados y con muchas normas y políticas. Se le da mucha importancia a la arquitectura del software y se expresa mediante modelos. El cliente interactúa con el equipo de desarrollo mediante reuniones separadas en el tiempo. En la primera reunión se fija un contrato que el equipo debe seguir, lo que genera muchos problemas a la hora de desarrollar ya que el equipo tomará decisoines sin tener en cuenta lo que el cliente opinaría al respecto. Podríamos decir entonces que es un modelo impuesto externamente no solo por el contrato con el cliente sino porque está basado en normas de estándares. 
+	Estos modelos se llevan a cabo en proyectos con equipos grandes y distribuidos. Generan muchos artefactos y documentación.
+	
+	Más adelante surgen los modelos de desarrollo ágiles. 
+	La agilidad en términos de software se podría definir como la respuesta efectiva al cambio; pero va más allá, esta idea lleva consigo toda una filosofía determinada en el Manifiesto por el Desarrollo Ágil. Este Manifiesto propone un nuevo modelo de proceso en el que los idividuos e interacciones están por encima de procesos y herramientas; el software funcionando sobre la documentación extensiva; la colaboración con el ciente sobre la negociación contractual y la respuesta ante el cambio sobre seguir un plan. También se han redactado doce principios:
+	
+	{\itshape \begin{enumerate}
+		\item La mayor prioridad es satisfacer al cliente mediante la entrega temprana y continua de software con valor.
+		\item Aceptamos que los requisitos cambien, incluso en etapas tardías del desarrolo. Los procesos Ágiles aprovechan el cambio para proporcionar ventaja competitiva al cliente.
+		\item Entregamos sotware funcional frecuentemetne, entre dos semanas y dos meses, con preferencia al periodo de tiempo más corto posible.
+		\item Los responsables de negocio y los desarrolladores trabajan juntos de forma cotidiana durante todo el proyecto.
+		\item Los proyectos se desarrollan en torno a individuos motivados. Hay que darles el entorno y apoyo que necesitan y confiarles la ejecución del trabajo.
+		\item El método más eficiente y efectivo de comunicar información al equipo de desarrollo y entre sus miembros es la conversación cara a cara.
+		\item El software funcionando es la medida principal de progreso.
+		\item Los procesos Ágiles promueven el desarrollo sostenible. Los pomotores, desarrolladores y usuarios deben ser capaces de mantener un ritmo constante de forma indefinida.
+		\item La atención continua a la excelencia técnica y al buen diseño mejora la Agilidad.
+		\item La simplicidad, o el arte de maximizar la cantidad de trabajo no realizado, es esencial.
+		\item Las mejores arquitecturas, requisitos y diseños emergen de equipos auto-organizados.
+		\item A intervalos regulares el equipo reflexiona sobe cómo ser más efectivo para a continuación ajustar y perfeccionar su comportamiento en consecuencia.
+	\end{enumerate} }
+	
+	Dado que los modelos ágiles están diseñados para poder realizar cambios en los requisitos en cualquier momento y están pensados para pequeños grupos de trabajadores. Creemos muy conveniente para nuestro trabajo usar una metodología ágil.
+	
+	\subsection{Modelo ágil: SCRUM}
+	\label{cap2:subsec:SCRUM}
+	
+	SCRUM es una metodología ágil para gestionar el desarrollo de software. Fue definido por \textit{Ikujiro Nonaka} e \textit{Hirotaka Takeuchi} a principios de los 80; compararon la forma de trabajo con el avance en formación de scrum (melé en español) de los jugadores de rugby y por esta razón se llama la metodología SCRUM. \textit{Nonaka} y \textit{Takeuchi} caracterizan SCRUM por el protagonismo de equipos brillantes, auto-organizados y motivados que abordan el desarrollo de sistemas complejos partiendo de una visión general y solapando las fases del desarrollo.
+	Más adelante, en 1995, \textit{Ken Schwaber} presentó una metodología basada en un ambiente SCRUM y usó el mismo término para definir la metodología.
+	Después, en 2005, \textit{Mike Cohn}, \textit{Esther Derby} y \textit{Ken Schwaber} organizaron la "`Scrum Alliance"' para difundir el marco de trabajo para el desarrollo software basado en la metodología SCRUM.
+	
+	SCRUM divide el trabajo en diferentes unidades llamadas \textsl{sprints},  estos tienen una duración preestablecida de entre dos y cuatro semanas obteniendo siempre al final una versión del software con nuevas prestaciones listas para ser usadas. En cada \textsl{sprint} se ajusta la funcionalidad y se añaden nuevas prestaciones priorizando aquellas que aporten más valor. 
+	
+	A continuación, explicaremos algunos conceptos que son necesarios para entender la metodología.
+	
+	Esta metología, hace mucho énfasis en el "`equipo de trabajo"'. Este equipo está formado por diferentes roles. 
+	
+	\begin{itemize}
+		\item \textbf{Product Owner}: representa al cliente. Este no está implicado directamente en el proyecto, pero se encarga de definir los objetivos y de garantizar que el equipo trabaja de manera adecuada. Tal y como hemos visto anteriormente, las metologías ágiles incluyen al cliente de una manera más cercana al desarrollo y SCRUM lo hace de esta manera.
+		\item \textbf{Scrum Master}: es el encargado de asegurar que el equipo no tiene problemas en sus tareas. Ayuda y guía al Scrum Team. Diríamos que es el encargado de que todo el proyecto salga adelante.
+		\item \textbf{Scrum Team}: Como su nombre indica, es el equipo encargado de desarrollar y entregar el producto. 
+	\end{itemize}
+	
+	También define una serie de artefactos, en menor medida que cualquier modelo tradicional.
+	
+	
+	\begin{itemize}
+		\item \textbf{Product backlog}: es una lista realizada por el usuario en la que explica los requisitos del producto, ordenados por prioridad. A lo largo del desarrollo crece y evoluciona. Se denomina tamibén "`historias de usuario"'.
+		\item \textbf{Sprint backlog}: es una lista de las tareas que debe realizar el equipo durante el sprint. Podríamos decir que son las historias de usuario que el equipo decide realizar en un sprint.
+		\item \textbf{Incremento}: es el resultado de cada sprint.
+		\item \textbf{Burn down chart}: es una gráfica de avance que mide la cantidad de requisitos del backlog del proyecto pendientes al comienzo de cada sprint, esta es actualizada a diario para comprobar el avance.
+	\end{itemize}
+	
+	Por último, define una serie de eventos.
+	
+	
+	\begin{itemize}
+		\item \textbf{Sprint}: este evento ya está explicado. Un sprint es cada una de las iteraciones del desarrollo.
+		\item \textbf{Sprint planning}: es una reunión del equipo de trabajo donde se decide qué se va a realizar en un sprint y las tareas en las que se divide el objetivo.
+		\item \textbf{Dialy sprint meeting}: es una reunión diaria como máximo de quince minutos, de pie, en donde cada componente del equipo informa sobre cómo va en sus tareas, lo que hizo el día anterior, lo que hará ese día y los problemas que ha encontrado o los que cree que se va a encontrar.
+		\item \textbf{Sprint Review}: es una reunión que se realiza al concluir el sprint donde se analiza el incremento creado, las tareas realizadas, si se ha concluido todo a tiempo, impedimentos y problemas.
+		\item \textbf{Sprint Retrospective}: es una reunión donde se habla de cómo ha funcionado el equipo en el sprint y qué cosas se pueden mejorar para el siguiente a nivel de proceso o metodología. En esta reunión participa todo el scrum team.
+	\end{itemize}
+	
+	Conociendo todos estos conceptos, nos resultará más sencillo comprender el flujo de trabajo.
+	
+	%\figura{Bitmap/Capitulo2/scrum}{width=.5\textwidth}{fig:scrum}%{Flujo de la metodología SCRUM.}
+	\figura{Bitmap/Capitulo2/scrum}{width=.9\textwidth}{fig:scrum}{Flujo SCRUM} 
+	
+	En la Figura \ref{fig:scrum} podemos ver un diagrama del flujo SCRUM. Sería el siguiente: el cliente crea su Product backlog con los requisitos y características por orden de prioridades. A continuación, en un Sprint planning, se presenta el product backlog y el equipo decide qué actividades van a desarrollar y cuánto tiempo van a tardar. Después de esta reunión se elabora el Sprint Backlog con todas las actividades que van a realizar divididas en tareas; cada componente del grupo se asigna una tarea y en cuanto acabe seguirá con la siguiente actividad que no esté hecha. Es muy importatne el orden de las tareas ya que, el cliente ha ordenado en el product backlog las actividades por prioridad y el equipo desarrollará estas siguiendo dicho parámetro. A continuación se comienza el sprint con el tiempo establecido. Este tiempo no se puede cambiar ni el equipo que está trabajando. Cada día, 24 horas, el equipo se reunirá en una Dialy sprint meeting para poner en común lo explicado anteriormente. Al final del sprint se realiza la Sprint Review donde se entrega el incremento o el producto hasta el momento al cliente; por lo tanto en esta reunión están presentes el scrum team, el scrum master y el cliente. Por úlitmo el scrum team junto con el scrum master se vuelve a reunir para hacer el Sprint Retrospective.
+	
 
 %-------------------------------------------------------------------
 \section{Integración Continua}
