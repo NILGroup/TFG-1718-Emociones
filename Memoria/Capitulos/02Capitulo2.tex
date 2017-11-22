@@ -54,7 +54,24 @@ Para deducir la emoción que transmite una palabra específica utilizaremos un dic
 	
 	\subsection{Nuestro diccionario}
 	\label{cap2:subsec:nuestro_diccionario}
-	El diccionario que vamos a utilizar.
+	
+	Nuestro diccionario afectivo está basado en el diccionario afectivo ANEW traducido al español que un equipo de la Universidad de Santiago de Compostela ha llevado a cabo (Jaime Redondo, Isabel Fraga, Isabel Padrón, y Montserrat Comesaña). 
+	Este diccionario afectivo ANEW traducido siguió un método de creación. Participaron 720 estudiantes de psicología de entre 18 y 25 años, 560 mujeres y 160 hombres. Las clasificaciones de las palabras se obtuvieron en universidades españolas, en facultades de Psicología (Santiago de Compostela, A Coruña, Valencia y Málaga) entre el 2003 y el 2005.
+	Estos participantes deberían evaluar 1034 palabras. Estas 1034 palabras son las que contiene ANEW, que una vez traducidas y revisadas se ordenaron de manera aleatoria. Para que el trabajo no fuese tan tedioso se dividió en ocho hojas con unas 129 palabras que cada participante tendría que evaluar según las tres dimensiones emocionales del ANEW (valencia?, excitación y dominancia); estas dimensiones se podían clasificar con una escala de 9 puntos usando la autoevaluación del maniquí (SAM).
+	
+	\figura{Bitmap/Capitulo2/imagenSam}{width=.9\textwidth}{fig:SAM}{Autoevaluación del maniquí (SAM).}
+	
+Estas evalaciones se realizaron a la vez, en un aula. Cada participante tenía una hoja de respuestas (con 129 palabras), una hoja de instrucciones y una hoja con la SAM (Figura \ref{fig:SAM}). Después de leer las instrucciones se resolvieron las dudas y se pusieron seis ejemplos para que los participantes entendiesen la metodología. Después comenzaron la evaluación.
+
+Los resultados se almacenaron en una base de datos. Cada entrada en la base de datos contiene un número que indentifica a la palabra, esta numeración coincide con el número que dicha palabra tiene en el ANEW; la palabra inglesa (E-word), la palabra original en la base de datos ANEW; la palabra española (S-word), ordenadas alfabéticamente y las evaluaciones afectivas, los valores medios y la desviación estándar para cada dimensión emocional.
+
+
+Basandonos en este diccionario, se ha creado una adaptación del ANEW traducido, un diccionario emocional más simplificado; ya que, aún teniendo 1034 palabras en el diccionario no se contemplan las tres dimensiones emocionales. En esta adaptación, se han elegido cinco emociones básicas (tristeza, miedo, alegría, enfado y sorpresa) y la neutralidad para no expresar ninguna emoción. Cada palabra puede representar varias de estas emociones, para ello se ha creado un número de confianza o confidence que determina con qué certeza la palabra corresponde con esa emoción. La suma de estos números de todas las emociones ha de sumar 1. 
+
+	\figura{Bitmap/Capitulo2/fragmento}{width=.9\textwidth}{fig:diccionario}{Fragmento de la adaptación del diccionario ANEW traducido.}
+	
+Por ejemplo en la Figura \ref{fig:diccionario}, podemos ver como la palabra abejas tiene un 0 en tristeza un 0,5 en miedo, 0,17 en alegría, 0 en enfado, 0 en sorpresa y 0,33 en neutro; lo que hace un 0,5+0,17+0.33 = 1 de confidence.
+Este diccionario ha sido rellenado también con un método, menos extenso que el ANEW dado que la traducción de palabras está tomada del ANEW traducido. Para conseguir estos números de certeza (confidence) se ha repartido una hoja de cálculo a N personas, X mujeres y Y hombres, los cuales tenían que marcar para cada palabra una única emoción. Después simplemente se han unido estos datos y creado estadísticamente los números de confidence.
 
 %-------------------------------------------------------------------
 \section{Servicios Web}
