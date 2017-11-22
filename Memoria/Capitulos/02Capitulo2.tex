@@ -16,7 +16,9 @@
 \end{FraseCelebre}
 
 \begin{resumen}
-En este capítulo se van a tratar los aspectos más importantes tanto de la computación emocional como de las diferentes tecnologías que vamos a utilizar.
+En este capítulo se van a tratar los aspectos más importantes tanto de la computación emocional como de las diferentes tecnologías y metodologías que se van a utilizar.
+En primer lugar, en la sección 2.1, se define la computación emocional y sus posibles aplicaciones, también se explican los distintos diccionarios afectivos ya existentes que permiten la marcación emocional de textos y se presenta el diccionario que se va a utilizar en este trabajo. En la sección 2.2 se introduce la tecnología que se va a utilizar para implementar el trabajo, los Servicios Web. En la sección 2.3 se fijan los conceptos relacionados con la metodología Scrum. En la sección 2.4 se explican las bases de la integración continua aplicada al desarrollo de Software y cómo se va a aplicar en este trabajo.
+
 \end{resumen}
 
 
@@ -150,7 +152,27 @@ Aquí va la parte de Servicios Web.
 %-------------------------------------------------------------------
 \label{cap2:sec:integracion}
 
-Explicación Integración Continua
+La práctica de desarrollo de software que se va a utilizar en el desarrollo de este trabajo es la integración continua. Se basa en que los desarrolladores combinen todos los cambios que realicen en el código en un repositorio común de forma periódica, de tal forma que una vez subidos estos cambios, se ejecutan una serie de pruebas automáticas sobre estos con el fin de validarlos. Aparte de las pruebas automáticas se realizan pruebas manuales para buscar errores más difíciles de encontrar que requieran a alguien que piense. Hasta que las pruebas sobre el nuevo código no acaban no se puede continuar. Aplicando esto a la metodología Scrum que vamos a utilizar, una historia de usuario no se puede considerar acabada hasta que no pase todas las pruebas, tanto automáticas como manuales.
+
+Implementar esta práctica al desarrollo tiene importantes ventajas entre las que se encuentran:
+
+\begin{itemize}
+	\item \textbf{Detección de errores:} Su objetivo principal es detectar los errores lo antes posible y así solucionarlos según surgen. Cada vez que el código cambia se compila y somete a pruebas para garantizar que no hay bugs. Este proceso aumenta la calidad del software y minimiza los riesgos del proceso ya que se tiene control sobre las versiones en todo momento. Cuanto más se tarde en detectar un error más trabajo lleva arreglarlo.
+	\item \textbf{Visibilidad del proceso:} Todos los pasos que se realizan en el desarrollo son visibles a todo el equipo, que tiene una estrategia común muy bien definida.
+	\item \textbf{Mejora del equipo:} Los desarrolladores no solo tienen una visión muy clara y estructurada del proceso sino que también aprenden a realizar todo tipo de pruebas, lo que les hace mejorar a nivel profesional. 
+\end{itemize}
+
+Lo primero para poder utilizar integración continua es tener definido un \textbf{"`pipeline"'}, es decir, un conjunto de fases por las que tiene que pasar el software y que están automatizadas. Se establecen criterios para que el código pase de una fase a otra y estrategias para gestionar errores que puedas surgir en las diferentes fases (control de versiones). Es importante tener bien definidas las pruebas que se van a realizar sobre cada fase y que estas puedan garantizar la máxima corrección posible sin tardar más de lo admisible, ya que se necesita un feedback rápido para poder seguir avanzando en el proceso. Cada fase es un grupo de pruebas y cada subida de código es un \textbf{"`pipeline"'} distinto que avanza de forma independiente por las fases. Por lo tanto se sabe en todo momento en qué punto se encuentra una versión específica. Esto permite tener una visión general de todo el proceso facilitando notablemente la detección de errores en fases y pipelines concretos.
+
+Para el correcto funcionamiento de esta práctica tiene que haber pequeñas integraciones de forma frecuente, una vez al día por ejemplo. Cuantos menos cambios haya más fácil es la integración en el producto general y solucionar los posibles errores que esta pueda generar. Cabe destacar que aunque una parte de código funcione de forma independiente no implica que vaya a funcionar al integrarlo en un programa más grande, por ello cuanto más frecuentes sean las integraciones mejor. 
+
+En nuestro caso la integración continua se aplicará de la siguiente manera:
+
+\begin{itemize}
+	\item \textbf{Repositorio:} Se utilizará un repositorio común de \textit{GitHub} en el que se subirán todos los cambios realizados en el código. Al ser un equipo de desarrollo pequeño y estar utilizando la metodología Scrum en principio todos los miembros del equipo estarán trabajando en la misma rama. Esto puede llegar a bloquear el proceso mientras una versión acabe de pasar las pruebas.
+	\item \textbf{Jenkins:} Tendremos Jenkins corriendo en un servidor para realizar las pruebas automáticas. Cada vez que se detecten cambios en el repositorio este avisará al servidor que procederá a hacer las pruebas de compilación y funcionamiento sobre el nuevo código.
+	\item \textbf{Pruebas manuales:} Algún miembro del equipo realizará las tareas de "`tester"'. Después de las pruebas automáticas se realizará otra serie de pruebas planificadas de antemano para probar mejor la funcionalidad del código. El "`tester"' no será siempre la misma persona.
+\end{itemize}
 
 %-------------------------------------------------------------------
 \section*{\NotasBibliograficas}
