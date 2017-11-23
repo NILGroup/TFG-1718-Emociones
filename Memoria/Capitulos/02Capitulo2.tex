@@ -48,9 +48,45 @@ Para deducir la emoción que transmite una palabra específica utilizaremos un dic
 
 	\subsection{Diccionarios Afectivos Existentes}
 	\label{cap2:subsec:diccionarios}
-	Diccionarios que existen actualmente.
 	
+	Hablamos de diccionario afectivo cuando se trata de un diccionario en el que las palabras se encuentran marcadas con etiquetas afectivas. Algunos ejemplos de etiquetas afectivas serían: alegría, tristeza, sorpresa, miedo...
 	
+	Con el paso del tiempo se han ido desarrollando algunos diccionarios afectivos, los cuales describiremos a continuación:
+	
+	\textbf{LASSWELL VALUE DICTIONARY Y GENERAL INQUIRER}
+	
+	Fue a comienzos de los años 60 cuando Stone y Lasswell, ambos investigadores, comenzaron a construir diccionarios en lo que las palabras estaban marcadas con etiquetas afectivas.
+	El diccionario Lasswell clasifica sus palabras de manera binaria y en ocho categorías básicas (riqueza, poder, respeto, rectitud, habilidad, iluminación, afecto y bienestar). Además de estas, el esquema de este diccionario distingue entre objetivos sustantivos y los elementos y atributos del proceso de distribución de valores, es decir, evaluación personal y asignación social.
+	La clasificación social del contenido mantiene estas distinciones. Las preocupaciones con valores particulares se clasifican en objetivos sustantivos particulares. El esquema de clasificación también distingue varios tipos de transacciones de valor.
+
+\textbf{DICCIONARIO DE HATZIVASSILOGLOU Y MCKEOWN}
+	
+	Este diccionario fue creado en 1997, y tarta de encontrar etiquetas como positive o negative de manera automatizada a través del análisis de un corpus.
+	Hatzuvassiloglou y McKeown tomaron una serie de adjetivos que aparecían de manera frecuente y decidieron darles una orientación, empleando un análisis estadístico en el que cuando dos adjetivos aparecían juntos, siguiendo el patrón adjetivo1 y adjetivo 2, devolvía una orientación positiva o negativa. 
+	Así, pudieron obtener un diccionario de adjetivos clasificados en positivos y negativos.
+
+\textbf{WORDNET AFFECT}
+
+	Se trata de una extensión de WordNet Domains, que incluye un subconjunto de synsets adecuados para representar conceptos afectivos correlacionados con palabras afectivas. De manera similar a nuestro método para etiquetas de dominio, asignamos a una serie de sintonias de WordNet una o mas etiquetas afectivas. En particular, los recursos afectivos que representan el estado emocional son individualizados por sintonizadores marcados por la emocion de la etiqueta A. Tambien existen otras etiquetas para aquellos conceptos que representan estados de animo, situaciones que provocan emociones o respuestas emocionales.
+	El recurso se amplió con un conjutno de etiquetas A adicionales (llamadas categorias emocionales), organizadas jerarquicamente, con el fin de especializar sysnsets con una emocion de etiqueta. 
+La estructura jerarquica de las nuevas etiquetas a se modelo en la relaciones de hiperonimos de wornet. En una segunda etapa, se definen cuatro etiquetas a-adicionales: positivo, negativo, ambiguo, neutral.
+	Otra propiedad importante para el lexico afectico en lo que se se refiere principalmente a la interpretacion adejtivas es la dimension estacionaria/causativa.
+
+	\textbf{WHISSELL'S DICTIONARY OF AFFECTA IN LANGUAGE (DAL)}
+	
+	Este diccionario es un recurso diseñado con el fin de medir el significado emocional de las palabras y textos. El objetivo del diccionario es comparar las palabras con una lista de 8742 palabras que han sido marcadas por distints personas en terminos de las dimensiones activacion y evaluacion e imagenes.
+
+	\textbf{DICCIONARIO DE TURNEY Y LITTMAN}
+	
+	Turney y Littman encontraron una manera mas eficiente para decidir cuando una palabra se podía considerar positiva o negativa. Dado un conjunto de palabras, que previamente ellos conocían como positivas o negativas, probaron como de frecuentemente podía aparecer una palabra en un contexto con un conjunto de palabras positivas o negaticas. 
+Empleando la informacion de estudios cercanos y estadísticas clasificaron como positivas todas aquellas palabras que aparecían de forma más significativa con un conjunto de palabras positivas y como negativas aquellas palabras que aparecían con un conjunto de palabras negativas.
+
+\textbf{CLAIRVOYANCE AFFECT LEXICON}
+
+	Este diccionario fue desarrollado a mano. Las entradas de este diccionario se dividen en cinco campos: el lema de la palabra, part-of-speech, clase afectiva, centralidad e intensidad.
+	
+	\textbf{ANEW}
+	Se trata de un modelo espacial de varias palabras con carga emocional que contribuye a clasificar textos arbitrarios.
 	
 	\subsection{Nuestro diccionario}
 	\label{cap2:subsec:nuestro_diccionario}
@@ -78,8 +114,71 @@ Este diccionario ha sido rellenado también con un método, menos extenso que el A
 %-------------------------------------------------------------------
 \label{cap2:sec:servicios_web}
 
-Aquí va la parte de Servicios Web.
-
+	Existen múltiples definiciones de Servicios Web por lo que resulta muy complejo dar una definición de este término. Esta complejidad nos permite hacernos una idea de la cantidad de servicios e implicaciones asociadas que se agrupan bajo este.
+	
+	En la actualidad, la definición más general de Servicio Web es la que lo define como un conjunto de APIs o tecnologías capaces de interoperar en la web. Estas APIs o tecnologías intercambian datos con el fin de ofrecer unos servicios.
+	
+	También podríamos definir servicio web como un servicio ofrecido por una aplicación que expone su lógica a clientes de cualquier plataforma mediante una interfaz accesible a través de la red utilizando tecnologías estándar de internet.
+	
+	Los servicios web se componen de varias capas entre las que destacan: servicios de transporte (constituidos por los protocolos del nivel más bajo, que codifican la información independientemente de su formato y que pueden ser comunes a otros servicios), servicios de mensajería, de desripción y de descubrimiento.
+	
+	
+	\begin{enumerate}
+		\item \textbf{Servicios de transporte}
+					Es el encargado del transporte de los mensajes entre aplicaciones sobre la red. Incluye varios protocolos del nivel de aplicación. Los más utilizados son:
+					
+					\begin{itemize}
+						\item HTTP: es un protocolo de nivel de aplicación más utilizado en la red. Define la sintáxis y la semántica utilizada para la arquitectura web. En relación a los servicios web es utilizado para la transferencia de las transacciones XML a través de la red utilizando los mismos principios de HTML.
+						\item FTP: es un protocolo de la capa de aplicación encargado de los servicios de transmisión de archivos a través de redes soportadas sobre TCP. En relación a los servicios web permite realizar modificaciones en equipos remotos evitando el uso de permisos sobre los archivos en la máquina cliente en sistemas operativos que no sean Windows.
+						\item SMTP: estándar de la capa de aplicación ampliamente utilizado para el envío de mensajes de correo electrónico a través de la red. Es un estándar que requiere cliente software de tipo POP3 o IMAP.
+						\item BEEP: protocolo de nivel de aplicación diseñado para la interacción asíncrona punto a punto sobre una red TCP/IP. PRovee un marco para administrar las conexiones punto a punto, autenticación, transporte de mensajes y manejo de errores.
+						\item JMS: Es una aplicación de interface de programación para JAVA para el envío de mensajes entre dos o más cliente. Soporta dos modelos, el modelo punto a punto y el modelo de publicación y suscripción. Una aplicación JMS estaría compuesta por un proveedor JMS, el cual implementa las interfaces que proveen las características de administración y el control, clientes JMS, que son los componenetes escritos en JAVA que producen y consumen los mensajes, mensajes, objetos administradores y clientes nativos, los cuales son programas que utilizan los mensajes de la API.
+					\end{itemize}
+		\item \textbf{Servicio de mensajería}
+			Conjunto encargado de la codificacion de los mensajes en XML estándar y pueda así ser interpretado en cualquiera de los nodos de la red. Los componentes más utilizados son los siguientes:
+			
+			\begin{itemize}
+				\item REST: Según Fielding es un estilo de arquitectura de software para sistemas hipermedias distribuidos tales como la World Wide Web. Por lo trato, se trata de un conjunto de principios para el diseño de redes, que es utilizado de manera común con el fin de definir una interfasz de transmisión sobre HTTP de manera análoga a como lo hace SOAP. Aunque REST no es un estándar como tal, posee un conjunto de estándares: HTTP, GIF, JPG, URL, XML....
+				\item RPC: Tecnología de software que permite ejecutar una rutina en un equipo o segmento de red de manera remota. Es un paradigma popular para la implementación de sistemas distribuidos bajo arquitecturas cliente-servidor.
+				\item XML-RPC: Protocolo de llamada remota que utiliza XML como lenguaje de codificación y HTTP como mecanismo de transporte. Protocolo sencillo, pues solo define algunos tipos de datos y comandos.
+				\item XML: Se trata de uno de los lenguajes más utilizados para el intercambio de datos sobre la web. Es un lenguaje etiquetado, característica que le permite definir objetos de datos estructurados en partes bien definidas llamadas elementos. Una etiqueta es una señal realizada dentro del documento XML que delimita un segmento definido y con sentido de este documento.
+				\item SOAP: Protocolo de la capa de aplicación para el intercambio de mensajes basados en XML sobre redes. Es una vía de transmisión entre un SOAP Sender y un SOAP Receiver, pero los mensajes SOAP deben interactuar con un conjunto de aplicaciones para que se pueda generar un diálogo SOAP.
+			\end{itemize}
+		\item \textbf{Servicio de descripción}
+		El servicio web debe contar con una interfaz pública la cual es descrita por un formato llamado WSDL
+		\begin{itemize}
+				\item WSDL: es un tipo de documento XML que describe lo que hace un servicio web, donde se encunetra y la forma de ser invocado. Este provee información muy importante para los desarrolladores, este lenguaje describe el formato de los mensajes que utiliza y a cuales puede responder. Siempre un documento XML WSDL presenta los siguientes elementos: tipos, mensajes, tipos de puerto, límites, servicio....
+			\end{itemize}
+		\item \textbf{Servicio de descubrimiento}
+		UDDI es un marco independiente de la plataforma para describir servicios, negocios e integrar servicios de negocio. La estructura de UDDI está basada sobre los servicios estándares de la web, lo que quiere decir que UDDI es accesible como otros servicios web.
+		Es un esfuerzo de la industria iniciada en Septiembre de 2000. Los propietarios de los Servicios Web los publican en el registro UDDI. Una vez publicados se mantienen allí apuntadores a la desripción del servicio Web y del Servicio. La estructura de datos con UDDI está compuesta en cuatro partes: businessEntity, businessService, bindingTemplate, tModel[10]
+	\end{enumerate}
+	
+	
+	\textbf{Ventajas de los servicios web}
+	
+	\begin{itemize}
+		\item Aportan interoperabilidad entre aplicaciones de software independientemente de sus propiedad o de las plataformas sobre las que se instalen.
+		\item Fomentan los estándares y protocolos basados en texto, de tal manera que facilitan su comprensión y accesibilidad. 
+		\item Permiten la combinación e integración de distintos servicios y software independientemente de su ubicación.
+		\item Permiten la integración justo-a-tiempo: el proceso de descubrimiento se ejecuta dinámicamente.
+		\item Reducen la complejidad por medio del encapsulamiento.
+		\item Dar una nueva vida a las aplicaciones de legado.
+		\item Abren la puerta a nuevas oportunidades de negocio.
+		\item Disminuyen el tiempo de desarrollo de las aplicaciones.
+		\item Menor consumo de espacio y memoria RAM.
+		\item Seguridad de los datos.
+	\end{itemize}
+	
+	\textbf{Inconvenientes de los servicios web}
+	
+	\begin{itemize}
+		\item No permiten comparar su grado de desarrollo con los estándares abiertos de computación distribuida.
+		\item Bajo rendimiento sí se compara con otros modelos de computación distribuida.
+		\item Como se apoyan en HTTP, puede esquivar medidas de seguridad relacionadas con el firewall.
+		\item Ausencia de información para algunos lenguajes de programación.
+		\item Al hacer uso de XML, mayor ancho de banda.
+	\end{itemize}
 %-------------------------------------------------------------------
 \section{Metodología Scrum}
 %-------------------------------------------------------------------
