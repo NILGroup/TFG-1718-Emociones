@@ -1,7 +1,7 @@
-from emocion.models import Emocion
-from emocion.serializer import EmocionSerializer
-from rest_framework.renderers import JSONRenderer
-from rest_framework.parsers import JSONParser
+#from emocion.models import Emocion
+#from emocion.serializers import EmocionSerializer
+#from rest_framework.renderers import JSONRenderer
+#from rest_framework.parsers import JSONParser
 
 class Palabra:
 	
@@ -18,6 +18,7 @@ class Palabra:
 
 	def show(self):
 		print("Palabra: " + self.palabra)
+		print(porcentajes)
 		print("Grado de tristeza: " + repr(self.porcentajes[0]))
 		print("Grado de miedo: " + repr(self.porcentajes[1]))
 		print("Grado de alegria: " + repr(self.porcentajes[2]))

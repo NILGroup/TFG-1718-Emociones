@@ -7,12 +7,14 @@ def parsear_emociones(porcentaje):
         return int(porcentaje.lstrip("0,"))
     else:
         return 100
-        
+
+"""        
 def serializar_datos(subida):
     serializador = EmocionSerializer(subida)
     serializador.data
     content = JSONRenderer().render(serializador.data)
     print(content)
+"""
 
 def leer_diccionario():
     fichero = open("diccionario_afectivo.csv")
@@ -25,10 +27,11 @@ def leer_diccionario():
         emociones = []
         for j in range(6):
             emociones.append(parsear_emociones(frase[j+1]))
-        #palabra.porcentajes = emociones
-        palabra.subir(subida)
+        palabra.porcentajes = emociones
+        #palabra.subir(subida)
+        palabra.show()
         linea = fichero.readline()
-    serializar_datos(subida)
+    #serializar_datos(subida)
     fichero.close()
 
 def main():
