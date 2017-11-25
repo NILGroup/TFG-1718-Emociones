@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.renderers import JSONRenderer
+from rest_framework.renderers import status
 from rest_framework.parsers import JSONParser
 from emocion.models import Emocion
 from emocion.serializers import EmocionSerializer
@@ -16,6 +17,13 @@ def lista_palabras(request):
         palabras = Emocion.objects.all()
         serializador = EmocionSerializer(palabras, many=True)
         return JsonResponse(serializador.data, safe=False)
+    elif request.method == 'POST':
+        serializador = EmocionSerializer(data=request.data)
+        if(serializador.is_valid()):
+            serializador.save()
+            return JsonResponse(serializador.data, status=status.HTTP_201_CREATED)
+        return JsonResponse(serializador.errors, status=status.HTTP_400_BAD_REQUEST)
+
 
 @csrf_exempt
 def detalle_palabra(request, pk):
@@ -30,6 +38,12 @@ def detalle_palabra(request, pk):
     if request.method == 'GET':
         serializador = EmocionSerializer(palabra)
         return JsonResponse(serializador.data)
+    elif request.method == 'PUT':
+        serializador = EmocionSerializer(palabra, data=request.data)
+        if serializador.is_valid():
+            serializador.save()
+            return JsonResponse(serializador.data)
+        return JsonResponse(serializador.errors, status=status.HTTP_400_BAD_REQUEST)
 
     elif request.method == 'DELETE':
         palabra.delete()
