@@ -1,5 +1,5 @@
-from emocion.models import Emocion
-from emocion.serializer import EmocionSerializer
+from models import Emocion
+from serializer import EmocionSerializer
 from rest_framework.renderers import JSONRenderer
 from rest_framework.parsers import JSONParser
 
