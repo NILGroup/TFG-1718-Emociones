@@ -1,50 +1,45 @@
-from django.shortcuts import render
-from django.http import HttpResponse, JsonResponse
-from django.views.decorators.csrf import csrf_exempt
-from rest_framework.renderers import JSONRenderer
-from rest_framework.renderers import status
-from rest_framework.parsers import JSONParser
+from rest_framework import status
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 from emocion.models import Emocion
 from emocion.serializers import EmocionSerializer
-# Create your views here.
 
-@csrf_exempt
-def lista_palabras(request):
+@api_view(['GET', 'POST'])
+def lista_palabras(request, format=None):
     """
-    List all code snippets, or create a new snippet.
+    Muestra la lista de palabras o añade una nueva.
     """
     if request.method == 'GET':
         palabras = Emocion.objects.all()
         serializador = EmocionSerializer(palabras, many=True)
-        return JsonResponse(serializador.data, safe=False)
+        return Response(serializador.data)
     elif request.method == 'POST':
-        serializador = EmocionSerializer(data=request.data)
-        if(serializador.is_valid()):
-            serializador.save()
-            return JsonResponse(serializador.data, status=status.HTTP_201_CREATED)
-        return JsonResponse(serializador.errors, status=status.HTTP_400_BAD_REQUEST)
+        serializador = EmocionSerializer(data=request.POST)
+        if serializador.is_valid():
+            seralizador.save()
+            return Response(serializador.data, status=status.HTTP_201_CREATED)
+        return Response(serializador.errors, status=status.HTTP_400_BAD_REQUEST)
 
-
-@csrf_exempt
-def detalle_palabra(request, pk):
+@api_view(['GET', 'PUT', 'DELETE'])
+def detalle_palabra(request, pk, format=None):
     """
-    Retrieve, update or delete a code snippet.
+    Muestra, añade o elimina una palabra concreta de la lista.
     """
     try:
         palabra = Emocion.objects.get(pk=pk)
     except Emocion.DoesNotExist:
-        return HttpResponse(status=404)
+        return Response(status=status.HTTP_404_NOT_FOUND)
 
     if request.method == 'GET':
         serializador = EmocionSerializer(palabra)
-        return JsonResponse(serializador.data)
+        return Response(serializador.data)
     elif request.method == 'PUT':
-        serializador = EmocionSerializer(palabra, data=request.data)
+        serializador = EmocionSerializer(palabra,data=request.data)
         if serializador.is_valid():
             serializador.save()
-            return JsonResponse(serializador.data)
-        return JsonResponse(serializador.errors, status=status.HTTP_400_BAD_REQUEST)
+            return Response(seralizador.data)
+        return Response(serializador.errors,status=status.HTTP_400_BAD_REQUEST)
 
     elif request.method == 'DELETE':
         palabra.delete()
-        return HttpResponse(status=204)
+        return Response(status=status.HTTP_204_NO_CONTENT)
