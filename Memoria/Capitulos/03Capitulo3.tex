@@ -1,0 +1,82 @@
+%---------------------------------------------------------------------
+%
+%                          Capítulo 1
+%
+%---------------------------------------------------------------------
+
+\chapter{Anális del Contenido Afectivo de un Texto}
+
+\begin{FraseCelebre}
+\begin{Frase}
+...
+\end{Frase}
+\begin{Fuente}
+...
+\end{Fuente}
+\end{FraseCelebre}
+
+\begin{resumen}
+En este capítuo se explicarán los servicios web que se han desarrollado con el fin de analizar el contenido afectivo de un texto.
+Primero, en la sección 3.1, se presentarán los servicios orientados a identificar la emoción predominante en una palabra concreta, tanto la consensuada como la mayoritaria para quedarnos con la opción más correcta. Después, en la sección 3.2, se explica como el análisis de la palabra se aplica a determinar la emoción de una frase entera para finalmente, en la sección 3.3, aplicar todo al anális de todo un texto.
+\end{resumen}
+
+
+%-------------------------------------------------------------------
+\section{Ánalis afectivo de una palabra}
+%-------------------------------------------------------------------
+\label{cap3:sec:palabra}
+
+ Como ya se comentó en la sección 2.1.2, para el desarrollo de este trabajo se utilizará un diccionario afectivo en español. Este diccionario, inicialmente en formato Excel, ha sido convertido a un fichero CSV para que resulte más sencillo obtener los datos. 
+
+Teniendo en cuenta que el trabajo está orientado a ser utilizado mediante servicios web lo primero que hay que hacer es subir la información que tenemos, todas las palabras con sus respectivos grados de certeza para cada emoción, a un servidor sobre el que se realizarán las distintas peticiones. El framework que hemos utilizado para todo el proceso es \textbf{Django}. \textbf{Django} nos permite modelar una palabra para almacenarla en el servidor y programar una serie de clases "`vista"' que nos permiten acceder a la lista de palabras.
+\begin{itemize}
+	\item \textbf{Modelo: } Los campos que tiene el modelo para cada palabra son la propia palabra, el porcentaje de una determinada emoción que expresan (para las seis emociones que consideramos en nuestro diccionario) y la emoción cuyo porcentaje destaca. Cada una de las palabras que tenemos recogidas se encapsulan en este modelo para ser almacenadas en el servidor.
+	\item \textbf{Consultas: } Para realizar las difetentes consultas sobre las palabras disponibles se crean una serie de clases que implementan los diferentes métodos de un servicio web REST típico: \textbf{GET, POST, DELETE}. Esencialmente \textbf{GET}, ya que es el que devuelve información sobre la palabra o alguno de sus campos. Cada una de las diferentes clases o "`vistas"' aportan una forma diferente de acceder a la información: acceso a toda la lista, a una palabra concreta, a un campo de una palabra concreta, etc...
+\end{itemize}
+Una vez que se tiene el servidor y todo el código necesario para el funcionamiento de los servicios web se procede a subir las palabras que recoge nuestro diccionario. Para ello se ha desarrollado un programa en \textit{Python} cuya función es leer el fichero CSV, interpretar cada una de sus líneas y subir la información que obtiene al servidor. Una vez que todas las palabras estén subidas ya se pueden realizar las consultas necesarias.
+
+Inicialmente se ha implementado un servicio web, también en \textit{Python}, que dada una palabra devuelve la información respectiva a los porcentajes de cada emoción que posee, mediante una petición \textbf{GET} al servidor, y los muestra al usuario.
+
+%-------------------------------------------------------------------
+\section{Ánalis afectivo de una frase}
+%-------------------------------------------------------------------
+\label{cap3:sec:frase}
+
+...
+
+%-------------------------------------------------------------------
+\section{Ánalis afectivo de un texto}
+%-------------------------------------------------------------------
+\label{cap3:sec:texto}
+
+...
+
+%-------------------------------------------------------------------
+\section*{\NotasBibliograficas}
+%-------------------------------------------------------------------
+\TocNotasBibliograficas
+
+Citamos algo para que aparezca en la bibliografía\ldots
+\citep{ldesc2e}
+
+\medskip
+
+Y también ponemos el acrónimo \ac{CVS} para que no cruja.
+
+Ten en cuenta que si no quieres acrónimos (o no quieres que te falle la compilación en ``release'' mientras no tengas ninguno) basta con que no definas la constante \verb+\acronimosEnRelease+ (en \texttt{config.tex}).
+
+
+%-------------------------------------------------------------------
+\section*{\ProximoCapitulo}
+%-------------------------------------------------------------------
+\TocProximoCapitulo
+
+...
+
+% Variable local para emacs, para  que encuentre el fichero maestro de
+% compilación y funcionen mejor algunas teclas rápidas de AucTeX
+%%%
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../Tesis.tex"
+%%% End:
