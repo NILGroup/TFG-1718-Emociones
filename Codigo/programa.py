@@ -18,13 +18,22 @@ def mostrar_porcentajes(porcentajes):
 	print("Porcentaje de sorpresa: " + numeros[4] + "%")
 	print("Porcentaje de neutral: " + numeros[5] + "%")
 
-URL = 'http://127.0.0.1:8000/emocion/' # URL del servidor
-sufijo = '/porcentajes/' # sufijo de la consulta
-print ("Introduzca la palabra que desea buscar:") # se le pide al usuario que introduzca una palabra
-buscar = input()
-print ("Buscaremos la palabra", buscar)
-destino = URL+buscar+sufijo
-respuesta = requests.get(destino)
-porcentajes = respuesta.json()
-mostrar_porcentajes(porcentajes)
+def lista_porcentajes():
+	URL = 'http://127.0.0.1:8000/emocion/' # URL del servidor
+	sufijo = '/porcentajes/' # sufijo de la consulta
+	valido = False
+	while valido != True:
+		print ("Introduzca la palabra que desea buscar:") # se le pide al usuario que introduzca una palabra
+		buscar = input()
+		buscada = buscar.lower()
+		print ("Buscaremos la palabra", buscada)
+		destino = URL+buscada+sufijo
+		respuesta = requests.get(destino)
+		if repr(respuesta) == "<Response [404]>":
+			print("No se ha encontrado la palabra. Asegurese de haberla escrito bien.")
+		else:
+			porcentajes = respuesta.json()
+			valido = True
+	mostrar_porcentajes(porcentajes)
 
+lista_porcentajes()

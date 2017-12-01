@@ -55,7 +55,7 @@ class ObtenerPorcentajes(APIView):
     """
     def get_object(self,pk):
         try:
-            return Emocion.objects.get(pk=pk)
+            return Emocion.objects.get(palabra=pk)
         except Emocion.DoesNotExist:
             raise Http404
 
