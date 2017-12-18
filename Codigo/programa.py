@@ -18,10 +18,10 @@ def cargar_datos(porcentajes):
 	numeros = coger_porcentajes(porcentajes)
 	emocion = lista_emociones()
 	return numeros, emocion
-
+"""
 def mostrar_porcentajes(porcentajes):
 	"""
-	Muestra la lista de porcentajes correspondientes a cada emoción.
+	#Muestra la lista de porcentajes correspondientes a cada emoción.
 	"""
 	numeros, emocion = cargar_datos(porcentajes)
 	for i in range(6):
@@ -60,6 +60,28 @@ def mostrar_emocion_mayoritaria(porcentajes):
 				emocionMayor = int(numeros[i])
 				posEmocion = i;
 		print("La emoción mayoritaria es " + emocion[posEmocion])
+"""
+def resultados(porcentajes):
+	numeros, emocion = cargar_datos(porcentajes)
+	mayoritarias = []
+	mayor_porcentaje = -1
+	contador = 0
+	for i in range(6):
+		print("Porcentaje de " + emocion[i] + ": "+ numeros[i] + "%")
+		if mayor_porcentaje < int(numeros[i]):
+			mayor_porcentaje = int(numeros[i])
+			mayoritarias = []
+			mayoritarias.append(i)
+			contador = 0
+		elif mayor_porcentaje == int(numeros[i]):
+			contador = contador + 1
+			mayoritarias.append(i)
+	if mayor_porcentaje == 100:
+		print("La emoción mayoritaria es " + emocion[mayoritarias[0]] + " y además es consensuada")
+	elif contador == 0:
+		print("La emoción mayoritaria es " + emocion[mayoritarias[0]] + " pero no es consensuada")
+	elif contador == 1:
+		print("Hay dos emociones mayoritarias: " + emocion[mayoritarias[0]] + " y " + emocion[mayoritarias[1]])
 
 def lista_porcentajes():
 	URL = 'http://127.0.0.1:8000/emocion/' # URL del servidor
@@ -77,10 +99,6 @@ def lista_porcentajes():
 		else:
 			porcentajes = respuesta.json()
 			valido = True
-
-	mostrar_porcentajes(porcentajes)
-	mostrar_emocion_consensuada(porcentajes)
-	mostrar_emocion_mayoritaria(porcentajes)
-	
+			resultados(porcentajes)
 
 lista_porcentajes()
