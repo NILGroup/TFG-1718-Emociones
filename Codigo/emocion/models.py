@@ -11,8 +11,11 @@ class Emocion(models.Model):
 	que se puede afirmar que una emoción la caracreriza expresados en porcentajes y
 	la emoción que destaca entre esos porcentajes.
 	"""
-	palabra = models.CharField(max_length=30, blank=True, default="")
+	palabra = models.CharField(max_length=30)
 	porcentajes = models.CharField(validators=VALIDADOR, max_length = 100)
+
+	def __str__(self):
+		return self.palabra
 
 	class Meta:
 		ordering = ('palabra',)

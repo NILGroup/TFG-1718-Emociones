@@ -59,6 +59,20 @@ class ObtenerPorcentajes(APIView):
         except Emocion.DoesNotExist:
             raise Http404
 
+    def get_percentages(self,numeros):
+        numeros = numeros.split(", ", 6)
+        numeros[0] = numeros[0].lstrip("[")
+        numeros[5] = numeros[5].rstrip("]")
+        return numeros
+        
     def get(self,request,pk,format=None):
+        emociones = ["SADNESS", "FEAR", "JOY", "MADNESS", "SORPRISE", "NEUTRAL"]
         palabra = self.get_object(pk)
-        return Response(palabra.porcentajes)
+        porcentajes = palabra.porcentajes
+        numeros = self.get_percentages(porcentajes)
+        respuesta = ""
+        for i in range(6):
+            respuesta = respuesta + emociones[i] + ":" + str(numeros[i]) + "% "
+            if i < 5:
+                respuesta = respuesta + "|| "
+        return Response(respuesta)

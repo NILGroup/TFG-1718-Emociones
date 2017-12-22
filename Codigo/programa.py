@@ -9,9 +9,17 @@ def lista_emociones():
 	return emocion
 
 def coger_porcentajes(porcentajes):
-	numeros = porcentajes.split(", ", 6)
-	numeros[0] = numeros[0].lstrip("[")
-	numeros[5] = numeros[5].rstrip("]")
+	tokens = porcentajes.split(":", 6)
+	numeros = []
+	for i in range(7):
+		if i > 0:
+			porcentaje = tokens[i][:2]
+			if porcentaje[0] == '0':
+				numeros.append("0")
+			elif porcentaje == "10":
+				numeros.append("100")
+			else:
+				numeros.append(porcentaje)
 	return numeros
 
 def cargar_datos(porcentajes):
@@ -20,9 +28,7 @@ def cargar_datos(porcentajes):
 	return numeros, emocion
 """
 def mostrar_porcentajes(porcentajes):
-	"""
 	#Muestra la lista de porcentajes correspondientes a cada emoción.
-	"""
 	numeros, emocion = cargar_datos(porcentajes)
 	for i in range(6):
 		print("Porcentaje de " + emocion[i] + ": "+ numeros[i] + "%")
@@ -61,6 +67,28 @@ def mostrar_emocion_mayoritaria(porcentajes):
 				posEmocion = i;
 		print("La emoción mayoritaria es " + emocion[posEmocion])
 """
+def quitar_acento(palabra,acento,letra):
+	pos = palabra.index(acento)
+	pre = palabra[:pos]
+	suf = palabra[pos+1:]
+	sin_acento = pre+letra+suf
+	return sin_acento
+
+def traducir(palabra):
+	if 'á' in palabra:
+		palabra = quitar_acento(palabra,'á', "a")
+	elif 'é' in palabra:
+		palabra = quitar_acento(palabra,'é', "e")
+	elif 'í' in palabra:
+		palabra = quitar_acento(palabra,'í', "i")
+	elif 'ó' in palabra:
+		palabra = quitar_acento(palabra,'ó', "o")
+	elif 'ú' in palabra:
+		palabra = quitar_acento(palabra,'ú', "u")
+	if 'ñ' in palabra:
+		palabra = quitar_acento(palabra,'ñ', "ny")	
+	return palabra
+
 def resultados(porcentajes):
 	numeros, emocion = cargar_datos(porcentajes)
 	mayoritarias = []
@@ -86,19 +114,24 @@ def resultados(porcentajes):
 def lista_porcentajes():
 	URL = 'http://127.0.0.1:8000/emocion/' # URL del servidor
 	sufijo = '/porcentajes/' # sufijo de la consulta
-	valido = False
-	while valido != True:
-		print ("Introduzca la palabra que desea buscar:") # se le pide al usuario que introduzca una palabra
-		buscar = input()
-		buscada = buscar.lower()
-		print ("Buscaremos la palabra", buscada)
+	#valido = False
+	print ("Introduzca la palabra que desea buscar (salir para salir):") # se le pide al usuario que introduzca una palabra
+	buscar = input()
+	buscada = buscar.lower()
+	buscada = traducir(buscada)
+	while buscada != "salir":
+		print ("Buscaremos la palabra", buscar)
 		destino = URL+buscada+sufijo
 		respuesta = requests.get(destino)
 		if repr(respuesta) == "<Response [404]>":
 			print("No se ha encontrado la palabra. Asegurese de haberla escrito bien.")
 		else:
 			porcentajes = respuesta.json()
-			valido = True
+			#valido = True
 			resultados(porcentajes)
-
+		print("----------------------------------------")
+		print("Introduzca la palabra que desea buscar:") # se le pide al usuario que introduzca una palabra
+		buscar = input()
+		buscada = buscar.lower()
+		buscada = traducir(buscada)
 lista_porcentajes()
