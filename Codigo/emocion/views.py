@@ -76,3 +76,70 @@ class ObtenerPorcentajes(APIView):
             if i < 5:
                 respuesta = respuesta + "|| "
         return Response(respuesta)
+
+class getMajority(APIView):
+
+    def get_object(self,pk):
+        try:
+            return Emocion.objects.get(palabra=pk)
+        except Emocion.DoesNotExist:
+            raise Http404
+
+    def get_percentages(self,numeros):
+        numeros = numeros.split(", ", 6)
+        numeros[0] = numeros[0].lstrip("[")
+        numeros[5] = numeros[5].rstrip("]")
+        return numeros
+        
+    def get(self,request,pk,format=None):
+        emociones = ["SADNESS", "FEAR", "JOY", "MADNESS", "SORPRISE", "NEUTRAL"]
+        palabra = self.get_object(pk)
+        porcentajes = palabra.porcentajes
+        numeros = self.get_percentages(porcentajes)
+        respuesta = ""
+        majority = [] 
+        entro = False
+        mayor = -1;
+        for i in range(6):
+            if(int(mayor) < int(numeros[i])):
+                mayor = numeros[i]
+                majority = []
+                majority.append(i)
+            elif (int(mayor) == int(numeros[i])):
+                entro = True
+                majority.append(i)
+        if(entro):
+            respuesta = "Majorities: " +  emociones[majority[0]] + ", " +  emociones[majority[1]]
+        else:
+            respuesta = "Majority: " + emociones[majority[0]]
+        return Response(respuesta)
+
+class getConsensual(APIView):
+
+    def get_object(self,pk):
+        try:
+            return Emocion.objects.get(palabra=pk)
+        except Emocion.DoesNotExist:
+            raise Http404
+
+    def get_percentages(self,numeros):
+        numeros = numeros.split(", ", 6)
+        numeros[0] = numeros[0].lstrip("[")
+        numeros[5] = numeros[5].rstrip("]")
+        return numeros
+        
+    def get(self,request,pk,format=None):
+        emociones = ["SADNESS", "FEAR", "JOY", "MADNESS", "SORPRISE", "NEUTRAL"]
+        palabra = self.get_object(pk)
+        porcentajes = palabra.porcentajes
+        numeros = self.get_percentages(porcentajes)
+        respuesta = ""
+        entro = False;
+        for i in range(6):
+            if(100 == int(numeros[i])):
+                entro = True;
+        if(entro):
+            respuesta = "Consensual: " + emocion
+        else:  
+            respuesta = "Not Consensual"
+        return Response(respuesta)
