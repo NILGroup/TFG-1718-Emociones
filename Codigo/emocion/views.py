@@ -109,9 +109,9 @@ class getMajority(APIView):
                 entro = True
                 majority.append(i)
         if(entro):
-            respuesta = "Majorities: " +  emociones[majority[0]] + ", " +  emociones[majority[1]]
+            respuesta = "Majorities: " +  emociones[majority[0]] + ", " +  emociones[majority[1]]  + " || Percentage: " + numeros(majority[0])
         else:
-            respuesta = "Majority: " + emociones[majority[0]]
+            respuesta = "Majority: " + emociones[majority[0]] + " || Percentage: " + numeros[majority[0]]
         return Response(respuesta)
 
 class getConsensual(APIView):

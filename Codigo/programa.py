@@ -105,11 +105,11 @@ def resultados(porcentajes):
 			contador = contador + 1
 			mayoritarias.append(i)
 	if mayor_porcentaje == 100:
-		print("La emoción mayoritaria es " + emocion[mayoritarias[0]] + " y además es consensuada")
+		print("La emoción mayoritaria es " + emocion[mayoritarias[0]] + " y además es consensuada, con porcentaje 100")
 	elif contador == 0:
-		print("La emoción mayoritaria es " + emocion[mayoritarias[0]] + " pero no es consensuada")
+		print("La emoción mayoritaria es " + emocion[mayoritarias[0]] + " con porcentaje " + str(mayor_porcentaje) + ",por lo que no es consensuada")
 	elif contador == 1:
-		print("Hay dos emociones mayoritarias: " + emocion[mayoritarias[0]] + " y " + emocion[mayoritarias[1]])
+		print("Hay dos emociones mayoritarias: " + emocion[mayoritarias[0]] + " y " + emocion[mayoritarias[1]] + " con porcentaje " + str(mayor_porcentaje))
 
 def lista_porcentajes():
 	URL = 'http://127.0.0.1:8000/emocion/' # URL del servidor
