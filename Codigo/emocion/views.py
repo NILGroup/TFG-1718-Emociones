@@ -55,9 +55,11 @@ class ObtenerPorcentajes(APIView):
     """
     def get_object(self,pk):
         try:
-            return Emocion.objects.get(palabra=pk)
+            entry = Emocion.objects.get(palabra=pk)
+            print(entry)
+            return entry
         except Emocion.DoesNotExist:
-            raise Http404
+            raise Http404()
 
     def get_percentages(self,numeros):
         numeros = numeros.split(", ", 6)
@@ -83,7 +85,7 @@ class getMajority(APIView):
         try:
             return Emocion.objects.get(palabra=pk)
         except Emocion.DoesNotExist:
-            raise Http404
+            raise Http404("WORD NOT FOUND")
 
     def get_percentages(self,numeros):
         numeros = numeros.split(", ", 6)
@@ -120,7 +122,7 @@ class getConsensual(APIView):
         try:
             return Emocion.objects.get(palabra=pk)
         except Emocion.DoesNotExist:
-            raise Http404
+            raise Http404("WORD NOT FOUND")
 
     def get_percentages(self,numeros):
         numeros = numeros.split(", ", 6)
