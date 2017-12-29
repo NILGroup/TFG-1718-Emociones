@@ -55,9 +55,7 @@ class ObtenerPorcentajes(APIView):
     """
     def get_object(self,pk):
         try:
-            entry = Emocion.objects.get(palabra=pk)
-            print(entry)
-            return entry
+            return Emocion.objects.get(palabra=pk)
         except Emocion.DoesNotExist:
             raise Http404()
 
@@ -79,69 +77,61 @@ class ObtenerPorcentajes(APIView):
                 respuesta = respuesta + "|| "
         return Response(respuesta)
 
-class getMajority(APIView):
+class getMain(APIView):
 
     def get_object(self,pk):
         try:
             return Emocion.objects.get(palabra=pk)
         except Emocion.DoesNotExist:
-            raise Http404("WORD NOT FOUND")
-
-    def get_percentages(self,numeros):
-        numeros = numeros.split(", ", 6)
-        numeros[0] = numeros[0].lstrip("[")
-        numeros[5] = numeros[5].rstrip("]")
-        return numeros
+            raise Http404()
         
     def get(self,request,pk,format=None):
         emociones = ["SADNESS", "FEAR", "JOY", "MADNESS", "SORPRISE", "NEUTRAL"]
         palabra = self.get_object(pk)
         porcentajes = palabra.porcentajes
-        numeros = self.get_percentages(porcentajes)
+        numeros = ObtenerPorcentajes.get_percentages(self,porcentajes)
         respuesta = ""
-        majority = [] 
+        mayoritarias = [] 
         entro = False
         mayor = -1;
         for i in range(6):
-            if(int(mayor) < int(numeros[i])):
-                mayor = numeros[i]
-                majority = []
-                majority.append(i)
-            elif (int(mayor) == int(numeros[i])):
+            if(mayor < int(numeros[i])):
+                mayor = int(numeros[i])
+                mayoritarias = []
+                mayoritarias.append(i)
+            elif (mayor == int(numeros[i])):
                 entro = True
-                majority.append(i)
+                mayoritarias.append(i)
         if(entro):
-            respuesta = "Majorities: " +  emociones[majority[0]] + ", " +  emociones[majority[1]]  + " || Percentage: " + numeros(majority[0])
+            respuesta = "MAIN: " +  emociones[mayoritarias[0]] + ", " +  emociones[mayoritarias[1]]  + " || %: " + numeros[mayoritarias[0]]
         else:
-            respuesta = "Majority: " + emociones[majority[0]] + " || Percentage: " + numeros[majority[0]]
+            respuesta = "MAIN: " + emociones[mayoritarias[0]] + " || %: " + numeros[mayoritarias[0]]
         return Response(respuesta)
 
-class getConsensual(APIView):
+class getAgreed(APIView):
 
     def get_object(self,pk):
         try:
             return Emocion.objects.get(palabra=pk)
         except Emocion.DoesNotExist:
-            raise Http404("WORD NOT FOUND")
-
-    def get_percentages(self,numeros):
-        numeros = numeros.split(", ", 6)
-        numeros[0] = numeros[0].lstrip("[")
-        numeros[5] = numeros[5].rstrip("]")
-        return numeros
+            raise Http404()
         
     def get(self,request,pk,format=None):
         emociones = ["SADNESS", "FEAR", "JOY", "MADNESS", "SORPRISE", "NEUTRAL"]
         palabra = self.get_object(pk)
         porcentajes = palabra.porcentajes
-        numeros = self.get_percentages(porcentajes)
+        numeros = ObtenerPorcentajes.get_percentages(self,porcentajes)
         respuesta = ""
-        entro = False;
-        for i in range(6):
-            if(100 == int(numeros[i])):
+        entro = False
+        contador = 0
+        while entro == False and contador < 6:
+            if(100 == int(numeros[contador])):
                 entro = True;
+            else:
+                contador = contador + 1
         if(entro):
-            respuesta = "Consensual: " + emocion
+            respuesta = "AGREED: " + emociones[contador]
         else:  
-            respuesta = "Not Consensual"
+            respuesta = "NO AGREED EMOTION"
         return Response(respuesta)
+        

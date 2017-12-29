@@ -6,7 +6,7 @@ def porcentajes(palabra):
 	Devuelve los porcentajes de emocion para una palabra.
 
 	>>> porcentajes("mesa")
-	SADNESS:0% || FEAR:0% || JOY:0% || MADNESS:0% || SORPRISE:0% || NEUTRAL:100% 
+	SADNESS:0% || FEAR:100% || JOY:0% || MADNESS:0% || SORPRISE:0% || NEUTRAL:0% 
 	>>> porcentajes("araña")
 	SADNESS:0% || FEAR:67% || JOY:0% || MADNESS:0% || SORPRISE:0% || NEUTRAL:33% 
 	>>> porcentajes("corazón")
