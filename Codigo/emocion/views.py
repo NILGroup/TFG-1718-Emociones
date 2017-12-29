@@ -95,11 +95,12 @@ class getMain(APIView):
         entro = False
         mayor = -1;
         for i in range(6):
-            if(mayor < int(numeros[i])):
-                mayor = int(numeros[i])
+            if(int(mayor) < int(numeros[i])):
+                mayor = numeros[i]
                 mayoritarias = []
+                entro = False
                 mayoritarias.append(i)
-            elif (mayor == int(numeros[i])):
+            elif (int(mayor) == int(numeros[i])):
                 entro = True
                 mayoritarias.append(i)
         if(entro):
