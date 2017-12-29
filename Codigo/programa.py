@@ -26,47 +26,7 @@ def cargar_datos(porcentajes):
 	numeros = coger_porcentajes(porcentajes)
 	emocion = lista_emociones()
 	return numeros, emocion
-"""
-def mostrar_porcentajes(porcentajes):
-	#Muestra la lista de porcentajes correspondientes a cada emoción.
-	numeros, emocion = cargar_datos(porcentajes)
-	for i in range(6):
-		print("Porcentaje de " + emocion[i] + ": "+ numeros[i] + "%")
 
-
-def tiene_consensuada(numeros):
-	tieneConsensuada = False
-	posEmocion = -1
-	i = 0
-	while((not tieneConsensuada) and i < 6):
-		if(numeros[i] == '100'):
-			posEmocion = i
-			tieneConsensuada = True
-		else:
-			i = i+1
-	return tieneConsensuada, posEmocion
-
-def mostrar_emocion_consensuada(porcentajes):
-	numeros, emocion = cargar_datos(porcentajes)
-	tieneConsensuada, posEmocion = tiene_consensuada(numeros)
-	if(not tieneConsensuada):
-		print("La palabra no tiene una emoción consensuada")
-	else:
-		print("La emoción consensuada es " + emocion[posEmocion])
-	
-def mostrar_emocion_mayoritaria(porcentajes):
-	numeros, emocion = cargar_datos(porcentajes)
-	tieneConsensuada, posEmocion = tiene_consensuada(numeros)
-	if(tieneConsensuada):
-		print("La emoción mayoritaria es " + emocion[posEmocion])
-	else:
-		emocionMayor = -1
-		for i in range(6):
-			if(emocionMayor < int(numeros[i])):
-				emocionMayor = int(numeros[i])
-				posEmocion = i;
-		print("La emoción mayoritaria es " + emocion[posEmocion])
-"""
 def quitar_acento(palabra,acento,letra):
 	pos = palabra.index(acento)
 	pre = palabra[:pos]
@@ -113,7 +73,7 @@ def resultados(porcentajes):
 
 def lista_porcentajes():
 	URL = 'http://127.0.0.1:8000/emocion/' # URL del servidor
-	sufijo = '/porcentajes/' # sufijo de la consulta
+	sufijo = '/percentages/' # sufijo de la consulta
 	#valido = False
 	print ("Introduzca la palabra que desea buscar (salir para salir):") # se le pide al usuario que introduzca una palabra
 	buscar = input()
