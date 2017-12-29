@@ -15,20 +15,17 @@ def porcentajes(palabra):
 	{'detail': 'Not found.'}
 	"""
 	URL = 'http://127.0.0.1:8000/emocion/' # URL del servidor
-	sufijo = '/porcentajes/' # sufijo de la consulta
-	#buscar = input()
+	sufijo = '/percentages/' # sufijo de la consulta
 	buscar = palabra
 	buscada = buscar.lower()
 	buscada = traducir(buscada)
-	#while buscada != "salir":
 	destino = URL+buscada+sufijo
 	respuesta = requests.get(destino)
 	porcentajes = respuesta.json()
 	print(porcentajes)
-		#buscar = input()
-		#buscada = buscar.lower()
-		#buscada = traducir(buscada)
 
 if __name__ == "__main__":
 	import doctest
-	doctest.testmod(verbose=True)
+	failure, test = doctest.testmod(verbose=True)
+	if failure > 0:
+		raise ValueError("TEST FAILED")
