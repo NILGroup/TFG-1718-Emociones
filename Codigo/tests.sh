@@ -1,8 +1,8 @@
 #!/bin/bash
 echo "STARTING TESTS"
 echo "-----------------------PERCENTAGES TEST-----------------------"
-python porcentajes_test.py
+python Codigo/porcentajes_test.py
 echo "-----------------------AGREED_EMOTION TEST-----------------------"
-python consensuada_test.py
+python Codigo/consensuada_test.py
 echo "-----------------------MAIN_EMOTION TEST-----------------------"
-python mayoritaria_test.py
+python Codigo/mayoritaria_test.py
