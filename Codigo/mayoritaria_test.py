@@ -7,7 +7,7 @@ def mayoritaria(palabra):
 
 	>>> mayoritaria("mesa")
 	MAIN: NEUTRAL || %: 100
-	>>> mayoritaria("corazón")
+	>>> mayoritaria("corazon")
 	MAIN: JOY, NEUTRAL || %: 50
 	>>> mayoritaria("diamante")
 	MAIN: JOY || %: 83

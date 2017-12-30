@@ -7,9 +7,9 @@ def porcentajes(palabra):
 
 	>>> porcentajes("mesa")
 	SADNESS:0% || FEAR:0% || JOY:0% || MADNESS:0% || SORPRISE:0% || NEUTRAL:100% 
-	>>> porcentajes("araña")
+	>>> porcentajes("aranya")
 	SADNESS:0% || FEAR:67% || JOY:0% || MADNESS:0% || SORPRISE:0% || NEUTRAL:33% 
-	>>> porcentajes("corazón")
+	>>> porcentajes("corazon")
 	SADNESS:0% || FEAR:0% || JOY:50% || MADNESS:0% || SORPRISE:0% || NEUTRAL:50% 
 	>>> porcentajes("te")
 	{'detail': 'Not found.'}

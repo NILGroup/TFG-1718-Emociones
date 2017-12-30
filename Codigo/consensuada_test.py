@@ -7,7 +7,7 @@ def consensuada(palabra):
 
 	>>> consensuada("mesa")
 	AGREED: NEUTRAL
-	>>> consensuada("corazón")
+	>>> consensuada("corazon")
 	NO AGREED EMOTION
 	>>> consensuada("te")
 	{'detail': 'Not found.'}
