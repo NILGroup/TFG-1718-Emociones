@@ -1,5 +1,4 @@
 import requests
-from corrector import traducir
 
 def mayoritaria(palabra):
 	"""
@@ -18,7 +17,6 @@ def mayoritaria(palabra):
 	sufijo = '/main/' # sufijo de la consulta
 	buscar = palabra
 	buscada = buscar.lower()
-	buscada = traducir(buscada)
 	destino = URL+buscada+sufijo
 	respuesta = requests.get(destino)
 	mayoritaria = respuesta.json()

@@ -1,5 +1,4 @@
 import requests
-from corrector import traducir
 
 def consensuada(palabra):
 	"""
@@ -16,7 +15,6 @@ def consensuada(palabra):
 	sufijo = '/agreed/' # sufijo de la consulta
 	buscar = palabra
 	buscada = buscar.lower()
-	buscada = traducir(buscada)
 	destino = URL+buscada+sufijo
 	respuesta = requests.get(destino)
 	consensuada = respuesta.json()

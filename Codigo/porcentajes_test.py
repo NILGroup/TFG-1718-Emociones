@@ -1,5 +1,4 @@
 import requests
-from corrector import traducir
 
 def porcentajes(palabra):
 	"""
@@ -18,7 +17,6 @@ def porcentajes(palabra):
 	sufijo = '/percentages/' # sufijo de la consulta
 	buscar = palabra
 	buscada = buscar.lower()
-	buscada = traducir(buscada)
 	destino = URL+buscada+sufijo
 	respuesta = requests.get(destino)
 	porcentajes = respuesta.json()
