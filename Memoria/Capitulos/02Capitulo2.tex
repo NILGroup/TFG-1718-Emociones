@@ -16,8 +16,8 @@
 \end{FraseCelebre}
 
 \begin{resumen}
-En este capítulo se van a tratar los aspectos más importantes tanto de la computación emocional como de las diferentes tecnologías y metodologías que se van a utilizar.
-En primer lugar, en la sección 2.1, se define la computación emocional y sus posibles aplicaciones, también se explican los distintos diccionarios afectivos ya existentes que permiten la marcación emocional de textos y se presenta el diccionario que se va a utilizar en este trabajo. En la sección 2.2 se introduce la tecnología que se va a utilizar para implementar el trabajo, los Servicios Web. En la sección 2.3 se fijan los conceptos relacionados con la metodología Scrum. En la sección 2.4 se explican las bases de la integración continua aplicada al desarrollo de Software y cómo se va a aplicar en este trabajo.
+En este capítulo se van a tratar los aspectos más importantes tanto de la computación afectiva como de las diferentes tecnologías y metodologías que se van a utilizar.
+En primer lugar, en la sección 2.1, se define la computación emocional y sus posibles aplicaciones, también se explican los distintos diccionarios afectivos ya existentes que permiten la marcación emocional de textos y se presenta el diccionario que se va a utilizar en este trabajo. En la sección 2.2 se introduce la tecnología que se va a utilizar para implementar el trabajo, los Servicios Web. En la sección 2.3 se fijan los conceptos relacionados con la metodología Scrum, la cual hemos seguido durante todo el TFG. En la sección 2.4 se explican las bases de la integración continua aplicada al desarrollo de Software y cómo se va a aplicar en este trabajo.
 
 \end{resumen}
 
@@ -27,87 +27,107 @@ En primer lugar, en la sección 2.1, se define la computación emocional y sus pos
 %-------------------------------------------------------------------
 \label{cap2:sec:computacion_afectiva}
 
-La computación emocional es el estudio y el desarrollo de sistemas y dispositivos capaces de percibir, medir e interpretar las emociones humanas.Esta rama de la computación permite un avance notable en la inteligencia artificial, hasta tal punto que los ordenadores lleguen a adaptarse a los humanos, sus necesidades y estados de ánimo. Los seres humanos están rodeados de emociones, en cualquier ámbito de su vida, tanto de las suyas propias como las de las personas con las que se comunican. Tanta importancia tienen para nosotros que influye no sólo a nuestra comunicación, sino también en nuestro aprendizaje y toma de decisiones. Por ello, resulta artificial y en ocasiones incluso frustrante intentar conmunicarse con una máquina que no es capaz de computar sentimientos. Se acuña entonces el término computación afectiva (Picard,1997) pretende mejorar la interacción hombre-máquina haciéndola más natural y asequible. 
+Todo el mundo sabe lo que son las emociones hasta que llega el momento de definirlas. Podríamos definir las emociones como reacciones automáticas que nuestro cuerpo experimenta ante un determinado estímulo. Sin embargo, todas ellas luego derivan en sentimientos más prolongados en el tiempo.
 
-El funcionamiento de este tipo de sistemas se basa en identificar el estado emocional del sujeto a través de diferentes fuentes(voz, expresiones, señales fisiológicas, palabras...) y procesar la información para clasificarla y aprender de ella. Clasificar la información de entrada puede resultar complicado ya que se suelen recibir varias señales diferentes a la vez, lo que hace necesario utilizar técnicas de priorización para determinar cuáles son las que más aportan a la hora de analizar y gestionar la información. Una vez identificada la emoción predominante, el sistema responde adecuandose a ella. La salida dependerá del tipo de sistema y las herramientas de las que dispone este para expresar su respuesta (colores, sonidos, emoticonos...) En casos más complejos aplicados a robótica o modelado, la salida producida es una simulación de la respuesta que produciría un ser humano ante los estímulos recibidos imitando su expresión corporal, voz o gestos faciales.
+Existen 6 emociones básicas, las cuales podemos representar e interpretar gracias a los gestos y movimientos.
 
-Se trata de una tecnología con un espectro enorme de posibilidades, ya que como se ha mencionado antes, las emociones están presentes en todos los ámbitos de la vida de una persona. Por lo tanto, puede aplicarse a áreas muy diferentes entre sí. Algunas de estas áreas son:
+La computación afectiva (Picard,1997) es el estudio y el desarrollo de sistemas y dispositivos capaces de percibir, medir e interpretar las emociones humanas.
+
+Esta rama de la computación permite un avance notable en la inteligencia artificial, hasta tal punto que los ordenadores lleguen a adaptarse a los humanos, sus necesidades y estados de ánimo. Los seres humanos están rodeados de emociones, en cualquier ámbito de su vida, tanto de las suyas propias como las de las personas con las que se comunican. Tanta importancia tienen para nosotros que influyen no sólo en nuestra comunicación, sino también en nuestro aprendizaje y toma de decisiones. Por ello, resulta artificial y en ocasiones incluso frustrante intentar comunicarse con una máquina que no es capaz de expresar sentimientos. 
+
+La computación afectiva pretende mejorar la interacción hombre-máquina haciéndola más natural y asequible. 
+
+El funcionamiento de este tipo de sistemas se basa en identificar el estado emocional del sujeto a través de diferentes fuentes (voz, expresiones, señales fisiológicas, palabras...) y procesar la información para clasificarla y aprender de ella. Clasificar la información de entrada puede resultar complicado ya que se suelen recibir varias señales diferentes a la vez, lo que hace necesario utilizar técnicas de priorización para determinar cuáles son las que más aportan a la hora de analizar y gestionar la información. Una vez identificada la emoción predominante, el sistema responde adecuandose a ella. La salida dependerá del tipo de sistema y las herramientas de las que dispone este para expresar su respuesta (colores, sonidos, emoticonos...) En casos más complejos aplicados a robótica o modelado, la salida producida es una simulación de la respuesta que produciría un ser humano ante los estímulos recibidos imitando su expresión corporal, voz o gestos faciales.
+
+La computación afectiva tiene multitud de aplicaciones, ya que como se ha mencionado antes, las emociones están presentes en todos los ámbitos de la vida de una persona. Por lo tanto, puede aplicarse a áreas muy diferentes entre sí como:
 
 \begin{itemize}
-	\item \textbf{Marketing}: Actualmente una de sus aplicaciones más explotadas. Poder evaluar la reacción emocional de alguien ante un anuncio o producto es una estrategia comercial que ya está siendo utilizada por cada vez más empresas.
-	\item \textbf{Salud}: Principalmente detección del estrés para minimizar sus efectos y aprender a controlarlo. Es posible inferir el nivel de estrés de una persona midiendo sus señales fisiológicas (ritmo cardiaco, respiración...) y si este nivel es demasiado alto proceder en consecuencia según el tipo de sistema. Se puede aplicar de forma similar a las fobias. 
+	\item \textbf{Marketing}: Actualmente una de sus aplicaciones más explotadas. Poder evaluar la reacción emocional de alguien ante un anuncio o producto es una estrategia comercial que ya está siendo utilizada cada vez por más empresas.
+	\item \textbf{Salud}: Principalmente detección del estrés para minimizar sus efectos y aprender a controlarlo. Es posible inferir el nivel de estrés de una persona midiendo sus señales fisiológicas (ritmo cardiaco, respiración...) y si este nivel es demasiado alto se reaccionará en consecuencia según el tipo de sistema. Se puede aplicar de forma similar a las fobias. 
 	\item \textbf{Entretenimiento}: La industria de los videojuegos ha crecido mucho en los últimos años e introducir este tipo de tecnología permite a las compañías crear juegos más adaptables y cercanos al jugador, lo que atrae a más público y mejora la experiencia de juego (modelado de personajes más realista y mayor empatía con estos).
 	\item \textbf{Robótica}: El mayor problema de los robots diseñados para interactuar con humanos es la carencia de emociones. Algunos de ellos llegan a producir una sensación de incomodidad. Dotar a este tipo de robots de cierta "humanidad" no sólo haría más cómodo el tratar con ellos sino que podrían realizar tareas como el acompañamiento de personas mayores.
-	\item \textbf{Accesibilidad}: Las herramientas que puede generar la computación afectiva pueden servir de gran ayuda a personas que no tengan la capacidad de entender o expresar sus emociones, como por ejemplo personas con autismo. Para este tipo de personas sería extremádamente complicado acceder a la tecnología sin la inclusión de estas herramientas que sean capaces de adaptarse a sus necesidades.
+	\item \textbf{Accesibilidad}: Las herramientas que puede generar la computación afectiva pueden servir de gran ayuda a personas que no tengan la capacidad de entender o expresar sus emociones, como por ejemplo personas con autismo. Para este tipo de personas sería extremadamente complicado acceder a la tecnología sin la inclusión de herramientas que les ayuden a detectar el contenido afectivo.
 	
 \end{itemize}
 
-En este trabajo vamos a centrarnos en el último área, la accesibilidad. En particular, en facilitar a personas que padecen Trastornos del Espectro Autista (TEA) el entendimiento de textos. Trataremos de analizar un texto de entrada para identificar las emociones predominantes y en que medida se presentan, evitando las posibles ambigüedades que pueda haber. Las emociones con las que trataremos son las básicas: alegría, tristeza, miedo, sorpresa, enfado o neutral. Una vez identificadas las emociones se etiquetarán para hacerlas más explícitas mediante emoticonos.
+En este trabajo vamos a centrarnos en el último área, la accesibilidad. En particular, en facilitar a personas que padecen Trastornos del Espectro Autista (TEA) el entendimiento de textos. Trataremos de analizar un texto de entrada para identificar las emociones predominantes y en que medida se presentan, evitando las posibles ambigüedades que pueda haber. Las emociones con las que trataremos son las básicas: alegría, tristeza, miedo, sorpresa y enfado. Una vez identificadas las emociones se etiquetarán para hacerlas más explícitas mediante emoticonos.
 
 Para deducir la emoción que transmite una palabra específica utilizaremos un diccionario afectivo basado en otros ya existentes.
 
-	\subsection{Diccionarios Afectivos Existentes}
-	\label{cap2:subsec:diccionarios}
+\subsection{Métodos existentes para el marcado de texto emocional}
+
+Los métodos existentes para el marcado de texto emocional podrían clasificarse en cinco categorías básicas: keyword spotting, afinidad léxica, procesamiento estadístico del lenguaje natural, métodos basados en el conocimiento del mundo real y métodos manuales.
+
+
+\begin{itemize}
+	\item \textbf{Keyword spotting}: El marcado del texto se basa en la aparición de palabras emocionales como happy, sad... Un
+ejemplo de este método es ANEW (Bradley y Lang, 1999), se trata de una base de datos de 3.109 palabras con su emoción asociada. Las principales desventajas de este método son: problemas cuando la negación está implicada en la frase y dependencia del método en aspectos superficiales cuando en la práctica existen muchas frases cuyo contenido emocional no se encuentra en los adjetivos.
+	\item \textbf{Afinidad léxica}: Este método no solo detecta palabras obviamente emocionales como los adjetivos, sino que asigna al resto de palabras una afinidad con las distintas emociones. Este método tiene dos problemas fundamentales: emplea tan solo las palabras sin tener en cuenta el contexto en el que se encuentran por lo que puede fallar con la aparición de las negaciones y ademas este tipo de métodos suelen entrenarse con un corpus lo que dificulta el desarrollo de un modelo reutilizable e independiente del dominio.
+	\item \textbf{Procesamiento estadístico}: Consiste en alimentar a un algoritmo de aprendizaje con un amplio corpus de textos marcados emocionalmente. Este método ha sido empleado en el proyecto Webmind (Goertzel et al., 2000).
+	\item \textbf{Métodos manuales}: Estos métodos implican el modelado de distintos estado emocionales en términos de modelos afectivos basados en teorías psicológicas sobre las necesidades, los deseos y las metas de los seres humanos. Un ejemplo es el DAYDREAMER (Dyer, 1987)
+	\item \textbf{Métodos basados en el conocimiento del mundo real}: Este método no solo mira los aspectos superficiales del texto, sino que va más allá, evalúa la calidad afectiva de la semántica subyacente que contiene el texto. Un ejemplo es el marcador llevado a cabo por Liu, Lieberman y Selker (Liu, Lieberman, y Selker, 2002)
+
+\end{itemize}
+
+Las técnicas basadas en el procesamiento estadístico del lenguaje natural solo funcionan con un texto de entrada lo suficientemente extenso, los métodos manuales precisan un amplio análisis y entendimiento de los textos y hacen muy difícil la generalización y los métodos basados en el conocimiento del "mundo real" necesitan un amplio conocimiento denominado "mundo real". (Francisco, Gervás, 2006)
 	
-	Hablamos de diccionario afectivo cuando se trata de un diccionario en el que las palabras se encuentran marcadas con etiquetas afectivas. Algunos ejemplos de etiquetas afectivas serían: alegría, tristeza, sorpresa, miedo...
+\subsection{Diccionarios Afectivos Existentes}
+\label{cap2:subsec:diccionarios}
 	
-	Con el paso del tiempo se han ido desarrollando algunos diccionarios afectivos, los cuales describiremos a continuación:
+	Un diccionario afectivo es un diccionario en el que las palabras se encuentran marcadas con etiquetas afectivas. Algunos ejemplos de etiquetas afectivas serían: alegría, tristeza, sorpresa, miedo...
 	
-	\textbf{LASSWELL VALUE DICTIONARY Y GENERAL INQUIRER}
+	En las siguientes secciones presentamos los diccionarios afectivos mas representativos.
+	
+	\subsubsection{LASSWELL VALUE DICTIONARY Y GENERAL INQUIRER}
 	
 	Fue a comienzos de los años 60 cuando Stone y Lasswell, ambos investigadores, comenzaron a construir diccionarios en lo que las palabras estaban marcadas con etiquetas afectivas.
 	El diccionario Lasswell clasifica sus palabras de manera binaria y en ocho categorías básicas (riqueza, poder, respeto, rectitud, habilidad, iluminación, afecto y bienestar). Además de estas, el esquema de este diccionario distingue entre objetivos sustantivos y los elementos y atributos del proceso de distribución de valores, es decir, evaluación personal y asignación social.
 	La clasificación social del contenido mantiene estas distinciones. Las preocupaciones con valores particulares se clasifican en objetivos sustantivos particulares. El esquema de clasificación también distingue varios tipos de transacciones de valor.
 
-\textbf{DICCIONARIO DE HATZIVASSILOGLOU Y MCKEOWN}
+\subsubsection{DICCIONARIO DE HATZIVASSILOGLOU Y MCKEOWN}
 	
 	Este diccionario fue creado en 1997, y tarta de encontrar etiquetas como positive o negative de manera automatizada a través del análisis de un corpus.
 	Hatzuvassiloglou y McKeown tomaron una serie de adjetivos que aparecían de manera frecuente y decidieron darles una orientación, empleando un análisis estadístico en el que cuando dos adjetivos aparecían juntos, siguiendo el patrón adjetivo1 y adjetivo 2, devolvía una orientación positiva o negativa. 
 	Así, pudieron obtener un diccionario de adjetivos clasificados en positivos y negativos.
 
-\textbf{WORDNET AFFECT}
+\subsubsection{WORDNET AFFECT}
 
 	Se trata de una extensión de WordNet Domains, que incluye un subconjunto de synsets adecuados para representar conceptos afectivos correlacionados con palabras afectivas. De manera similar a nuestro método para etiquetas de dominio, asignamos a una serie de sintonias de WordNet una o mas etiquetas afectivas. En particular, los recursos afectivos que representan el estado emocional son individualizados por sintonizadores marcados por la emocion de la etiqueta A. Tambien existen otras etiquetas para aquellos conceptos que representan estados de animo, situaciones que provocan emociones o respuestas emocionales.
 	El recurso se amplió con un conjutno de etiquetas A adicionales (llamadas categorias emocionales), organizadas jerarquicamente, con el fin de especializar sysnsets con una emocion de etiqueta. 
 La estructura jerarquica de las nuevas etiquetas a se modelo en la relaciones de hiperonimos de wornet. En una segunda etapa, se definen cuatro etiquetas a-adicionales: positivo, negativo, ambiguo, neutral.
 	Otra propiedad importante para el lexico afectico en lo que se se refiere principalmente a la interpretacion adejtivas es la dimension estacionaria/causativa.
 
-	\textbf{WHISSELL'S DICTIONARY OF AFFECTA IN LANGUAGE (DAL)}
+	\subsubsection{WHISSELL'S DICTIONARY OF AFFECTA IN LANGUAGE (DAL)}
 	
 	Este diccionario es un recurso diseñado con el fin de medir el significado emocional de las palabras y textos. El objetivo del diccionario es comparar las palabras con una lista de 8742 palabras que han sido marcadas por distints personas en terminos de las dimensiones activacion y evaluacion e imagenes.
 
-	\textbf{DICCIONARIO DE TURNEY Y LITTMAN}
+	\subsubsection{DICCIONARIO DE TURNEY Y LITTMAN}
 	
 	Turney y Littman encontraron una manera mas eficiente para decidir cuando una palabra se podía considerar positiva o negativa. Dado un conjunto de palabras, que previamente ellos conocían como positivas o negativas, probaron como de frecuentemente podía aparecer una palabra en un contexto con un conjunto de palabras positivas o negaticas. 
 Empleando la informacion de estudios cercanos y estadísticas clasificaron como positivas todas aquellas palabras que aparecían de forma más significativa con un conjunto de palabras positivas y como negativas aquellas palabras que aparecían con un conjunto de palabras negativas.
 
-\textbf{CLAIRVOYANCE AFFECT LEXICON}
+\subsubsection{CLAIRVOYANCE AFFECT LEXICON}
 
 	Este diccionario fue desarrollado a mano. Las entradas de este diccionario se dividen en cinco campos: el lema de la palabra, part-of-speech, clase afectiva, centralidad e intensidad.
 	
-	\textbf{ANEW}
+	\subsubsection{ANEW}
 	Se trata de un modelo espacial de varias palabras con carga emocional que contribuye a clasificar textos arbitrarios.
 	
 	\subsection{Nuestro diccionario}
 	\label{cap2:subsec:nuestro_diccionario}
 	
-	Nuestro diccionario afectivo está basado en el diccionario afectivo ANEW traducido al español que un equipo de la Universidad de Santiago de Compostela ha llevado a cabo (Jaime Redondo, Isabel Fraga, Isabel Padrón, y Montserrat Comesaña). 
-	Este diccionario afectivo ANEW traducido siguió un método de creación. Participaron 720 estudiantes de psicología de entre 18 y 25 años, 560 mujeres y 160 hombres. Las clasificaciones de las palabras se obtuvieron en universidades españolas, en facultades de Psicología (Santiago de Compostela, A Coruña, Valencia y Málaga) entre el 2003 y el 2005.
-	Estos participantes deberían evaluar 1034 palabras. Estas 1034 palabras son las que contiene ANEW, que una vez traducidas y revisadas se ordenaron de manera aleatoria. Para que el trabajo no fuese tan tedioso se dividió en ocho hojas con unas 129 palabras que cada participante tendría que evaluar según las tres dimensiones emocionales del ANEW (valencia?, excitación y dominancia); estas dimensiones se podían clasificar con una escala de 9 puntos usando la autoevaluación del maniquí (SAM).
+	Nuestro diccionario afectivo está basado en el diccionario afectivo ANEW traducido al español.
+	En la traducción de ANEW al castellano participaron 720 estudiantes de psicología de entre 18 y 25 años, 560 mujeres y 160 hombres.	Estos participantes evaluaron las 1034 palabras que contiene ANEW. 
 	
-	\figura{Bitmap/Capitulo2/imagenSam}{width=.9\textwidth}{fig:SAM}{Autoevaluación del maniquí (SAM).}
-	
-Estas evalaciones se realizaron a la vez, en un aula. Cada participante tenía una hoja de respuestas (con 129 palabras), una hoja de instrucciones y una hoja con la SAM (Figura \ref{fig:SAM}). Después de leer las instrucciones se resolvieron las dudas y se pusieron seis ejemplos para que los participantes entendiesen la metodología. Después comenzaron la evaluación.
+	Cada palabra debía ser marcada con las dimensiones emocionales: valencia, activación y dominancia en una escala de 9 puntos.
 
-Los resultados se almacenaron en una base de datos. Cada entrada en la base de datos contiene un número que indentifica a la palabra, esta numeración coincide con el número que dicha palabra tiene en el ANEW; la palabra inglesa (E-word), la palabra original en la base de datos ANEW; la palabra española (S-word), ordenadas alfabéticamente y las evaluaciones afectivas, los valores medios y la desviación estándar para cada dimensión emocional.
+Cada entrada en el diccionario contiene un número que identifica a la palabra, esta numeración coincide con el número que dicha palabra tiene en el ANEW; la palabra inglesa (E-word), la palabra original en la base de datos ANEW; la palabra española (S-word) y las evaluaciones afectivas, los valores medios y la desviación estándar para cada dimensión emocional.
 
-
-Basandonos en este diccionario, se ha creado una adaptación del ANEW traducido, un diccionario emocional más simplificado; ya que, aún teniendo 1034 palabras en el diccionario no se contemplan las tres dimensiones emocionales. En esta adaptación, se han elegido cinco emociones básicas (tristeza, miedo, alegría, enfado y sorpresa) y la neutralidad para no expresar ninguna emoción. Cada palabra puede representar varias de estas emociones, para ello se ha creado un número de confianza o confidence que determina con qué certeza la palabra corresponde con esa emoción. La suma de estos números de todas las emociones ha de sumar 1. 
+Este diccionario fue ampliado con las 5 emociones básicas (tristeza, miedo, alegría, enfado y sorpresa) y la neutralidad para no expresar ninguna emoción. En la ampliación de este diccionario participaron 10 personas; cada una de ellas marco cada una de las 1034 palabras con una emoción básica. A partir de estas marcas se obtuvo un valor entre 0 y 1 para cada emición, valor que indica el porcentaje de evaluadores que asignaron ducha emoción a la palabra.
 
 	\figura{Bitmap/Capitulo2/fragmento}{width=.9\textwidth}{fig:diccionario}{Fragmento de la adaptación del diccionario ANEW traducido.}
 	
-Por ejemplo en la Figura \ref{fig:diccionario}, podemos ver como la palabra abejas tiene un 0 en tristeza un 0,5 en miedo, 0,17 en alegría, 0 en enfado, 0 en sorpresa y 0,33 en neutro; lo que hace un 0,5+0,17+0.33 = 1 de confidence.
-Este diccionario ha sido rellenado también con un método, menos extenso que el ANEW dado que la traducción de palabras está tomada del ANEW traducido. Para conseguir estos números de certeza (confidence) se ha repartido una hoja de cálculo a N personas, X mujeres y Y hombres, los cuales tenían que marcar para cada palabra una única emoción. Después simplemente se han unido estos datos y creado estadísticamente los números de confidence.
+Por ejemplo en la Tabla \ref{fig:diccionario}, podemos ver los valores obtenidos para las palabras abandonado, aborto y abeja. En este ejemplo se puede ver que tristeza fue la emoción asignada a la palabra abandonado por todos los evaluadores, mientras que con abejas y aborto no hubo acuerdo. En el caso de aborto, un 67\% de los anotadoresle asignaron tristeza, mientras que un 17\% consideró que la palabra no tenía emoción asociada y un 17\% le asignaron miedo.
 
 %-------------------------------------------------------------------
 \section{Servicios Web}
@@ -270,10 +290,10 @@ Este diccionario ha sido rellenado también con un método, menos extenso que el A
 
 La práctica de desarrollo de software que se va a utilizar en el desarrollo de este trabajo es la integración continua. Se basa en que los desarrolladores combinen todos los cambios que realicen en el código en un repositorio común de forma periódica, de tal forma que una vez subidos estos cambios, se ejecutan una serie de pruebas automáticas sobre estos con el fin de validarlos. Aparte de las pruebas automáticas se realizan pruebas manuales para buscar errores más difíciles de encontrar que requieran a alguien que piense. Hasta que las pruebas sobre el nuevo código no acaban no se puede continuar. Aplicando esto a la metodología Scrum que vamos a utilizar, una historia de usuario no se puede considerar acabada hasta que no pase todas las pruebas, tanto automáticas como manuales.
 
-Implementar esta práctica al desarrollo tiene importantes ventajas entre las que se encuentran:
+Las principales ventajas de la integración continua:
 
 \begin{itemize}
-	\item \textbf{Detección de errores:} Su objetivo principal es detectar los errores lo antes posible y así solucionarlos según surgen. Cada vez que el código cambia se compila y somete a pruebas para garantizar que no hay bugs. Este proceso aumenta la calidad del software y minimiza los riesgos del proceso ya que se tiene control sobre las versiones en todo momento. Cuanto más se tarde en detectar un error más trabajo lleva arreglarlo.
+	\item \textbf{Detección de errores:} Cada vez que el código cambia se compila y se somete a pruebas para garantizar que no hay errores. Este proceso aumenta la calidad del software y minimiza los riesgos del proceso ya que se tiene control sobre las versiones en todo momento. Cuanto más se tarde en detectar un error más trabajo llevará arreglarlo.
 	\item \textbf{Visibilidad del proceso:} Todos los pasos que se realizan en el desarrollo son visibles a todo el equipo, que tiene una estrategia común muy bien definida.
 	\item \textbf{Mejora del equipo:} Los desarrolladores no solo tienen una visión muy clara y estructurada del proceso sino que también aprenden a realizar todo tipo de pruebas, lo que les hace mejorar a nivel profesional. 
 \end{itemize}
@@ -288,6 +308,7 @@ En nuestro caso la integración continua se aplicará de la siguiente manera:
 	\item \textbf{Repositorio:} Se utilizará un repositorio común de \textit{GitHub} en el que se subirán todos los cambios realizados en el código. Al ser un equipo de desarrollo pequeño y estar utilizando la metodología Scrum en principio todos los miembros del equipo estarán trabajando en la misma rama. Esto puede llegar a bloquear el proceso mientras una versión acabe de pasar las pruebas.
 	\item \textbf{Jenkins:} Tendremos Jenkins corriendo en un servidor para realizar las pruebas automáticas. Cada vez que se detecten cambios en el repositorio este avisará al servidor que procederá a hacer las pruebas de compilación y funcionamiento sobre el nuevo código.
 	\item \textbf{Pruebas manuales:} Algún miembro del equipo realizará las tareas de "`tester"'. Después de las pruebas automáticas se realizará otra serie de pruebas planificadas de antemano para probar mejor la funcionalidad del código. El "`tester"' no será siempre la misma persona.
+		\item \textbf{Pruebas automáticas:} Usaremos un software especial con el fin de controlar la ejecución de pruebas y la comparación entre los resultados obtenidos y los resultados esperados. El uso de estas pruebas, nos permite incluir pruebas muy repetitivas y necesarias, dado que habrá pruebas que realizarlas de manera manual nos podrá ser muy costoso.
 \end{itemize}
 
 %-------------------------------------------------------------------

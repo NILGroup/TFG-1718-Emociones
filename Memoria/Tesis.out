@@ -12,22 +12,24 @@
 \BOOKMARK [1][-]{section.1.1}{En el pr\363ximo cap\355tulo}{chapter.1}% 12
 \BOOKMARK [0][-]{chapter.2}{Estado del arte}{}% 13
 \BOOKMARK [1][-]{section.2.1}{Computaci\363n Afectiva}{chapter.2}% 14
-\BOOKMARK [2][-]{subsection.2.1.1}{Diccionarios Afectivos Existentes}{section.2.1}% 15
-\BOOKMARK [2][-]{subsection.2.1.2}{Nuestro diccionario}{section.2.1}% 16
-\BOOKMARK [1][-]{section.2.2}{Servicios Web}{chapter.2}% 17
-\BOOKMARK [1][-]{section.2.3}{Metodolog\355a Scrum}{chapter.2}% 18
-\BOOKMARK [2][-]{subsection.2.3.1}{Proceso de desarrollo software}{section.2.3}% 19
-\BOOKMARK [2][-]{subsection.2.3.2}{Modelo \341gil: SCRUM}{section.2.3}% 20
-\BOOKMARK [1][-]{section.2.4}{Integraci\363n Continua}{chapter.2}% 21
-\BOOKMARK [1][-]{section.2.4}{Notas bibliogr\341ficas}{chapter.2}% 22
-\BOOKMARK [1][-]{section.2.4}{En el pr\363ximo cap\355tulo}{chapter.2}% 23
-\BOOKMARK [0][-]{chapter.3}{An\341lis del Contenido Afectivo de un Texto}{}% 24
-\BOOKMARK [1][-]{section.3.1}{\301nalis afectivo de una palabra}{chapter.3}% 25
-\BOOKMARK [1][-]{section.3.2}{\301nalis afectivo de una frase}{chapter.3}% 26
-\BOOKMARK [1][-]{section.3.3}{\301nalis afectivo de un texto}{chapter.3}% 27
-\BOOKMARK [1][-]{section.3.3}{Notas bibliogr\341ficas}{chapter.3}% 28
-\BOOKMARK [1][-]{section.3.3}{En el pr\363ximo cap\355tulo}{chapter.3}% 29
-\BOOKMARK [0][-]{appendix.Alph1}{As\355 se hizo...}{}% 30
-\BOOKMARK [1][-]{section.Alph1.1}{Introducci\363n}{appendix.Alph1}% 31
-\BOOKMARK [0][-]{appendix*.9}{Bibliograf\355a}{}% 32
-\BOOKMARK [0][-]{fin.0}{Fin}{}% 33
+\BOOKMARK [2][-]{subsection.2.1.1}{M\351todos existentes para el marcado de texto emocional}{section.2.1}% 15
+\BOOKMARK [2][-]{subsection.2.1.2}{Diccionarios Afectivos Existentes}{section.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.1.3}{Nuestro diccionario}{section.2.1}% 17
+\BOOKMARK [1][-]{section.2.2}{Servicios Web}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.3}{Metodolog\355a Scrum}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.3.1}{Proceso de desarrollo software}{section.2.3}% 20
+\BOOKMARK [2][-]{subsection.2.3.2}{Modelo \341gil: SCRUM}{section.2.3}% 21
+\BOOKMARK [1][-]{section.2.4}{Integraci\363n Continua}{chapter.2}% 22
+\BOOKMARK [1][-]{section.2.4}{Notas bibliogr\341ficas}{chapter.2}% 23
+\BOOKMARK [1][-]{section.2.4}{En el pr\363ximo cap\355tulo}{chapter.2}% 24
+\BOOKMARK [0][-]{chapter.3}{An\341lis del Contenido Afectivo de un Texto}{}% 25
+\BOOKMARK [1][-]{section.3.1}{\301nalis afectivo de una palabra}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.1.1}{Servicio web emociones}{section.3.1}% 27
+\BOOKMARK [2][-]{subsection.3.1.2}{Servicio web emoci\363n consensuada}{section.3.1}% 28
+\BOOKMARK [2][-]{subsection.3.1.3}{Servicio web emoci\363n mayoritaria}{section.3.1}% 29
+\BOOKMARK [1][-]{section.3.2}{\301nalis afectivo de una frase}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.3}{\301nalis afectivo de un texto}{chapter.3}% 31
+\BOOKMARK [0][-]{appendix.Alph1}{As\355 se hizo...}{}% 32
+\BOOKMARK [1][-]{section.Alph1.1}{Introducci\363n}{appendix.Alph1}% 33
+\BOOKMARK [0][-]{appendix*.8}{Bibliograf\355a}{}% 34
+\BOOKMARK [0][-]{fin.0}{Fin}{}% 35
