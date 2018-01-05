@@ -134,71 +134,76 @@ Por ejemplo en la Tabla \ref{fig:diccionario}, podemos ver los valores obtenidos
 %-------------------------------------------------------------------
 \label{cap2:sec:servicios_web}
 
-	Existen múltiples definiciones de Servicios Web por lo que resulta muy complejo dar una definición de este término. Esta complejidad nos permite hacernos una idea de la cantidad de servicios e implicaciones asociadas que se agrupan bajo este.
+	Existen múltiples definiciones de servicios web por lo que resulta muy complejo dar una definición de este término. Esta complejidad nos permite hacernos una idea de la cantidad de servicios e implicaciones asociadas que se agrupan bajo este concepto. 
 	
-	En la actualidad, la definición más general de Servicio Web es la que lo define como un conjunto de APIs o tecnologías capaces de interoperar en la web. Estas APIs o tecnologías intercambian datos con el fin de ofrecer unos servicios.
+	En la actualidad, la definición más general de Servicio Web es la que lo define como un conjunto de aplicaciones o tecnologías capaces de interoperar en la Web. Estas aplicaciones o tecnologías intercambian datos con el fin de ofrecer unos servicios. Los proveedores ofrecen sus servicios como procedimientos remotos y los usuarios solicitan un servicio llamando a estos procedimientos a través de la Web. (www.w3c.es/Divulgación/GuiasBreves/ServiciosWeb)
 	
-	También podríamos definir servicio web como un servicio ofrecido por una aplicación que expone su lógica a clientes de cualquier plataforma mediante una interfaz accesible a través de la red utilizando tecnologías estándar de internet.
+	\subsection{Características de los Servicios Web}	
+	\label{cap2:subsec:servicios_web}
 	
-	Los servicios web se componen de varias capas entre las que destacan: servicios de transporte (constituidos por los protocolos del nivel más bajo, que codifican la información independientemente de su formato y que pueden ser comunes a otros servicios), servicios de mensajería, de desripción y de descubrimiento.
+	Las características deseable de un Servicio Web son:
+	\begin{itemize}
+		\item Un servicio que debe poder ser accesible a través de la web. Para ello debe utilizar procotolos de transporte estándares como HTTP, y condificar los mensajes en un lenguaje estándar que pueda conocer cualquier cliente que quiera utilizar el servicio..
+		\item Un servicio que debe contener una descripción de sí mismo. De esta forma, una aplicación podrá saber cuál es la función de un determinado servicio web.
+		\item Debe poder ser localizo. Deberemos tener algún mecanismo que nos permita encontrar un servicio web que realice una determinada función. De esta forma tendremos la posibilidad de que una aplicación localice el servicio que necesite de forma automática, sin tener que conocerlo previamente el usuario. (http://www.jtech.ua.es/j2ee/publico/servc-web-2012-13/sesion01-apuntes.html)
+	\end{itemize}
+
 	
-	
-	\begin{enumerate}
-		\item \textbf{Servicios de transporte}
-					Es el encargado del transporte de los mensajes entre aplicaciones sobre la red. Incluye varios protocolos del nivel de aplicación. Los más utilizados son:
-					
-					\begin{itemize}
-						\item HTTP: es un protocolo de nivel de aplicación más utilizado en la red. Define la sintáxis y la semántica utilizada para la arquitectura web. En relación a los servicios web es utilizado para la transferencia de las transacciones XML a través de la red utilizando los mismos principios de HTML.
-						\item FTP: es un protocolo de la capa de aplicación encargado de los servicios de transmisión de archivos a través de redes soportadas sobre TCP. En relación a los servicios web permite realizar modificaciones en equipos remotos evitando el uso de permisos sobre los archivos en la máquina cliente en sistemas operativos que no sean Windows.
-						\item SMTP: estándar de la capa de aplicación ampliamente utilizado para el envío de mensajes de correo electrónico a través de la red. Es un estándar que requiere cliente software de tipo POP3 o IMAP.
-						\item BEEP: protocolo de nivel de aplicación diseñado para la interacción asíncrona punto a punto sobre una red TCP/IP. PRovee un marco para administrar las conexiones punto a punto, autenticación, transporte de mensajes y manejo de errores.
-						\item JMS: Es una aplicación de interface de programación para JAVA para el envío de mensajes entre dos o más cliente. Soporta dos modelos, el modelo punto a punto y el modelo de publicación y suscripción. Una aplicación JMS estaría compuesta por un proveedor JMS, el cual implementa las interfaces que proveen las características de administración y el control, clientes JMS, que son los componenetes escritos en JAVA que producen y consumen los mensajes, mensajes, objetos administradores y clientes nativos, los cuales son programas que utilizan los mensajes de la API.
-					\end{itemize}
-		\item \textbf{Servicio de mensajería}
-			Conjunto encargado de la codificacion de los mensajes en XML estándar y pueda así ser interpretado en cualquiera de los nodos de la red. Los componentes más utilizados son los siguientes:
-			
-			\begin{itemize}
-				\item REST: Según Fielding es un estilo de arquitectura de software para sistemas hipermedias distribuidos tales como la World Wide Web. Por lo trato, se trata de un conjunto de principios para el diseño de redes, que es utilizado de manera común con el fin de definir una interfasz de transmisión sobre HTTP de manera análoga a como lo hace SOAP. Aunque REST no es un estándar como tal, posee un conjunto de estándares: HTTP, GIF, JPG, URL, XML....
-				\item RPC: Tecnología de software que permite ejecutar una rutina en un equipo o segmento de red de manera remota. Es un paradigma popular para la implementación de sistemas distribuidos bajo arquitecturas cliente-servidor.
-				\item XML-RPC: Protocolo de llamada remota que utiliza XML como lenguaje de codificación y HTTP como mecanismo de transporte. Protocolo sencillo, pues solo define algunos tipos de datos y comandos.
-				\item XML: Se trata de uno de los lenguajes más utilizados para el intercambio de datos sobre la web. Es un lenguaje etiquetado, característica que le permite definir objetos de datos estructurados en partes bien definidas llamadas elementos. Una etiqueta es una señal realizada dentro del documento XML que delimita un segmento definido y con sentido de este documento.
-				\item SOAP: Protocolo de la capa de aplicación para el intercambio de mensajes basados en XML sobre redes. Es una vía de transmisión entre un SOAP Sender y un SOAP Receiver, pero los mensajes SOAP deben interactuar con un conjunto de aplicaciones para que se pueda generar un diálogo SOAP.
-			\end{itemize}
-		\item \textbf{Servicio de descripción}
-		El servicio web debe contar con una interfaz pública la cual es descrita por un formato llamado WSDL
-		\begin{itemize}
-				\item WSDL: es un tipo de documento XML que describe lo que hace un servicio web, donde se encunetra y la forma de ser invocado. Este provee información muy importante para los desarrolladores, este lenguaje describe el formato de los mensajes que utiliza y a cuales puede responder. Siempre un documento XML WSDL presenta los siguientes elementos: tipos, mensajes, tipos de puerto, límites, servicio....
-			\end{itemize}
-		\item \textbf{Servicio de descubrimiento}
-		UDDI es un marco independiente de la plataforma para describir servicios, negocios e integrar servicios de negocio. La estructura de UDDI está basada sobre los servicios estándares de la web, lo que quiere decir que UDDI es accesible como otros servicios web.
-		Es un esfuerzo de la industria iniciada en Septiembre de 2000. Los propietarios de los Servicios Web los publican en el registro UDDI. Una vez publicados se mantienen allí apuntadores a la desripción del servicio Web y del Servicio. La estructura de datos con UDDI está compuesta en cuatro partes: businessEntity, businessService, bindingTemplate, tModel[10]
-	\end{enumerate}
+	\subsection{Tipos de Servicios Web}
+	\label{cap2:subsec:servicios_web}
+	A nivel técnico, los servicios pueden implementarse de varias formas. En este sentido, podemos distinguir dos tipos de servicios web: los denominados servicios web "grandes", llamados servicios web SOAP, y servicios web RESTful.
+	\begin{itemize}
+		\item Servicios web SOAP: utilizan mensajes XML para intercomunicarse que siguen el estándar SOAP, un lenguaje XML que define la arquitectura y formato de los mensajes. Dichos sistemas normalmente contienen una descripción legible por la máquina de la descripción de las operaciones ofrecidas por el servicio, escrita en WSDL (lenguaje basado en XML para definir las interfaces sintácticamente).
+		\item Servicios web RESTful: utilizan estándares muy conocidos como HTTP, SML, URI, MIME, y tienen una infraestructura "liger" que permite que los servicios se construyan utilizando herramientas de forma mínima. (http://www.jtech.ua.es/j2ee/publico/servc-web-2012-13/sesion01-apuntes.html)
+	\end{itemize}
 	
 	
-	\textbf{Ventajas de los servicios web}
+	\subsection{Arquitectura de los Servicios Web}
+	\label{cap2:subsec:servicios_web}
+	
+	Los servicios web se componen de varias capas entre las que destacan: servicios de transporte (constituidos por los protocolos de nivel más bajo, que codifican la información independientemente de su formato y que pueden ser comunes a otros servicios), servicios de mensajería, de descripción y de descubrimiento. En las siguiente subsecciones explicaremos más en detalle cada una de estas capas.
+	
+	\subsubsection{Servicios de transporte}
+	
+		Capa que se encarga de transportar los mensajes entre aplicaciones. Normalmente se utiliza el protocolo HTTP para este 		transporte. HTTP es el protocolo de nivel de aplicación más utilizado en la red. Define la sintáxis y la semántica utilizada 		para la arquitectura webb. Es utilizado para la transferencia de las transacciones XML a través de la red utilizando los mismos 	principios de HTML.
+	
+	\subsubsection{Servicios de mensajería}
+	
+	Capa encargada de la codificación de los mensajes en XML estándar paraa que pueda así ser interpretado en cualquiera de los 	nodos de la red. Puede implementar protocolos como XML-RPC o SOAP.
 	
 	\begin{itemize}
-		\item Aportan interoperabilidad entre aplicaciones de software independientemente de sus propiedad o de las plataformas sobre las que se instalen.
-		\item Fomentan los estándares y protocolos basados en texto, de tal manera que facilitan su comprensión y accesibilidad. 
+		\item XML-RPC: Protocolo de llamadas remta que utiliza XML como lenguaje de codificación y HTTP como mecanismo de transporte. Protocolo sencillo, pues solo define algunos tipos de datos y comandos.
+		\item SOAP: Protocolo de la capa de aplicación para el intercambio de mensajes basados en XML sobre redes. Es una vía de transmisión entre un SOAP Sender y un SOAP Receiver, pero lo mensajes SOAP deben interactuar con un conjunto de aplicaciones para que se pueda generar un diálogo SOAP.
+	\end{itemize}
+	
+	\subsubsection{Servicios de descripción}
+	
+	Capa encargada de definir la interfaz pública de un determinad servicio. Esta definición se realiza mediante WSDL, tipo de documento que XML que describe lo que hace un servicio web, dónde se encuentra y la forma de ser invocado.
+	
+	\subsubsection{Servicios de descubrimiento}
+	
+	Capa encargada del registro centralizado de servicios, permitiendo que estos sean anunciados y localizados. Para ello se utiliza el protocolo UDDI, el cual define la especificación para construir un directorio distribuido de servicios web, donde los datos se almacenan en XML. Este registro también almacena información sobre las organizaciones que los proporcionan, la categoría en la que se encuentran, y sus instrucciones de uso. 
+	
+	\subsection{Ventajas e inconvenientes de los servicios web.}
+	\label{cap2:subsec:servicios_web}
+	
+	Utilizar servicios web puede tener tanto ventajas, como desventajas. A continuación expondremos algunas de ellas.
+
+	\subsubsection{Ventajas}
+	\begin{itemize}
+		\item Aportan interoperabilidad entre aplicaciones de software independientemente de sus propiedades o de las plataformas sobre las que se instalan.
+		\item Fomentan los estándares y protocolos basados en texto, de tal manera que facilitad su comprensión y accesibilidad.
 		\item Permiten la combinación e integración de distintos servicios y software independientemente de su ubicación.
-		\item Permiten la integración justo-a-tiempo: el proceso de descubrimiento se ejecuta dinámicamente.
-		\item Reducen la complejidad por medio del encapsulamiento.
-		\item Dar una nueva vida a las aplicaciones de legado.
-		\item Abren la puerta a nuevas oportunidades de negocio.
-		\item Disminuyen el tiempo de desarrollo de las aplicaciones.
-		\item Menor consumo de espacio y memoria RAM.
-		\item Seguridad de los datos.
+		\item  Al apoyarse en HTTP, lo servicios Web se pueden aprovechar de los  de seguridad firewall sin necesidad de cambiar las reglas de filtrado.
+		\item Disminuyen el tiempo de desarrollo de las aplicaciones: Pues gracias a la filosofía de orientación a objetos utilizada, el desarrollo se convierte más bien en una labor de composición.
 	\end{itemize}
-	
-	\textbf{Inconvenientes de los servicios web}
-	
+	\subsubsection{Desventajas}
 	\begin{itemize}
-		\item No permiten comparar su grado de desarrollo con los estándares abiertos de computación distribuida.
-		\item Bajo rendimiento sí se compara con otros modelos de computación distribuida.
-		\item Como se apoyan en HTTP, puede esquivar medidas de seguridad relacionadas con el firewall.
-		\item Ausencia de información para algunos lenguajes de programación.
-		\item Al hacer uso de XML, mayor ancho de banda.
+		\item Bajo rendimiento si se compara con otros modelos de computación distribuida.
+		\item Al apoyarse en HTTP, pueden esquivar medidas de seguridad basadas en firewall cuyas reglas tratan de bloquear la comunicación entre programas.
 	\end{itemize}
+	
+	
 %-------------------------------------------------------------------
 \section{Metodología Scrum}
 %-------------------------------------------------------------------
