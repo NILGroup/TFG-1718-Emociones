@@ -16,8 +16,8 @@
 \end{FraseCelebre}
 
 \begin{resumen}
-En este capítulo se explicarán los servicios web que se han desarrollado con el fin de analizar el contenido afectivo de un texto.
-Primero, en la sección 3.1, se presentarán los servicios orientados a identificar la emoción predominante en una palabra concreta, tanto la consensuada como la mayoritaria. Después, en la sección 3.2, se explica como el análisis de la palabra se aplica a determinar la emoción de una frase entera para finalmente, en la sección 3.3, aplicar todo al anális de todo un texto.
+En este capítuo se explicarán los servicios web que se han desarrollado con el fin de analizar el contenido afectivo de un texto.
+Primero, en la sección 3.1, se presentarán los servicios orientados a identificar la emoción predominante en una palabra concreta, tanto la consensuada como la mayoritaria para quedarnos con la opción más correcta. Después, en la sección 3.2, se explica como el análisis de la palabra se aplica a determinar la emoción de una frase entera para finalmente, en la sección 3.3, aplicar todo al anális de todo un texto.
 \end{resumen}
 
 
@@ -35,29 +35,7 @@ Teniendo en cuenta que el trabajo está orientado a ser utilizado mediante servic
 \end{itemize}
 Una vez que se tiene el servidor y todo el código necesario para el funcionamiento de los servicios web se procede a subir las palabras que recoge nuestro diccionario. Para ello se ha desarrollado un programa en \textit{Python} cuya función es leer el fichero CSV, interpretar cada una de sus líneas y subir la información que obtiene al servidor. Una vez que todas las palabras estén subidas ya se pueden realizar las consultas necesarias.
 
-\subsection{Servicio web emociones}
-Se trata de un servicio web, implementado en \textit{Python} que dada una palabra nos devuelve la información respectiva a los porcentajes de cada emoción que posee, mediante una petición \textbf{GET} al servidor, y los muestra al usuario.
-
-Como entrada tendríamos la palabra de la cual queremos conocer sus emociones; existirán dos posibilidades, bien que la palabra esté en nuestro diccionario, por lo que la salida sería el porcentaje de cada emoción, o bien que la palabra no exista en nuestro diccionario, que no devolverá nada.
-
-Por ejemplo; sí quisieramos conocer el porcentaje de la palabra abeja, ingresaríamos abeja y la salida sería:
-
-\subsection{Servicio web emoción consensuada}
-Se trata de un servicio web, implementado en \textit{Python} que dada una palabra nos devuelve, mediante una petición \textbf{GET} al servidor, sí tiene o no emoción consensuada y en caso de tenerla cual.  Hablamos de emoción consensuada cuando la confianza de una de sus emociones es 1. 
-
-Como entrada tendríamos la palabra de la cual queremos conocer su emoción consensuada, mientras que la salida será la emoción consensuada en caso de tenerla.
-
-Por ejemplo; ....
-
-\subsection{Servicio web emoción mayoritaria}
-Se trata de un servicio web, implementado en \textit{Python} que dada una palabra nos devuelve, mediante una petición \textbf{GET} al servidor, su emoción mayoritaria. Hablamos de emoción mayoritaria cuando el porcentaje de confianza de la una emoción es mayor al del resto de emociones.
-
-Como entrada tendríamos la palabra de la cual queremos conocer su emoción mayoritaria, mientras que la salida será la emoción mayoritaria, o mayoritarias (en caso de que haya dos con el mismo porcentaje).
-
-Por ejemplo; ....
-
-
-
+Inicialmente se ha implementado un servicio web, también en \textit{Python}, que dada una palabra devuelve la información respectiva a los porcentajes de cada emoción que posee, mediante una petición \textbf{GET} al servidor, y los muestra al usuario.
 
 %-------------------------------------------------------------------
 \section{Ánalis afectivo de una frase}
@@ -71,7 +49,29 @@ Por ejemplo; ....
 %-------------------------------------------------------------------
 \label{cap3:sec:texto}
 
+...
 
+%-------------------------------------------------------------------
+\section*{\NotasBibliograficas}
+%-------------------------------------------------------------------
+\TocNotasBibliograficas
+
+Citamos algo para que aparezca en la bibliografía\ldots
+\citep{ldesc2e}
+
+\medskip
+
+Y también ponemos el acrónimo \ac{CVS} para que no cruja.
+
+Ten en cuenta que si no quieres acrónimos (o no quieres que te falle la compilación en ``release'' mientras no tengas ninguno) basta con que no definas la constante \verb+\acronimosEnRelease+ (en \texttt{config.tex}).
+
+
+%-------------------------------------------------------------------
+\section*{\ProximoCapitulo}
+%-------------------------------------------------------------------
+\TocProximoCapitulo
+
+...
 
 % Variable local para emacs, para  que encuentre el fichero maestro de
 % compilación y funcionen mejor algunas teclas rápidas de AucTeX
