@@ -1,0 +1,89 @@
+%---------------------------------------------------------------------
+%
+%                          Capítulo 4
+%
+%---------------------------------------------------------------------
+
+\chapter{Analis del Contenido Afectivo de un Texto}
+
+\begin{FraseCelebre}
+\begin{Frase}
+...
+\end{Frase}
+\begin{Fuente}
+...
+\end{Fuente}
+\end{FraseCelebre}
+
+\begin{resumen}
+En este capítulo se explicarán los servicios web que se han desarrollado con el fin de analizar el contenido afectivo de un texto.
+Primero, en la sección 4.1, se presentarán los servicios orientados a identificar la emoción predominante en una palabra concreta, tanto la consensuada como la mayoritaria. Después, en la sección 4.2, se explica como el análisis de la palabra se aplica a determinar la emoción de una frase entera para finalmente, en la sección 4.3, aplicar todo al anális de todo un texto.
+\end{resumen}
+
+
+%-------------------------------------------------------------------
+\section{Analis afectivo de una palabra}
+%-------------------------------------------------------------------
+\label{cap4:sec:palabra}
+
+ Como ya se comentó en la sección 2.1.2, para el desarrollo de este trabajo se utilizará un diccionario afectivo en español. Este diccionario, inicialmente en formato Excel, ha sido convertido a un fichero CSV para que resulte más sencillo obtener los datos. 
+
+Los datos estarán almacenados en el servidor Django.
+\begin{itemize}
+	\item \textbf{Modelo: } Los campos que tiene el modelo para cada palabra son la propia palabra, el porcentaje de una determinada emoción que expresan (para las seis emociones que consideramos en nuestro diccionario) y la emoción cuyo porcentaje destaca. Cada una de las palabras que tenemos recogidas se encapsulan en este modelo para ser almacenadas en el servidor.
+	\item \textbf{Consultas: } Para realizar las difetentes consultas sobre las palabras disponibles se crean una serie de clases que implementan los diferentes métodos de un servicio web REST típico: \textbf{GET, POST, DELETE}. Esencialmente \textbf{GET}, ya que es el que devuelve información sobre la palabra o alguno de sus campos. Cada una de las diferentes clases o "`vistas"' aportan una forma diferente de acceder a la información: acceso a toda la lista, a una palabra concreta, a un campo de una palabra concreta, etc...
+\end{itemize}
+Una vez que se tiene el servidor y todo el código necesario para el funcionamiento de los servicios web se procede a subir las palabras que recoge nuestro diccionario. Para ello se ha desarrollado un programa en \textit{Python} cuya función es leer el fichero CSV, interpretar cada una de sus líneas y subir la información que obtiene al servidor. Una vez que todas las palabras estén subidas ya se pueden realizar las consultas necesarias.
+
+\subsection{Servicio web porcentajes}
+Se trata de un servicio web, implementado en Python que dada una palabra nos devuelve la información respectiva a los porcentajes de cada emoción que posee, mediante una petición \textbf{GET} al servidor, y los muestra al usuario.
+
+Como entrada tendríamos la palabra de la cual queremos conocer sus emociones; existirán dos posibilidades, bien que la palabra esté en nuestro diccionario, por lo que la salida sería el porcentaje de cada emoción \ref{fig:porcentajes}, o bien que la palabra no exista en nuestro diccionario, que devolverá un mensaje de "`NOT FOUND"' \ref{fig:notfound}.
+
+\figura{Bitmap/Capitulo4/porcentajes}{width=.9\textwidth}{fig:porcentajes}{Respuesta al buscar los porcentajes de la palabra "`calor"'.}
+	
+\figura{Bitmap/Capitulo4/no_encontrada}{width=.9\textwidth}{fig:notfound}{Respuesta al buscar los porcentajes de una palabra que no está en el diccionario.}
+
+
+\subsection{Servicio web emoción consensuada}
+Se trata de un servicio web, implementado en Python que dada una palabra nos devuelve, mediante una petición \textbf{GET} al servidor, sí tiene o no emoción consensuada y en caso de tenerla cual.  Hablamos de emoción consensuada cuando la confianza de una de sus emociones es 1. 
+
+Como entrada tendríamos la palabra de la cual queremos conocer su emoción consensuada, mientras que la salida será la emoción consensuada en caso de tenerla \ref{fig:consensuada} o un mensaje de que no la tiene \ref{fig:noconsensuada}.
+
+\figura{Bitmap/Capitulo4/consensuada}{width=.9\textwidth}{fig:consensuada}{Respuesta al encontrar la emoción consensuada.}
+
+\figura{Bitmap/Capitulo4/no_consensuada}{width=.9\textwidth}{fig:noconsensuada}{Respuesta si la palabra no tiene emoción consensuada.}
+
+\subsection{Servicio web emoción mayoritaria}
+Se trata de un servicio web, implementado en Python que dada una palabra nos devuelve, mediante una petición \textbf{GET} al servidor, su emoción mayoritaria. Hablamos de emoción mayoritaria cuando el porcentaje de confianza de la una emoción es mayor al del resto de emociones.
+
+Como entrada tendríamos la palabra de la cual queremos conocer su emoción mayoritaria, mientras que la salida será la emoción mayoritaria \ref{fig:mayoritaria}, o mayoritarias (en caso de que haya dos con el mismo porcentaje) \ref{fig:mayoritarias}.
+
+\figura{Bitmap/Capitulo4/mayoritaria}{width=.9\textwidth}{fig:mayoritaria}{Respuesta al encontrar la emoción mayoritaria.}
+
+\figura{Bitmap/Capitulo4/mayoritarias}{width=.9\textwidth}{fig:mayoritarias}{Respuesta si hay dos emociones mayoritarias.}
+
+
+
+
+%-------------------------------------------------------------------
+\section{Ánalis afectivo de una frase}
+%-------------------------------------------------------------------
+\label{cap4:sec:frase}
+
+...
+
+%-------------------------------------------------------------------
+\section{Ánalis afectivo de un texto}
+%-------------------------------------------------------------------
+\label{cap4:sec:texto}
+
+...
+
+% Variable local para emacs, para  que encuentre el fichero maestro de
+% compilación y funcionen mejor algunas teclas rápidas de AucTeX
+%%%
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../Tesis.tex"
+%%% End:

@@ -1,10 +1,10 @@
 %---------------------------------------------------------------------
 %
-%                          Capítulo 1
+%                          Capítulo 3
 %
 %---------------------------------------------------------------------
 
-\chapter{Anális del Contenido Afectivo de un Texto}
+\chapter{Herramientas}
 
 \begin{FraseCelebre}
 \begin{Frase}
@@ -16,40 +16,57 @@
 \end{FraseCelebre}
 
 \begin{resumen}
-En este capítuo se explicarán los servicios web que se han desarrollado con el fin de analizar el contenido afectivo de un texto.
-Primero, en la sección 3.1, se presentarán los servicios orientados a identificar la emoción predominante en una palabra concreta, tanto la consensuada como la mayoritaria para quedarnos con la opción más correcta. Después, en la sección 3.2, se explica como el análisis de la palabra se aplica a determinar la emoción de una frase entera para finalmente, en la sección 3.3, aplicar todo al anális de todo un texto.
+En este capítulo se profundizará en las herramientas que utilizaremos a lo largo del trabajo.
 \end{resumen}
 
 
 %-------------------------------------------------------------------
-\section{Ánalis afectivo de una palabra}
+\section{Diccionario}
 %-------------------------------------------------------------------
-\label{cap3:sec:palabra}
+\label{cap3:sec:diccionario}
 
- Como ya se comentó en la sección 2.1.2, para el desarrollo de este trabajo se utilizará un diccionario afectivo en español. Este diccionario, inicialmente en formato Excel, ha sido convertido a un fichero CSV para que resulte más sencillo obtener los datos. 
+El diccionario afectivo que vamos a utilizar para marcar las palabras está basado en el diccionario afectivo ANEW traducido al español (Redondo,Fraga,Padrón y Comesaña, 2007).
+En la traducción de ANEW al castellano participaron 720 estudiantes de psicología de entre 18 y 25 años, 560 mujeres y 160 hombres.	Estos participantes evaluaron las 1034 palabras que contiene ANEW. 
+	
+Cada palabra debía ser marcada con las dimensiones emocionales: evaluación, activación y control en una escala de 9 puntos.
 
-Teniendo en cuenta que el trabajo está orientado a ser utilizado mediante servicios web lo primero que hay que hacer es subir la información que tenemos, todas las palabras con sus respectivos grados de certeza para cada emoción, a un servidor sobre el que se realizarán las distintas peticiones. El framework que hemos utilizado para todo el proceso es \textbf{Django}. \textbf{Django} nos permite modelar una palabra para almacenarla en el servidor y programar una serie de clases "`vista"' que nos permiten acceder a la lista de palabras.
-\begin{itemize}
-	\item \textbf{Modelo: } Los campos que tiene el modelo para cada palabra son la propia palabra, el porcentaje de una determinada emoción que expresan (para las seis emociones que consideramos en nuestro diccionario) y la emoción cuyo porcentaje destaca. Cada una de las palabras que tenemos recogidas se encapsulan en este modelo para ser almacenadas en el servidor.
-	\item \textbf{Consultas: } Para realizar las difetentes consultas sobre las palabras disponibles se crean una serie de clases que implementan los diferentes métodos de un servicio web REST típico: \textbf{GET, POST, DELETE}. Esencialmente \textbf{GET}, ya que es el que devuelve información sobre la palabra o alguno de sus campos. Cada una de las diferentes clases o "`vistas"' aportan una forma diferente de acceder a la información: acceso a toda la lista, a una palabra concreta, a un campo de una palabra concreta, etc...
-\end{itemize}
-Una vez que se tiene el servidor y todo el código necesario para el funcionamiento de los servicios web se procede a subir las palabras que recoge nuestro diccionario. Para ello se ha desarrollado un programa en \textit{Python} cuya función es leer el fichero CSV, interpretar cada una de sus líneas y subir la información que obtiene al servidor. Una vez que todas las palabras estén subidas ya se pueden realizar las consultas necesarias.
+Cada entrada en el diccionario contiene un número que identifica a la palabra, esta numeración coincide con el número que dicha palabra tiene en el ANEW; la palabra inglesa (E-word), la palabra original en la base de datos ANEW; la palabra española (S-word) y las evaluaciones afectivas, los valores medios y la desviación estándar para cada dimensión emocional.
 
-Inicialmente se ha implementado un servicio web, también en \textit{Python}, que dada una palabra devuelve la información respectiva a los porcentajes de cada emoción que posee, mediante una petición \textbf{GET} al servidor, y los muestra al usuario.
+Este diccionario fue ampliado con las 5 emociones básicas (tristeza, miedo, alegría, enfado y sorpresa) y la neutralidad para no expresar ninguna emoción. En la ampliación de este diccionario participaron 10 personas; cada una de ellas marco cada una de las 1034 palabras con una emoción básica. A partir de estas marcas se obtuvo un valor entre 0 y 1 para cada emoción, valor que indica el porcentaje de evaluadores que asignaron ducha emoción a la palabra.
 
-%-------------------------------------------------------------------
-\section{Ánalis afectivo de una frase}
-%-------------------------------------------------------------------
-\label{cap3:sec:frase}
-
-...
+	\figura{Bitmap/Capitulo3/fragmento}{width=.9\textwidth}{fig:diccionario}{Fragmento de la adaptación del diccionario ANEW traducido.}
+	
+Por ejemplo en la Tabla \ref{fig:diccionario}, podemos ver los valores obtenidos para las palabras abandonado, aborto y abeja. En este ejemplo se puede ver que tristeza fue la emoción asignada a la palabra abandonado por todos los evaluadores, mientras que con abejas y aborto no hubo acuerdo. En el caso de aborto, un 67\% de los anotadoresle asignaron tristeza, mientras que un 17\% consideró que la palabra no tenía emoción asociada y un 17\% le asignaron miedo.
 
 %-------------------------------------------------------------------
-\section{Ánalis afectivo de un texto}
+\section{Django}
 %-------------------------------------------------------------------
-\label{cap3:sec:texto}
+\label{cap3:sec:django}
 
-...
+Toda la implementación del trabajo se hará en Django (djangoproject.com,2005-2018), un framework para aplicaciones web gratuito y open source escrito en Python. 
+
+Django incluye un servidor web que almacena la base de datos que contiene los datos del diccionario y permite hacer las consultas necesarias. La base de datos está formada por instancias del modelo creado, en nuestro caso cada palabra aparecerá modelada mediante su significante y los porcentajes de cada emoción que contiene. Las consultas, por su parte, se realizan mediante una serie de vistas que se crearán según las necesidades funcionales que tengamos y siempre devolverán el resultado en formato JSON.
+
+%-------------------------------------------------------------------
+\section{Trello}
+%-------------------------------------------------------------------
+\label{cap3:sec:trello}
+
+Trello es una aplicación web que permite organizar proyectos y actividades (trello.com,2011-2018). Emplea un sistema kanban para representar las tareas con tarjetas virtuales. Estas tarjetas irán atravesando los distintos artefactos de la metodología scrum con la que estamos trabajando. En la Figura \ref{fig:sprint} podemos ver el estado al inicial del proyecto. Se observa el \textbf{Product Backlog}, del que scrum master saca la cantidad de tareas que quiere que se realicen durante el sprint y estas pasan a la lista \textbf{To Do}. En la Figura \ref{fig:sprint2} se puede ver un ejemplo más avanzado en el que se puede ver como las tareas has sido divididas en subtareas para formar el \textbf{Sprint Backlog}, del que van saliendo en orden para estar \textbf{En Progreso} y, una vez acabadas, \textbf{Done}.
+
+	\figura{Bitmap/Capitulo3/Sprint1Plan}{width=.9\textwidth}{fig:sprint}{Sprint inicial que ilustra la estructura.}
+	
+	\figura{Bitmap/Capitulo3/Sprint1Fin}{width=.9\textwidth}{fig:sprint2}{Final del sprint inicial.}
+
+%-------------------------------------------------------------------
+\section{Doctest y Jenkins}
+%-------------------------------------------------------------------
+\label{cap3:sec:pruebas}
+
+Como ya se comentó en el capítulo 2.4 utilizaremos Jenkins como parte de la integración continua del proyecto. Esto nos permitirá asegurarnos de que la unificación es correcta y hacer las pruebas automáticas. Esto último se llevará a cabo mediante una orden shell que Jenkins ejecutará para ejecutar el script de pruebas. El script únicamente contendrá las llamadas a los diferentes programas de pruebas que se realicen.
+
+Los programas de pruebas utilizarán Doctest para hacer las pruebas. Doctest es un módulo incluido en la librería estandar de Python. Su funcionamiento se basa en definir la función que se quiera probar y, dentro de un comentario al inicio de esta, poner una serie de llamadas y el resultado que se espera obtener de ellas. Tiene una función "`testmod"' que realiza las pruebas y devuelve el número de fallos y el resultado de todas las pruebas. Si el número de fallos es mayor que cero el programa de pruebas que haya fallado lanzará una excepción que Jenkins detectará para notificar a todo el equipo que hay algo que va mal.
+
 
 %-------------------------------------------------------------------
 \section*{\NotasBibliograficas}

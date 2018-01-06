@@ -7,21 +7,47 @@
 \contentsline {section}{En el pr\'oximo cap\IeC {\'\i }tulo}{1}{section.1.1}
 \contentsline {chapter}{\numberline {2}Estado del arte}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Computaci\'on Afectiva}{3}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Diccionarios Afectivos Existentes}{5}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Nuestro diccionario}{7}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.1}M\'etodos existentes para el marcado de texto emocional}{5}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Diccionarios Afectivos Existentes}{6}{subsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.2.1}LASSWELL VALUE DICTIONARY Y GENERAL INQUIRER}{6}{subsubsection.2.1.2.1}
+\contentsline {subsubsection}{\numberline {2.1.2.2}DICCIONARIO DE HATZIVASSILOGLOU Y MCKEOWN}{7}{subsubsection.2.1.2.2}
+\contentsline {subsubsection}{\numberline {2.1.2.3}WORDNET AFFECT}{7}{subsubsection.2.1.2.3}
+\contentsline {subsubsection}{\numberline {2.1.2.4}WHISSELL'S DICTIONARY OF AFFECTA IN LANGUAGE (DAL)}{7}{subsubsection.2.1.2.4}
+\contentsline {subsubsection}{\numberline {2.1.2.5}DICCIONARIO DE TURNEY Y LITTMAN}{8}{subsubsection.2.1.2.5}
+\contentsline {subsubsection}{\numberline {2.1.2.6}CLAIRVOYANCE AFFECT LEXICON}{8}{subsubsection.2.1.2.6}
+\contentsline {subsubsection}{\numberline {2.1.2.7}ANEW}{8}{subsubsection.2.1.2.7}
 \contentsline {section}{\numberline {2.2}Servicios Web}{8}{section.2.2}
-\contentsline {section}{\numberline {2.3}Metodolog\IeC {\'\i }a Scrum}{12}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Proceso de desarrollo software}{12}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Modelo \'agil: SCRUM}{13}{subsection.2.3.2}
-\contentsline {section}{\numberline {2.4}Integraci\'on Continua}{16}{section.2.4}
-\contentsline {section}{Notas bibliogr\'aficas}{17}{section.2.4}
-\contentsline {section}{En el pr\'oximo cap\IeC {\'\i }tulo}{18}{section.2.4}
-\contentsline {chapter}{\numberline {3}An\'alis del Contenido Afectivo de un Texto}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}\'Analis afectivo de una palabra}{19}{section.3.1}
-\contentsline {section}{\numberline {3.2}\'Analis afectivo de una frase}{20}{section.3.2}
-\contentsline {section}{\numberline {3.3}\'Analis afectivo de un texto}{20}{section.3.3}
-\contentsline {section}{Notas bibliogr\'aficas}{20}{section.3.3}
-\contentsline {section}{En el pr\'oximo cap\IeC {\'\i }tulo}{21}{section.3.3}
-\contentsline {chapter}{\numberline {A}As\IeC {\'\i } se hizo...}{23}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Introducci\'on}{23}{section.Alph1.1}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{25}{appendix*.9}
+\contentsline {subsection}{\numberline {2.2.1}Caracter\IeC {\'\i }sticas de los Servicios Web}{8}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Tipos de Servicios Web}{9}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Arquitectura de los Servicios Web}{9}{subsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3.1}Servicios de transporte}{9}{subsubsection.2.2.3.1}
+\contentsline {subsubsection}{\numberline {2.2.3.2}Servicios de mensajer\IeC {\'\i }a}{10}{subsubsection.2.2.3.2}
+\contentsline {subsubsection}{\numberline {2.2.3.3}Servicios de descripci\'on}{10}{subsubsection.2.2.3.3}
+\contentsline {subsubsection}{\numberline {2.2.3.4}Servicios de descubrimiento}{10}{subsubsection.2.2.3.4}
+\contentsline {subsection}{\numberline {2.2.4}Ventajas e inconvenientes de los servicios web.}{10}{subsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.4.1}Ventajas}{10}{subsubsection.2.2.4.1}
+\contentsline {subsubsection}{\numberline {2.2.4.2}Desventajas}{11}{subsubsection.2.2.4.2}
+\contentsline {section}{\numberline {2.3}Metodolog\IeC {\'\i }a Scrum}{11}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Proceso de desarrollo software}{11}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}SCRUM}{12}{subsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.2.1}Roles}{12}{subsubsection.2.3.2.1}
+\contentsline {subsubsection}{\numberline {2.3.2.2}Artefactos}{13}{subsubsection.2.3.2.2}
+\contentsline {subsubsection}{\numberline {2.3.2.3}Eventos}{13}{subsubsection.2.3.2.3}
+\contentsline {section}{\numberline {2.4}Integracion Continua}{14}{section.2.4}
+\contentsline {chapter}{\numberline {3}Herramientas}{17}{chapter.3}
+\contentsline {section}{\numberline {3.1}Diccionario}{17}{section.3.1}
+\contentsline {section}{\numberline {3.2}Django}{18}{section.3.2}
+\contentsline {section}{\numberline {3.3}Trello}{18}{section.3.3}
+\contentsline {section}{\numberline {3.4}Doctest y Jenkins}{19}{section.3.4}
+\contentsline {section}{Notas bibliogr\'aficas}{20}{section.3.4}
+\contentsline {section}{En el pr\'oximo cap\IeC {\'\i }tulo}{20}{section.3.4}
+\contentsline {chapter}{\numberline {4}Analis del Contenido Afectivo de un Texto}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}Analis afectivo de una palabra}{21}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Servicio web porcentajes}{22}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Servicio web emoci\'on consensuada}{22}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Servicio web emoci\'on mayoritaria}{23}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}\'Analis afectivo de una frase}{24}{section.4.2}
+\contentsline {section}{\numberline {4.3}\'Analis afectivo de un texto}{24}{section.4.3}
+\contentsline {chapter}{\numberline {A}As\IeC {\'\i } se hizo...}{27}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Introducci\'on}{27}{section.Alph1.1}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{29}{appendix*.16}
