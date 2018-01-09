@@ -46,8 +46,8 @@
 \contentsline {subsection}{\numberline {4.1.1}Servicio web porcentajes}{22}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Servicio web emoci\'on consensuada}{22}{subsection.4.1.2}
 \contentsline {subsection}{\numberline {4.1.3}Servicio web emoci\'on mayoritaria}{23}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}\'Analis afectivo de una frase}{24}{section.4.2}
-\contentsline {section}{\numberline {4.3}\'Analis afectivo de un texto}{24}{section.4.3}
-\contentsline {chapter}{\numberline {A}As\IeC {\'\i } se hizo...}{27}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Introducci\'on}{27}{section.Alph1.1}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{29}{appendix*.16}
+\contentsline {section}{\numberline {4.2}\'Analis afectivo de una frase}{23}{section.4.2}
+\contentsline {section}{\numberline {4.3}\'Analis afectivo de un texto}{23}{section.4.3}
+\contentsline {chapter}{\numberline {A}As\IeC {\'\i } se hizo...}{25}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Introducci\'on}{25}{section.Alph1.1}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{27}{appendix*.16}
