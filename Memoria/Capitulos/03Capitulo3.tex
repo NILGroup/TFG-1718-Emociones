@@ -25,18 +25,19 @@ En este capítulo se profundizará en las herramientas que utilizaremos a lo largo
 %-------------------------------------------------------------------
 \label{cap3:sec:diccionario}
 
-El diccionario afectivo que vamos a utilizar para marcar las palabras está basado en el diccionario afectivo ANEW traducido al español (Redondo,Fraga,Padrón y Comesaña, 2007).
-En la traducción de ANEW al castellano participaron 720 estudiantes de psicología de entre 18 y 25 años, 560 mujeres y 160 hombres.	Estos participantes evaluaron las 1034 palabras que contiene ANEW. 
+El diccionario afectivo que vamos a utilizar para marcar las palabras está basado en el diccionario afectivo ANEW traducido al español (Redondo, Fraga, Padrón y Comesaña, 2007).
+En la traducción de ANEW al castellano participaron 720 estudiantes de Psicología de entre 18 y 25 años, 560 mujeres y 160 hombres.	Estos participantes evaluaron las 1034 palabras que contiene ANEW. 
 	
 Cada palabra debía ser marcada con las dimensiones emocionales: evaluación, activación y control en una escala de 9 puntos.
 
-Cada entrada en el diccionario contiene un número que identifica a la palabra, esta numeración coincide con el número que dicha palabra tiene en el ANEW; la palabra inglesa (E-word), la palabra original en la base de datos ANEW; la palabra española (S-word) y las evaluaciones afectivas, los valores medios y la desviación estándar para cada dimensión emocional.
+Cada entrada en el diccionario contiene un número que identifica a la palabra de manera que, esta numeración coincide con el número que dicha palabra tiene en el ANEW; la palabra inglesa (E-word), la palabra original en la base de datos ANEW; la palabra española (S-word) y las evaluaciones afectivas, los valores medios y la desviación estándar para cada dimensión emocional.
 
-Este diccionario fue ampliado con las 5 emociones básicas (tristeza, miedo, alegría, enfado y sorpresa) y la neutralidad para no expresar ninguna emoción. En la ampliación de este diccionario participaron 10 personas; cada una de ellas marco cada una de las 1034 palabras con una emoción básica. A partir de estas marcas se obtuvo un valor entre 0 y 1 para cada emoción, valor que indica el porcentaje de evaluadores que asignaron ducha emoción a la palabra.
+Este diccionario, es una adaptación en el que se han elegido las 5 emociones básicas (tristeza, miedo, alegría, enfado y sorpresa) y la neutralidad para no expresar ninguna emoción. Para crearlo participaron 10 personas; cada una de ellas marco cada una de las 1034 palabras con una emoción básica.
+Cada palabra puede representar varias emociones por lo que se ha creado un número de confianza \textit{c}, entre e 0 y el 1, que determina con qué certeza la palabra corresponde a esa emoción; es decir indica el porcentaje de evaluadores que asignaron dicha emoción a la palabra. La suma de estos números debe sumar 1.
 
 	\figura{Bitmap/Capitulo3/fragmento}{width=.9\textwidth}{fig:diccionario}{Fragmento de la adaptación del diccionario ANEW traducido.}
 	
-Por ejemplo en la Tabla \ref{fig:diccionario}, podemos ver los valores obtenidos para las palabras abandonado, aborto y abeja. En este ejemplo se puede ver que tristeza fue la emoción asignada a la palabra abandonado por todos los evaluadores, mientras que con abejas y aborto no hubo acuerdo. En el caso de aborto, un 67\% de los anotadoresle asignaron tristeza, mientras que un 17\% consideró que la palabra no tenía emoción asociada y un 17\% le asignaron miedo.
+Por ejemplo en la Tabla \ref{fig:diccionario}, podemos ver los valores obtenidos para las palabras "`abandonado"', "`aborto"' y "`abeja"'. En este ejemplo se puede ver que tristeza fue la emoción asignada a la palabra "`abandonado"' por todos los evaluadores, mientras que con "`abejas"' y "`aborto"' no hubo acuerdo. En el caso de "`aborto"', un 67\% de los anotadores le asignaron tristeza, mientras que un 17\% consideró que la palabra no tenía emoción asociada y un 17\% le asignaron miedo.
 
 %-------------------------------------------------------------------
 \section{Django}
