@@ -32,12 +32,14 @@ Cada palabra debía ser marcada con las dimensiones emocionales: evaluación, acti
 
 Cada entrada en el diccionario contiene un número que identifica a la palabra de manera que, esta numeración coincide con el número que dicha palabra tiene en el ANEW; la palabra inglesa (E-word), la palabra original en la base de datos ANEW; la palabra española (S-word) y las evaluaciones afectivas, los valores medios y la desviación estándar para cada dimensión emocional.
 
-Este diccionario, es una adaptación en el que se han elegido las 5 emociones básicas (tristeza, miedo, alegría, enfado y sorpresa) y la neutralidad para no expresar ninguna emoción. Para crearlo participaron 10 personas; cada una de ellas marco cada una de las 1034 palabras con una emoción básica.
+Este diccionario, es una adaptación en el que se han elegido las 5 emociones básicas (tristeza, miedo, alegría, enfado y sorpresa) y la neutralidad para no expresar ninguna emoción. Para crearlo participaron 10 personas; cada una de ellas marcó cada una de las 1034 palabras con una emoción básica o la neutralidad.
 Cada palabra puede representar varias emociones por lo que se ha creado un número de confianza \textit{c}, entre e 0 y el 1, que determina con qué certeza la palabra corresponde a esa emoción; es decir indica el porcentaje de evaluadores que asignaron dicha emoción a la palabra. La suma de estos números debe sumar 1.
 
 	\figura{Bitmap/Capitulo3/fragmento}{width=.9\textwidth}{fig:diccionario}{Fragmento de la adaptación del diccionario ANEW traducido.}
 	
 Por ejemplo en la Tabla \ref{fig:diccionario}, podemos ver los valores obtenidos para las palabras "`abandonado"', "`aborto"' y "`abeja"'. En este ejemplo se puede ver que tristeza fue la emoción asignada a la palabra "`abandonado"' por todos los evaluadores, mientras que con "`abejas"' y "`aborto"' no hubo acuerdo. En el caso de "`aborto"', un 67\% de los anotadores le asignaron tristeza, mientras que un 17\% consideró que la palabra no tenía emoción asociada y un 17\% le asignaron miedo.
+
+Para simplificar la subida de los datos al servidor hemos eliminado las tildes de las palabras y reemplazado las "`ñ"' por "`ny"'. Esto no tiene efecto en la interacción con los usuarios ya que ellos introducen las palabras como realmente se escriben y se realiza la transformación antes de buscarlas en el servidor. Al no trabajar con palabras con tildes diacríticas no se producen ambigüedades a la hora de realizar la búsqueda. 
 
 %-------------------------------------------------------------------
 \section{Django}
@@ -46,7 +48,7 @@ Por ejemplo en la Tabla \ref{fig:diccionario}, podemos ver los valores obtenidos
 
 Toda la implementación del trabajo se hará en Django (djangoproject.com,2005-2018), un framework para aplicaciones web gratuito y open source escrito en Python. 
 
-Django incluye un servidor web que almacena la base de datos que contiene los datos del diccionario y permite hacer las consultas necesarias. La base de datos está formada por instancias del modelo creado, en nuestro caso cada palabra aparecerá modelada mediante su significante y los porcentajes de cada emoción que contiene. Para realizar las difetentes consultas sobre las palabras disponibles se crean una serie de clases que implementan los diferentes métodos de un servicio web REST típico: \textbf{GET, POST, DELETE}. Esencialmente \textbf{GET}, ya que es el que devuelve información sobre la palabra o alguno de sus campos. Cada una de las diferentes clases o "`vistas"' aportan una forma diferente de acceder a la información: acceso a toda la lista, a una palabra concreta, a un campo de una palabra concreta, etc... Los resultados serán devueltos en formato JSON.
+Django incluye un servidor web que almacena la base de datos qu contendrá las palabras del diccionario y permitirá hacer las consultas necesarias. La base de datos estará formada por instancias del modelo creado, en nuestro caso cada palabra aparecerá modelada mediante su significante y los grados de certeza que tiene de cada emoción. Para realizar las diferentes consultas sobre las palabras disponibles se crearán una serie de clases que implementan los diferentes métodos de un servicio web REST típico: \textbf{GET, POST, DELETE}. Esencialmente \textbf{GET}, ya que es el que devuelve información sobre la palabra o alguno de sus campos. Cada una de las diferentes clases o "`vistas"' nos aportarán una forma diferente de acceder a la información: acceso a toda la lista, a una palabra concreta, a un campo de una palabra concreta, etc... Los resultados serán devueltos en formato JSON.
 
 %-------------------------------------------------------------------
 \section{Trello}
@@ -64,10 +66,16 @@ Trello es una aplicación web que permite organizar proyectos y actividades (trel
 %-------------------------------------------------------------------
 \label{cap3:sec:pruebas}
 
-Como ya se comentó en el capítulo 2.4 utilizaremos Jenkins como parte de la integración continua del proyecto. Esto nos permitirá asegurarnos de que la unificación es correcta y hacer las pruebas automáticas. Esto último se llevará a cabo mediante una orden shell que Jenkins ejecutará para ejecutar el script de pruebas. El script únicamente contendrá las llamadas a los diferentes programas de pruebas que se realicen.
+Como ya se comentó en el capítulo 2.4 utilizaremos Jenkins como parte de la integración continua del proyecto. Esto nos permitirá asegurarnos de que la unificación es correcta y realizar las pruebas automáticas. Esto último se llevará a cabo mediante una orden shell que Jenkins ejecutará cada vez que se detecte un cambio en el repositorio. La orden únicamente se encarga de ejecutar el script de pruebas que contendrá las llamadas a los diferentes programas de pruebas que se desarrollen.
 
-Los programas de pruebas utilizarán Doctest para hacer las pruebas. Doctest es un módulo incluido en la librería estandar de Python. Su funcionamiento se basa en definir la función que se quiera probar y, dentro de un comentario al inicio de esta, poner una serie de llamadas y el resultado que se espera obtener de ellas. Tiene una función "`testmod"' que realiza las pruebas y devuelve el número de fallos y el resultado de todas las pruebas. Si el número de fallos es mayor que cero el programa de pruebas que haya fallado lanzará una excepción que Jenkins detectará para notificar a todo el equipo que hay algo que va mal.
+Los programas de pruebas utilizarán Doctest para hacer las pruebas. Doctest es un módulo incluido en la librería estandar de Python. Su funcionamiento se basa en definir la función que se quiera probar y, dentro de un comentario al inicio de esta, poner una serie de llamadas y el resultado que se espera obtener de ellas. Tiene una función "`testmod"' que realiza las pruebas y devuelve el número de fallos y el resultado de todas las pruebas. Si el número de fallos es mayor que cero el programa de pruebas que haya fallado provocamos una excepción que Jenkins detectará para notificar a todo el equipo que hay algún fallo. Los resultados de las pruebas se muestran por consola al acabar y Jenkins los guardará para ayudar a encontrar el problema.
 
+%-------------------------------------------------------------------
+\section{SpaCy}
+%-------------------------------------------------------------------
+\label{cap3:sec:spacy}
+
+El objetivo final es llegar a interpretar textos enteros, no sólo palabras. Para ello se necesita una herramienta que nos facilite trabajar con frases, etiquetando cada una de las palabras que las forman. \textbf{SpaCy} es una librería open source escrita en Python y dedicada al procesamiento de lenguajes naturales. Soporta el español y nos permite etiquetar las palabras para poder buscar sólo aquellas que puedan tener carga emocional. Nuestro diccionario contiene únicamente sustantivos por lo que nos centraremos en ellos.
 
 %-------------------------------------------------------------------
 \section*{\NotasBibliograficas}
