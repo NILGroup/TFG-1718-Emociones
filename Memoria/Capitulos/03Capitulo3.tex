@@ -6,17 +6,8 @@
 
 \chapter{Herramientas}
 
-\begin{FraseCelebre}
-\begin{Frase}
-...
-\end{Frase}
-\begin{Fuente}
-...
-\end{Fuente}
-\end{FraseCelebre}
-
 \begin{resumen}
-En este capítulo se profundizará en las herramientas que utilizaremos a lo largo del trabajo.
+En este capítulo se profundizará en las herramientas que utilizaremos a lo largo del trabajo. En la sección 3.1 se presenta el diccionario que vamos a utilizar para el marcado emocional. En la sección 3.2 se introduce el framework que vamos a utilizar para el desarrollo de los servicios web, Django. En la sección 3.3 se explica cómo vamos a utilizar Trello para seguir la metodología Scrum. En la sección 3.4 se expone la forma de realizar las pruebas utilizando Jenkins y Doctest. En la sección 3.5 se presenta SpaCy, el framework que se utilizará para poder etiquetar las palabras que forman una frase para poder realizar el análisis emocional sobre ella.
 \end{resumen}
 
 
@@ -37,9 +28,7 @@ Cada palabra puede representar varias emociones por lo que se ha creado un númer
 
 	\figura{Bitmap/Capitulo3/fragmento}{width=.9\textwidth}{fig:diccionario}{Fragmento de la adaptación del diccionario ANEW traducido.}
 	
-Por ejemplo en la Tabla \ref{fig:diccionario}, podemos ver los valores obtenidos para las palabras "`abandonado"', "`aborto"' y "`abeja"'. En este ejemplo se puede ver que tristeza fue la emoción asignada a la palabra "`abandonado"' por todos los evaluadores, mientras que con "`abejas"' y "`aborto"' no hubo acuerdo. En el caso de "`aborto"', un 67\% de los anotadores le asignaron tristeza, mientras que un 17\% consideró que la palabra no tenía emoción asociada y un 17\% le asignaron miedo.
-
-Para simplificar la subida de los datos al servidor hemos eliminado las tildes de las palabras y reemplazado las "`ñ"' por "`ny"'. Esto no tiene efecto en la interacción con los usuarios ya que ellos introducen las palabras como realmente se escriben y se realiza la transformación antes de buscarlas en el servidor. Al no trabajar con palabras con tildes diacríticas no se producen ambigüedades a la hora de realizar la búsqueda. 
+Por ejemplo en la Tabla \ref{fig:diccionario}, podemos ver los valores obtenidos para las palabras "`abandonado"', "`aborto"' y "`abeja"'. En este ejemplo se puede ver que tristeza fue la emoción asignada a la palabra "`abandonado"' por todos los evaluadores, mientras que con "`abejas"' y "`aborto"' no hubo acuerdo. En el caso de "`aborto"', un 67\% de los anotadores le asignaron tristeza, mientras que un 17\% consideró que la palabra no tenía emoción asociada y un 17\% le asignaron miedo. 
 
 %-------------------------------------------------------------------
 \section{Django}
@@ -75,29 +64,9 @@ Los programas de pruebas utilizarán Doctest para hacer las pruebas. Doctest es u
 %-------------------------------------------------------------------
 \label{cap3:sec:spacy}
 
-El objetivo final es llegar a interpretar textos enteros, no sólo palabras. Para ello se necesita una herramienta que nos facilite trabajar con frases, etiquetando cada una de las palabras que las forman. \textbf{SpaCy} es una librería open source escrita en Python y dedicada al procesamiento de lenguajes naturales. Soporta el español y nos permite etiquetar las palabras para poder buscar sólo aquellas que puedan tener carga emocional. Nuestro diccionario contiene únicamente sustantivos por lo que nos centraremos en ellos.
+El objetivo final es llegar a interpretar textos enteros, no sólo palabras. Para ello se necesita una herramienta que nos facilite trabajar con frases, etiquetando cada una de las palabras que las forman. \textbf{SpaCy} es una librería open source escrita en Python y dedicada al procesamiento de lenguajes naturales. Soporta el español y nos permite etiquetar las palabras para poder buscar sólo aquellas que puedan tener carga emocional.
+SpaCy recibirá el texto plano, en este caso una serie de frases, y devolverá un objeto de tipo "`Doc"', propio de la librería, que contendrá la frase con una serie de anotaciones sobre cada una de las palabras que la forman (lema, etiqueta, dependencias sintácticas, forma...). Esas anotaciones nos van a permitir descartar las palabras que no nos interesen y obtener información sobre las que sí. Utilizaremos el lema para buscar la palabra en el diccionario.
 
-%-------------------------------------------------------------------
-\section*{\NotasBibliograficas}
-%-------------------------------------------------------------------
-\TocNotasBibliograficas
-
-Citamos algo para que aparezca en la bibliografía\ldots
-\citep{ldesc2e}
-
-\medskip
-
-Y también ponemos el acrónimo \ac{CVS} para que no cruja.
-
-Ten en cuenta que si no quieres acrónimos (o no quieres que te falle la compilación en ``release'' mientras no tengas ninguno) basta con que no definas la constante \verb+\acronimosEnRelease+ (en \texttt{config.tex}).
-
-
-%-------------------------------------------------------------------
-\section*{\ProximoCapitulo}
-%-------------------------------------------------------------------
-\TocProximoCapitulo
-
-...
 
 % Variable local para emacs, para  que encuentre el fichero maestro de
 % compilación y funcionen mejor algunas teclas rápidas de AucTeX

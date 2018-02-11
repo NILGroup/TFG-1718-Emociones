@@ -6,48 +6,39 @@
 
 \chapter{Introducción}
 
-\begin{FraseCelebre}
-\begin{Frase}
-...
-\end{Frase}
-\begin{Fuente}
-...
-\end{Fuente}
-\end{FraseCelebre}
-
 \begin{resumen}
-Este capítulo sirve como introducción al trabajo que se va a realizar. 
+	En este capítulo se va a realizar una introducción al trabajo que vamos a presentar.
+	En primer lugar, en la sección 1.1 se explicará en qué consiste el trabajo. En la sección 1.2 se expondrán las principales dificultades a las que nos hemos enfrentado y las decisiones que se han tomado para afrontarlas. Por último, en la sección 1.3 se presentará la estructura del trabajo.
+
 \end{resumen}
+ 
+%-------------------------------------------------------------------
+\section{Definición}
+%-------------------------------------------------------------------
+\label{cap1:sec:definicion}
 
+El tabajo se centra en la detección automática del contenido emocional de un texto, una parte de la computación afectiva que permite identificar la carga emocional de un texto. Esto nos va a ayudar a evitar ambigüedades emocionales a la hora de interpretar un texto facilitando su lectura a personas con algún déficit en la percepción de emociones, como aquellas con Trastornos del Espectro Autista.
+Se implementarán servicios web que permitan analizar emocionalmente un texto, identificando las emociones básicas que contiene y su intensidad, y hacer más explicito el significado emocional para hacer más fácil su comprensión a las personas con discapacidades de este tipo.
 
 %-------------------------------------------------------------------
-\section{Introducción}
+\section{Dificultades}
 %-------------------------------------------------------------------
-\label{cap1:sec:introduccion}
+\label{cap1:sec:dificultades}
 
-...
+A lo largo de la realización del trabajo nos hemos ido encontrando una serie de problemas que se explican a continuación.
 
-%-------------------------------------------------------------------
-\section*{\NotasBibliograficas}
-%-------------------------------------------------------------------
-\TocNotasBibliograficas
-
-Citamos algo para que aparezca en la bibliografía\ldots
-\citep{ldesc2e}
-
-\medskip
-
-Y también ponemos el acrónimo \ac{CVS} para que no cruja.
-
-Ten en cuenta que si no quieres acrónimos (o no quieres que te falle la compilación en ``release'' mientras no tengas ninguno) basta con que no definas la constante \verb+\acronimosEnRelease+ (en \texttt{config.tex}).
-
+\subsection{Gramática}
+Para simplificar la subida de los datos al servidor, no tener que trabajar con caractéres especiales, hemos eliminado las tildes de las palabras de nuestro diccionario y reemplazado las "`ñ"' por "`ny"'. Esto no tiene efecto en la interacción con los usuarios ya que ellos introducen las palabras como realmente se escriben y se realiza la transformación antes de buscarlas en el servidor. Al no trabajar con palabras con tildes diacríticas no se producen ambigüedades a la hora de realizar la búsqueda así que tampoco afectará al funcionamiento.
 
 %-------------------------------------------------------------------
-\section*{\ProximoCapitulo}
+\section{Estructura}
 %-------------------------------------------------------------------
-\TocProximoCapitulo
+\label{cap1:sec:estructura}
 
-...
+Este capítulo 1 sirve de introducción al trabajo definiendo su objetivo, su estructura y los problemas que han aparecido a lo largo de su desarrollo.
+El capítulo 2 presenta los aspectos más importantes de la computación afectiva e introduce la tecnología y la metodología que se van a utilizar.
+El capítulo 3 describe las herramientas utilizadas a lo largo del trabajo.
+El capítulo 4 explica cada uno de los servicios web desarrollados durante el trabajo.
 
 % Variable local para emacs, para  que encuentre el fichero maestro de
 % compilación y funcionen mejor algunas teclas rápidas de AucTeX
