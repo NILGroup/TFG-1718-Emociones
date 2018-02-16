@@ -1,27 +1,36 @@
 import requests
-import interprete.interpretar_porcentajes
+from interprete import InterpretePalabras
 
-def porcentajes(palabra):
+def porcentajes(destino):
 	"""
 	Devuelve los porcentajes de emocion para una palabra.
 
-	>>> porcentajes("mesa")
-	SADNESS:0% || FEAR:0% || JOY:0% || MADNESS:0% || SORPRISE:0% || NEUTRAL:100% 
-	>>> porcentajes("aranya")
-	SADNESS:0% || FEAR:67% || JOY:0% || MADNESS:0% || SORPRISE:0% || NEUTRAL:33% 
-	>>> porcentajes("corazon")
-	SADNESS:0% || FEAR:0% || JOY:50% || MADNESS:0% || SORPRISE:0% || NEUTRAL:50% 
-	>>> porcentajes("te")
-	{u'detail': u'Not found.'}
+	>>> porcentajes("http://127.0.0.1:8000/emociones/mesa/percentages/")
+	Porcentaje de tristeza: 0%
+	Porcentaje de miedo: 0%
+	Porcentaje de alegria: 0%
+	Porcentaje de enfado: 0%
+	Porcentaje de sorpresa: 0%
+	Porcentaje de neutral: 100%
+	>>> porcentajes("http://127.0.0.1:8000/emociones/aranya/percentages/")
+	Porcentaje de tristeza: 0%
+	Porcentaje de miedo: 67%
+	Porcentaje de alegria: 0%
+	Porcentaje de enfado: 0%
+	Porcentaje de sorpresa: 0%
+	Porcentaje de neutral: 33%
+	>>> porcentajes("http://127.0.0.1:8000/emociones/corazon/percentages/")
+	Porcentaje de tristeza: 0%
+	Porcentaje de miedo: 0%
+	Porcentaje de alegria: 50%
+	Porcentaje de enfado: 0%
+	Porcentaje de sorpresa: 0%
+	Porcentaje de neutral: 50%
+	>>> porcentajes("http://127.0.0.1:8000/emociones/te/percentages/")
+	No se ha encontrado la palabra. Asegurese de haberla escrito bien.
 	"""
-	URL = 'http://127.0.0.1:8000/emociones/mesa/percentages/' # URL del servidor
-	sufijo = '/percentages/' # sufijo de la consulta
-	buscar = palabra
-	buscada = buscar.lower()
-	destino = URL+buscada+sufijo
-	respuesta = requests.get(destino)
-	porcentajes = respuesta.json()
-	print(porcentajes)
+	interprete = InterpretePalabras()
+	interprete.interpretar_porcentajes(destino)
 
 if __name__ == "__main__":
 	import doctest
