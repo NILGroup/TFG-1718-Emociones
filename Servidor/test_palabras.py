@@ -1,5 +1,6 @@
 import requests
 from interprete_palabras import InterpretePalabras
+from salida import Salida
 
 def porcentajes(op,destino):
 	"""
@@ -48,15 +49,16 @@ def porcentajes(op,destino):
 	No se ha encontrado la palabra. Asegurese de haberla escrito bien.
 	"""
 	interpreta = InterpretePalabras()
+	_salida = Salida()
 	if op == 0:
 		porcentajes = interpreta.interpretar_porcentajes(destino)
-		interpreta.mostrar_porcentajes(porcentajes)
+		_salida.mostrar_porcentajes(porcentajes)
 	elif op == 1:
 		consensuada = interpreta.interpretar_consensuada(destino)
-		interpreta.mostrar_consensuada(consensuada)
+		_salida.mostrar_consensuada(consensuada)
 	elif op == 2:
 		mayoritarias,porcentaje = interpreta.interpretar_mayoritaria(destino)
-		interpreta.mostrar_mayoritaria(mayoritarias,porcentaje)
+		_salida.mostrar_mayoritaria(mayoritarias,porcentaje)
 
 if __name__ == "__main__":
 	import doctest

@@ -65,25 +65,13 @@ class InterpretePalabras():
 			print("Hay dos emociones mayoritarias: " + emocion[mayoritarias[0]] + " y " + emocion[mayoritarias[1]] + " con porcentaje " + str(mayor_porcentaje))
 
 	@staticmethod
-	def mostrar_porcentajes(porcentajes):
-		if len(porcentajes) == 6:
-			for i in range(6):
-				print("Porcentaje de " + emocion[i] + ": "+ porcentajes[i] + "%")
-
-	@staticmethod
 	def interpretar_porcentajes(destino):
 		respuesta = requests.get(destino)
 		numeros = []
-		if repr(respuesta) == "<Response [404]>":
-			print("No se ha encontrado la palabra. Asegurese de haberla escrito bien.")
-		else:
+		if repr(respuesta) != "<Response [404]>":
 			porcentajes = respuesta.json()
 			numeros = coger_porcentajes(porcentajes)
 		return numeros
-
-	@staticmethod
-	def mostrar_consensuada(consensuada):
-		print(consensuada)
 
 	@staticmethod
 	def interpretar_consensuada(destino):
@@ -97,15 +85,6 @@ class InterpretePalabras():
 			else:
 				emocion = consensuada.split(" ")
 				return traducir_emocion(emocion[1])
-	
-	@staticmethod
-	def mostrar_mayoritaria(mayoritarias,porcentaje):
-		if len(mayoritarias) == 1:
-			print(mayoritarias[0] + " con un " + porcentaje + "%")
-		elif len(mayoritarias) == 2:
-			print("Hay dos emociones mayoritarias: " + mayoritarias[0] + " y " + mayoritarias[1] + " con un " + porcentaje + "%")
-		else:
-			print("No se ha encontrado la palabra. Asegurese de haberla escrito bien.")
 
 	@staticmethod
 	def interpretar_mayoritaria(destino):

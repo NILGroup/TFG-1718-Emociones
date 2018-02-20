@@ -1,8 +1,10 @@
 import requests
 from interprete_palabras import InterpretePalabras
 from interprete_frases import InterpreteFrases
+from salida import Salida
 import corrector
 
+_salida = Salida()
 """
 --------
 PALABRAS
@@ -38,17 +40,17 @@ def interpretar_palabra(URL):
 			palabra = leer_palabra()
 			destino = URL+palabra+servicios[0]
 			porcentajes = interpreta.interpretar_porcentajes(destino)
-			interpreta.mostrar_porcentajes(porcentajes)
+			_salida.mostrar_porcentajes(porcentajes)
 		elif opcion == 2:
 			palabra = leer_palabra()
 			destino = URL+palabra+servicios[1]
 			consensuada = interpreta.interpretar_consensuada(destino)
-			interpreta.mostrar_consensuada(consensuada)
+			_salida.mostrar_consensuada(consensuada)
 		elif opcion == 3:
 			palabra = leer_palabra()
 			destino = URL+palabra+servicios[2]
 			mayoritarias, porcentaje = interpreta.interpretar_mayoritaria(destino)
-			interpreta.mostrar_mayoritaria(mayoritarias,porcentaje)
+			_salida.mostrar_mayoritaria(mayoritarias,porcentaje)
 		elif opcion == 4:
 			palabra = leer_palabra()
 			destino = URL+palabra+servicios[0]
@@ -84,10 +86,11 @@ def interpretar_frase(URL):
 		elif opcion == 1:
 			frase = leer_frase()
 			porcentajes = interpreta.emociones_frase(frase)
-			interpreta.mostrar_emociones_frase(porcentajes)
+			_salida.mostrar_porcentajes(porcentajes)
 		elif opcion == 2:
 			frase = leer_frase()
-			interpreta.emociones__mayoritaria_frase(frase)
+			mayoritarias,porcentaje = interpreta.emociones_mayoritaria_frase(frase)
+			_salida.mostrar_mayoritaria(mayoritarias,porcentaje)
 
 """
 ------
