@@ -19,6 +19,12 @@ def obtener_url_mayoritaria(palabra):
 	palabra = corrector.traducir(palabra)
 	return URL+palabra+servicio
 
+def obtener_url_consensuada(palabra):
+    servicio = '/agreed/'
+    palabra = palabra.lower()
+    palabra = corrector.traducir(palabra)
+    return URL+palabra+servicio
+
 def obtener_medias(lista,n):
 	if n > 0:
 		for i in range(6):
@@ -82,5 +88,24 @@ class InterpreteFrases():
 			i = indices[0]
 			j = indices[1]
 			return [emociones[i],emociones[j]],pocentaje_frase
+		else:
+			return ["Neutral"],"100"
+        
+    @staticmethod
+	def emocion_consensuada_frase(frase):
+		palabras = procesador.procesar_frase(frase)
+		contadores = [0,0,0,0,0,0]
+		mayor = -1
+		pocentaje_frase = 0
+		indices = []
+		for palabra in palabras:
+			destino = obtener_url_consensuada(palabra)
+			consensuada = interpreta.interpretar_consensuada(destino)
+			if len(consensuada) == 1:
+				i = emociones.index(consesuada[0])
+				mayor,indices,pocentaje_frase = incrementar_contador(contadores,i,mayor,indices,pocentaje_frase,pocentaje)
+		if len(indices) == 1:
+			i = indices[0]
+			return [emociones[i]],pocentaje_frase
 		else:
 			return ["Neutral"],"100"

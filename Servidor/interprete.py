@@ -71,6 +71,7 @@ def leer_frase():
 def menu_frase():
 	print("1.Emociones")
 	print("2.Emocion Mayoritaria")
+    print("3.Emocion Consensuada")
 	print("0.Salir")
 	print("Introduzca una opcion:")
 	opcion = input()
@@ -91,6 +92,10 @@ def interpretar_frase(URL):
 			frase = leer_frase()
 			mayoritarias,porcentaje = interpreta.emociones_mayoritaria_frase(frase)
 			_salida.mostrar_mayoritaria(mayoritarias,porcentaje)
+        elif opcion == 3:
+            frase = leer_frase()
+            consensuada = interpreta.emocion_consensuada_frase(frase)
+            _salida.mostrar_consensuada(consensuada)
 
 """
 ------
