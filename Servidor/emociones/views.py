@@ -6,6 +6,7 @@ from rest_framework.renderers import JSONRenderer
 from emociones.models import Palabra
 from emociones.serializers import PalabraSerializer
 
+
 class ListaPalabras(APIView):
     """
     Muestra la lista de palabras o añade una nueva.
@@ -26,6 +27,7 @@ class DetallePalabra(APIView):
     """
     Muestra, actualiza o elimina una palabra concreta de la lista.
     """
+
     def get_object(self,pk):
         try:
             return Palabra.objects.get(palabra=pk)
@@ -59,7 +61,10 @@ class ObtenerPorcentajes(APIView):
         try:
             return Palabra.objects.get(palabra=pk)
         except Palabra.DoesNotExist:
-            raise Http404()
+            try:
+                return Palabra.objects.get(lexema=pk)
+            except Palabra.DoesNotExist:
+                raise Http404()
 
     def get_percentages(self,numeros):
         numeros = numeros.split(", ", 6)
@@ -85,7 +90,10 @@ class ObtenerConsensuada(APIView):
         try:
             return Palabra.objects.get(palabra=pk)
         except Palabra.DoesNotExist:
-            raise Http404()
+            try:
+                return Palabra.objects.get(lexema=pk)
+            except Palabra.DoesNotExist:
+                raise Http404()
         
     def get(self,request,pk,format=None):
         emociones = ["SADNESS", "FEAR", "JOY", "MADNESS", "SURPRISE", "NEUTRAL"]
@@ -112,7 +120,10 @@ class ObtenerMayoritaria(APIView):
         try:
             return Palabra.objects.get(palabra=pk)
         except Palabra.DoesNotExist:
-            raise Http404()
+            try:
+                return Palabra.objects.get(lexema=pk)
+            except Palabra.DoesNotExist:
+                raise Http404()
         
     def get(self,request,pk,format=None):
         emociones = ["SADNESS", "FEAR", "JOY", "MADNESS", "SURPRISE", "NEUTRAL"]

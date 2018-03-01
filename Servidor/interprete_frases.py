@@ -49,19 +49,22 @@ class InterpreteFrases():
 	@staticmethod
 	def emociones_frase(frase):
 		palabras = procesador.procesar_frase(frase)
-		emociones_frase = [0,0,0,0,0,0]
-		no_encontradas = 0
-		for palabra in palabras:
-			destino = obtener_url(palabra)
-			emociones_pal = interpreta.interpretar_porcentajes(destino)
-			if len(emociones_pal) > 0:
-				for i in range(6):
-					emociones_frase[i] = emociones_frase[i] + int(emociones_pal[i])
-			else:
-				no_encontradas = no_encontradas + 1
-		n = len(palabras) - no_encontradas
-		emociones = obtener_medias(emociones_frase,n)
-		return emociones
+		if len(palabras) == 0:
+			return ["0","0","0","0","0","100"]
+		else:
+			emociones_frase = [0,0,0,0,0,0]
+			no_encontradas = 0
+			for palabra in palabras:
+				destino = obtener_url(palabra)
+				emociones_pal = interpreta.interpretar_porcentajes(destino)
+				if len(emociones_pal) > 0:
+					for i in range(6):
+						emociones_frase[i] = emociones_frase[i] + int(emociones_pal[i])
+				else:
+					no_encontradas = no_encontradas + 1
+			n = len(palabras) - no_encontradas
+			emociones = obtener_medias(emociones_frase,n)
+			return emociones
 
 	@staticmethod
 	def emociones_mayoritaria_frase(frase):
@@ -90,8 +93,8 @@ class InterpreteFrases():
 			return [emociones[i],emociones[j]],pocentaje_frase
 		else:
 			return ["Neutral"],"100"
-        
-    @staticmethod
+
+	@staticmethod
 	def emocion_consensuada_frase(frase):
 		palabras = procesador.procesar_frase(frase)
 		contadores = [0,0,0,0,0,0]

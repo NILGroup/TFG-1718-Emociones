@@ -12,6 +12,7 @@ class Palabra(models.Model):
 	"""
 
 	palabra = models.CharField(max_length=30)
+	lexema = models.CharField(max_length=30)
 	porcentajes = models.CharField(validators=[validate_comma_separated_integer_list], max_length = 100)
 
 	def __str__(self):

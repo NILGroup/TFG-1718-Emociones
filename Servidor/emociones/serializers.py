@@ -4,4 +4,4 @@ from emociones.models import Palabra
 class PalabraSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Palabra
-		fields = ('id','palabra','porcentajes')
+		fields = ('id','palabra','lexema','porcentajes')

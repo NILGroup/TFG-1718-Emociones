@@ -19,17 +19,17 @@ def leer_diccionario():
     """
     Función que implementa la funcionalidad principal, lectura y subida de datos.
     """
-    fichero = open("diccionario_afectivo.csv")
+    fichero = open("diccionario_afectivo_con_lemas.csv")
     fichero.readline() # ignoramos la primera linea 
     linea = fichero.readline()
     while linea != "":
-        frase = linea.split(';', 6) # se trocea la línea para obtener los datos
-        frase[6] = frase[6].strip("\n") # se elimina el salto de linea
+        frase = linea.split(';', 7) # se trocea la línea para obtener los datos
+        frase[7] = frase[7].strip("\n") # se elimina el salto de linea
         nueva_palabra = frase[0] # se coge la nueva palabra 
         emociones = []
         for j in range(6): # para cada columna, se traduce el grado de certeza
-            emociones.append(parsear_emociones(frase[j+1]))
-        subida = Palabra(palabra=nueva_palabra, porcentajes=emociones)
+            emociones.append(parsear_emociones(frase[j+2]))
+        subida = Palabra(palabra=nueva_palabra, lexema=frase[1], porcentajes=emociones)
         subida.save()
         linea = fichero.readline() # se lee la siguiente palabra
     serializar_datos(subida)
