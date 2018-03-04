@@ -1,4 +1,118 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{16}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{Baldasarri(2016)}]{aplicacionesCA}
+{\sc Baldasarri, S.}
+\newblock Computaci'on afectiva: tecnolog'ia y emociones ara mejorar la
+  expriencia de usuario.
+\newblock {\em Revista Institucional de la Facultad de Inform'atica Universidad
+  Nacional de La Plata (Argentina)\/}, 2016.
+
+\bibitem[{Bradley y Lang(1999)}]{ANEW}
+{\sc Bradley, M.~M.} y {\sc Lang, P.~J.}
+\newblock Affective norms for english words (anew): Instruction manual and
+  affective ratings.
+\newblock 1999.
+\newblock Disponible en
+  \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.306.3881&rep=rep1&type=pdf}
+  (último acceso,  Marzo, 2018).
+
+\bibitem[{Fowler(2006)}]{Fowler}
+{\sc Fowler, M.}
+\newblock Continuous integration.
+\newblock 2006.
+\newblock Disponible en
+  \url{https://www.martinfowler.com/articles/continuousIntegration.html}
+  (último acceso,  Marzo, 2018).
+
+\bibitem[{Francisco(2008)}]{TesisVir}
+{\sc Francisco, V.}
+\newblock {\em Identificaci'on Autom'atica del Contenido Afectivo de un Texto y
+  su Papel en la Presentaci'on de Informaci'on\/}.
+\newblock Phd, Universidad Complutense de Madrid, 2008.
+
+\bibitem[{Garrido y Zunino(2006)}]{ArqWebServices}
+{\sc Garrido, H.} y {\sc Zunino, C.}
+\newblock 2006.
+\newblock Disponible en
+  \url{http://www-2.dc.uba.ar/materias/seginf/material/tp_1c2006/Seguridad_WebServices.pdf}
+  (último acceso,  Marzo, 2018).
+
+\bibitem[{Goertzel et\ al.(2000)Goertzel, Silverman, Hartley, Bugaj y
+  Ross}]{goertzel}
+{\sc Goertzel, B.}, {\sc Silverman, K.}, {\sc Hartley, C.}, {\sc Bugaj, S.} y
+  {\sc Ross, M.}
+\newblock {\em The Baby Webmind Project\/}.
+\newblock 2000.
+
+\bibitem[{Dto. de Ciencia de la Computaci'on~e
+  Inteligencia~Artificial()}]{jtech}
+{\sc Dto. de Ciencia de la Computaci'on~e Inteligencia~Artificial, U. d.~A.}
+\newblock Servicios web.
+\newblock ????
+\newblock Disponible en
+  \url{http://www.jtech.ua.es/j2ee/publico/servc-web-2012-13/sesion01-apuntes.html}
+  (último acceso,  Marzo, 2018).
+
+\bibitem[{L'azaro()}]{DiegoLazaro}
+{\sc L'azaro, D.}
+\newblock Introducci'on a los web services.
+\newblock ????
+\newblock Disponible en
+  \url{https://diego.com.es/introduccion-a-los-web-services} (último acceso,
+  Marzo, 2018).
+
+\bibitem[{Liu et\ al.(2002)Liu, Lieberman y Selker}]{Liu2002}
+{\sc Liu, H.}, {\sc Lieberman, H.} y {\sc Selker, T.}
+\newblock Adaptive linking between text and photos using common sense
+  reasoning.
+\newblock {\em Proceedings of the 2n International Conference on Adaptive
+  Hypermedia and Adaptive Web Based Systems\/}, 2002.
+
+\bibitem[{Ng et\ al.(2012)Ng, Khong y Thwaites}]{chinos}
+{\sc Ng, Y.}, {\sc Khong, C.} y {\sc Thwaites, H.}
+\newblock A review of affective design towards video games.
+\newblock {\em Procedia-Social and Behavioral Sciences\/}, vol.\ 51, 2012.
+
+\bibitem[{Picard(1997)}]{Picard}
+{\sc Picard, R.~W.}
+\newblock {\em Affective Computing\/}.
+\newblock 1997.
+
+\bibitem[{Redondo et\ al.(2007)Redondo, Fraga, Padr'on y Comesa'na}]{ANEW_es}
+{\sc Redondo, J.}, {\sc Fraga, I.}, {\sc Padr'on, I.} y {\sc Comesa'na, M.}
+\newblock The spanish adaptation of anew (affective norms for english words.
+\newblock {\em Behavior Research Methods\/}, 2007.
+\newblock Disponible en
+  \url{https://link.springer.com/article/10.3758/BF03193031} (último acceso,
+  Marzo, 2018).
+
+\bibitem[{Riek et\ al.(2010)Riek, Paul y Robinson}]{RobotSonrie}
+{\sc Riek, L.~D.}, {\sc Paul, P.~C.} y {\sc Robinson, P.}
+\newblock When my robot similes at me: Enabling human-robot rapport via
+  real-time head gesture mimicry.
+\newblock {\em Journal on Multimodal User Interfaces\/}, 2010.
+
+\bibitem[{ScrumManager(2016)}]{ScrumManagerLibro}
+{\sc ScrumManager}.
+\newblock {\em Scrum Manager v. 2.6\/}.
+\newblock 2016.
+\newblock Disponible en \url{http://scrummanager.net/files/scrum_manager.pdf}
+  (último acceso,  Marzo, 2018).
+
+\bibitem[{Softeng()}]{ProcesoScrum}
+{\sc Softeng}.
+\newblock ????
+\newblock Disponible en
+  \url{https://www.softeng.es/es-es/empresa/metodologias-de-trabajo/metodologia-scrum/proceso-roles-de-scrum.html}
+  (último acceso,  Marzo, 2018).
+
+\bibitem[{W3C()}]{W3CServicios}
+{\sc W3C}.
+\newblock Servicios web.
+\newblock ????
+\newblock Disponible en
+  \url{https://www.w3c.es/Divulgacion/GuiasBreves/ServiciosWeb} (último acceso,
+   Marzo, 2018).
 
 \end{thebibliography}

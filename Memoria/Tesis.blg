@@ -9,8 +9,22 @@ A level-1 auxiliary file: Apendices/01ApendiceA.aux
 A level-1 auxiliary file: Cascaras/bibliografia.aux
 The style file: TeXiS/TeXiS.bst
 A level-1 auxiliary file: Cascaras/fin.aux
-I found no \citation commands---while reading file Tesis.aux
 Database file #1: nuestros.bib
 Database file #2: latex.bib
 Database file #3: otros.bib
-(There was 1 error message)
+Warning--I didn't find a database entry for "aplicacionesCA2"
+Warning--I didn't find a database entry for "aplicacionesCA3"
+Warning--empty journal in ANEW
+Warning--empty title in ArqWebServices
+Warning--empty journal in ArqWebServices
+Warning--missing publisher in goertzel
+Warning--empty journal in jtech
+Warning--empty year in jtech; set to ????
+Warning--empty journal in DiegoLazaro
+Warning--empty year in DiegoLazaro; set to ????
+Warning--missing publisher in Picard
+Warning--missing publisher in ScrumManagerLibro
+Warning--empty year in ProcesoScrum; set to ????
+Warning--empty journal in W3CServicios
+Warning--empty year in W3CServicios; set to ????
+(There were 15 warnings)

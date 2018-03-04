@@ -16,35 +16,28 @@ En este capítulo se profundizará en las herramientas que utilizaremos a lo largo
 %-------------------------------------------------------------------
 \label{cap3:sec:diccionario}
 
-El diccionario afectivo que vamos a utilizar para marcar las palabras está basado en el diccionario afectivo ANEW traducido al español (Redondo, Fraga, Padrón y Comesaña, 2007).
-En la traducción de ANEW al castellano participaron 720 estudiantes de Psicología de entre 18 y 25 años, 560 mujeres y 160 hombres.	Estos participantes evaluaron las 1034 palabras que contiene ANEW. 
-	
-Cada palabra debía ser marcada con las dimensiones emocionales: evaluación, activación y control en una escala de 9 puntos.
-
-Cada entrada en el diccionario contiene un número que identifica a la palabra de manera que, esta numeración coincide con el número que dicha palabra tiene en el ANEW; la palabra inglesa (E-word), la palabra original en la base de datos ANEW; la palabra española (S-word) y las evaluaciones afectivas, los valores medios y la desviación estándar para cada dimensión emocional.
-
 Este diccionario, es una adaptación en el que se han elegido las 5 emociones básicas (tristeza, miedo, alegría, enfado y sorpresa) y la neutralidad para no expresar ninguna emoción. Para crearlo participaron 10 personas; cada una de ellas marcó cada una de las 1034 palabras con una emoción básica o la neutralidad.
-Cada palabra puede representar varias emociones por lo que se ha creado un número de confianza \textit{c}, entre e 0 y el 1, que determina con qué certeza la palabra corresponde a esa emoción; es decir indica el porcentaje de evaluadores que asignaron dicha emoción a la palabra. La suma de estos números debe sumar 1.
+Cada palabra puede representar varias emociones por lo que se ha creado un número de confianza \textit{c}, entre e 0 y el 1, que determina con qué certeza la palabra corresponde a esa emoción; es decir indica el tanto por uno de evaluadores que asignaron dicha emoción a la palabra. La suma de estos números debe sumar 1.
 
 	\figura{Bitmap/Capitulo3/fragmento}{width=.9\textwidth}{fig:diccionario}{Fragmento de la adaptación del diccionario ANEW traducido.}
 	
-Por ejemplo en la Tabla \ref{fig:diccionario}, podemos ver los valores obtenidos para las palabras "`abandonado"', "`aborto"' y "`abeja"'. En este ejemplo se puede ver que tristeza fue la emoción asignada a la palabra "`abandonado"' por todos los evaluadores, mientras que con "`abejas"' y "`aborto"' no hubo acuerdo. En el caso de "`aborto"', un 67\% de los anotadores le asignaron tristeza, mientras que un 17\% consideró que la palabra no tenía emoción asociada y un 17\% le asignaron miedo. 
+En la Tabla \ref{fig:diccionario}, podemos ver los valores obtenidos para las palabras "`abandonado"', "`aborto"' y "`abeja"'. En este ejemplo se puede ver que tristeza fue la emoción asignada a la palabra "`abandonado"' por todos los evaluadores, mientras que con "`abejas"' y "`aborto"' no hubo acuerdo. En el caso de "`aborto"', un 67\% de los anotadores le asignaron tristeza, mientras que un 17\% consideró que la palabra no tenía emoción asociada y un 17\% le asignaron miedo. 
 
 %-------------------------------------------------------------------
 \section{Django}
 %-------------------------------------------------------------------
 \label{cap3:sec:django}
 
-Toda la implementación del trabajo se hará en Django (djangoproject.com,2005-2018), un framework para aplicaciones web gratuito y open source escrito en Python. 
+Toda la implementación del trabajo se hará en Django, un framework para aplicaciones web gratuito y open source escrito en Python. 
 
-Django incluye un servidor web que almacena la base de datos qu contendrá las palabras del diccionario y permitirá hacer las consultas necesarias. La base de datos estará formada por instancias del modelo creado, en nuestro caso cada palabra aparecerá modelada mediante su significante y los grados de certeza que tiene de cada emoción. Para realizar las diferentes consultas sobre las palabras disponibles se crearán una serie de clases que implementan los diferentes métodos de un servicio web REST típico: \textbf{GET, POST, DELETE}. Esencialmente \textbf{GET}, ya que es el que devuelve información sobre la palabra o alguno de sus campos. Cada una de las diferentes clases o "`vistas"' nos aportarán una forma diferente de acceder a la información: acceso a toda la lista, a una palabra concreta, a un campo de una palabra concreta, etc... Los resultados serán devueltos en formato JSON.
+Django incluye un servidor web que almacena la base de datos que contendrá las palabras del diccionario y permitirá hacer las consultas necesarias. La base de datos estará formada por instancias del modelo creado, en nuestro caso cada palabra aparecerá modelada mediante su significante y los grados de certeza que tiene de cada emoción. Para realizar las diferentes consultas sobre las palabras disponibles se crearán una serie de clases que implementan los diferentes métodos de un servicio web REST típico: \textbf{GET, POST, DELETE}. Esencialmente \textbf{GET}, ya que es el que devuelve información sobre la palabra o alguno de sus campos. Cada una de las diferentes clases o "`vistas"' nos aportarán una forma diferente de acceder a la información: acceso a toda la lista, a una palabra concreta, a un campo de una palabra concreta, etc... Los resultados serán devueltos en formato JSON.
 
 %-------------------------------------------------------------------
 \section{Trello}
 %-------------------------------------------------------------------
 \label{cap3:sec:trello}
 
-Trello es una aplicación web que permite organizar proyectos y actividades (trello.com,2011-2018). Emplea un sistema kanban para representar las tareas con tarjetas virtuales. Estas tarjetas irán atravesando los distintos artefactos de la metodología scrum con la que estamos trabajando. En la Figura \ref{fig:sprint} podemos ver el estado al inicial del proyecto. Se observa el \textbf{Product Backlog}, del que scrum master saca la cantidad de tareas que quiere que se realicen durante el sprint y estas pasan a la lista \textbf{To Do}. En la Figura \ref{fig:sprint2} se puede ver un ejemplo más avanzado en el que se puede ver como las tareas has sido divididas en subtareas para formar el \textbf{Sprint Backlog}, del que van saliendo en orden para estar \textbf{En Progreso} y, una vez acabadas, \textbf{Done}.
+Trello es una aplicación web que permite organizar proyectos y actividades. Para representar las tareas  y las historias de usuario se usan tarjetas virtuales. En la Figura \ref{fig:sprint} podemos ver el estado inicial del proyecto. Se observa el \textbf{Product Backlog}, del que product owner saca la cantidad de las historias de usuario que quiere que se realicen durante el sprint y estas pasan a la lista \textbf{To Do}. En la Figura \ref{fig:sprint2} se puede ver un ejemplo más avanzado en el que se puede ver como las historias de usuario han sido divididas en tareas para formar el \textbf{Sprint Backlog}, del que van saliendo en orden para estar \textbf{En Progreso} y, una vez acabadas, \textbf{Done}.
 
 	\figura{Bitmap/Capitulo3/Sprint1Plan}{width=.9\textwidth}{fig:sprint}{Sprint inicial que ilustra la estructura.}
 	
@@ -57,7 +50,7 @@ Trello es una aplicación web que permite organizar proyectos y actividades (trel
 
 Como ya se comentó en el capítulo 2.4 utilizaremos Jenkins como parte de la integración continua del proyecto. Esto nos permitirá asegurarnos de que la unificación es correcta y realizar las pruebas automáticas. Esto último se llevará a cabo mediante una orden shell que Jenkins ejecutará cada vez que se detecte un cambio en el repositorio. La orden únicamente se encarga de ejecutar el script de pruebas que contendrá las llamadas a los diferentes programas de pruebas que se desarrollen.
 
-Los programas de pruebas utilizarán Doctest para hacer las pruebas. Doctest es un módulo incluido en la librería estandar de Python. Su funcionamiento se basa en definir la función que se quiera probar y, dentro de un comentario al inicio de esta, poner una serie de llamadas y el resultado que se espera obtener de ellas. Tiene una función "`testmod"' que realiza las pruebas y devuelve el número de fallos y el resultado de todas las pruebas. Si el número de fallos es mayor que cero el programa de pruebas que haya fallado provocamos una excepción que Jenkins detectará para notificar a todo el equipo que hay algún fallo. Los resultados de las pruebas se muestran por consola al acabar y Jenkins los guardará para ayudar a encontrar el problema.
+Los programas de pruebas utilizarán Doctest para hacer las pruebas. Doctest es un módulo incluido en la librería estandar de Python. Su funcionamiento se basa en definir la función que se quiera probar y, dentro de un comentario al inicio de esta, poner una serie de llamadas y el resultado que se espera obtener de ellas. Tiene una función "`testmod"' que realiza las pruebas y devuelve el número de fallos y el resultado de todas las pruebas. Si el número de fallos es mayor que cero provocamos una excepción que Jenkins detectará para notificar a todo el equipo que hay algún fallo. Los resultados de las pruebas se muestran por consola al acabar y Jenkins los guardará para ayudar a encontrar el problema.
 
 %-------------------------------------------------------------------
 \section{SpaCy}
@@ -65,7 +58,7 @@ Los programas de pruebas utilizarán Doctest para hacer las pruebas. Doctest es u
 \label{cap3:sec:spacy}
 
 El objetivo final es llegar a interpretar textos enteros, no sólo palabras. Para ello se necesita una herramienta que nos facilite trabajar con frases, etiquetando cada una de las palabras que las forman. \textbf{SpaCy} es una librería open source escrita en Python y dedicada al procesamiento de lenguajes naturales. Soporta el español y nos permite etiquetar las palabras para poder buscar sólo aquellas que puedan tener carga emocional.
-SpaCy recibirá el texto plano, en este caso una serie de frases, y devolverá un objeto de tipo "`Doc"', propio de la librería, que contendrá la frase con una serie de anotaciones sobre cada una de las palabras que la forman (lema, etiqueta, dependencias sintácticas, forma...). Esas anotaciones nos van a permitir descartar las palabras que no nos interesen y obtener información sobre las que sí. Utilizaremos el lema para buscar la palabra en el diccionario.
+SpaCy recibirá el texto plano, en este caso una serie de frases, y devolverá un objeto de tipo "`Doc"', propio de la librería, que contendrá la frase con una serie de anotaciones sobre cada una de las palabras que la forman (lema, etiqueta, dependencias sintácticas, forma...). 
 
 
 % Variable local para emacs, para  que encuentre el fichero maestro de
