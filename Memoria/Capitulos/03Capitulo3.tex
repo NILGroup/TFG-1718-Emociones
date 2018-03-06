@@ -30,7 +30,11 @@ En la Tabla \ref{fig:diccionario}, podemos ver los valores obtenidos para las pa
 
 Toda la implementación del trabajo se hará en Django, un framework para aplicaciones web gratuito y open source escrito en Python. 
 
-Django incluye un servidor web que almacena la base de datos que contendrá las palabras del diccionario y permitirá hacer las consultas necesarias. La base de datos estará formada por instancias del modelo creado, en nuestro caso cada palabra aparecerá modelada mediante su significante y los grados de certeza que tiene de cada emoción. Para realizar las diferentes consultas sobre las palabras disponibles se crearán una serie de clases que implementan los diferentes métodos de un servicio web REST típico: \textbf{GET, POST, DELETE}. Esencialmente \textbf{GET}, ya que es el que devuelve información sobre la palabra o alguno de sus campos. Cada una de las diferentes clases o "`vistas"' nos aportarán una forma diferente de acceder a la información: acceso a toda la lista, a una palabra concreta, a un campo de una palabra concreta, etc... Los resultados serán devueltos en formato JSON.
+El framework de Django nos proporciona un servidor web, en el que se almacena la base de datos.
+Esta base de datos, contiene las palabras con sus respectivas probabilidades para cada emoción y la neutralidad modeladas mediante su lexema y los grados de certeza para cada emoción. La base de datos permitirá hacer las consultas necesarias. 
+Para realizar las diferentes consultas sobre las palabras disponibles existen una serie de clases que implementan los diferentes métodos de un servicio web REST típico: \textbf{GET, POST, DELETE}. Principalmente \textbf{GET}, ya que es este método el que devuelve información sobre la palabra o alguno de sus atributos. 
+Cada una de las diferentes clases nos aportarán una manera diferente de acceder a la información, como pueden ser: acceso a todo el diccionario de palabras, a una palabra concreta o a un campo de una palabra concreta.
+Los resultados serán devueltos en formato JSON.
 
 %-------------------------------------------------------------------
 \section{Trello}

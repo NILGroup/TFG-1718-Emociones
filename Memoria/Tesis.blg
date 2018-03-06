@@ -17,10 +17,6 @@ Warning--I didn't find a database entry for "aplicacionesCA3"
 Warning--to sort, need author, editor, or key in RAE
 Warning--empty author and editor in RAE
 Warning--missing publisher in RAE
-ptr=1, stack=
-2018
----the literal stack isn't empty for entry RAE
-while executing---line 1842 of file TeXiS/TeXiS.bst
 Warning--empty journal in ANEW
 Warning--empty title in ArqWebServices
 Warning--empty journal in ArqWebServices
@@ -34,4 +30,4 @@ Warning--missing publisher in ScrumManagerLibro
 Warning--empty year in ProcesoScrum; set to ????
 Warning--empty journal in W3CServicios
 Warning--empty year in W3CServicios; set to ????
-(There was 1 error message)
+(There were 18 warnings)

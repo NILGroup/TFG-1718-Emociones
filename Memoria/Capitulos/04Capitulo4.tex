@@ -8,7 +8,7 @@
 
 \begin{resumen}
 En este capítulo se explicarán los servicios web que se han desarrollado con el fin de analizar el contenido afectivo de un texto.
-Primero, en la sección 4.1, se presentarán los servicios orientados a identificar la emoción predominante en una palabra concreta, tanto la consensuada como la mayoritaria. Después, en la sección 4.2, se explica como el análisis de la palabra se aplica a determinar la emoción de una frase entera para finalmente, en la sección 4.3, aplicar todo al anális de todo un texto.
+Primero, en la sección 4.1, se presentarán los servicios orientados a identificar la emoción predominante en una palabra concreta, tanto la consensuada como la mayoritaria. Después, en la sección 4.2, se explica como el análisis de la palabra se aplica a determinar la emoción de una frase entera para finalmente, en la sección 4.3, aplicar todo al análisis de todo un texto.
 \end{resumen}
 
 
@@ -21,7 +21,7 @@ Primero, en la sección 4.1, se presentarán los servicios orientados a identifica
 
 Los datos estarán almacenados en el servidor Django.
 \begin{itemize}
-	\item \textbf{Modelo: } Los campos que tiene el modelo para cada palabra, como ya se comentó en el capítulo anterior, son la propia palabra, el porcentaje de una determinada emoción que expresan (para las cinco emociones que consideramos en nuestro diccionario y la neutralidad). Cada una de las palabras que tenemos recogidas se encapsulan en este modelo para ser almacenadas en el servidor.
+	\item \textbf{Modelo: } Los campos que tiene el modelo para cada palabra, son: la propia palabra, la probabilidad de indicar cada una de las emociones básicas y la neutralidad. Cada una de las palabras que tenemos recogidas se encapsulan en este modelo para ser almacenadas en el servidor.
 	\item \textbf{Consultas: } Se realizarán mediante declaración de clases "`vista"' según las funcionalidades que requiera cada uno de los servicios web que vamos a desarrollar.
 \end{itemize}
 Una vez que se tiene el servidor y todo el código necesario para el funcionamiento de los servicios web se procede a subir las palabras que recoge nuestro diccionario. Para ello se ha desarrollado un programa en \textit{Python} cuya función es leer el fichero CSV, interpretar cada una de sus líneas y subir la información que obtiene al servidor. Una vez que todas las palabras estén subidas ya se pueden realizar las consultas necesarias.
@@ -37,7 +37,7 @@ Como entrada tendríamos la palabra de la cual queremos conocer sus emociones; ex
 
 
 \subsection{Servicio web emoción consensuada}
-Esta vista nos devuelve, mediante una petición \textbf{GET} al servidor, si tiene o no emoción consensuada y en caso de tenerla cuál.  Hablamos de emoción consensuada cuando la el grado de certeza que se tiene de una de sus emociones es 1. 
+Esta vista nos devuelve, mediante una petición \textbf{GET} al servidor, si tiene o no emoción consensuada y en caso de tenerla cuál.  Hablamos de emoción consensuada cuando el grado de certeza que se tiene de una de sus emociones es 1. 
 
 Como entrada tendríamos la palabra de la cual queremos conocer su emoción consensuada, mientras que la salida será la emoción consensuada en caso de tenerla (Figura \ref{fig:consensuada}) o un mensaje de que no la tiene (Figura \ref{fig:noconsensuada}).
 
@@ -46,12 +46,11 @@ Como entrada tendríamos la palabra de la cual queremos conocer su emoción consen
 \figura{Bitmap/Capitulo4/no_consensuada}{width=.3\textwidth}{fig:noconsensuada}{Respuesta si la palabra no tiene emoción consensuada.}
 
 \subsection{Servicio web emoción mayoritaria}
-Esta vista nos devuelve, mediante una petición \textbf{GET} al servidor, su emoción mayoritaria. Hablamos de emoción mayoritaria cuando el porcentaje de confianza de la una emoción es mayor al del resto de emociones.
+Esta vista nos devuelve, mediante una petición \textbf{GET} al servidor, su emoción mayoritaria. Hablamos de emoción mayoritaria cuando el porcentaje de confianza de una emoción es mayor al del resto de emociones.
 
 Como entrada tendríamos la palabra de la cual queremos conocer su emoción mayoritaria, mientras que la salida será la emoción mayoritaria (Figura \ref{fig:mayoritaria}), o mayoritarias (en caso de que haya dos con el mismo porcentaje) (Figura \ref{fig:mayoritarias}).
 
 \figura{Bitmap/Capitulo4/mayoritaria}{width=.3\textwidth}{fig:mayoritaria}{Respuesta al encontrar la emoción mayoritaria.}
-
 \figura{Bitmap/Capitulo4/mayoritarias}{width=.3\textwidth}{fig:mayoritarias}{Respuesta si hay dos emociones mayoritarias.}
 
 
