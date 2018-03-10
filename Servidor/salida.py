@@ -18,7 +18,7 @@ class Salida():
 	@staticmethod
 	def mostrar_mayoritaria(mayoritarias,porcentaje):
 		if len(mayoritarias) == 1:
-			print(mayoritarias[0] + " con un " + porcentaje + "%")
+			print("La mayoritaria es " + mayoritarias[0] + " con un " + porcentaje + "%")
 		elif len(mayoritarias) == 2:
 			print("Hay dos emociones mayoritarias: " + mayoritarias[0] + " y " + mayoritarias[1] + " con un " + porcentaje + "%")
 		else:

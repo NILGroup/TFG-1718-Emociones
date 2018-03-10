@@ -84,7 +84,8 @@ class InterpretePalabras():
 				return "No hay emocion consensuada."
 			else:
 				emocion = consensuada.split(" ")
-				return traducir_emocion(emocion[1])
+				e = "La emocion consensuada es " + traducir_emocion(emocion[1])
+				return e
 
 	@staticmethod
 	def interpretar_mayoritaria(destino):

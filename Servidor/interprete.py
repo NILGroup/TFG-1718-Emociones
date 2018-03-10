@@ -5,6 +5,7 @@ from salida import Salida
 import corrector
 
 _salida = Salida()
+
 """
 --------
 PALABRAS

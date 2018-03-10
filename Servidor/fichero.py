@@ -19,7 +19,7 @@ def leer_diccionario():
     """
     Función que implementa la funcionalidad principal, lectura y subida de datos.
     """
-    fichero = open("diccionario_afectivo_con_lemas.csv")
+    fichero = open("diccionario.csv")
     fichero.readline() # ignoramos la primera linea 
     linea = fichero.readline()
     while linea != "":
