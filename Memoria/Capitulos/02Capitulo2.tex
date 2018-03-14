@@ -94,16 +94,17 @@ Las técnicas basadas en el procesamiento estadístico del lenguaje natural solo f
 	
 	En las siguientes secciones presentamos los diccionarios afectivos mas representativos.
 	
-	\subsubsection{Lasswell value dictionary y general inquirer}
+	\subsubsection{Lasswell Value Dictionary}
 	
-	Fue a comienzos de los años 60 cuando Stone y Lasswell, ambos investigadores, comenzaron a construir diccionarios en lo que las palabras estaban marcadas con etiquetas afectivas.
-	El diccionario Lasswell clasifica sus palabras de manera binaria y en ocho categorías básicas (riqueza, poder, respeto, rectitud, habilidad, iluminación, afecto y bienestar). Además de estas, el esquema de este diccionario distingue entre objetivos sustantivos y los elementos y atributos del proceso de distribución de valores, es decir, evaluación personal y asignación social.
-	La clasificación social del contenido mantiene estas distinciones. Las preocupaciones con valores particulares se clasifican en objetivos sustantivos particulares. El esquema de clasificación también distingue varios tipos de transacciones de valor.
+	Fue a comienzos de los años 60 cuando investigadores, comenzaron a construir diccionarios en lo que las palabras estaban marcadas con etiquetas afectivas. Uno de estos investigadores era Lasswell.
+	El diccionario Lasswell \citep{peterson1965lasswell} clasifica sus palabras de manera binaria y en ocho categorías básicas (riqueza, poder, respeto, rectitud, habilidad, iluminación, afecto y bienestar). Además de estas, el esquema de este diccionario distingue entre objetivos sustantivos y los elementos y atributos del proceso de distribución de valores, es decir, evaluación personal y asignación social.
+	La clasificación social del contenido mantiene estas distinciones. 
 
 \subsubsection{Diccionario de Hatzivassiloglou y Mckeown}
 	
 	Este diccionario fue creado en 1997, y tarta de encontrar etiquetas como positive o negative de manera automatizada a través del análisis de un corpus.
-	Hatzuvassiloglou y McKeown tomaron una serie de adjetivos que aparecían de manera frecuente y decidieron darles una orientación, empleando un análisis estadístico en el que cuando dos adjetivos aparecían juntos, siguiendo el patrón adjetivo1 y adjetivo 2, devolvía una orientación positiva o negativa. 
+	Hatzuvassiloglou y McKeown \citep{mckeown} tomaron una serie de adjetivos que aparecían de manera frecuente y decidieron darles una orientación.
+	Empleando un análisis estadístico en el que cuando dos adjetivos aparecían juntos devolvía una orientación positiva o negativa, dependiendo de la orientación del adjetivo1 y adjetivo2. Es decir, si un adjectivo aparece junto a otro del que se conoce la orientación el adjetivo del que no conocemos la orientación toma el del adjetivo que sí conocemos.
 	Así, pudieron obtener un diccionario de adjetivos clasificados en positivos y negativos.
 
 \subsubsection{Wordnet affect}
@@ -129,7 +130,9 @@ Empleando la informacion de estudios cercanos y estadísticas clasificaron como p
 	\subsubsection{ANEW}
 	Se trata de un modelo espacial de varias palabras con carga emocional que contribuye a clasificar textos arbitrarios.
 	Para obtener este diccionario, se pidió a una serie de personas que marcasen un conjunto de palabras con los valores para las dimensiones de una emoción \citep{ANEW}. 
-	Este diccionario será base del diccionario afectivo que vamos a emplear para marcar palabras en este trabajo. Concretamente, utilizaremos el diccionario ANEW traducido al español \citep{ANEW_es}. En la traducción de ANEW al castellano participaron 720 estudiantes de Psicología de entre 18 y 25 años, 560 mujeres y 160 hombres. Estos participantes evaluaron 1.034 palabras que contiene ANEW.
+	
+	\subsubsection{Traducción de ANEW al castellano}
+	Este diccionario será muy importante en nuestro trabajo, la traducción del diccionario ANEW al castellano \citep{ANEW_es}. En él participaron 720 estudiantes de Psicología de entre 18 y 25 años, 560 mujeres y 160 hombres. Estos participantes evaluaron 1.034 palabras que contiene ANEW.
 	Cada palabra debía ser marcada con las dimensiones emocionales: evaluación, activación y control, en una escala de 9 puntos.
 	Cada entrada en el diccionario contiene un número que identifica a la palabra, de manera que, esta numeración coincide con el número que dicha palabra tiene en el ANEW; la palabra ingles (E-word), la palabra original en la base de datos ANEW; la palabra española (S-word) y las evaluaciones afectivas, los valores medios y la desviación estándar para cada dimensión emocional.
 
@@ -224,7 +227,8 @@ Empleando la informacion de estudios cercanos y estadísticas clasificaron como p
 	
 	\begin{itemize}
 		\item \textbf{Sprint}: Cada una de las iteraciones del desarrollo.
-		\item \textbf{Sprint Planning}: Se trata de la reunión de planificación del sprint. Este evento consta de dos partes. En la primera parte el Product Owner presenta lo que quiere que se haga en el sprint y resuelve dudas acerca de la historia de usuario y explica la importancia de dicha tarea para que el grupo de trabajo tenga clara la prioridad. En la segunda parte el equipo estima el timpo que llevará a desarrollar cada una de las diferentes historias de usuario propuestas en el product owner y deciden cuantas van a implementar en el sprint, para posteriormente crear el Sprint Backlog.
+		\item \textbf{Sprint Planning}: Se trata de la reunión de planificación del sprint. Este evento consta de dos partes. En la primera parte el Product Owner presenta lo que quiere que se haga en el sprint y resuelve dudas acerca de la historia de usuario y explica la importancia de dicha tarea para que el grupo de trabajo tenga clara la prioridad. Después, en la misma reunión, el equipo estima el timpo que llevará a desarrollar cada una de las diferentes historias de usuario propuestas en el product owner y deciden cuantas van a implementar en el sprint, para posteriormente crear el Sprint Backlog.
+		En la segunda parte, el equipo desarrollador divide las historias de usuario en pequeñas tareas ordenadas por prioridad, el Sprint Backlog.
 		\item \textbf{Daily Scrum}: Reunión diaria como máximo de quince minutos, de pie, donde cada componente del equipo informa sobre cómo va en sus tareas, lo que hizo el día anterior, lo que hará ese día y los problemas que ha encontrado o los que cree que se va a encontrar.
 		\item \textbf{Sprint Review}: Reunión que se realiza al concluir el sprint centrándose en el producto. Se presenta el producto creado en el sprint al Product Owner y este lo analiza y da su feedback.
 		\item \textbf{Sprint Retrospective}: Reunión donde se habla de cómo ha funcionado el equipo en el sprint y qué cosas se pueden mejorar para el siguiente a nivel de proceso o metodología.
@@ -242,7 +246,7 @@ Empleando la informacion de estudios cercanos y estadísticas clasificaron como p
 
 La integración continua \citep{Fowler}, se basa en que los desarrolladores combinen todos los cambios que realicen en el código en un repositorio común de forma periódica (cada pocas horas, al menos una vez al día), de tal forma que una vez subidos estos cambios, se ejecutan una serie de pruebas automáticas sobre estos con el fin de validarlos y detectar errores de integración tan pronto como sea posible.
 
-En general, las metodologías ágiles y en particular la metodología Scrum enfoca su objetivo en tener versiones del producto al finalizar cada etapa; es por esto por lo que la integración es vital en proyectos que empleen estas metodologías. Emplenado la integración continua, aseguras de encontrar los errores a tiempo para que el producto esté listo para la entrega al cliente o para ponerlo en producción si este así lo desea.
+En general, las metodologías ágiles y en particular la metodología Scrum enfoca su objetivo en tener versiones del producto al finalizar cada etapa; es por esto por lo que la integración continua es vital en proyectos que empleen estas metodologías. Emplenado la integración continua, los desarrolladores se aseguran de encontrar los errores a tiempo para que el producto esté listo para la entrega al cliente o para ponerlo en producción si este así lo desea.
 
 Las principales ventajas de la integración continua:
 

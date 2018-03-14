@@ -11,13 +11,12 @@ En este capítulo se explicarán los servicios web que se han desarrollado con el 
 Primero, en la sección 4.1, se presentarán los servicios orientados a identificar la emoción predominante en una palabra concreta, tanto la consensuada como la mayoritaria. Después, en la sección 4.2, se explica como el análisis de la palabra se aplica a determinar la emoción de una frase entera para finalmente, en la sección 4.3, aplicar todo al análisis de todo un texto.
 \end{resumen}
 
-
 %-------------------------------------------------------------------
-\section{Análisis afectivo de una palabra}
+\section{Base para los servicios web}
 %-------------------------------------------------------------------
-\label{cap4:sec:palabra}
+\label{cap4:sec:base}
 
- Como ya se comentó en la sección 3.1, para el desarrollo de este trabajo se utilizará un diccionario afectivo en español. Este diccionario, inicialmente en formato Excel, ha sido convertido a un fichero CSV para que resulte más sencillo obtener los datos. 
+Como ya se comentó en la sección 3.1, para el desarrollo de este trabajo se utilizará un diccionario afectivo en español. Este diccionario, inicialmente en formato Excel, ha sido convertido a un fichero CSV para que resulte más sencillo obtener los datos. 
 
 Los datos estarán almacenados en el servidor Django.
 \begin{itemize}
@@ -25,6 +24,13 @@ Los datos estarán almacenados en el servidor Django.
 	\item \textbf{Consultas: } Se realizarán mediante declaración de clases "`vista"' según las funcionalidades que requiera cada uno de los servicios web que vamos a desarrollar.
 \end{itemize}
 Una vez que se tiene el servidor y todo el código necesario para el funcionamiento de los servicios web se procede a subir las palabras que recoge nuestro diccionario. Para ello se ha desarrollado un programa en \textit{Python} cuya función es leer el fichero CSV, interpretar cada una de sus líneas y subir la información que obtiene al servidor. Una vez que todas las palabras estén subidas ya se pueden realizar las consultas necesarias.
+
+%-------------------------------------------------------------------
+\section{Análisis afectivo de una palabra}
+%-------------------------------------------------------------------
+\label{cap4:sec:palabra}
+
+Hemos implementado tres servicios web diferentes para mostrar la carga afectiva de una palabra.
 
 \subsection{Servicio web porcentajes}
 Esta vista nos devuelve la información respectiva a los porcentajes de cada emoción que posee, mediante una petición \textbf{GET} al servidor, y los muestra al usuario.
