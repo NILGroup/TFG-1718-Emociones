@@ -14,17 +14,17 @@ Database file #2: latex.bib
 Database file #3: otros.bib
 Warning--I didn't find a database entry for "aplicacionesCA2"
 Warning--I didn't find a database entry for "aplicacionesCA3"
-Warning--to sort, need author, editor, or key in RAE
-Warning--empty author and editor in RAE
-Warning--missing publisher in RAE
+Warning--to sort, need author or key in RAE
 Warning--empty journal in ANEW
 Warning--empty title in ArqWebServices
 Warning--empty journal in ArqWebServices
 Warning--missing publisher in goertzel
+Warning--missing publisher in mckeown
 Warning--empty journal in jtech
 Warning--empty year in jtech; set to ????
 Warning--empty journal in DiegoLazaro
 Warning--empty year in DiegoLazaro; set to ????
+Warning--missing publisher in peterson1965lasswell
 Warning--missing publisher in Picard
 Warning--missing publisher in ScrumManagerLibro
 Warning--empty year in ProcesoScrum; set to ????
