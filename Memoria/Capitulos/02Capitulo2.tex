@@ -22,7 +22,7 @@ Todo el mundo sabe lo que son las emociones hasta que llega el momento de defini
 
 Son experimentadas de manera particular por cada individuo debido a experiencias pasadas, su carácter, aprendizaje... No obstante, podemos afirmar que son estados afectivos y por ello indican estados internos personales, motivaciones, deseos, necesidades e incluso objetivos. 
 
-Existen muchas emociones, las cuales podemos representar gracias a gestos y movimientos; al igual que las emociones, podemos centrarnos en conocer la categorización de estas. Entre estas categorías se definen definen 6 categorías básicas:
+Existen muchas emociones, las cuales podemos representar gracias a gestos y movimientos; al igual que las emociones, podemos centrarnos en conocer la categorización de estas. Entre estas categorías se definen definen 6 categorías emocionales básicas:
 
 \begin{itemize}
 	\item \textbf{Miedo}: Angustia por un riesgo o daño real o imaginario. \citep{RAE}
@@ -31,6 +31,14 @@ Existen muchas emociones, las cuales podemos representar gracias a gestos y movi
 	\item \textbf{Aversión}: Rechazo o repugnancia frente a alguien o algo. \citep{RAE}
 	\item \textbf{Alegría}: Sentimiento grato y vivo que suele manifestarse con signos exteriores. \citep{RAE}
 	\item \textbf{Tristeza}: Doloroso, enojoso, difícil de soportar. \citep{RAE}
+\end{itemize}
+
+Las categorías básicas no son la única forma de clasificar las emociones. Otro método muy importante es la clasificación mediante dimensiones emocionales, aspectos esenciales de una emoción. Generalmente se utilizan tres para formar un espacio tridimensional que permitirá identificar la emoción según los valores que tome para cada dimensión. Las dimensiones que se tienen en cuenta son las siguientes:
+
+\begin{itemize}
+	\item \textbf{Evaluación}: Representa como de positiva o negativa es la emoción.
+	\item \textbf{Activación}: Representa en qué lugar de la escala activa (exitación) / pasiva (calma) se encuentra la emoción.
+	\item \textbf{Control}: Representa el control que tiene la emoción sobre una persona.
 \end{itemize}
 
 A modo de resumen, podríamos hablar también de las tres dimensiones de la persona que se activan a la vez y de modo indisoluble con cada emoción:
@@ -107,33 +115,50 @@ Las técnicas basadas en el procesamiento estadístico del lenguaje natural solo f
 	Empleando un análisis estadístico en el que cuando dos adjetivos aparecían juntos devolvía una orientación positiva o negativa, dependiendo de la orientación del adjetivo1 y adjetivo2. Es decir, si un adjectivo aparece junto a otro del que se conoce la orientación el adjetivo del que no conocemos la orientación toma el del adjetivo que sí conocemos.
 	Así, pudieron obtener un diccionario de adjetivos clasificados en positivos y negativos.
 
-\subsubsection{Wordnet affect}
+\subsubsection{Wordnet Affect}
 
 	Se trata de una extensión de WordNet Domains, que incluye un subconjunto de synsets adecuados para representar conceptos afectivos correlacionados con palabras afectivas. De manera similar a nuestro método para etiquetas de dominio, asignamos a una serie de sintonias de WordNet una o mas etiquetas afectivas. En particular, los recursos afectivos que representan el estado emocional son individualizados por sintonizadores marcados por la emocion de la etiqueta A. Tambien existen otras etiquetas para aquellos conceptos que representan estados de animo, situaciones que provocan emociones o respuestas emocionales.
 	El recurso se amplió con un conjutno de etiquetas A adicionales (llamadas categorias emocionales), organizadas jerarquicamente, con el fin de especializar sysnsets con una emocion de etiqueta. 
 La estructura jerarquica de las nuevas etiquetas a se modelo en la relaciones de hiperonimos de wornet. En una segunda etapa, se definen cuatro etiquetas a-adicionales: positivo, negativo, ambiguo, neutral.
 	Otra propiedad importante para el lexico afectico en lo que se se refiere principalmente a la interpretacion adejtivas es la dimension estacionaria/causativa.
 
-	\subsubsection{Whissell's dictionary of affects in language (DAL)}
+	\subsubsection{Whissell's Dictionary of Affects in Language (DAL)}
 	
 	Este diccionario es un recurso diseñado con el fin de medir el significado emocional de las palabras y textos. El objetivo del diccionario es comparar las palabras con una lista de 8.742 palabras que han sido marcadas por distints personas en terminos de las dimensiones activacion y evaluacion e imagenes.
 
 	\subsubsection{Diccionario de Turney y Littman}
 	
-	Turney y Littman encontraron una manera mas eficiente para decidir cuando una palabra se podía considerar positiva o negativa. Dado un conjunto de palabras, que previamente ellos conocían como positivas o negativas, probaron como de frecuentemente podía aparecer una palabra en un contexto con un conjunto de palabras positivas o negaticas. 
+	Turney y Littman encontraron una manera mas eficiente para decidir cuando una palabra se podía considerar positiva o negativa. Dado un conjunto de palabras, que previamente ellos conocían como positivas o negativas, probaron como de frecuentemente podía aparecer una palabra en un contexto con un conjunto de palabras positivas o negativas. 
 Empleando la informacion de estudios cercanos y estadísticas clasificaron como positivas todas aquellas palabras que aparecían de forma más significativa con un conjunto de palabras positivas y como negativas aquellas palabras que aparecían con un conjunto de palabras negativas.
 
-\subsubsection{Clairvonyance affect lexicon}
+\subsubsection{Clairvoyance Affect Lexicon}
 
-	Este diccionario fue desarrollado a mano. Las entradas de este diccionario se dividen en cinco campos: el lema de la palabra, part-of-speech, clase afectiva, centralidad e intensidad.
+	Este diccionario fue desarrollado a mano (Huettner and Subasic, 2000). Las entradas de este diccionario se dividen en cinco campos que caracterizan la palabra.
+	
+	\begin{itemize}
+		\item Lema.
+		\item Categoría gramatical.
+		\item Clase afectiva: Entre un pequeño conjunto de categorías emocionales.
+		\item Centralidad: Valor entre 0.0 y 1.0 que trata de medir la relación de la palabra con la clase afectiva que se le ha asignado.
+		\item Intensidad: Mide la intensidad emocional de la palabra.
+	\end{itemize}
+	
+	Cada palabra aparece en el diccionario una vez por cada clase afectiva a la que pertenece. La centralidad varía en las diferentes apariciones mientras que la intensidad se mantiene igual.
+	
+	\subsubsection{Diccionario de Grefenstette et al.}
+	Grefenstette et al. (2006) crearon un diccionario afectivo a partir de patrones sintácticos. Tomaron 21 verbos: \textit{appear}, \textit{appears}, \textit{appeared}, \textit{appearing}, \textit{feel}, \textit{feels}, \textit{feeling}, \textit{felt}, \textit{are}, \textit{be}, \textit{is}, \textit{was}, \textit{were}, \textit{look}, \textit{looked}, \textit{looks}, \textit{looking}, \textit{seem}, \textit{seems}, \textit{seemed}, \textit{seeming} y les añadieron uno de estos 5 adverbios: \textit{almost}, \textit{extremely}, \textit{so}, \textit{too}, \textit{very}. A partir de todas las combinaciones posibles obtuvieron 105 patrones. Buscaron los patrones en toda la web para encontrar las palabras que comúnmente aparecen a continuación de ellos y, una vez encontradas filtraban las que tuviesen un componente afectivo clasificándolas en positivas o negativas.
 	
 	\subsubsection{ANEW}
-	Se trata de un modelo espacial de varias palabras con carga emocional que contribuye a clasificar textos arbitrarios.
-	Para obtener este diccionario, se pidió a una serie de personas que marcasen un conjunto de palabras con los valores para las dimensiones de una emoción \citep{ANEW}. 
+	La Affective Norms for English Words \citep{ANEW} contiene un gran número de palabras inglesas medidas en términos de las dimensiones emocionales comentadas anteriormente (evaluación, activación y control). Para obtener este diccionario, se pidió a una serie de personas que marcasen un conjunto de palabras fuera de contexto con los valores para cada una de las tres dimensiones de una emoción en una escala de 9 puntos. Para ello contaron con la ayuda del sistema de marcación SAM (Lang, 1980). 
+	
+	Se trata de un modelo espacial de varias palabras con carga emocional que contribuye a facilitar la clasificación de textos arbitrarios y el estudio de las emociones.
+	
+	Este diccionario será muy importante en nuestro trabajo ya que utilizaremos una versión traducida de él.
 	
 	\subsubsection{Traducción de ANEW al castellano}
-	Este diccionario será muy importante en nuestro trabajo, la traducción del diccionario ANEW al castellano \citep{ANEW_es}. En él participaron 720 estudiantes de Psicología de entre 18 y 25 años, 560 mujeres y 160 hombres. Estos participantes evaluaron 1.034 palabras que contiene ANEW.
+	 Se trata de la traducción del diccionario ANEW al castellano \citep{ANEW_es}. En él participaron 720 estudiantes de Psicología de entre 18 y 25 años, 560 mujeres y 160 hombres. Estos participantes evaluaron 1.034 palabras que contiene ANEW.
 	Cada palabra debía ser marcada con las dimensiones emocionales: evaluación, activación y control, en una escala de 9 puntos.
+	
 	Cada entrada en el diccionario contiene un número que identifica a la palabra, de manera que, esta numeración coincide con el número que dicha palabra tiene en el ANEW; la palabra ingles (E-word), la palabra original en la base de datos ANEW; la palabra española (S-word) y las evaluaciones afectivas, los valores medios y la desviación estándar para cada dimensión emocional.
 
 %-------------------------------------------------------------------

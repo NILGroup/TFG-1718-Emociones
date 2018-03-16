@@ -9,23 +9,24 @@
 \contentsline {subsection}{\numberline {2.2.1}M\'etodos para el marcado de texto emocional}{6}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Diccionarios Afectivos}{7}{subsection.2.2.2}
 \contentsline {subsubsection}{\numberline {2.2.2.1}Lasswell Value Dictionary}{7}{subsubsection.2.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.2.2}Diccionario de Hatzivassiloglou y Mckeown}{7}{subsubsection.2.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.2.3}Wordnet affect}{8}{subsubsection.2.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.2.4}Whissell's dictionary of affects in language (DAL)}{8}{subsubsection.2.2.2.4}
-\contentsline {subsubsection}{\numberline {2.2.2.5}Diccionario de Turney y Littman}{8}{subsubsection.2.2.2.5}
-\contentsline {subsubsection}{\numberline {2.2.2.6}Clairvonyance affect lexicon}{9}{subsubsection.2.2.2.6}
-\contentsline {subsubsection}{\numberline {2.2.2.7}ANEW}{9}{subsubsection.2.2.2.7}
-\contentsline {subsubsection}{\numberline {2.2.2.8}Traducci\'on de ANEW al castellano}{9}{subsubsection.2.2.2.8}
-\contentsline {section}{\numberline {2.3}Servicios Web}{9}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Caracter\IeC {\'\i }sticas de los Servicios Web}{9}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Tipos de Servicios Web}{10}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Arquitectura de los Servicios Web}{10}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Ventajas e inconvenientes}{11}{subsection.2.3.4}
-\contentsline {section}{\numberline {2.4}Scrum}{12}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Roles}{12}{subsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.1.1}Artefactos}{12}{subsubsection.2.4.1.1}
-\contentsline {subsubsection}{\numberline {2.4.1.2}Eventos}{12}{subsubsection.2.4.1.2}
-\contentsline {section}{\numberline {2.5}Integracion Continua}{14}{section.2.5}
+\contentsline {subsubsection}{\numberline {2.2.2.2}Diccionario de Hatzivassiloglou y Mckeown}{8}{subsubsection.2.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2.3}Wordnet Affect}{8}{subsubsection.2.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.2.4}Whissell's Dictionary of Affects in Language (DAL)}{8}{subsubsection.2.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.2.5}Diccionario de Turney y Littman}{9}{subsubsection.2.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.2.6}Clairvoyance Affect Lexicon}{9}{subsubsection.2.2.2.6}
+\contentsline {subsubsection}{\numberline {2.2.2.7}Diccionario de Grefenstette et al.}{9}{subsubsection.2.2.2.7}
+\contentsline {subsubsection}{\numberline {2.2.2.8}ANEW}{10}{subsubsection.2.2.2.8}
+\contentsline {subsubsection}{\numberline {2.2.2.9}Traducci\'on de ANEW al castellano}{10}{subsubsection.2.2.2.9}
+\contentsline {section}{\numberline {2.3}Servicios Web}{10}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Caracter\IeC {\'\i }sticas de los Servicios Web}{11}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Tipos de Servicios Web}{11}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Arquitectura de los Servicios Web}{11}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Ventajas e inconvenientes}{12}{subsection.2.3.4}
+\contentsline {section}{\numberline {2.4}Scrum}{13}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Roles}{13}{subsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.1.1}Artefactos}{13}{subsubsection.2.4.1.1}
+\contentsline {subsubsection}{\numberline {2.4.1.2}Eventos}{13}{subsubsection.2.4.1.2}
+\contentsline {section}{\numberline {2.5}Integracion Continua}{15}{section.2.5}
 \contentsline {chapter}{\numberline {3}Herramientas}{17}{chapter.3}
 \contentsline {section}{\numberline {3.1}Diccionario}{17}{section.3.1}
 \contentsline {section}{\numberline {3.2}Django}{18}{section.3.2}
