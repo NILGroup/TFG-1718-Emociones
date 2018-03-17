@@ -7,7 +7,7 @@
 \chapter{Herramientas}
 
 \begin{resumen}
-En este capítulo se profundizará en las herramientas que utilizaremos a lo largo del trabajo. En la sección 3.1 se presenta el diccionario que vamos a utilizar para el marcado emocional. En la sección 3.2 se introduce el framework que vamos a utilizar para el desarrollo de los servicios web, Django. En la sección 3.3 se explica cómo vamos a utilizar Trello para seguir la metodología Scrum. En la sección 3.4 se expone la forma de realizar las pruebas utilizando Jenkins y Doctest. En la sección 3.5 se presentan SpaCy y PyStemmer, las herramientas que se utilizarán para poder etiquetar las palabras que forman una frase para poder realizar el análisis emocional sobre ella.
+En este capítulo se profundizará en las herramientas que utilizaremos a lo largo del trabajo. En la sección 3.1 se presenta el diccionario que vamos a utilizar para el marcado emocional. En la sección 3.2 se introduce el framework que vamos a utilizar para el desarrollo de los servicios web, Django. En la sección 3.3 se explica cómo vamos a utilizar Trello para seguir la metodología Scrum. En la sección 3.4 se expone la forma de realizar las pruebas utilizando Jenkins y Doctest. En la sección 3.5 se presentan SpaCy y PyStemmer, las herramientas que se utilizarán para poder procesar las palabras que forman una frase para poder realizar el análisis emocional sobre ella.
 \end{resumen}
 
 
@@ -28,7 +28,7 @@ En la Tabla \ref{fig:diccionario}, podemos ver los valores obtenidos para las pa
 %-------------------------------------------------------------------
 \label{cap3:sec:django}
 
-Toda la implementación del trabajo se hará en Django, un framework para aplicaciones web gratuito y open source escrito en Python. 
+Toda la implementación del trabajo se hará utilizando Django, un framework para aplicaciones web gratuito y open source escrito en Python. 
 
 El framework de Django nos proporciona un servidor web, en el que se almacena la base de datos.
 Esta base de datos, contiene las palabras con sus respectivas probabilidades para cada emoción y la neutralidad modeladas mediante su lexema y los grados de certeza para cada emoción. La base de datos permitirá hacer las consultas necesarias. 
@@ -57,12 +57,15 @@ Como ya se comentó en el capítulo 2.4 utilizaremos Jenkins como parte de la inte
 Los programas de pruebas utilizarán Doctest para hacer las pruebas. Doctest es un módulo incluido en la librería estandar de Python. Su funcionamiento se basa en definir la función que se quiera probar y, dentro de un comentario al inicio de esta, poner una serie de llamadas y el resultado que se espera obtener de ellas. Tiene una función "`testmod"' que realiza las pruebas y devuelve el número de fallos y el resultado de todas las pruebas. Si el número de fallos es mayor que cero provocamos una excepción que Jenkins detectará para notificar a todo el equipo que hay algún fallo. Los resultados de las pruebas se muestran por consola al acabar y Jenkins los guardará para ayudar a encontrar el problema.
 
 %-------------------------------------------------------------------
-\section{SpaCy}
+\section{SpaCy y PyStemmer}
 %-------------------------------------------------------------------
-\label{cap3:sec:spacy}
+\label{cap3:sec:lematizacion}
 
 El objetivo final es llegar a interpretar textos enteros, no sólo palabras. Para ello se necesita una herramienta que nos facilite trabajar con frases, etiquetando cada una de las palabras que las forman. \textbf{SpaCy} es una librería open source escrita en Python y dedicada al procesamiento de lenguajes naturales. Soporta el español y nos permite etiquetar las palabras para poder buscar sólo aquellas que puedan tener carga emocional.
-SpaCy recibirá el texto plano, en este caso una serie de frases, y devolverá un objeto de tipo "`Doc"', propio de la librería, que contendrá la frase con una serie de anotaciones sobre cada una de las palabras que la forman (lema, etiqueta, dependencias sintácticas, forma...). 
+SpaCy recibirá el texto plano, en este caso una serie de frases, y devolverá un objeto de tipo "`Doc"', propio de la librería, que contendrá la frase con una serie de anotaciones sobre cada una de las palabras que la forman (lema, etiqueta, dependencias sintácticas, forma...).
+
+
+Una vez que hemos filtrado la frase para quedarnos con las palabras que nos interesan para el anális emocional tenemos que obtener el lema de cada una de ellas. Para ello utilizaremos la librería de Pyhton \textbf{PyStemmer} que consiste en una adaptación de Snowball para Python. Snowball es un pequeño lenguaje de procesamiento que permite crear algoritmos de lematización. PyStemmer soporta el español y nos ofrece mejores resultados que Spacy a la hora de obtener los lemas de las palabras, por eso vamos a combinar ambas herramientas para procesar las palabras.
 
 
 % Variable local para emacs, para  que encuentre el fichero maestro de

@@ -25,14 +25,18 @@
 \BOOKMARK [1][-]{section.3.2}{Django}{chapter.3}% 25
 \BOOKMARK [1][-]{section.3.3}{Trello}{chapter.3}% 26
 \BOOKMARK [1][-]{section.3.4}{Doctest y Jenkins}{chapter.3}% 27
-\BOOKMARK [1][-]{section.3.5}{SpaCy}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.5}{SpaCy y PyStemmer}{chapter.3}% 28
 \BOOKMARK [0][-]{chapter.4}{An\341lisis del Contenido Afectivo de un Texto}{}% 29
 \BOOKMARK [1][-]{section.4.1}{Base para los servicios web}{chapter.4}% 30
 \BOOKMARK [1][-]{section.4.2}{An\341lisis afectivo de una palabra}{chapter.4}% 31
-\BOOKMARK [2][-]{subsection.4.2.1}{Servicio web porcentajes}{section.4.2}% 32
-\BOOKMARK [2][-]{subsection.4.2.2}{Servicio web emoci\363n consensuada}{section.4.2}% 33
-\BOOKMARK [2][-]{subsection.4.2.3}{Servicio web emoci\363n mayoritaria}{section.4.2}% 34
-\BOOKMARK [0][-]{appendix.Alph1}{As\355 se hizo...}{}% 35
-\BOOKMARK [1][-]{section.Alph1.1}{Introducci\363n}{appendix.Alph1}% 36
-\BOOKMARK [0][-]{appendix*.14}{Bibliograf\355a}{}% 37
-\BOOKMARK [0][-]{fin.0}{Fin}{}% 38
+\BOOKMARK [2][-]{subsection.4.2.1}{Servicio web porcentajes de una palabra}{section.4.2}% 32
+\BOOKMARK [2][-]{subsection.4.2.2}{Servicio web emoci\363n consensuada de una palabra}{section.4.2}% 33
+\BOOKMARK [2][-]{subsection.4.2.3}{Servicio web emoci\363n mayoritaria de una palabra}{section.4.2}% 34
+\BOOKMARK [1][-]{section.4.3}{An\341lisis afectivo de una frase}{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.4.3.1}{Porcentajes de una frase}{section.4.3}% 36
+\BOOKMARK [2][-]{subsection.4.3.2}{Emoci\363n mayoritaria de una frase}{section.4.3}% 37
+\BOOKMARK [1][-]{section.4.4}{An\341lisis afectivo de un texto}{chapter.4}% 38
+\BOOKMARK [0][-]{appendix.Alph1}{As\355 se hizo...}{}% 39
+\BOOKMARK [1][-]{section.Alph1.1}{Introducci\363n}{appendix.Alph1}% 40
+\BOOKMARK [0][-]{appendix*.16}{Bibliograf\355a}{}% 41
+\BOOKMARK [0][-]{fin.0}{Fin}{}% 42
