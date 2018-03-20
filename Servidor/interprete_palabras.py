@@ -1,12 +1,16 @@
 import requests
 
 """
-Programa que le pide al usuario que introduzca una palabra para buscarla en el 
-servidor y devolver el grado de cada emoción que tiene.
+Programa que se encarga de buscar una palabra en el servicio web y devolver la información que tiene sobre ella.
 """
-emocion = ["tristeza", "miedo", "alegria", "enfado", "sorpresa", "neutral"]
+
+emocion = ["tristeza", "miedo", "alegria", "enfado", "sorpresa", "neutral"] # lista de emociones con las que trabajamos
 
 def coger_porcentajes(porcentajes):
+	"""
+	Función que traduce la cadena de porcentajes que devuelve el servicio web a una lista
+	de 6 strings que representan porcentajes (uno por cada emoción).
+	"""
 	tokens = porcentajes.split(" || ")
 	numeros = []
 	for i in range(6):
@@ -21,6 +25,10 @@ def coger_porcentajes(porcentajes):
 	return numeros
 
 def traducir_emocion(ingles):
+	"""
+	Dada una emoción en inglés devuelve su correspondiente en castellano.
+	Es necesario ya que las cadenas que devuelve el servicio web están en inglés.
+	"""
 	if ingles == "SADNESS":
 		return "Tristeza"
 	elif ingles == "FEAR":
@@ -37,45 +45,26 @@ def traducir_emocion(ingles):
 class InterpretePalabras():
 
 	@staticmethod
-	def mostrar_todo(destino):
-		respuesta = requests.get(destino)
-		if repr(respuesta) == "<Response [404]>":
-			print("No se ha encontrado la palabra. Asegurese de haberla escrito bien.")
-		else:
-			porcentajes = respuesta.json()
-		numeros = coger_porcentajes(porcentajes)
-		mayoritarias = []
-		mayor_porcentaje = -1
-		contador = 0
-		for i in range(6):
-			print("Porcentaje de " + emocion[i] + ": "+ numeros[i] + "%")
-			if mayor_porcentaje < int(numeros[i]):
-				mayor_porcentaje = int(numeros[i])
-				mayoritarias = []
-				mayoritarias.append(i)
-				contador = 0
-			elif mayor_porcentaje == int(numeros[i]):
-				contador = contador + 1
-				mayoritarias.append(i)
-		if mayor_porcentaje == 100:
-			print("La emoción mayoritaria es " + emocion[mayoritarias[0]] + " y además es consensuada.")
-		elif contador == 0:
-			print("La emoción mayoritaria es " + emocion[mayoritarias[0]] + " con porcentaje " + str(mayor_porcentaje) + ", por lo que no es consensuada")
-		elif contador == 1:
-			print("Hay dos emociones mayoritarias: " + emocion[mayoritarias[0]] + " y " + emocion[mayoritarias[1]] + " con porcentaje " + str(mayor_porcentaje))
-
-	@staticmethod
 	def interpretar_porcentajes(destino):
-		respuesta = requests.get(destino)
+		"""
+		Función que dada una URL del servicio web correspondiente a los porcentajes de una palabra
+		busca la palabra y devuelve una lista con sus porcentajes (o una lista vacía si no la encuentra).
+		"""
+		respuesta = requests.get(destino) # consulta al servicio web
 		numeros = []
-		if repr(respuesta) != "<Response [404]>":
+		if repr(respuesta) != "<Response [404]>": # si la encuentra interpreta la respuesta JSON
 			porcentajes = respuesta.json()
 			numeros = coger_porcentajes(porcentajes)
 		return numeros
 
 	@staticmethod
 	def interpretar_consensuada(destino):
-		respuesta = requests.get(destino)
+		"""
+		Función que dada una URL del servicio web correspondiente a la emoción consensuada de una palabra
+		busca la palabra y devuelve la emoción, si es que hay emoción consensuada. Si no encuentra la palabra
+		o esta no tiene emoción consensuada devuelve un mensaje informativo.
+		"""
+		respuesta = requests.get(destino) # consulta al servicio web
 		if repr(respuesta) == "<Response [404]>":
 			return "No se ha encontrado la palabra. Asegurese de haberla escrito bien."
 		else:
@@ -84,12 +73,16 @@ class InterpretePalabras():
 				return "No hay emocion consensuada."
 			else:
 				emocion = consensuada.split(" ")
-				e = "La emocion consensuada es " + traducir_emocion(emocion[1])
-				return e
+				return "La emocion consensuada es " + traducir_emocion(emocion[1])
 
 	@staticmethod
 	def interpretar_mayoritaria(destino):
-		respuesta = requests.get(destino)
+		"""
+		Función que dada una URL del servicio web correspondiente a la emoción mayoritaria de una palabra
+		busca la palabra y devuelve dicha emoción, o dos si hay empate. Además de una lista con las emociones 
+		mayoritaria	devuelve el porcentaje que tienen. Si no encuentra la palabra devuelve una lista vacía y un cero.
+		"""
+		respuesta = requests.get(destino) # consulta al servicio web
 		mayoritarias = []
 		if repr(respuesta) == "<Response [404]>":
 			return mayoritarias,"0"

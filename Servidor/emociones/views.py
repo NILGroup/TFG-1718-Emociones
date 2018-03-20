@@ -5,8 +5,12 @@ from rest_framework.response import Response
 from rest_framework.renderers import JSONRenderer
 from emociones.models import Palabra
 from emociones.serializers import PalabraSerializer
+from django.shortcuts import render
 
-
+def index(request):
+    num_palabras = Palabra.objects.all().count()
+    return render(request,'index.html',context={'num_palabras':num_palabras},)
+    
 class ListaPalabras(APIView):
     """
     Muestra la lista de palabras o añade una nueva.

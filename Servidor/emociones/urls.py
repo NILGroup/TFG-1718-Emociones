@@ -3,6 +3,7 @@ from rest_framework.urlpatterns import format_suffix_patterns
 from emociones import views
 
 urlpatterns = [
+	url(r'^e/$',views.index),
 	url(r'^emociones/$', views.ListaPalabras.as_view()),
 	url(r'^emociones/(?P<pk>\w+)/$', views.DetallePalabra.as_view()),
 	url(r'^emociones/(?P<pk>\w+)/percentages/$', views.ObtenerPorcentajes.as_view()),

@@ -1,98 +1,146 @@
 from interprete_palabras import InterpretePalabras
 from procesador_emocional import PalabrasEmocionales
-import corrector
 
-interpreta = InterpretePalabras()
-procesador = PalabrasEmocionales()
-URL = 'http://127.0.0.1:8000/emociones/'
-emociones = ["Tristeza", "Miedo", "Alegria", "Enfado", "Sorpresa", "Neutral"]
+"""
+Programa que se encarga de procesar una frase, buscando las palabras emocionales de esta
+en el servicio web, y devolver la información que tiene sobre ella.
+"""
 
-def obtener_url(palabra):
+interpreta = InterpretePalabras() # nos permitirá interpretar las palabras emocionales
+procesador = PalabrasEmocionales() # nos permitirá encontrar las palabras emocionales
+
+URL = 'http://127.0.0.1:8000/emociones/' # URL base del servicio web
+
+emociones = ["Tristeza", "Miedo", "Alegria", "Enfado", "Sorpresa", "Neutral"] # lista de emociones con las que trabajamos
+
+def obtener_url_porcentajes(palabra):
+	"""
+	Función que dada una palabra devuelve la URL que hay que usar para
+	obtener sus porcentajes.
+	"""
 	servicio = '/percentages/'
 	palabra = palabra.lower()
-	palabra = corrector.traducir(palabra)
 	return URL+palabra+servicio
 
 def obtener_url_mayoritaria(palabra):
+	"""
+	Función que dada una palabra devuelve la URL que hay que usar para
+	obtener su emoción mayoritaria.
+	"""
 	servicio = '/main/'
 	palabra = palabra.lower()
-	palabra = corrector.traducir(palabra)
 	return URL+palabra+servicio
 
 def obtener_url_consensuada(palabra):
-    servicio = '/agreed/'
-    palabra = palabra.lower()
-    palabra = corrector.traducir(palabra)
-    return URL+palabra+servicio
+	"""
+	Función que dada una palabra devuelve la URL que hay que usar para
+	obtener su emoción consensuada.
+	"""
+	servicio = '/agreed/'
+	palabra = palabra.lower()
+	return URL+palabra+servicio
 
-def obtener_medias(lista,n):
-	if n > 0:
+def obtener_medias(porcentajes,num_palabras):
+	"""
+	Función que dada una lista de porcentajes y un número de palabras a partir
+	de las que se han obtenido, haya las medias para cada emoción. Devuelve una
+	lista con los porcentajes medios.
+	"""
+	if num_palabras > 0:
 		for i in range(6):
-			lista[i] = str(round(lista[i] / n,2))
-		return lista
-	else:
+			porcentajes[i] = str(round(porcentajes[i] / num_palabras,2))
+		return porcentajes
+	else: # si no hay ninguna palabra emocional en la frase entonces esta es neutral
 		return ["0","0","0","0","0","100"]
 
-def incrementar_contador(contadores,i,mayor,indices,pocentaje_frase,pocentaje_palabra):
-	contadores[i] = contadores[i]+1
-	if contadores[i] > mayor:
-		lista = [i]
-		return contadores[i],lista,pocentaje_palabra
-	elif contadores[i] == mayor:
-		indices.append(i)
-		return mayor,indices,pocentaje_frase
-	else:
-		return mayor,indices,pocentaje_frase
+def actualizar_porcentajes(emocion,contadores,porcentajes,porcentaje):
+	i = emociones.index(emocion)
+	contadores[i] = contadores[i] + 1
+	porcentajes[i] = porcentajes[i] + int(porcentaje)
+
+def calcular_mayoritaria(contadores,porcentajes):
+	mayor = -1
+	indices = []
+	for i in range(6):
+		if contadores[i] > 0:
+			media = round(porcentajes[i]/contadores[i],2)
+			if media > mayor:
+				mayor = media
+				indices = [i]
+			elif media == mayor:
+				indices.append(i)
+	return indices,mayor
 
 class InterpreteFrases():
 
 	@staticmethod
 	def emociones_frase(frase):
-		palabras = procesador.procesar_frase(frase)
-		if len(palabras) == 0:
+		"""
+		Función que dada una frase obtiene las palabras emocionales que contiene e interpreta
+		los porcentajes de cada emoción. Devuelve los porcentajes y las palabras que permiten
+		llegar a ellos.
+		"""
+		palabras_dicc,palabras = procesador.procesar_frase(frase) # lista de palabras emocionales
+		if len(palabras) == 0: # si no hay ninguna, la frase es 100% neutral
 			return ["0","0","0","0","0","100"]
 		else:
-			emociones_frase = [0,0,0,0,0,0]
-			no_encontradas = 0
+			emociones_frase = [0,0,0,0,0,0] 
+			no_encontradas = 0 # contador de palabras emocionales que no están en nuestro diccionario
 			for palabra in palabras:
-				destino = obtener_url(palabra)
-				emociones_pal = interpreta.interpretar_porcentajes(destino)
-				if len(emociones_pal) > 0:
+				destino = obtener_url_porcentajes(palabra) # obtenemos URL para realizar la consulta
+				porcentajes = interpreta.interpretar_porcentajes(destino) # obtenemos los porcentajes de la palabra
+				if len(porcentajes) > 0: # si la encontramos, actualizamos los porcentajes de la frase
 					for i in range(6):
-						emociones_frase[i] = emociones_frase[i] + int(emociones_pal[i])
+						emociones_frase[i] = emociones_frase[i] + int(porcentajes[i])
 				else:
 					no_encontradas = no_encontradas + 1
-			n = len(palabras) - no_encontradas
-			emociones = obtener_medias(emociones_frase,n)
-			return emociones
+			num_palabras = len(palabras) - no_encontradas # calculamos el número de palabras útiles
+			emociones = obtener_medias(emociones_frase,num_palabras)
+			return emociones,palabras_dicc
 
 	@staticmethod
 	def emociones_mayoritaria_frase(frase):
-		palabras = procesador.procesar_frase(frase)
-		contadores = [0,0,0,0,0,0]
-		mayor = -1
-		pocentaje_frase = 0
-		indices = []
+		"""
+		Función que dada una frase obtiene las palabras emocionales que contiene e interpreta
+		la emoción mayoritaria para cada una. Lleva un contador con el número de apariciones
+		de cada emoción como mayoritarias. Devuelve la lista de mayoritarias y su porcentaje.
+		"""
+		palabras_dicc,palabras = procesador.procesar_frase(frase) # lista de palabras emocionales
+		contadores = [0,0,0,0,0,0] # lista de contadores
+		porcentajes = [0,0,0,0,0,0] # porcentajes parciales
+		indices = [] # posiciones de la lista de emociones principal que se corresponden con las mayoritarias
+
 		for palabra in palabras:
-			destino = obtener_url_mayoritaria(palabra)
-			mayoritarias,pocentaje = interpreta.interpretar_mayoritaria(destino)
+			destino = obtener_url_mayoritaria(palabra) # obtenemos URL para realizar la consulta
+			mayoritarias,porcentaje = interpreta.interpretar_mayoritaria(destino) # obtenemos los resultados
+			# actualizamos la información según si la palabra tiene una o dos emociones mayoritarias
 			if len(mayoritarias) == 1:
-				i = emociones.index(mayoritarias[0])
-				mayor,indices,pocentaje_frase = incrementar_contador(contadores,i,mayor,indices,pocentaje_frase,pocentaje)
+				actualizar_porcentajes(mayoritarias[0],contadores,porcentajes,porcentaje)
 			elif len(mayoritarias) == 2:
-				i = emociones.index(mayoritarias[0])
-				mayor,indices,pocentaje_frase = incrementar_contador(contadores,i,mayor,indices,pocentaje_frase,pocentaje)
-				j = emociones.index(mayoritarias[1])
-				mayor,indices,pocentaje_frase = incrementar_contador(contadores,j,mayor,indices,pocentaje_frase,pocentaje)
-		if len(indices) == 1:
-			i = indices[0]
-			return [emociones[i]],pocentaje_frase
-		elif len(indices) == 2:
-			i = indices[0]
-			j = indices[1]
-			return [emociones[i],emociones[j]],pocentaje_frase
-		else:
+				actualizar_porcentajes(mayoritarias[0],contadores,porcentajes,porcentaje)
+				actualizar_porcentajes(mayoritarias[1],contadores,porcentajes,porcentaje)
+
+		ind,porcent = calcular_mayoritaria(contadores,porcentajes)
+		# devolvemos la/s emocion/es mayoritaria/s y su porcentaje
+		if len(ind) == 1:
+			i = ind[0]
+			return [emociones[i]],porcent
+		elif len(ind) == 2:
+			i = ind[0]
+			j = ind[1]
+			return [emociones[i],emociones[j]],porcent/2
+		else: # si no hay palabras emocionales, la frase es mayormente neutral
 			return ["Neutral"],"100"
+
+	@staticmethod
+	def emocion_mayoritaria_frase(porcentajes):
+		mayor = -1
+		indice = 0
+		for i in range(6):
+			if float(porcentajes[i]) > mayor:
+				mayor = float(porcentajes[i])
+				indice = i
+		return [emociones[indice]],str(mayor)
 
 	@staticmethod
 	def emocion_consensuada_frase(frase):
@@ -106,7 +154,7 @@ class InterpreteFrases():
 			consensuada = interpreta.interpretar_consensuada(destino)
 			if len(consensuada) == 1:
 				i = emociones.index(consesuada[0])
-				mayor,indices,pocentaje_frase = incrementar_contador(contadores,i,mayor,indices,pocentaje_frase,pocentaje)
+				mayor,indices,pocentaje_frase = incr_contador_mayoritarias(contadores,i,mayor,indices,pocentaje_frase,pocentaje)
 		if len(indices) == 1:
 			i = indices[0]
 			return [emociones[i]],pocentaje_frase
