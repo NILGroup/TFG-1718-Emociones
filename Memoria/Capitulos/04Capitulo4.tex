@@ -26,7 +26,7 @@ Los datos estarán almacenados en el servidor Django.
 \end{itemize}
 
 \figura{Bitmap/Capitulo4/vista_general}{width=.6\textwidth}{fig:vista_general}{Vista general de la lista de palabras.}
-\figura{Bitmap/Capitulo4/vista_detalle}{width=.3\textwidth}{fig:vista_det}{Vista detalle de la palabra "`Alegre"'.}
+\figura{Bitmap/Capitulo4/vista_detalle}{width=.4\textwidth}{fig:vista_det}{Vista detalle de la palabra "`Alegre"'.}
 
 Una vez que se tiene el servidor y todo el código necesario para el funcionamiento de los servicios web se procede a subir las palabras que recoge nuestro diccionario. Para ello se ha desarrollado un programa en \textit{Python} cuya función es leer el fichero CSV, interpretar cada una de sus líneas y subir la información que obtiene al servidor. Una vez que todas las palabras estén subidas ya se pueden realizar las consultas necesarias.
 
@@ -42,9 +42,9 @@ Esta vista nos devuelve la información respectiva a los porcentajes de cada emoc
 
 Como entrada tendríamos la palabra de la cual queremos conocer sus emociones; existirán dos posibilidades, bien que la palabra esté en nuestro diccionario, por lo que la salida sería el porcentaje de cada emoción (Figura \ref{fig:porcentajes}), o bien que la palabra no exista en nuestro diccionario, que devolverá un mensaje de "`NOT FOUND"' (Figura \ref{fig:notfound}).
 
-\figura{Bitmap/Capitulo4/porcentajes}{width=.3\textwidth}{fig:porcentajes}{Respuesta al buscar los porcentajes de la palabra "`calor"'.}
+\figura{Bitmap/Capitulo4/porcentajes}{width=.4\textwidth}{fig:porcentajes}{Respuesta al buscar los porcentajes de la palabra "`alegre"'.}
 	
-\figura{Bitmap/Capitulo4/no_encontrada}{width=.3\textwidth}{fig:notfound}{Respuesta al buscar los porcentajes de una palabra que no está en el diccionario.}
+\figura{Bitmap/Capitulo4/no_encontrada}{width=.4\textwidth}{fig:notfound}{Respuesta al buscar los porcentajes de una palabra que no está en el diccionario.}
 
 
 \subsection{Servicio web emoción consensuada de una palabra}
@@ -52,17 +52,17 @@ Esta vista nos devuelve, mediante una petición \textbf{GET} al servidor, si la p
 
 Como entrada tendríamos la palabra de la cual queremos conocer su emoción consensuada, mientras que la salida será la emoción consensuada en caso de tenerla (Figura \ref{fig:consensuada}) o un mensaje de que no la tiene (Figura \ref{fig:noconsensuada}).
 
-\figura{Bitmap/Capitulo4/consensuada}{width=.3\textwidth}{fig:consensuada}{Respuesta al encontrar la emoción consensuada.}
+\figura{Bitmap/Capitulo4/consensuada}{width=.4\textwidth}{fig:consensuada}{Respuesta al encontrar la emoción consensuada.}
 
-\figura{Bitmap/Capitulo4/no_consensuada}{width=.3\textwidth}{fig:noconsensuada}{Respuesta si la palabra no tiene emoción consensuada.}
+\figura{Bitmap/Capitulo4/no_consensuada}{width=.4\textwidth}{fig:noconsensuada}{Respuesta si la palabra no tiene emoción consensuada.}
 
 \subsection{Servicio web emoción mayoritaria de una palabra}
 Esta vista nos devuelve, mediante una petición \textbf{GET} al servidor, la emoción mayoritaria de una palabra. Hablamos de emoción mayoritaria cuando el porcentaje de certeza de una emoción es mayor al del resto de emociones.
 
 Como entrada tendríamos la palabra de la cual queremos conocer su emoción mayoritaria, mientras que la salida será la emoción mayoritaria (Figura \ref{fig:mayoritaria}), o mayoritarias (en caso de que haya dos con el mismo porcentaje) (Figura \ref{fig:mayoritarias}).
 
-\figura{Bitmap/Capitulo4/mayoritaria}{width=.3\textwidth}{fig:mayoritaria}{Respuesta al encontrar la emoción mayoritaria.}
-\figura{Bitmap/Capitulo4/mayoritarias}{width=.3\textwidth}{fig:mayoritarias}{Respuesta si hay dos emociones mayoritarias.}
+\figura{Bitmap/Capitulo4/mayoritaria}{width=.4\textwidth}{fig:mayoritaria}{Respuesta al encontrar la emoción mayoritaria.}
+\figura{Bitmap/Capitulo4/mayoritarias}{width=.4\textwidth}{fig:mayoritarias}{Respuesta si hay dos emociones mayoritarias.}
 
 %-------------------------------------------------------------------
 \section{Análisis afectivo de una frase}

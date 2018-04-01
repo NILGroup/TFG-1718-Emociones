@@ -1,4 +1,4 @@
-\select@language {spanish}
+\babel@toc {spanish}{}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Definici\'on}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Dificultades}{1}{section.1.2}
@@ -12,13 +12,13 @@
 \contentsline {subsubsection}{\numberline {2.2.2.2}Diccionario de Hatzivassiloglou y Mckeown}{8}{subsubsection.2.2.2.2}
 \contentsline {subsubsection}{\numberline {2.2.2.3}Wordnet Affect}{8}{subsubsection.2.2.2.3}
 \contentsline {subsubsection}{\numberline {2.2.2.4}Whissell's Dictionary of Affects in Language (DAL)}{8}{subsubsection.2.2.2.4}
-\contentsline {subsubsection}{\numberline {2.2.2.5}Diccionario de Turney y Littman}{9}{subsubsection.2.2.2.5}
+\contentsline {subsubsection}{\numberline {2.2.2.5}Diccionario de Turney y Littman}{8}{subsubsection.2.2.2.5}
 \contentsline {subsubsection}{\numberline {2.2.2.6}Clairvoyance Affect Lexicon}{9}{subsubsection.2.2.2.6}
 \contentsline {subsubsection}{\numberline {2.2.2.7}Diccionario de Grefenstette et al.}{9}{subsubsection.2.2.2.7}
-\contentsline {subsubsection}{\numberline {2.2.2.8}ANEW}{10}{subsubsection.2.2.2.8}
+\contentsline {subsubsection}{\numberline {2.2.2.8}ANEW}{9}{subsubsection.2.2.2.8}
 \contentsline {subsubsection}{\numberline {2.2.2.9}Traducci\'on de ANEW al castellano}{10}{subsubsection.2.2.2.9}
 \contentsline {section}{\numberline {2.3}Servicios Web}{10}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Caracter\IeC {\'\i }sticas de los Servicios Web}{11}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.1}Caracter\IeC {\'\i }sticas de los Servicios Web}{10}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Tipos de Servicios Web}{11}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Arquitectura de los Servicios Web}{11}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Ventajas e inconvenientes}{12}{subsection.2.3.4}
@@ -43,6 +43,11 @@
 \contentsline {subsection}{\numberline {4.3.1}Porcentajes de una frase}{24}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Emoci\'on mayoritaria de una frase}{25}{subsection.4.3.2}
 \contentsline {section}{\numberline {4.4}An\'alisis afectivo de un texto}{25}{section.4.4}
-\contentsline {chapter}{\numberline {A}As\IeC {\'\i } se hizo...}{27}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Introducci\'on}{27}{section.Alph1.1}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{29}{appendix*.16}
+\contentsline {chapter}{\numberline {5}Dise\~no de la aplicaci\'on web}{27}{chapter.5}
+\contentsline {chapter}{\numberline {6}API de la aplicaci\'on web}{29}{chapter.6}
+\contentsline {chapter}{\numberline {7}Resultados}{31}{chapter.7}
+\contentsline {chapter}{\numberline {A}As\IeC {\'\i } se hizo...}{33}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Introducci\'on}{33}{section.Alph1.1}
+\contentsline {chapter}{\numberline {B}Textos de prueba}{35}{appendix.Alph2}
+\contentsline {section}{\numberline {B.1}Introducci\'on}{35}{section.Alph2.1}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{37}{appendix*.16}
