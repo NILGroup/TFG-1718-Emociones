@@ -174,17 +174,17 @@ En nuestro trabajo emplearemos un diccionario similar a la Traducción de ANEW al
 	A nivel técnico, los servicios pueden implementarse de varias formas. En este sentido, podemos distinguir dos tipos de servicios web \citep{jtech}: 
 	\begin{itemize}
 		\item SOAP: utilizan mensajes XML para intercomunicarse que siguen el estándar SOAP (Simple Object Access Protocol), un lenguaje XML que define la arquitectura y formato de los mensajes. Dichos sistemas normalmente contienen una descripción legible por la máquina de la descripción de las operaciones ofrecidas por el servicio, escrita en WSDL (lenguaje basado en XML para definir las interfaces sintácticamente).
-		\item Servicios web RESTful: utilizan estándares conocidos como HTTP, SML, URI, MIME, y tienen una infraestructura "ligera" que permite que los servicios se construyan utilizando herramientas de forma mínima.
+		\item Servicios web RESTful: utilizan estándares conocidos como HTTP, SML, URI, MIME, y tienen una infraestructura ``ligera'' que permite que los servicios se construyan utilizando herramientas de forma mínima.
 	\end{itemize}
 		
 	\subsection{Arquitectura de los Servicios Web}
 	\label{cap2:subsec:serviciosweb}
 	
-	Los servicios web se componen de varias capas entre las que destacan: servicios de transporte (constituidos por los protocolos de nivel más bajo, que codifican la información independientemente de su formato y que pueden ser comunes a otros servicios), servicios de mensajería, de descripción y de descubrimiento. En las siguiente subsecciones explicaremos más en detalle cada una de estas capas \footnote{https://diego.com.es/introduccion-a-los-web-services} \citep{ArqWebServices}.
+	Los servicios web se componen de varias capas entre las que destacan: servicios de transporte (constituidos por los protocolos de nivel más bajo, que codifican la información independientemente de su formato y que pueden ser comunes a otros servicios), servicios de mensajería, de descripción y de descubrimiento. En las siguiente subsecciones explicaremos más en detalle cada una de estas capas \footnote{https://diego.com.es/introduccion-a-los-web-services} \footnote{http://www.jtech.ua.es/j2ee/publico/servc-web-2012-13/sesion01-apuntes.html}.
 	
 	\begin{itemize}
 		\item Servicios de transporte: Capa que se encarga de transportar los mensajes entre el servidor y el cliente. Normalmente se utiliza el protocolo HTTP para este transporte. 
-		\item Servicios de mensajería: Capa encargada de la codificación de los mensajes en formato XML estándar para que pueda ser interpretado en cualquiera de los nodos de la red. Puede implementar protocolos como XML-RPC o SOAP.
+		\item Servicios de mensajería: Capa encargada de la codificación de los mensajes en formato estándar para que pueda ser interpretado en cualquiera de los nodos de la red. Decide la tipología del mensaje que se envía, puede ser en \textit{XML} o \textit{JSON}.
 		\item Servicios de descripción: Capa encargada de definir la interfaz pública de un determinado servicio. Esta definición se realiza mediante WSDL (Web Service Description Language), tipo de documento XML que describe lo que hace un servicio web, dónde se encuentra y la forma de ser invocado.
 		\item Servicios de descubrimiento: Capa encargada del registro centralizado de servicios, permitiendo que estos sean anunciados y localizados. Para ello se utiliza el protocolo UDDI, el cual define la especificación para construir un directorio distribuido de servicios web, donde los datos se almacenan en XML. Este registro también almacena información sobre las organizaciones que los proporcionan, la categoría en la que se encuentran, y sus instrucciones de uso. 
 		\end{itemize}

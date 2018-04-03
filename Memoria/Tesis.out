@@ -11,49 +11,58 @@
 \BOOKMARK [1][-]{section.2.1}{Emociones}{chapter.2}% 11
 \BOOKMARK [1][-]{section.2.2}{Computaci\363n Afectiva}{chapter.2}% 12
 \BOOKMARK [2][-]{subsection.2.2.1}{M\351todos para el marcado de texto emocional}{section.2.2}% 13
-\BOOKMARK [2][-]{subsection.2.2.2}{Diccionarios Afectivos}{section.2.2}% 14
-\BOOKMARK [1][-]{section.2.3}{Servicios Web}{chapter.2}% 15
-\BOOKMARK [2][-]{subsection.2.3.1}{Caracter\355sticas de los Servicios Web}{section.2.3}% 16
-\BOOKMARK [2][-]{subsection.2.3.2}{Tipos de Servicios Web}{section.2.3}% 17
-\BOOKMARK [2][-]{subsection.2.3.3}{Arquitectura de los Servicios Web}{section.2.3}% 18
-\BOOKMARK [2][-]{subsection.2.3.4}{Ventajas e inconvenientes}{section.2.3}% 19
-\BOOKMARK [1][-]{section.2.4}{Scrum}{chapter.2}% 20
-\BOOKMARK [2][-]{subsection.2.4.1}{Roles}{section.2.4}% 21
-\BOOKMARK [1][-]{section.2.5}{Integracion Continua}{chapter.2}% 22
-\BOOKMARK [0][-]{chapter.3}{Herramientas}{}% 23
-\BOOKMARK [1][-]{section.3.1}{Diccionario}{chapter.3}% 24
-\BOOKMARK [1][-]{section.3.2}{Django}{chapter.3}% 25
-\BOOKMARK [1][-]{section.3.3}{Trello}{chapter.3}% 26
-\BOOKMARK [1][-]{section.3.4}{Doctest y Jenkins}{chapter.3}% 27
-\BOOKMARK [1][-]{section.3.5}{SpaCy y PyStemmer}{chapter.3}% 28
-\BOOKMARK [0][-]{chapter.4}{An\341lisis del Contenido Afectivo de un Texto}{}% 29
-\BOOKMARK [1][-]{section.4.1}{Base para los servicios web}{chapter.4}% 30
-\BOOKMARK [1][-]{section.4.2}{An\341lisis afectivo de una palabra}{chapter.4}% 31
-\BOOKMARK [2][-]{subsection.4.2.1}{Servicio web porcentajes de una palabra}{section.4.2}% 32
-\BOOKMARK [2][-]{subsection.4.2.2}{Servicio web emoci\363n consensuada de una palabra}{section.4.2}% 33
-\BOOKMARK [2][-]{subsection.4.2.3}{Servicio web emoci\363n mayoritaria de una palabra}{section.4.2}% 34
-\BOOKMARK [1][-]{section.4.3}{An\341lisis afectivo de una frase}{chapter.4}% 35
-\BOOKMARK [2][-]{subsection.4.3.1}{Porcentajes de una frase}{section.4.3}% 36
-\BOOKMARK [2][-]{subsection.4.3.2}{Emoci\363n mayoritaria de una frase}{section.4.3}% 37
-\BOOKMARK [1][-]{section.4.4}{An\341lisis afectivo de un texto}{chapter.4}% 38
-\BOOKMARK [0][-]{chapter.5}{Dise\361o de la aplicaci\363n web}{}% 39
-\BOOKMARK [1][-]{section.5.1}{Prototipos iniciales}{chapter.5}% 40
-\BOOKMARK [1][-]{section.5.2}{Prototipo com\372n}{chapter.5}% 41
-\BOOKMARK [1][-]{section.5.3}{Interfaz final}{chapter.5}% 42
-\BOOKMARK [0][-]{chapter.6}{Desarrollo de la aplicaci\363n web}{}% 43
-\BOOKMARK [0][-]{chapter.7}{API de la aplicaci\363n web}{}% 44
-\BOOKMARK [0][-]{chapter.8}{Resultados}{}% 45
-\BOOKMARK [0][-]{appendix.Alph1}{As\355 se hizo...}{}% 46
-\BOOKMARK [1][-]{section.Alph1.1}{Sprint 1}{appendix.Alph1}% 47
-\BOOKMARK [1][-]{section.Alph1.2}{Sprint 2}{appendix.Alph1}% 48
-\BOOKMARK [1][-]{section.Alph1.3}{Sprint 3}{appendix.Alph1}% 49
-\BOOKMARK [1][-]{section.Alph1.4}{Sprint 4}{appendix.Alph1}% 50
-\BOOKMARK [1][-]{section.Alph1.5}{Sprint 5}{appendix.Alph1}% 51
-\BOOKMARK [1][-]{section.Alph1.6}{Sprint 6}{appendix.Alph1}% 52
-\BOOKMARK [1][-]{section.Alph1.7}{Sprint 7}{appendix.Alph1}% 53
-\BOOKMARK [0][-]{appendix.Alph2}{Casos de prueba}{}% 54
-\BOOKMARK [1][-]{section.Alph2.1}{Cuentos}{appendix.Alph2}% 55
-\BOOKMARK [1][-]{section.Alph2.2}{Noticias}{appendix.Alph2}% 56
-\BOOKMARK [1][-]{section.Alph2.3}{Entradas de Blog}{appendix.Alph2}% 57
-\BOOKMARK [0][-]{appendix*.29}{Bibliograf\355a}{}% 58
-\BOOKMARK [0][-]{fin.0}{Fin}{}% 59
+\BOOKMARK [1][-]{section.2.3}{Diccionarios Afectivos}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.4}{Servicios Web}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.4.1}{Caracter\355sticas de los Servicios Web}{section.2.4}% 16
+\BOOKMARK [2][-]{subsection.2.4.2}{Tipos de Servicios Web}{section.2.4}% 17
+\BOOKMARK [2][-]{subsection.2.4.3}{Arquitectura de los Servicios Web}{section.2.4}% 18
+\BOOKMARK [2][-]{subsection.2.4.4}{Ventajas e inconvenientes}{section.2.4}% 19
+\BOOKMARK [1][-]{section.2.5}{Scrum}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.5.1}{Roles}{section.2.5}% 21
+\BOOKMARK [2][-]{subsection.2.5.2}{Artefactos}{section.2.5}% 22
+\BOOKMARK [2][-]{subsection.2.5.3}{Eventos}{section.2.5}% 23
+\BOOKMARK [1][-]{section.2.6}{Integraci\363n Continua}{chapter.2}% 24
+\BOOKMARK [0][-]{chapter.3}{Herramientas}{}% 25
+\BOOKMARK [1][-]{section.3.1}{Herramientas b\341sicas}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.2}{Diccionario}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.3}{Django}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.4}{Trello}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.5}{Doctest y Jenkins}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.6}{SpaCy y PyStemmer}{chapter.3}% 31
+\BOOKMARK [0][-]{chapter.4}{An\341lisis del Contenido Afectivo de un Texto}{}% 32
+\BOOKMARK [1][-]{section.4.1}{Base para los servicios web}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.2}{An\341lisis afectivo de una palabra}{chapter.4}% 34
+\BOOKMARK [2][-]{subsection.4.2.1}{Servicio web porcentajes de una palabra}{section.4.2}% 35
+\BOOKMARK [2][-]{subsection.4.2.2}{Servicio web emoci\363n consensuada de una palabra}{section.4.2}% 36
+\BOOKMARK [2][-]{subsection.4.2.3}{Servicio web emoci\363n mayoritaria de una palabra}{section.4.2}% 37
+\BOOKMARK [1][-]{section.4.3}{An\341lisis afectivo de una frase}{chapter.4}% 38
+\BOOKMARK [2][-]{subsection.4.3.1}{Porcentajes de una frase}{section.4.3}% 39
+\BOOKMARK [2][-]{subsection.4.3.2}{Emoci\363n mayoritaria de una frase}{section.4.3}% 40
+\BOOKMARK [1][-]{section.4.4}{An\341lisis afectivo de un texto}{chapter.4}% 41
+\BOOKMARK [0][-]{chapter.5}{Dise\361o de la aplicaci\363n web}{}% 42
+\BOOKMARK [1][-]{section.5.1}{Prototipos iniciales}{chapter.5}% 43
+\BOOKMARK [2][-]{subsection.5.1.1}{Pantalla principal}{section.5.1}% 44
+\BOOKMARK [2][-]{subsection.5.1.2}{Pantalla de an\341lisis}{section.5.1}% 45
+\BOOKMARK [1][-]{section.5.2}{Prototipo com\372n}{chapter.5}% 46
+\BOOKMARK [2][-]{subsection.5.2.1}{Pantalla principal}{section.5.2}% 47
+\BOOKMARK [2][-]{subsection.5.2.2}{Pantalla de an\341lisis}{section.5.2}% 48
+\BOOKMARK [1][-]{section.5.3}{Interfaz final}{chapter.5}% 49
+\BOOKMARK [0][-]{chapter.6}{Desarrollo de la aplicaci\363n web}{}% 50
+\BOOKMARK [0][-]{chapter.7}{API de la aplicaci\363n web}{}% 51
+\BOOKMARK [0][-]{chapter.8}{Resultados}{}% 52
+\BOOKMARK [1][-]{section.8.1}{Resultados de los casos de prueba}{chapter.8}% 53
+\BOOKMARK [1][-]{section.8.2}{Resultados evaluaci\363n con usuarios finales}{chapter.8}% 54
+\BOOKMARK [0][-]{appendix.Alph1}{As\355 se hizo...}{}% 55
+\BOOKMARK [1][-]{section.Alph1.1}{Sprint 1}{appendix.Alph1}% 56
+\BOOKMARK [1][-]{section.Alph1.2}{Sprint 2}{appendix.Alph1}% 57
+\BOOKMARK [1][-]{section.Alph1.3}{Sprint 3}{appendix.Alph1}% 58
+\BOOKMARK [1][-]{section.Alph1.4}{Sprint 4}{appendix.Alph1}% 59
+\BOOKMARK [1][-]{section.Alph1.5}{Sprint 5}{appendix.Alph1}% 60
+\BOOKMARK [1][-]{section.Alph1.6}{Sprint 6}{appendix.Alph1}% 61
+\BOOKMARK [1][-]{section.Alph1.7}{Sprint 7}{appendix.Alph1}% 62
+\BOOKMARK [0][-]{appendix.Alph2}{Casos de prueba}{}% 63
+\BOOKMARK [1][-]{section.Alph2.1}{Cuentos}{appendix.Alph2}% 64
+\BOOKMARK [1][-]{section.Alph2.2}{Noticias}{appendix.Alph2}% 65
+\BOOKMARK [1][-]{section.Alph2.3}{Entradas de Blog}{appendix.Alph2}% 66
+\BOOKMARK [0][-]{appendix*.43}{Bibliograf\355a}{}% 67
+\BOOKMARK [0][-]{fin.0}{Fin}{}% 68

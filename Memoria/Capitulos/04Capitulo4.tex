@@ -22,33 +22,34 @@ Como ya se comentó en la sección 3.1, para el desarrollo de este trabajo se util
 Los datos estarán almacenados en el servidor Django.
 \begin{itemize}
 	\item \textbf{Modelo: } Los campos que tiene el modelo para cada palabra, son: la propia palabra, el lema de esta y el porcentaje de certeza de cada una de las emociones básicas y la neutralidad. Cada una de las palabras que tenemos recogidas se encapsulan en este modelo para ser almacenadas en el servidor.
-	\item \textbf{Consultas: } Se realizarán mediante declaración de clases "`vista"' según las funcionalidades que requiera cada uno de los servicios web que vamos a desarrollar. Inicialmente disponemos de una vista general (Figura \ref{fig:vista_general}) que muestra la lista entera de palabras almacenadas y una vista detalle (Figura \ref{fig:vista_det}) para cada una de ellas.
+	\item \textbf{Consultas: } Se realizarán mediante declaración de clases ``vista'' según las funcionalidades que requiera cada uno de los servicios web que vamos a desarrollar. Inicialmente disponemos de una vista general (Figura \ref{fig:vista_general}) que muestra la lista entera de palabras almacenadas y una vista detalle (Figura \ref{fig:vista_det}) para cada una de ellas.
 \end{itemize}
 
 \figura{Bitmap/Capitulo4/vista_general}{width=.6\textwidth}{fig:vista_general}{Vista general de la lista de palabras.}
-\figura{Bitmap/Capitulo4/vista_detalle}{width=.4\textwidth}{fig:vista_det}{Vista detalle de la palabra "`Alegre"'.}
+\figura{Bitmap/Capitulo4/vista_detalle}{width=.4\textwidth}{fig:vista_det}{Vista detalle de la palabra ``Alegre''.}
 
-Una vez que se tiene el servidor y todo el código necesario para el funcionamiento de los servicios web se procede a subir las palabras que recoge nuestro diccionario. Para ello se ha desarrollado un programa en \textit{Python} cuya función es leer el fichero CSV, interpretar cada una de sus líneas y subir la información que obtiene al servidor. Una vez que todas las palabras estén subidas ya se pueden realizar las consultas necesarias.
+
+Una vez que se tiene el servidor y todo el código necesario para el funcionamiento de los servicios web se procede a publicar/subir las palabras que recoge nuestro diccionario. Para ello se ha desarrollado un programa en \textit{Python} cuya función es leer el fichero CSV, interpretar cada una de sus líneas y almacenar/subir la información que obtiene al servidor. Una vez que todas las palabras estén almacenadas/subidas ya se pueden realizar las consultas necesarias.
 
 %-------------------------------------------------------------------
 \section{Análisis afectivo de una palabra}
 %-------------------------------------------------------------------
 \label{cap4:sec:palabra}
 
-Hemos implementado tres servicios web diferentes para mostrar la carga afectiva de una palabra.
+Hemos implementado tres servicios web diferentes para mostrar la carga afectiva de una palabra, dependiendo de la información buscada en cada momento.
 
 \subsection{Servicio web porcentajes de una palabra}
-Esta vista nos devuelve la información respectiva a los porcentajes de cada emoción que posee, mediante una petición \textbf{GET} al servidor, y los muestra al usuario.
+Dada una palabra, este servicio nos devuelve la información respectiva a los porcentajes de cada emoción que posee. Para ello se realiza una petición \textbf{GET} al servidor, y se devuelve el resultado en JSON al usuario.
 
-Como entrada tendríamos la palabra de la cual queremos conocer sus emociones; existirán dos posibilidades, bien que la palabra esté en nuestro diccionario, por lo que la salida sería el porcentaje de cada emoción (Figura \ref{fig:porcentajes}), o bien que la palabra no exista en nuestro diccionario, que devolverá un mensaje de "`NOT FOUND"' (Figura \ref{fig:notfound}).
+Como entrada tendríamos la palabra de la cual queremos conocer sus emociones; existirán dos posibilidades, bien que la palabra esté en nuestro diccionario, por lo que la salida sería el porcentaje de cada emoción (Figura \ref{fig:porcentajes}), o bien que la palabra no exista en nuestro diccionario, que devolverá un en la respuesta un mensaje 404 de ``NOT FOUND'' (Figura \ref{fig:notfound}).
 
-\figura{Bitmap/Capitulo4/porcentajes}{width=.4\textwidth}{fig:porcentajes}{Respuesta al buscar los porcentajes de la palabra "`alegre"'.}
+\figura{Bitmap/Capitulo4/porcentajes}{width=.4\textwidth}{fig:porcentajes}{Respuesta al buscar los porcentajes de la palabra ``alegre''.}
 	
 \figura{Bitmap/Capitulo4/no_encontrada}{width=.4\textwidth}{fig:notfound}{Respuesta al buscar los porcentajes de una palabra que no está en el diccionario.}
 
 
 \subsection{Servicio web emoción consensuada de una palabra}
-Esta vista nos devuelve, mediante una petición \textbf{GET} al servidor, si la palabra tiene o no emoción consensuada y en caso de tenerla cuál.  Hablamos de emoción consensuada cuando el grado de certeza que se tiene de una de sus emociones es 1, es decir, el porcentaje para dicha emoción es 100. 
+Dada una palabra, este servicio nos devuelve a través de una petición \textbf{GET} al servidor, si la palabra tiene o no emoción consensuada y en caso de tenerla cuál.  Hablamos de emoción consensuada cuando el grado de certeza que se tiene de una de sus emociones es 1, es decir, el porcentaje para dicha emoción es 100. 
 
 Como entrada tendríamos la palabra de la cual queremos conocer su emoción consensuada, mientras que la salida será la emoción consensuada en caso de tenerla (Figura \ref{fig:consensuada}) o un mensaje de que no la tiene (Figura \ref{fig:noconsensuada}).
 
@@ -57,7 +58,7 @@ Como entrada tendríamos la palabra de la cual queremos conocer su emoción consen
 \figura{Bitmap/Capitulo4/no_consensuada}{width=.4\textwidth}{fig:noconsensuada}{Respuesta si la palabra no tiene emoción consensuada.}
 
 \subsection{Servicio web emoción mayoritaria de una palabra}
-Esta vista nos devuelve, mediante una petición \textbf{GET} al servidor, la emoción mayoritaria de una palabra. Hablamos de emoción mayoritaria cuando el porcentaje de certeza de una emoción es mayor al del resto de emociones.
+De nuevo, dada una palabra el servicio nos devuelve, recibiendo una petición \textbf{GET} en el servidor, la emoción mayoritaria de una palabra. Hablamos de emoción mayoritaria cuando el porcentaje de certeza de una emoción es mayor al del resto de emociones.
 
 Como entrada tendríamos la palabra de la cual queremos conocer su emoción mayoritaria, mientras que la salida será la emoción mayoritaria (Figura \ref{fig:mayoritaria}), o mayoritarias (en caso de que haya dos con el mismo porcentaje) (Figura \ref{fig:mayoritarias}).
 
@@ -69,21 +70,22 @@ Como entrada tendríamos la palabra de la cual queremos conocer su emoción mayori
 %-------------------------------------------------------------------
 \label{cap4:sec:frase}
 
-El anális emocional de una frase se sustenta en los servicios web desarrollados para hayar la carga afectiva de las palabras. Procesaremos las palabras que forman la frase utilizando las herramientas comentadas en el apartado 3.5 para obtener una lista de palabras candidatas acompañadas de sus lemas. Para cada una de las palabras de la lista obtenemos su información emocional mediante los servicios web explicados en el apartado anterior y, combinando los resultados obtenidos, podemos mostrar la carga afectiva de la frase.
+El anális emocional de una frase se sustenta en los servicios web desarrollados para hallar la carga afectiva de las palabras. Procesaremos las palabras que forman la frase utilizando las herramientas comentadas en el apartado 3.5 para obtener una lista de palabras candidatas acompañadas de sus lemas. Para cada una de las palabras de la lista obtenemos su información emocional mediante los servicios web explicados en el apartado anterior y, combinando los resultados obtenidos, podemos mostrar la carga afectiva de la frase.
 
 \subsection{Porcentajes de una frase}
-Los porcentajes de cada emoción para una frase se obtienen haciendo una media con los porcentajes de las palabras que la forman. Por ejemplo, si la frase es: \textit{Estoy alegre y feliz.}, las palabras emocionales son "`alegre"' y "`feliz"' y se haría una media entre las dos para todos los porcentajes. En este caso ambas son 100\% alegres y 0\% el resto de emociones, asi que el resultado seria que la frase es 100\% alegre. Si la frase, en cambio, es: \textit{Estoy alegre y triste}, como "`alegre"' es 100\% alegre y "`triste"' es 100\% triste, la frase será 50\% de cada una de estas emociones.
+Los porcentajes de cada emoción para una frase se obtienen haciendo una media con los porcentajes de las palabras que la forman. Por ejemplo, si la frase es: \textit{Estoy alegre y feliz.}, las palabras emocionales son ``alegre'' y ``feliz'' y se haría una media entre las dos para todos los porcentajes. En este caso ambas son 100\% alegres y 0\% el resto de emociones, así que el resultado sería que la frase es 100\% alegre. Si la frase, en cambio, es: \textit{Estoy alegre y triste}, como ``alegre'' es 100\% alegre y ``triste'' es 100\% triste, la frase será 50\% de cada una de estas emociones.
 
 La media que realizamos es ponderada, dando más peso a los verbos ya que estos son el núcleo de la frase.
 
 \subsection{Emoción mayoritaria de una frase}
-Para hayar la emoción mayoritaria de una frase se cuentan las apariciones de una emoción entre las palabras emocionales como mayoritaria y se hace una media con los porcentajes de todas estas apariciones, dando más importancia a los porcentajes de los verbos. Una vez que se tienen los porcentajes definitivos para cada emoción se comparan para hayar el mayor y la emoción a la que corresponde será la mayoritaria de la frase. 
+Para hallar la emoción mayoritaria de una frase se cuentan las apariciones de una emoción entre las palabras emocionales como mayoritaria y se hace una media con los porcentajes de todas estas apariciones, dando más importancia a los porcentajes de los verbos. Una vez que se tienen los porcentajes definitivos para cada emoción se comparan para hallar el mayor y la emoción a la que corresponde será la mayoritaria de la frase. 
 %-------------------------------------------------------------------
 \section{Análisis afectivo de un texto}
 %-------------------------------------------------------------------
 \label{cap4:sec:texto}
 
-Analizar un texto consiste, básicamente, en partirlo en frases y obtener la carga afectiva de cada una de ella. Las operaciones ralizadas durante el análisis son, por lo tanto, las mismas que para analizar una frase: medias ponderadas para hayar los porcentajes y la emoción mayoritaria a partir de la información devuelta por cada frase.
+Analizar un texto consiste, básicamente, en partirlo en frases y obtener la carga afectiva de cada una de ella. Las operaciones realizadas durante el análisis son, por lo tanto, las mismas que para analizar una frase: medias ponderadas para hallar los porcentajes y la emoción mayoritaria a partir de la información devuelta por cada frase.
+Analizar un texto consiste, básicamente, en partirlo en frases y obtener la carga afectiva de cada una de ella. Las operaciones ralizadas durante el análisis son, por lo tanto, las mismas que para analizar una frase: medias ponderadas para hallar los porcentajes y la emoción mayoritaria a partir de la información devuelta por cada frase.
 % Variable local para emacs, para  que encuentre el fichero maestro de
 % compilación y funcionen mejor algunas teclas rápidas de AucTeX
 %%%

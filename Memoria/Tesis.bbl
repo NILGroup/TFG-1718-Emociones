@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{23}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{RAE(2018)}]{RAE}
@@ -15,12 +15,17 @@
 
 \bibitem[{Bradley y Lang(1999)}]{ANEW}
 {\sc Bradley, M.~M.} y {\sc Lang, P.~J.}
-\newblock Affective norms for english words (anew): Instruction manual and
+\newblock Affective norms for english words ({ANEW}): Instruction manual and
   affective ratings.
 \newblock 1999.
 \newblock Disponible en
   \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.306.3881&rep=rep1&type=pdf}
   (último acceso,  Marzo, 2018).
+
+\bibitem[{Cowie(2000)}]{Cowie00}
+{\sc Cowie, R.}
+\newblock Describing the emotional states expressed in speech.
+\newblock {\em Speech and Emotion\/}, 2000.
 
 \bibitem[{Fowler(2006)}]{Fowler}
 {\sc Fowler, M.}
@@ -36,12 +41,12 @@
   su Papel en la Presentaci'on de Informaci'on\/}.
 \newblock Phd, Universidad Complutense de Madrid, 2008.
 
-\bibitem[{Garrido y Zunino(2006)}]{ArqWebServices}
-{\sc Garrido, H.} y {\sc Zunino, C.}
-\newblock 2006.
-\newblock Disponible en
-  \url{http://www-2.dc.uba.ar/materias/seginf/material/tp_1c2006/Seguridad_WebServices.pdf}
-  (último acceso,  Marzo, 2018).
+\bibitem[{Francisco y Gerv{\'a}s(2006)}]{FranciscoGervasTSD2006}
+{\sc Francisco, V.} y {\sc Gerv{\'a}s, P.}
+\newblock Automated mark up of affective information in english texts.
+\newblock En {\em Text, Speech and Dialogue (TSD 2006)\/}, p\'agina
+  375{\textendash}382. Springer Verlag, Springer Verlag, Brno, Czech Republic,
+  2006.
 
 \bibitem[{Goertzel et\ al.(2000)Goertzel, Silverman, Hartley, Bugaj y
   Ross}]{goertzel}
@@ -50,10 +55,23 @@
 \newblock {\em The Baby Webmind Project\/}.
 \newblock 2000.
 
+\bibitem[{Grefenstette et\ al.(2006)Grefenstette, Qu, Evans y
+  Shanahan}]{Grefenstette06}
+{\sc Grefenstette, G.}, {\sc Qu, Y.}, {\sc Evans, D.~A.} y {\sc Shanahan,
+  J.~G.}
+\newblock Validating the coverage of lexical resources for affect analysis and
+  automatically classifying new words along semantic axes.
+\newblock 2006.
+
 \bibitem[{Hatzivassiloglou y McKeown(1997)}]{mckeown}
 {\sc Hatzivassiloglou, V.} y {\sc McKeown, K.~R.}
 \newblock {\em Predicting the semantic orientation of adjectives\/}.
 \newblock 1997.
+
+\bibitem[{Huettner y Subasic(2000)}]{HuettnerSubasic00}
+{\sc Huettner, A.} y {\sc Subasic, P.}
+\newblock Fuzzy typing for document management.
+\newblock 2000.
 
 \bibitem[{Dto. de Ciencia de la Computaci'on~e
   Inteligencia~Artificial()}]{jtech}
@@ -64,13 +82,17 @@
   \url{http://www.jtech.ua.es/j2ee/publico/servc-web-2012-13/sesion01-apuntes.html}
   (último acceso,  Marzo, 2018).
 
-\bibitem[{L'azaro()}]{DiegoLazaro}
-{\sc L'azaro, D.}
-\newblock Introducci'on a los web services.
-\newblock ????
-\newblock Disponible en
-  \url{https://diego.com.es/introduccion-a-los-web-services} (último acceso,
-  Marzo, 2018).
+\bibitem[{Lang(1980)}]{Lang80}
+{\sc Lang, P.}
+\newblock Behavioral treatment and bio-behavioral assessment: Computer
+  applications.
+\newblock 1980.
+
+\bibitem[{Lang et\ al.(1999)Lang, Bradley y Chuthbert}]{Lang99}
+{\sc Lang, P.}, {\sc Bradley, M.} y {\sc Chuthbert, B.}
+\newblock International affective picture system ({I}{A}{P}{S}): Technical
+  manual and affective ratings.
+\newblock 1999.
 
 \bibitem[{Liu et\ al.(2002)Liu, Lieberman y Selker}]{Liu2002}
 {\sc Liu, H.}, {\sc Lieberman, H.} y {\sc Selker, T.}
@@ -78,6 +100,12 @@
   reasoning.
 \newblock {\em Proceedings of the 2n International Conference on Adaptive
   Hypermedia and Adaptive Web Based Systems\/}, 2002.
+
+\bibitem[{Mueller y Dyer(1985)}]{MuellerDyer85}
+{\sc Mueller, E.~T.} y {\sc Dyer, M.~G.}
+\newblock Towards a computational theory of human daydreaming.
+\newblock {\em Porceedings of the Seventh Annual Conference of the Cognitive
+  Science Society\/}, 1985.
 
 \bibitem[{Ng et\ al.(2012)Ng, Khong y Thwaites}]{chinos}
 {\sc Ng, Y.}, {\sc Khong, C.} y {\sc Thwaites, H.}
@@ -97,7 +125,8 @@
 
 \bibitem[{Redondo et\ al.(2007)Redondo, Fraga, Padr'on y Comesa'na}]{ANEW_es}
 {\sc Redondo, J.}, {\sc Fraga, I.}, {\sc Padr'on, I.} y {\sc Comesa'na, M.}
-\newblock The spanish adaptation of anew (affective norms for english words.
+\newblock The spanish adaptation of {ANEW} ({A}ffective {N}orms for {E}nglish
+  {W}ords.
 \newblock {\em Behavior Research Methods\/}, 2007.
 \newblock Disponible en
   \url{https://link.springer.com/article/10.3758/BF03193031} (último acceso,
@@ -116,19 +145,10 @@
 \newblock Disponible en \url{http://scrummanager.net/files/scrum_manager.pdf}
   (último acceso,  Marzo, 2018).
 
-\bibitem[{Softeng()}]{ProcesoScrum}
-{\sc Softeng}.
-\newblock ????
-\newblock Disponible en
-  \url{https://www.softeng.es/es-es/empresa/metodologias-de-trabajo/metodologia-scrum/proceso-roles-de-scrum.html}
-  (último acceso,  Marzo, 2018).
-
-\bibitem[{W3C()}]{W3CServicios}
-{\sc W3C}.
-\newblock Servicios web.
-\newblock ????
-\newblock Disponible en
-  \url{https://www.w3c.es/Divulgacion/GuiasBreves/ServiciosWeb} (último acceso,
-   Marzo, 2018).
+\bibitem[{Turney y L.Littman(2003)}]{TurneyLittman03}
+{\sc Turney, P.~D.} y {\sc L.Littman, M.}
+\newblock Measuring praise and criticism: Inference of semantic orientation
+  from association.
+\newblock {\em ACM Transactions on Information System ({T}{O}{I}{S})\/}, 2003.
 
 \end{thebibliography}
