@@ -90,9 +90,10 @@ El objetivo final es llegar a interpretar la emoción de textos enteros, no sólo 
 SpaCy recibirá el texto plano, en este caso una serie de frases, y devolverá un objeto de tipo ``Doc'', propio de la librería, que contendrá la frase con una serie de anotaciones sobre cada una de las palabras que la forman (lema, etiqueta, dependencias sintácticas, forma...).
 
 
-Una vez que hemos filtrado la frase para quedarnos con las palabras que nos interesan para el anális emocional tenemos que obtener el lema de cada una de ellas. Para ello utilizaremos la librería de Pyhton \textbf{PyStemmer} que consiste en una adaptación de Snowball para Python. Snowball es un pequeño lenguaje de procesamiento que permite crear algoritmos de lematización. PyStemmer soporta el español y nos ofrece mejores resultados que Spacy a la hora de obtener los lemas de las palabras, por eso vamos a combinar ambas herramientas para procesar las palabras.
+Una vez que hemos filtrado la frase para quedarnos con las palabras que nos interesan para el anális emocional tenemos que obtener el lema de cada una de ellas. Para ello utilizaremos la librería de Pyhton \textbf{PyStemmer} que consiste en una adaptación de Snowball para Python. Snowball es un pequeño lenguaje de procesamiento que permite crear algoritmos de lematización. PyStemmer (Figura \ref{fig:pystemmer}) soporta el español y nos ofrece mejores resultados que Spacy (Figura \ref{fig:spacy}) a la hora de obtener los lemas de las palabras, por eso vamos a combinar ambas herramientas para procesar las palabras.
 
-% AQUI VA EL EJEMPLO ELENA!!!!!!! %
+\figura{Bitmap/Capitulo3/pystemmer}{width=.4\textwidth}{fig:pystemmer}{Lematización de la palabra "`alegre"' con Stemmer.}
+\figura{Bitmap/Capitulo3/spacy}{width=.4\textwidth}{fig:spacy}{Lematización de la palabra "`alegre"' con Spacy.}
 
 % Variable local para emacs, para  que encuentre el fichero maestro de
 % compilación y funcionen mejor algunas teclas rápidas de AucTeX
