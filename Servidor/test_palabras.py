@@ -6,46 +6,46 @@ def porcentajes(op,destino):
 	"""
 	Devuelve los porcentajes de emocion para una palabra.
 
-	>>> porcentajes(0,"http://127.0.0.1:8000/emociones/mesa/percentages/")
+	>>> porcentajes(0,"http://127.0.0.1:8000/porcentajes/alegre/")
 	Porcentaje de tristeza: 0%
 	Porcentaje de miedo: 0%
-	Porcentaje de alegria: 0%
+	Porcentaje de alegria: 100%
 	Porcentaje de enfado: 0%
 	Porcentaje de sorpresa: 0%
-	Porcentaje de neutral: 100%
-	>>> porcentajes(0,"http://127.0.0.1:8000/emociones/aranya/percentages/")
+	Porcentaje de neutral: 0%
+	>>> porcentajes(0,"http://127.0.0.1:8000/porcentajes/araña/")
 	Porcentaje de tristeza: 0%
 	Porcentaje de miedo: 67%
 	Porcentaje de alegria: 0%
 	Porcentaje de enfado: 0%
 	Porcentaje de sorpresa: 0%
 	Porcentaje de neutral: 33%
-	>>> porcentajes(0,"http://127.0.0.1:8000/emociones/corazon/percentages/")
+	>>> porcentajes(0,"http://127.0.0.1:8000/porcentajes/corazón/")
 	Porcentaje de tristeza: 0%
 	Porcentaje de miedo: 0%
 	Porcentaje de alegria: 50%
 	Porcentaje de enfado: 0%
 	Porcentaje de sorpresa: 0%
 	Porcentaje de neutral: 50%
-	>>> porcentajes(0,"http://127.0.0.1:8000/emociones/te/percentages/")
+	>>> porcentajes(0,"http://127.0.0.1:8000/porcentajes/te/")
 	No se ha encontrado la palabra. Asegurese de haberla escrito bien.
 
-	>>> porcentajes(1,"http://127.0.0.1:8000/emociones/mesa/agreed/")
-	Neutral
-	>>> porcentajes(1,"http://127.0.0.1:8000/emociones/aranya/agreed/")
+	>>> porcentajes(1,"http://127.0.0.1:8000/consensuada/mesa/")
+	La emocion consensuada es Neutral
+	>>> porcentajes(1,"http://127.0.0.1:8000/consensuada/araña/")
 	No hay emocion consensuada.
-	>>> porcentajes(1,"http://127.0.0.1:8000/emociones/corazon/agreed/")
+	>>> porcentajes(1,"http://127.0.0.1:8000/consensuada/corazón/")
 	No hay emocion consensuada.
-	>>> porcentajes(1,"http://127.0.0.1:8000/emociones/te/agreed/")
+	>>> porcentajes(1,"http://127.0.0.1:8000/consensuada/te/")
 	No se ha encontrado la palabra. Asegurese de haberla escrito bien.
 
-	>>> porcentajes(2,"http://127.0.0.1:8000/emociones/mesa/main/")
-	Neutral con un 100%
-	>>> porcentajes(2,"http://127.0.0.1:8000/emociones/aranya/main/")
-	Miedo con un 67%
-	>>> porcentajes(2,"http://127.0.0.1:8000/emociones/corazon/main/")
-	Hay dos emociones mayoritarias: Alegria y Neutral con un 50%
-	>>> porcentajes(2,"http://127.0.0.1:8000/emociones/te/main/")
+	>>> porcentajes(2,"http://127.0.0.1:8000/mayoritaria/mesa/")
+	La mayoritaria es Neutral con un 100%
+	>>> porcentajes(2,"http://127.0.0.1:8000/mayoritaria/araña/")
+	La mayoritaria es Miedo con un 67%
+	>>> porcentajes(2,"http://127.0.0.1:8000/mayoritaria/corazón/")
+	Hay dos emociones mayoritarias: Alegría y Neutral con un 50%
+	>>> porcentajes(2,"http://127.0.0.1:8000/mayoritaria/te/")
 	No se ha encontrado la palabra. Asegurese de haberla escrito bien.
 	"""
 	interpreta = InterpretePalabras()

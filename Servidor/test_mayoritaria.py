@@ -4,20 +4,20 @@ def mayoritaria(palabra):
 	"""
 	Devuelve la emocion consensuada para una palabra.
 
-	>>> mayoritaria("mesa")
-	MAIN: NEUTRAL || %: 100
-	>>> mayoritaria("corazon")
-	MAIN: JOY, NEUTRAL || %: 50
+	>>> mayoritaria("alegre")
+	Mayoritaria: Alegría con un 100%
+	>>> mayoritaria("corazón")
+	Mayoritarias: Alegría y Neutral con un 50%
 	>>> mayoritaria("diamante")
-	MAIN: JOY || %: 83
+	Mayoritaria: Alegría con un 83%
 	>>> mayoritaria("te")
-	{u'detail': u'Not found.'}
+	{'detail': 'Not found.'}
 	"""
-	URL = 'http://127.0.0.1:8000/emociones/' # URL del servidor
-	sufijo = '/main/' # sufijo de la consulta
+	URL = 'http://127.0.0.1:8000/' # URL del servidor
+	sufijo = 'mayoritaria/' # sufijo de la consulta
 	buscar = palabra
 	buscada = buscar.lower()
-	destino = URL+buscada+sufijo
+	destino = URL+sufijo+buscada
 	respuesta = requests.get(destino)
 	mayoritaria = respuesta.json()
 	print(mayoritaria)

@@ -20,7 +20,7 @@ def porcentajes(op,frase):
 	Porcentaje de enfado: 0.0%
 	Porcentaje de sorpresa: 0.0%
 	Porcentaje de neutral: 0.0%
-	>>> porcentajes(0,"Mañana es mi boda")
+	>>> porcentajes(0,"Estoy alegre y feliz")
 	Porcentaje de tristeza: 0.0%
 	Porcentaje de miedo: 0.0%
 	Porcentaje de alegria: 100.0%
@@ -48,13 +48,6 @@ def porcentajes(op,frase):
 	Porcentaje de enfado: 0.0%
 	Porcentaje de sorpresa: 0.0%
 	Porcentaje de neutral: 100.0%
-	>>> porcentajes(0,"Hola")
-	Porcentaje de tristeza: 0%
-	Porcentaje de miedo: 0%
-	Porcentaje de alegria: 0%
-	Porcentaje de enfado: 0%
-	Porcentaje de sorpresa: 0%
-	Porcentaje de neutral: 100%
 	>>> porcentajes(0,"Me voy a dormir")
 	Porcentaje de tristeza: 0.0%
 	Porcentaje de miedo: 0.0%
@@ -70,31 +63,30 @@ def porcentajes(op,frase):
 	Porcentaje de sorpresa: 0.0%
 	Porcentaje de neutral: 33.33%
 	>>> porcentajes(1,"Ana está triste y avergonzada")
-	Tristeza con un 100%
+	La mayoritaria es Tristeza con un 100%
 	>>> porcentajes(1,"Llevaba una escopeta")
-	Miedo con un 100%
+	La mayoritaria es Miedo con un 100%
 	>>> porcentajes(1,"Mañana es mi boda")
-	Alegria con un 100%
+	La mayoritaria es Alegria con un 100%
 	>>> porcentajes(1,"Ese tipo es un arrogante")
-	Enfado con un 100%
+	La mayoritaria es Enfado con un 100%
 	>>> porcentajes(1,"Me ha sorprendido su actitud")
-	Sorpresa con un 100%
+	La mayoritaria es Sorpresa con un 100%
 	>>> porcentajes(1,"Pásame un tenedor")
-	Neutral con un 100%
-	>>> porcentajes(1,"Hola")
-	Neutral con un 100%
+	La mayoritaria es Neutral con un 100%
 	>>> porcentajes(1,"Me voy a dormir")
-	Hay dos emociones mayoritarias: Alegria y Neutral con un 50%
+	La mayoritaria es Hay dos emociones mayoritarias: Alegria y Neutral con un 50%
 	>>> porcentajes(1,"Ana está triste porque se ha roto su ascensor")
-	Tristeza con un 67%
+	La mayoritaria es Tristeza con un 67%
 	"""
 	interpreta = InterpreteFrases()
 	_salida = Salida()
 	if op == 0:
-		porcentajes = interpreta.emociones_frase(frase)
+		porcentajes,palabras = interpreta.emociones_frase(frase)
 		_salida.mostrar_porcentajes(porcentajes)
 	elif op == 1:
-		mayoritarias,porcentaje = interpreta.emociones_mayoritaria_frase(frase)
+		porcentajes,palabras = interpreta.emociones_frase(frase)
+		mayoritarias,porcentaje = interpreta.emocion_mayoritaria_frase(porcentajes)
 		_salida.mostrar_mayoritaria(mayoritarias,porcentaje)
 
 if __name__ == "__main__":

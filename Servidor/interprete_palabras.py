@@ -24,24 +24,6 @@ def coger_porcentajes(porcentajes):
 			numeros.append(porcentaje)
 	return numeros
 
-def traducir_emocion(ingles):
-	"""
-	Dada una emoción en inglés devuelve su correspondiente en castellano.
-	Es necesario ya que las cadenas que devuelve el servicio web están en inglés.
-	"""
-	if ingles == "SADNESS":
-		return "Tristeza"
-	elif ingles == "FEAR":
-		return "Miedo"
-	elif ingles == "JOY":
-		return "Alegria"
-	elif ingles == "MADNESS":
-		return "Enfado"
-	elif ingles == "SURPRISE":
-		return "Sorpresa"
-	else:
-		return "Neutral"
-
 class InterpretePalabras():
 
 	@staticmethod
@@ -69,11 +51,11 @@ class InterpretePalabras():
 			return "No se ha encontrado la palabra. Asegurese de haberla escrito bien."
 		else:
 			consensuada = respuesta.json()
-			if consensuada[:2] == "NO":
+			if consensuada[:2] == "No":
 				return "No hay emocion consensuada."
 			else:
 				emocion = consensuada.split(" ")
-				return "La emocion consensuada es " + traducir_emocion(emocion[1])
+				return "La emocion consensuada es " + emocion[1]
 
 	@staticmethod
 	def interpretar_mayoritaria(destino):
@@ -89,14 +71,13 @@ class InterpretePalabras():
 		else:
 			mayoritaria = respuesta.json()
 			tokens = mayoritaria.split(" ")
-			if ',' in mayoritaria:
-				tokens[1] = tokens[1].rstrip(',')
-				mayoritarias.append(traducir_emocion(tokens[1]))
-				mayoritarias.append(traducir_emocion(tokens[2]))
-				porcentaje = tokens[5]
+			if "y " in mayoritaria:
+				mayoritarias.append(tokens[1])
+				mayoritarias.append(tokens[3])
+				porcentaje = tokens[6].rstrip('%')
 				return mayoritarias,porcentaje
 			else:
-				emocion = traducir_emocion(tokens[1])
+				emocion = tokens[1]
 				mayoritarias.append(emocion)
-				porcentaje = tokens[4]
+				porcentaje = tokens[4].rstrip('%')
 				return mayoritarias,porcentaje

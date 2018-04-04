@@ -4,20 +4,20 @@ def porcentajes(palabra):
 	"""
 	Devuelve los porcentajes de emocion para una palabra.
 
-	>>> porcentajes("mesa")
-	SADNESS:0% || FEAR:0% || JOY:0% || MADNESS:0% || SURPRISE:0% || NEUTRAL:100%
-	>>> porcentajes("aranya")
-	SADNESS:0% || FEAR:67% || JOY:0% || MADNESS:0% || SURPRISE:0% || NEUTRAL:33%
-	>>> porcentajes("corazon")
-	SADNESS:0% || FEAR:0% || JOY:50% || MADNESS:0% || SURPRISE:0% || NEUTRAL:50%
+	>>> porcentajes("alegre")
+	Tristeza:0% || Miedo:0% || Alegría:100% || Enfado:0% || Sorpresa:0% || Neutral:0%
+	>>> porcentajes("araña")
+	Tristeza:0% || Miedo:67% || Alegría:0% || Enfado:0% || Sorpresa:0% || Neutral:33%
+	>>> porcentajes("corazón")
+	Tristeza:0% || Miedo:0% || Alegría:50% || Enfado:0% || Sorpresa:0% || Neutral:50%
 	>>> porcentajes("te")
-	{u'detail': u'Not found.'}
+	{'detail': 'Not found.'}
 	"""
-	URL = 'http://127.0.0.1:8000/emociones/' # URL del servidor
-	sufijo = '/percentages/' # sufijo de la consulta
+	URL = 'http://127.0.0.1:8000/' # URL del servidor
+	sufijo = 'porcentajes/' # sufijo de la consulta
 	buscar = palabra
 	buscada = buscar.lower()
-	destino = URL+buscada+sufijo
+	destino = URL+sufijo+buscada
 	respuesta = requests.get(destino)
 	porcentajes = respuesta.json()
 	print(porcentajes)

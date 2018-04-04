@@ -4,18 +4,18 @@ def consensuada(palabra):
 	"""
 	Devuelve la emocion consensuada para una palabra.
 
-	>>> consensuada("mesa")
-	AGREED: NEUTRAL
-	>>> consensuada("corazon")
-	NO AGREED EMOTION
+	>>> consensuada("alegre")
+	Consensuada: Alegría
+	>>> consensuada("corazón")
+	No hay emoción consensuada
 	>>> consensuada("te")
-	{u'detail': u'Not found.'}
+	{'detail': 'Not found.'}
 	"""
-	URL = 'http://127.0.0.1:8000/emociones/' # URL del servidor
-	sufijo = '/agreed/' # sufijo de la consulta
+	URL = 'http://127.0.0.1:8000/' # URL del servidor
+	sufijo = 'consensuada/' # sufijo de la consulta
 	buscar = palabra
 	buscada = buscar.lower()
-	destino = URL+buscada+sufijo
+	destino = URL+sufijo+buscada
 	respuesta = requests.get(destino)
 	consensuada = respuesta.json()
 	print(consensuada)

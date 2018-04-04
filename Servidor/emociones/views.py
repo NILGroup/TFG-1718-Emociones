@@ -77,7 +77,7 @@ class ObtenerPorcentajes(APIView):
         return numeros
         
     def get(self,request,pk,format=None):
-        emociones = ["SADNESS", "FEAR", "JOY", "MADNESS", "SURPRISE", "NEUTRAL"]
+        emociones = ["Tristeza", "Miedo", "Alegría", "Enfado", "Sorpresa", "Neutral"]
         palabra = self.get_object(pk)
         porcentajes = palabra.porcentajes
         numeros = self.get_percentages(porcentajes)
@@ -100,7 +100,7 @@ class ObtenerConsensuada(APIView):
                 raise Http404()
         
     def get(self,request,pk,format=None):
-        emociones = ["SADNESS", "FEAR", "JOY", "MADNESS", "SURPRISE", "NEUTRAL"]
+        emociones = ["Tristeza", "Miedo", "Alegría", "Enfado", "Sorpresa", "Neutral"]
         palabra = self.get_object(pk)
         porcentajes = palabra.porcentajes
         numeros = ObtenerPorcentajes.get_percentages(self,porcentajes)
@@ -113,9 +113,9 @@ class ObtenerConsensuada(APIView):
             else:
                 contador = contador + 1
         if(entro):
-            respuesta = "AGREED: " + emociones[contador]
+            respuesta = "Consensuada: " + emociones[contador]
         else:  
-            respuesta = "NO AGREED EMOTION"
+            respuesta = "No hay emoción consensuada"
         return Response(respuesta)
 
 class ObtenerMayoritaria(APIView):
@@ -130,7 +130,7 @@ class ObtenerMayoritaria(APIView):
                 raise Http404()
         
     def get(self,request,pk,format=None):
-        emociones = ["SADNESS", "FEAR", "JOY", "MADNESS", "SURPRISE", "NEUTRAL"]
+        emociones = ["Tristeza", "Miedo", "Alegría", "Enfado", "Sorpresa", "Neutral"]
         palabra = self.get_object(pk)
         porcentajes = palabra.porcentajes
         numeros = ObtenerPorcentajes.get_percentages(self,porcentajes)
@@ -148,7 +148,7 @@ class ObtenerMayoritaria(APIView):
                 entro = True
                 mayoritarias.append(i)
         if(entro):
-            respuesta = "MAIN: " +  emociones[mayoritarias[0]] + ", " +  emociones[mayoritarias[1]]  + " || %: " + numeros[mayoritarias[0]]
+            respuesta = "Mayoritarias: " +  emociones[mayoritarias[0]] + " y " +  emociones[mayoritarias[1]]  + " con un " + numeros[mayoritarias[0]] + "%"
         else:
-            respuesta = "MAIN: " + emociones[mayoritarias[0]] + " || %: " + numeros[mayoritarias[0]]
+            respuesta = "Mayoritaria: " + emociones[mayoritarias[0]] + " con un " + numeros[mayoritarias[0]] + "%"
         return Response(respuesta)

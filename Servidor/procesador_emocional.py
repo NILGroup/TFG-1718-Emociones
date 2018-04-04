@@ -70,9 +70,13 @@ def descartar_palabras(doc):
 			especial,buscar = casos_especiales(lexema)
 			if especial == True:
 				lexemas.append(buscar)
+				if es_verbo(pos) == True:
+					lexemas.append(buscar)
 			else:
 				procesada = procesar_palabra(token.text,lexema)
 				lexemas.append(procesada)
+				if es_verbo(pos) == True:
+					lexemas.append(procesada)
 	return palabras,lexemas
 
 def procesar_palabra(palabra,lexema):

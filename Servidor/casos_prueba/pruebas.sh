@@ -1,0 +1,11 @@
+#!/bin/bash
+
+rm -r resultados
+for i in *; 
+do
+	if [ $i != 'pruebas.sh' ];
+	then
+		echo $i 
+		python3 ../traductor.py $i > resultados/$i
+	fi;
+done

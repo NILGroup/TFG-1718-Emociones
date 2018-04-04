@@ -9,36 +9,36 @@ en el servicio web, y devolver la información que tiene sobre ella.
 interpreta = InterpretePalabras() # nos permitirá interpretar las palabras emocionales
 procesador = PalabrasEmocionales() # nos permitirá encontrar las palabras emocionales
 
-URL = 'http://127.0.0.1:8000/emociones/' # URL base del servicio web
+URL = 'http://127.0.0.1:8000/' # URL base del servicio web
 
-emociones = ["Tristeza", "Miedo", "Alegria", "Enfado", "Sorpresa", "Neutral"] # lista de emociones con las que trabajamos
+emociones = ["Tristeza", "Miedo", "Alegría", "Enfado", "Sorpresa", "Neutral"] # lista de emociones con las que trabajamos
 
 def obtener_url_porcentajes(palabra):
 	"""
 	Función que dada una palabra devuelve la URL que hay que usar para
 	obtener sus porcentajes.
 	"""
-	servicio = '/percentages/'
+	servicio = 'porcentajes/'
 	palabra = palabra.lower()
-	return URL+palabra+servicio
+	return URL+servicio+palabra
 
 def obtener_url_mayoritaria(palabra):
 	"""
 	Función que dada una palabra devuelve la URL que hay que usar para
 	obtener su emoción mayoritaria.
 	"""
-	servicio = '/main/'
+	servicio = 'mayoritaria/'
 	palabra = palabra.lower()
-	return URL+palabra+servicio
+	return URL+servicio+palabra
 
 def obtener_url_consensuada(palabra):
 	"""
 	Función que dada una palabra devuelve la URL que hay que usar para
 	obtener su emoción consensuada.
 	"""
-	servicio = '/agreed/'
+	servicio = 'consensuada/'
 	palabra = palabra.lower()
-	return URL+palabra+servicio
+	return URL+servicio+palabra
 
 def obtener_medias(porcentajes,num_palabras):
 	"""
@@ -86,12 +86,12 @@ class InterpreteFrases():
 		else:
 			emociones_frase = [0,0,0,0,0,0] 
 			no_encontradas = 0 # contador de palabras emocionales que no están en nuestro diccionario
-			for palabra in palabras:
-				destino = obtener_url_porcentajes(palabra) # obtenemos URL para realizar la consulta
+			for i in range(len(palabras)):
+				destino = obtener_url_porcentajes(palabras[i]) # obtenemos URL para realizar la consulta
 				porcentajes = interpreta.interpretar_porcentajes(destino) # obtenemos los porcentajes de la palabra
 				if len(porcentajes) > 0: # si la encontramos, actualizamos los porcentajes de la frase
-					for i in range(6):
-						emociones_frase[i] = emociones_frase[i] + int(porcentajes[i])
+					for j in range(6):
+						emociones_frase[j] = emociones_frase[j] + int(porcentajes[j])
 				else:
 					no_encontradas = no_encontradas + 1
 			num_palabras = len(palabras) - no_encontradas # calculamos el número de palabras útiles
