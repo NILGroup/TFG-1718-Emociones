@@ -1,0 +1,11 @@
+-----------------------------------------------------------
+Lista de palabras emocionales:
+['vivía', 'castillo', 'encantado', 'dieron', 'bienvenida', 'esforzaron', 'sintiera', 'casa', 'disfrutaba', 'cenas', 'gran', 'comedor', 'castillo', 'sintió', 'feliz', 'castillo', 'hogar']
+Porcentaje de tristeza: 0.0%
+Porcentaje de miedo: 3.3%
+Porcentaje de alegria: 44.43%
+Porcentaje de enfado: 0.0%
+Porcentaje de sorpresa: 0.0%
+Porcentaje de neutral: 52.17%
+La mayoritaria es Neutral con un 52.17%
+-----------------------------------------------------------

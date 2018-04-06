@@ -1,6 +1,7 @@
 #!/bin/bash
 
 rm -r resultados
+mkdir resultados
 for i in *; 
 do
 	if [ $i != 'pruebas.sh' ];

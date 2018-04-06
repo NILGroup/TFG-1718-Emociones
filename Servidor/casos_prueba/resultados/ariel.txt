@@ -1,0 +1,11 @@
+-----------------------------------------------------------
+Lista de palabras emocionales:
+['sirenita', 'vivía', 'mar', 'sentía', 'fascinada', 'humanos', 'sobretodo', 'poer', 'príncipe', 'pidió', 'bruja', 'mar', 'transformara', 'humana', 'estar', 'príncipe', 'besaba', 'pasarn', 'días', 'volvería', 'convertirse', 'sirena', 'magia', 'bruja', 'mar', 'separar']
+Porcentaje de tristeza: 24.57%
+Porcentaje de miedo: 12.1%
+Porcentaje de alegria: 37.77%
+Porcentaje de enfado: 0.0%
+Porcentaje de sorpresa: 3.3%
+Porcentaje de neutral: 22.27%
+La mayoritaria es Alegria con un 37.77%
+-----------------------------------------------------------

@@ -9,7 +9,7 @@ en el servicio web, y devolver la información que tiene sobre ella.
 interpreta = InterpretePalabras() # nos permitirá interpretar las palabras emocionales
 procesador = PalabrasEmocionales() # nos permitirá encontrar las palabras emocionales
 
-URL = 'http://127.0.0.1:8000/' # URL base del servicio web
+URL = 'http://127.0.0.1:8000/emociones/' # URL base del servicio web
 
 emociones = ["Tristeza", "Miedo", "Alegría", "Enfado", "Sorpresa", "Neutral"] # lista de emociones con las que trabajamos
 
@@ -18,27 +18,27 @@ def obtener_url_porcentajes(palabra):
 	Función que dada una palabra devuelve la URL que hay que usar para
 	obtener sus porcentajes.
 	"""
-	servicio = 'porcentajes/'
+	servicio = '/porcentajes/'
 	palabra = palabra.lower()
-	return URL+servicio+palabra
+	return URL+palabra+servicio
 
 def obtener_url_mayoritaria(palabra):
 	"""
 	Función que dada una palabra devuelve la URL que hay que usar para
 	obtener su emoción mayoritaria.
 	"""
-	servicio = 'mayoritaria/'
+	servicio = '/mayoritaria/'
 	palabra = palabra.lower()
-	return URL+servicio+palabra
+	return URL+palabra+servicio
 
 def obtener_url_consensuada(palabra):
 	"""
 	Función que dada una palabra devuelve la URL que hay que usar para
 	obtener su emoción consensuada.
 	"""
-	servicio = 'consensuada/'
+	servicio = '/consensuada/'
 	palabra = palabra.lower()
-	return URL+servicio+palabra
+	return URL+palabra+servicio
 
 def obtener_medias(porcentajes,num_palabras):
 	"""
@@ -86,8 +86,8 @@ class InterpreteFrases():
 		else:
 			emociones_frase = [0,0,0,0,0,0] 
 			no_encontradas = 0 # contador de palabras emocionales que no están en nuestro diccionario
-			for i in range(len(palabras)):
-				destino = obtener_url_porcentajes(palabras[i]) # obtenemos URL para realizar la consulta
+			for palabra in palabras:
+				destino = obtener_url_porcentajes(palabra) # obtenemos URL para realizar la consulta
 				porcentajes = interpreta.interpretar_porcentajes(destino) # obtenemos los porcentajes de la palabra
 				if len(porcentajes) > 0: # si la encontramos, actualizamos los porcentajes de la frase
 					for j in range(6):
