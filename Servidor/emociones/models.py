@@ -1,13 +1,10 @@
 from django.db import models
 from django.core.validators import validate_comma_separated_integer_list
 
-#VALIDADOR DE PORCENTAJES 
-#VALIDADOR = [(validate_comma_separated_integer_list, '0,17,33,50,67,83,100', None)]
-
 # Modelo que utilizará el servicio web
 class Palabra(models.Model):
 	"""
-	Los campos que tiene el modelo son: la palabra en sí y el grado de certeza con el
+	Los campos que tiene el modelo son: la palabra en sí, su lexema y el grado de certeza con el
 	que se puede afirmar que una emoción la caracteriza expresados en porcentajes.
 	"""
 
