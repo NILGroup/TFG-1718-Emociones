@@ -56,15 +56,15 @@ $(document).ready(function(){
 	
        $.ajax({
 		type: 'GET', /*Creo que por defecto es GET*/
-		url: 'http://sesat.fdi.ucm.es/emociones/'+datos,
+		url: 'http://sesat.fdi.ucm.es/emociones/'+datos+'/',
 		contentType: 'application/json',
 		dataType: 'json',
 		crossDomain: true,
 		success: function(data){
 			
 			$("#salida").html(JSON.stringify(data));  /*Esto mostrará todos los datos*/   
-			var porcentajes =data.porcentajes;
-			var porcentajes_array = data.porcentajes.split(',');
+			var porcentajes = data.porcentajes;
+			var porcentajes_array = data.porcentajes.replace('[', ' ').replace(']', ' ').split(',');
 			var tristeza = porcentajes_array[0];
 			var miedo = porcentajes_array[1];
 			var alegria = porcentajes_array[2];
