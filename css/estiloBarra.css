@@ -1,5 +1,7 @@
 .progress {
 	width: 100%;
+	position:fixed;bottom:0px;
+	margin-top: 50px;
 }
 .bTristeza {
 	background-color: blue !important;

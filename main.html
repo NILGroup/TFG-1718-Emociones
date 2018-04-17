@@ -34,30 +34,52 @@
 			
 		</div>
 
-		<div class = "container">
+		
 			<div id="salida"></div>
 			<div id="hola" style= "display:none;"></div>
 
 			<br>
 			<div class="row">
-				<p> Tristeza:<div id="tristeza" class="col-md-1"></div> </p>
-				<p> Miedo:<div id="miedo" class="col-md-1"></div> </p>
-				<p> Alegria:<div id="alegria" class="col-md-1"></div> </p>
-				<p> Enfado:<div id="enfado" class="col-md-1"></div> </p>
-				<p> Sorpresa:<div id="sorpresa" class="col-md-1"></div> </p>
-			</div>
-
-		 	<div class="row">
-
-				<div class="progress">
-					<div class="progress-bar progress-bar bTristeza" id="barritaTristeza"> </div>
-					<div class="progress-bar progress-bar bMiedo" id="barritaMiedo"> </div>
-					<div class="progress-bar progress-bar bAlegria" id="barritaAlegria"> </div>
-					<div class="progress-bar progress-bar bEnfado" id="barritaEnfado"> </div>
-					<div class="progress-bar progress-bar bSorpresa" id="barritaSorpresa"> </div>
+				<div class="col-md-2" style="text-align:center;">
+					<p> Tristeza: <span id="tristeza"></span></p>
+					<div id="tristezaF"></div>
+				</div>
+				<div class="col-md-2" style="text-align: center;">
+					<p> Miedo: <span id="miedo"></span></p>
+					<div id="miedoF"></div>
+				</div>
+				<div class="col-md-2" style="text-align: center;">
+					<p> Alegria: <span id="alegria"></span></p>
+					<div id="alegriaF"></div>
+				</div>
+				<div class="col-md-2" style="text-align: center;">
+					<p> Enfado: <span id="enfado"></span></p>
+					<div id="enfadoF"></div>
+				</div>
+				<div class="col-md-2" style="text-align: center;">
+					<p> Sorpresa: <span id="sorpresa"></span></p>
+					<div id="sorpresaF"></div>
 				</div>
 			</div>
-		</div>
+		
+
+		<div class="progress">
+					<div class="progress-bar progress-bar bTristeza" id="barritaTristeza"> 
+						<span id="textoTristeza"></span> 
+					</div>
+					<div class="progress-bar progress-bar bMiedo" id="barritaMiedo"> 
+						<span id="textoMiedo"></span>
+					</div>
+					<div class="progress-bar progress-bar bAlegria" id="barritaAlegria"> 
+						<span id="textoAlegria"></span>
+					</div>
+					<div class="progress-bar progress-bar bEnfado" id="barritaEnfado"> 
+						<span id="textoEnfado"></span>
+					</div>
+					<div class="progress-bar progress-bar bSorpresa" id="barritaSorpresa"> 
+						<span id="textoSopresa"></span>
+					</div>
+				</div>
 		
 
 		
@@ -90,49 +112,71 @@ $(document).ready(function(){
 			var sorpresa = porcentajes_array[4];
 			
 			if(tristeza != 0){
+				$("#tristeza").html('');
+				$("#tristezaF").html('');
 				$("#tristeza").html(tristeza); /*Aquí mostrará el porcentaje de tristeza */
-				var imgTristeza = $('<img src="img/tristeza.png" alt="sad face" width="50" height="50"/>');
-				$('#tristeza').append(imgTristeza); 
+				var imgTristeza = $('<img src="img/tristeza.png" alt="sad face" width="60" height="60"/>');
+				$('#tristezaF').append(imgTristeza); 
+				$('#textoTristeza').html("Tristeza");
+		
 			}
 			else {
 				$("#tristeza").html('');
-				$("#tristeza").append('');
+				$("#tristezaF").html('');
+				$('#textoTristeza').html('');
+
 			}
 			if(miedo != 0){
+				$("#miedo").html('');
+				$("#miedoF").html('');
 				$("#miedo").html(miedo); /*Aquí mostrará el porcentaje de miedo */
-				var imgMiedo = $('<img src="img/miedo.png" alt="scary face" width="50" height="50"/>');
-				$('#miedo').append(imgMiedo); 
+				var imgMiedo = $('<img src="img/miedo.png" alt="scary face" width="60" height="60"/>');
+				$('#miedoF').append(imgMiedo); 
+				$('#textoMiedo').html('Miedo');
 			}
 			else {
 				$("#miedo").html('');
-				$("#miedo").append('');
+				$("#miedoF").html('');
+				$('#textoMiedo').html('');
 			}
 			if(alegria != 0){
+				$("#alegria").html('');
+				$("#alegriaF").html('');
 				$("#alegria").html(alegria); /*Aquí mostrará el porcentaje de alegría */
-				var imgAlegria = $('<img src="img/alegria.png" alt="happy face" width="50" height="50"/>');
-				$('#alegria').append(imgAlegria); 
+				var imgAlegria = $('<img src="img/alegria.png" alt="happy face" width="60" height="60"/>');
+				$('#alegriaF').append(imgAlegria); 
+				$('#textoAlegria').html('Alegria');
 			}
 			else {
 				$("#alegria").html('');
-				$("#alegria").append('');
+				$("#alegriaF").html('');
+				$('#textoAlegria').html('');
 			}
 			if(enfado != 0){
+				$("#enfado").html('');
+				$("#enfadoF").html('');
 				$("#enfado").html(enfado); /*Aquí mostrará el porcentaje de enfado */
-				var imgEnfado = $('<img src="img/enfado.png" alt="angry face" width="50" height="50"/>');
-				$('#enfado').append(imgEnfado); 
+				var imgEnfado = $('<img src="img/enfado.png" alt="angry face" width="60" height="60"/>');
+				$('#enfadoF').append(imgEnfado); 
+				$('#textoEnfado').html('Enfado');
 			}
 			else {
 				$("#enfado").html('');
-				$("#enfado").append('');
+				$("#enfadoF").html('');
+				$('#textoEnfado').html('');
 			}
 			if(sorpresa != 0){
+				$("#sorpresa").html('');
+				$("#sorpresa").html('');
 				$("#sorpresa").html(sorpresa); /*Aquí mostrará el porcentaje de sorpresa */
 				var imgSorpresa = $('<img src="img/sorpresa.png" alt="surprise face" width="50" height="50"/>');
 				$('#sorpresa').append(imgSorpresa); 
+				$('#textoSopresa').html('Sorpresa');
 			}
 			else {
 				$("#sorpresa").html('');
-				$("#sorpresa").append('');
+				$("#sorpresa").html('');
+				$('#textoSopresa').html('');
 			}
 			
 			var tristeza = "width:" + parseInt(porcentajes_array[0]) + "%";
@@ -146,7 +190,7 @@ $(document).ready(function(){
 			document.getElementById("barritaAlegria").style = alegria;
 			document.getElementById("barritaEnfado").style = enfado;
 			document.getElementById("barritaSorpresa").style = sorpresa;
-		
+
 		},	
 		error: function(request, status, errorThrown) {
                		alert(request);
