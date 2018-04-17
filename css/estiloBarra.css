@@ -1,6 +1,21 @@
 .progress {
 	width: 100%;
 }
+.bTristeza {
+	background-color: blue !important;
+}
+.bMiedo {
+	background-color: purple !important;
+}
+.bAlegria {
+	background-color: yellow !important;
+}
+.bEnfado {
+	background-color: red !important;
+}
+.bSorpresa{
+	background-color: green !important;
+}
 .progress-bar {
 	text-align: left;
 	white-space: nowrap;
@@ -8,6 +23,7 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	cursor: pointer;
+	width: 0px;
 }
 
 .progress-bar > .progress-type {
@@ -17,6 +33,7 @@
 .progress-meter {
 	min-height: 15px;
 	border-bottom: 2px solid rgb(160, 160, 160);
+	width: 100%;
 }
 
 .progress-meter > .meter {
@@ -28,8 +45,8 @@
 	border-color: rgb(160, 160, 160);
 }
 
-.progress-meter > .meter-left {
-	border-left-width: 2px;
+.progress-meter > .meter-center {
+	border-left-width: 6px;
 }
 
 .progress-meter > .meter-right {
