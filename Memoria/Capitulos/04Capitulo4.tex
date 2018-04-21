@@ -44,7 +44,7 @@ class Palabra(models.Model):
 \figura{Bitmap/Capitulo4/vista_detalle}{width=.4\textwidth}{fig:vista_det}{Vista detalle de la palabra ``Alegre''.}
 
 
-Una vez que se tiene el servidor y todo el código necesario para el funcionamiento de los servicios web se procede a publicar las palabras que recoge nuestro diccionario. Para ello se ha desarrollado un programa en \textit{Python} cuya función es leer el fichero CSV, interpretar cada una de sus líneas y almacenar/subir la información que obtiene en la base de datos del servidor. Una vez que todas las palabras estén almacenadas/subidas ya se pueden realizar las consultas necesarias.
+Una vez que se tiene el servidor y todo el código necesario para el funcionamiento de los servicios web se procede a publicar las palabras que recoge nuestro diccionario. Para ello se ha desarrollado un programa en \textit{Python} cuya función es leer el fichero CSV, interpretar cada una de sus líneas y almacenar la información que obtiene en la base de datos del servidor. Una vez que todas las palabras estén subidas ya se pueden realizar las consultas necesarias.
 
 %-------------------------------------------------------------------
 \section{Análisis afectivo de una palabra}
@@ -106,10 +106,11 @@ Para hallar la emoción mayoritaria de una frase se cuentan las apariciones de un
 %-------------------------------------------------------------------
 \label{cap4:sec:texto}
 
-Analizar un texto consiste, básicamente, en partirlo en frases y obtener la carga afectiva de cada una de ellas. Las frases se obtienen partiendo el texto al encontrar un punto, un signo de exclamación o un signo de interrogación. Según el caractér que haya sido utilizado para obtener la frase la clasificaremos como enunciativas, exclamativas o interrogativas respectivamente. 
+Analizar un texto consiste, básicamente, en partirlo en frases y obtener la carga afectiva de cada una de ellas. 
 
-Las operaciones realizadas durante el análisis son prácticamente las mismas que para analizar una frase: medias ponderadas para hallar los porcentajes y la emoción mayoritaria a partir de la información devuelta por cada frase. En este caso las frases que tienen más peso (dos veces más que las enunciativas) son las exclamativas, mientras que las interrogativas tendrán la mitad de peso que las enunciativas.
+Las frases se obtienen partiendo el texto cada vez que se encuentra un "`."'. Una vez que se tienen las frases del texto hay que analizarlas porque pueden conter subfrases, las frases interrogativas o exclamativas no acaban con un punto por lo que estarán incluidas en otra frase. Se parte, por lo tanto, cada frase en sus subfrases (si las tiene) y a cada subfrase se le asigna un tipo: enunciativa, interrogativa o exclamativa. Según el tipo de la frase esta tendrá más o menos peso. Las exclamativas tienen el doble de peso que las enunciativas mientras que las interrogativas tienen la mitad.
 
+Las operaciones realizadas durante el análisis son prácticamente las mismas que para analizar una frase: medias ponderadas para hallar los porcentajes y la emoción mayoritaria a partir de la información devuelta por cada frase teniendo en cuenta los pesos de las subfrases.
 % Variable local para emacs, para  que encuentre el fichero maestro de
 % compilación y funcionen mejor algunas teclas rápidas de AucTeX
 %%%
