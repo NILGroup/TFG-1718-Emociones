@@ -40,44 +40,43 @@
 
 			<br>
 			<div class="row">
-				<div class="col-md-2" style="text-align:center;">
+				<div class="col-md-2 textoCentrado">
 					<p> Tristeza: <span id="tristeza"></span></p>
 					<div id="tristezaF"></div>
 				</div>
-				<div class="col-md-2" style="text-align: center;">
+				<div class="col-md-2 textoCentrado">
 					<p> Miedo: <span id="miedo"></span></p>
 					<div id="miedoF"></div>
 				</div>
-				<div class="col-md-2" style="text-align: center;">
+				<div class="col-md-2 textoCentrado">
 					<p> Alegria: <span id="alegria"></span></p>
 					<div id="alegriaF"></div>
 				</div>
-				<div class="col-md-2" style="text-align: center;">
+				<div class="col-md-2 textoCentrado">
 					<p> Enfado: <span id="enfado"></span></p>
 					<div id="enfadoF"></div>
 				</div>
-				<div class="col-md-2" style="text-align: center;">
+				<div class="col-md-2 textoCentrado">
 					<p> Sorpresa: <span id="sorpresa"></span></p>
 					<div id="sorpresaF"></div>
 				</div>
 			</div>
-		
-
+	
 		<div class="progress">
 					<div class="progress-bar progress-bar bTristeza" id="barritaTristeza"> 
-						<span id="textoTristeza"></span> 
+						<span class="textoProgress" id="textoTristeza"></span> 
 					</div>
 					<div class="progress-bar progress-bar bMiedo" id="barritaMiedo"> 
-						<span id="textoMiedo"></span>
+						<span class="textoProgress" id="textoMiedo"></span>
 					</div>
 					<div class="progress-bar progress-bar bAlegria" id="barritaAlegria"> 
-						<span id="textoAlegria"></span>
+						<span class="textoProgress" id="textoAlegria"></span>
 					</div>
 					<div class="progress-bar progress-bar bEnfado" id="barritaEnfado"> 
-						<span id="textoEnfado"></span>
+						<span class="textoProgress" id="textoEnfado"></span>
 					</div>
 					<div class="progress-bar progress-bar bSorpresa" id="barritaSorpresa"> 
-						<span id="textoSopresa"></span>
+						<span class="textoProgress" id="textoSopresa"></span>
 					</div>
 				</div>
 		
@@ -167,10 +166,10 @@ $(document).ready(function(){
 			}
 			if(sorpresa != 0){
 				$("#sorpresa").html('');
-				$("#sorpresa").html('');
+				$("#sorpresaF").html('');
 				$("#sorpresa").html(sorpresa); /*Aquí mostrará el porcentaje de sorpresa */
-				var imgSorpresa = $('<img src="img/sorpresa.png" alt="surprise face" width="50" height="50"/>');
-				$('#sorpresa').append(imgSorpresa); 
+				var imgSorpresa = $('<img src="img/sorpresa.png" alt="surprise face" width="60" height="60"/>');
+				$('#sorpresaF').append(imgSorpresa); 
 				$('#textoSopresa').html('Sorpresa');
 			}
 			else {

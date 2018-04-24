@@ -1,8 +1,17 @@
-.progress {
-	width: 100%;
-	position:fixed;bottom:0px;
-	margin-top: 50px;
+.textoCentrado {
+	text-align: center;
 }
+.textoProgress{
+	color: black;
+}
+.progress {
+	width: 99% !important; 
+	bottom:0px;
+	margin-top: 50px;
+	margin-left: 10px;
+    
+}
+
 .bTristeza {
 	background-color: blue !important;
 }
