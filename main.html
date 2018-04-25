@@ -32,36 +32,13 @@
 				
 			</center>
 			
-		</div>
-
+	
 		
 			<div id="salida"></div>
 			<div id="hola" style= "display:none;"></div>
 
 			<br>
-			<div class="row">
-				<div class="col-md-2 textoCentrado">
-					<p> Tristeza: <span id="tristeza"></span></p>
-					<div id="tristezaF"></div>
-				</div>
-				<div class="col-md-2 textoCentrado">
-					<p> Miedo: <span id="miedo"></span></p>
-					<div id="miedoF"></div>
-				</div>
-				<div class="col-md-2 textoCentrado">
-					<p> Alegria: <span id="alegria"></span></p>
-					<div id="alegriaF"></div>
-				</div>
-				<div class="col-md-2 textoCentrado">
-					<p> Enfado: <span id="enfado"></span></p>
-					<div id="enfadoF"></div>
-				</div>
-				<div class="col-md-2 textoCentrado">
-					<p> Sorpresa: <span id="sorpresa"></span></p>
-					<div id="sorpresaF"></div>
-				</div>
-			</div>
-	
+			
 		<div class="progress">
 					<div class="progress-bar progress-bar bTristeza" id="barritaTristeza"> 
 						<span class="textoProgress" id="textoTristeza"></span> 
@@ -80,6 +57,7 @@
 					</div>
 				</div>
 		
+			</div>
 
 		
 <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -141,70 +119,45 @@ $(document).ready(function(){
 			var sorpresa = porcentajes_array[4];
 			
 			if(tristeza != 0){
-				$("#tristeza").html('');
-				$("#tristezaF").html('');
-				$("#tristeza").html(tristeza); /*Aquí mostrará el porcentaje de tristeza */
 				var imgTristeza = $('<img src="img/tristeza.jpg" alt="sad face" width="60" height="60"/>');
-				$('#tristezaF').append(imgTristeza); 
 				$('#textoTristeza').html("Tristeza");
+				$('#textoTristeza').append(imgTristeza); 
 		
 			}
 			else {
-				$("#tristeza").html('');
-				$("#tristezaF").html('');
 				$('#textoTristeza').html('');
 
 			}
 			if(miedo != 0){
-				$("#miedo").html('');
-				$("#miedoF").html('');
-				$("#miedo").html(miedo); /*Aquí mostrará el porcentaje de miedo */
 				var imgMiedo = $('<img src="img/miedo.jpg" alt="scary face" width="60" height="60"/>');
-				$('#miedoF').append(imgMiedo); 
 				$('#textoMiedo').html('Miedo');
+				$('#textoMiedo').append(imgMiedo); 
 			}
 			else {
-				$("#miedo").html('');
-				$("#miedoF").html('');
 				$('#textoMiedo').html('');
 			}
 			if(alegria != 0){
-				$("#alegria").html('');
-				$("#alegriaF").html('');
-				$("#alegria").html(alegria); /*Aquí mostrará el porcentaje de alegría */
 				var imgAlegria = $('<img src="img/alegria.jpg" alt="happy face" width="60" height="60"/>');
-				$('#alegriaF').append(imgAlegria); 
 				$('#textoAlegria').html('Alegria');
+				$('#textoAlegria').append(imgAlegria); 
 			}
 			else {
-				$("#alegria").html('');
-				$("#alegriaF").html('');
 				$('#textoAlegria').html('');
 			}
 			if(enfado != 0){
-				$("#enfado").html('');
-				$("#enfadoF").html('');
-				$("#enfado").html(enfado); /*Aquí mostrará el porcentaje de enfado */
 				var imgEnfado = $('<img src="img/enfado.jpg" alt="angry face" width="60" height="60"/>');
-				$('#enfadoF').append(imgEnfado); 
-				$('#textoEnfado').html('Enfado');
+				$('#textoEnfado').html('Enfado');				
+				$('#textoEnfado').append(imgEnfado); 
 			}
 			else {
-				$("#enfado").html('');
-				$("#enfadoF").html('');
 				$('#textoEnfado').html('');
 			}
-			if(sorpresa != 0){
-				$("#sorpresa").html('');
-				$("#sorpresaF").html('');
-				$("#sorpresa").html(sorpresa); /*Aquí mostrará el porcentaje de sorpresa */
-				var imgSorpresa = $('<img src="img/sorpresa.jpg" alt="surprise face" width="60" height="60"/>');
-				$('#sorpresaF').append(imgSorpresa); 
-				$('#textoSopresa').html('Sorpresa');
+			if(asco != 0){
+				var imgAsco = $('<img src="img/sorpresa.jpg" alt="dislike face" width="60" height="60"/>');
+				$('#textoAsco').html('Asco');
+				$('#textoAsco').append(imgAsco); 
 			}
 			else {
-				$("#sorpresa").html('');
-				$("#sorpresaF").html('');
 				$('#textoSopresa').html('');
 			}
 			
@@ -212,7 +165,7 @@ $(document).ready(function(){
 			var miedo = "width:" +  parseInt(porcentajes_array[1]) + "%";
 			var alegria = "width:" + parseInt(porcentajes_array[2]) + "%";
 			var enfado = "width:" + parseInt(porcentajes_array[3]) + "%";
-			var sorpresa = "width:" + parseInt(porcentajes_array[4]) + "%";
+			var asco = "width:" + parseInt(porcentajes_array[4]) + "%";
 			
 			document.getElementById("barritaTristeza").style = tristeza;
 			document.getElementById("barritaMiedo").style = miedo;
