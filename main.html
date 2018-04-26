@@ -41,19 +41,24 @@
 			
 		<div class="progress">
 					<div class="progress-bar progress-bar bTristeza" id="barritaTristeza"> 
-						<span class="textoProgress" id="textoTristeza"></span> 
+						<span class="textoProgress textoCentrado" id="textoTristeza"></span>
+						<span class="textoProgress textoCentrado" id="imagenTristeza"></span>
 					</div>
 					<div class="progress-bar progress-bar bMiedo" id="barritaMiedo"> 
-						<span class="textoProgress" id="textoMiedo"></span>
+						<span class="textoProgress textoCentrado" id="textoMiedo"></span>
+						<span class="textoProgress textoCentrado" id="imagenMiedo"></span>
 					</div>
 					<div class="progress-bar progress-bar bAlegria" id="barritaAlegria"> 
-						<span class="textoProgress" id="textoAlegria"></span>
+						<span class="textoProgress textoCentrado" id="textoAlegria"></span>
+						<span class="textoProgress textoCentrado" id="imagenAlegria"></span>
 					</div>
 					<div class="progress-bar progress-bar bEnfado" id="barritaEnfado"> 
-						<span class="textoProgress" id="textoEnfado"></span>
+						<span class="textoProgress textoCentrado" id="textoEnfado"></span>
+						<span class="textoProgress textoCentrado" id="imagenEnfado"></span>
 					</div>
-					<div class="progress-bar progress-bar bSorpresa" id="barritaSorpresa"> 
-						<span class="textoProgress" id="textoSopresa"></span>
+					<div class="progress-bar progress-bar bAsco" id="barritaAsco"> 
+						<span class="textoProgress textoCentrado" id="textoAsco"></span>
+						<span class="textoProgress textoCentrado" id="imagenAsco"></span>
 					</div>
 				</div>
 		
@@ -116,12 +121,12 @@ $(document).ready(function(){
 			var miedo = porcentajes_array[1];
 			var alegria = porcentajes_array[2];
 			var enfado = porcentajes_array[3];
-			var sorpresa = porcentajes_array[4];
+			var asco = porcentajes_array[4];
 			
 			if(tristeza != 0){
-				var imgTristeza = $('<img src="img/tristeza.jpg" alt="sad face" width="60" height="60"/>');
+				var imgTristeza = $('<img src="img/tristeza.png" alt="sad face" width="60" height="60"/>');
 				$('#textoTristeza').html("Tristeza");
-				$('#textoTristeza').append(imgTristeza); 
+				$('#imagenTristeza').append(imgTristeza); 
 		
 			}
 			else {
@@ -129,36 +134,36 @@ $(document).ready(function(){
 
 			}
 			if(miedo != 0){
-				var imgMiedo = $('<img src="img/miedo.jpg" alt="scary face" width="60" height="60"/>');
+				var imgMiedo = $('<img src="img/miedo.png" alt="scary face" width="60" height="60"/>');
 				$('#textoMiedo').html('Miedo');
-				$('#textoMiedo').append(imgMiedo); 
+				$('#imagenMiedo').append(imgMiedo); 
 			}
 			else {
 				$('#textoMiedo').html('');
 			}
 			if(alegria != 0){
-				var imgAlegria = $('<img src="img/alegria.jpg" alt="happy face" width="60" height="60"/>');
+				var imgAlegria = $('<img src="img/alegria.png" alt="happy face" width="60" height="60"/>');
 				$('#textoAlegria').html('Alegria');
-				$('#textoAlegria').append(imgAlegria); 
+				$('#imagenAlegria').append(imgAlegria); 
 			}
 			else {
 				$('#textoAlegria').html('');
 			}
 			if(enfado != 0){
-				var imgEnfado = $('<img src="img/enfado.jpg" alt="angry face" width="60" height="60"/>');
+				var imgEnfado = $('<img src="img/enfado.png" alt="angry face" width="60" height="60"/>');
 				$('#textoEnfado').html('Enfado');				
-				$('#textoEnfado').append(imgEnfado); 
+				$('#imagenEnfado').append(imgEnfado); 
 			}
 			else {
 				$('#textoEnfado').html('');
 			}
 			if(asco != 0){
-				var imgAsco = $('<img src="img/sorpresa.jpg" alt="dislike face" width="60" height="60"/>');
+				var imgAsco = $('<img src="img/asco.png" alt="dislike face" width="60" height="60"/>');
 				$('#textoAsco').html('Asco');
-				$('#textoAsco').append(imgAsco); 
+				$('#imagenAsco').append(imgAsco); 
 			}
 			else {
-				$('#textoSopresa').html('');
+				$('#textoAsco').html('');
 			}
 			
 			var tristeza = "width:" + parseInt(porcentajes_array[0]) + "%";
@@ -171,7 +176,7 @@ $(document).ready(function(){
 			document.getElementById("barritaMiedo").style = miedo;
 			document.getElementById("barritaAlegria").style = alegria;
 			document.getElementById("barritaEnfado").style = enfado;
-			document.getElementById("barritaSorpresa").style = sorpresa;
+			document.getElementById("barritaAsco").style = asco;
 
 		},	
 		error: function(request, status, errorThrown) {
