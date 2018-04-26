@@ -125,45 +125,60 @@ $(document).ready(function(){
 			
 			if(tristeza != 0){
 				var imgTristeza = $('<img src="img/tristeza.png" alt="sad face" width="60" height="60"/>');
+				$('#textoTristeza').html('');
+				$('#imagenTristeza').html('');
 				$('#textoTristeza').html("Tristeza");
 				$('#imagenTristeza').append(imgTristeza); 
 		
 			}
 			else {
 				$('#textoTristeza').html('');
+				$('#imagenTristeza').html('');
 
 			}
 			if(miedo != 0){
 				var imgMiedo = $('<img src="img/miedo.png" alt="scary face" width="60" height="60"/>');
+				$('#textoMiedo').html('');
+				$('#imagenMiedo').html('');
 				$('#textoMiedo').html('Miedo');
 				$('#imagenMiedo').append(imgMiedo); 
 			}
 			else {
 				$('#textoMiedo').html('');
+				$('#imagenMiedo').html('');
 			}
 			if(alegria != 0){
 				var imgAlegria = $('<img src="img/alegria.png" alt="happy face" width="60" height="60"/>');
+				$('#textoAlegria').html('');
+				$('#imagenAlegria').html('');
 				$('#textoAlegria').html('Alegria');
 				$('#imagenAlegria').append(imgAlegria); 
 			}
 			else {
 				$('#textoAlegria').html('');
+				$('#imagenAlegria').html('');
 			}
 			if(enfado != 0){
 				var imgEnfado = $('<img src="img/enfado.png" alt="angry face" width="60" height="60"/>');
+				$('#textoEnfado').html('');
+				$('#imagenEnfado').html(''); 
 				$('#textoEnfado').html('Enfado');				
 				$('#imagenEnfado').append(imgEnfado); 
 			}
 			else {
 				$('#textoEnfado').html('');
+				$('#imagenEnfado').html(''); 
 			}
 			if(asco != 0){
 				var imgAsco = $('<img src="img/asco.png" alt="dislike face" width="60" height="60"/>');
+				$('#textoAsco').html('');
+				$('#imagenAsco').html('');
 				$('#textoAsco').html('Asco');
 				$('#imagenAsco').append(imgAsco); 
 			}
 			else {
 				$('#textoAsco').html('');
+				$('#imagenAsco').html(imgAsco); 
 			}
 			
 			var tristeza = "width:" + parseInt(porcentajes_array[0]) + "%";
