@@ -7,7 +7,7 @@
 \chapter{Herramientas}
 
 \begin{resumen}
-En este capítulo se profundizará en las herramientas que utilizaremos a lo largo del trabajo. En la sección 3.1 se muestran las herramientas básicas que vamos a usar. En la sección 3.2 se presenta el diccionario que vamos a utilizar para el marcado emocional. En la sección 3.3 se introduce el framework que vamos a utilizar para el desarrollo de los servicios web, Django. En la sección 3.4 se explica cómo vamos a utilizar Trello para seguir la metodología Scrum. En la sección 3.5 se expone la forma de realizar las pruebas utilizando Jenkins y Doctest. En la sección 3.6 se presentan SpaCy y PyStemmer, las herramientas que se utilizarán para poder procesar las palabras que forman una frase para poder realizar el análisis emocional sobre ella.
+En este capítulo se profundizará en las herramientas que utilizaremos a lo largo del trabajo. En la sección 3.1 se muestran las herramientas básicas que vamos a usar para el desarrollo de nuestro proyecto. En la sección 3.2 se presenta el diccionario que vamos a utilizar para el marcado emocional. En la sección 3.3 se introduce el framework que vamos a utilizar para el desarrollo de los servicios web, Django. En la sección 3.4 se explica cómo vamos a utilizar Trello para seguir la metodología Scrum. En la sección 3.5 se expone la forma de realizar las pruebas utilizando Jenkins y Doctest. En la sección 3.6 se presentan SpaCy y PyStemmer, las herramientas que se utilizarán para poder procesar las palabras que forman una frase para poder realizar el análisis emocional sobre ella.
 \end{resumen}
 
 %-------------------------------------------------------------------
@@ -16,18 +16,19 @@ En este capítulo se profundizará en las herramientas que utilizaremos a lo largo
 \label{cap3:sec:basico}
 
 \begin{itemize}
-	\item \textbf{Repositorio:} Se utilizará un repositorio común de \textit{GitHub} en el que se subirán todos los cambios realizados en el código. Al ser un equipo de desarrollo pequeño y estar utilizando la metodología Scrum en principio todos los miembros del equipo estarán trabajando en la misma rama. Esto puede llegar a bloquear el proceso mientras una versión acabe de pasar las pruebas.
+	\item \textbf{Repositorio:} Se utilizará un repositorio común de \textit{GitHub} en el que se subirán todos los cambios realizados en el código. A pesar de ser un equipo de desarrollo pequeño y estar utilizando la metodología Scrum usaremos una rama por historia de usuario.
 	
-	\item \textbf{Pruebas manuales:} Algún miembro del equipo realizará las tareas de ``tester''. Después de las pruebas automáticas se realizará otra serie de pruebas planificadas de antemano para probar mejor la funcionalidad del código. El ``tester'' no será siempre la misma persona.
-		\item \textbf{Pruebas automáticas:} Usaremos un software especial con el fin de controlar la ejecución de pruebas y la comparación entre los resultados obtenidos y los resultados esperados. El uso de estas pruebas, nos permite incluir pruebas muy repetitivas y necesarias, dado que habrá pruebas que realizarlas de manera manual nos podrá ser muy costoso.
+		\item \textbf{Pruebas automáticas:} Haremos uso de jenkins con el fin de controlar la ejecución de pruebas y la comparación entre los resultados obtenidos y los resultados esperados. El uso de estas pruebas, nos permite incluir pruebas muy repetitivas y necesarias, dado que habrá pruebas que realizarlas de manera manual nos podrá ser muy costoso.
 \end{itemize}
 
 
 %-------------------------------------------------------------------
-\section{Diccionario}
+\section{Diccionario emocional}
 %-------------------------------------------------------------------
-\label{cap3:sec:diccionario}
+\label{cap3:sec:diccionario emocional}
 
+
+%HAY QUE CAMBIAR TODO ESTO%
 Este diccionario, basado en el diccionario ANEW traducido al castellano, es una adaptación en el que se han elegido las 5 emociones básicas (tristeza, miedo, alegría, enfado y sorpresa) y la neutralidad para no expresar ninguna emoción. Para crearlo participaron 10 personas, y cada una de ellas marcó cada una de las 1034 palabras con una emoción básica o la neutralidad.
 Cada palabra puede representar varias emociones por lo que se ha creado un número de confianza \textit{c}, entre 0 y 1, que determina con qué certeza la palabra corresponde a esa emoción. Este número indica el tanto por uno de evaluadores que asignaron dicha emoción a la palabra. La suma de estos números debe sumar 1.
 
@@ -68,7 +69,7 @@ Los resultados serán devueltos en formato JSON.
 
 Trello es una aplicación web que permite organizar proyectos y actividades. Para representar las tareas  y las historias de usuario se usan tarjetas virtuales. En la Figura \ref{fig:sprint} podemos ver el estado inicial del proyecto. Se observa el \textbf{Product Backlog}, del que product owner saca la cantidad de las historias de usuario que quiere que se realicen durante el sprint y estas pasan a la lista \textbf{To Do}. En la Figura \ref{fig:sprint2} se puede ver un ejemplo más avanzado en el que se puede ver como las historias de usuario han sido divididas en tareas para formar el \textbf{Sprint Backlog}, del que van saliendo en orden para estar \textbf{En Progreso} y, una vez acabadas, \textbf{Done}.
 
-	\figura{Bitmap/Capitulo3/Sprint1Plan}{width=.9\textwidth}{fig:sprint}{Sprint inicial que ilustra la estructura.}
+	\figura{Bitmap/Capitulo3/Sprint1Plan}{width=.9\textwidth}{fig:sprint}{Tablero trello al inicio del proyecto.}
 	
 	\figura{Bitmap/Capitulo3/Sprint1Fin}{width=.9\textwidth}{fig:sprint2}{Final del sprint inicial.}
 
