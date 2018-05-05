@@ -4,40 +4,9 @@
 %
 %---------------------------------------------------------------------
 
-\chapter{Desarrollo de la aplicación web}
+\chapter{API de la aplicación web}
 
 \begin{resumen}
-En este capítulo se explicará el proceso de desarrollo de la aplicación web. 
+En este capítulo se presentará una API de la aplicación desarrollada.
 \end{resumen}
 
-%-------------------------------------------------------------------
-\section{Despliegue}
-%-------------------------------------------------------------------
-\label{cap6:sec:despliegue}
-
-El primer paso es desplegar los servicios web en el servidor que nos ha proporcionado la universidad. Desplegaremos la aplicación desarrollada en Django en el apache del servidor usando mod\_wsgi, un módulo de apache que le permite hospedar aplicaciones web desarrolladas en Python. 
-
-Comenzamos instalando apache y el módulo en el servidor (Figura \ref{fig:install}) y, una vez que ambos estén instalados, habilitamos el módulo (Figura \ref{fig:modulo}) y reiniciamos apache (Figura \ref{fig:restart}) para que tenga efecto. Para que nuestra aplicación quede alojada en el apache hay que crear un virtualhost para ella (un dominio que apunte al directorio donde está nuestro proyecto). El virtualhost se configura creando un fichero con extensión .conf cuyo contenido se muestra en la Figura \ref{fig:conf}.
-
-\figura{Bitmap/Capitulo6/conf}{width=.6\textwidth}{fig:conf}{Contenido del archivo .conf}
-\figura{Bitmap/Capitulo6/install}{width=.6\textwidth}{fig:install}{Comando para la instalación}
-\figura{Bitmap/Capitulo6/modulo}{width=.6\textwidth}{fig:modulo}{Comando para la activación de mod\_wsgi}
-\figura{Bitmap/Capitulo6/restart}{width=.6\textwidth}{fig:restart}{Comando para el reinicio de apache}
-\figura{Bitmap/Capitulo6/activate}{width=.6\textwidth}{fig:activate}{Comando para activar el virtualhost}
-
-
-Cuando hemos terminado con la configuración del virtualhost sólo queda activarlo (Figura \ref{fig:activate}) y volver a reiniciar el apache.
-
-%-------------------------------------------------------------------
-\section{Desarrollo de la interfaz}
-%-------------------------------------------------------------------
-\label{cap6:sec:interfaz}
-
-La interfaz se desarrolla siguiendo el prototipo final obtenido en la sección 5.3.
-
-%-------------------------------------------------------------------
-\section{Integración}
-%-------------------------------------------------------------------
-\label{cap6:sec:integracion}
-
-Integrar la interfaz con la parte funcional.

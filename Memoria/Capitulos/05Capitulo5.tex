@@ -4,29 +4,26 @@
 %
 %---------------------------------------------------------------------
 
-\chapter{Diseño de la aplicación web}
+\chapter{Diseño y desarrollo de la aplicación web}
 
 \begin{resumen}
-En este capítulo se explicará el proceso seguido para diseñar la interfaz que tendrá la aplicación web que desarrollaremos.
-Primero, en la sección 5.1, se presentan los prototipos que diseñamos cada una de las tres. En la sección 5.2, se muestra el prototipo que obtuvimos tras poner los tres en común. Finalmente, en la sección 5.3, se presenta la interfaz que finalmente tendrá la aplicación.
+En este capítulo se explicará el proceso de diseño y desarrollo de la aplicación web que contendrá los servicios desarrollados.
+Primero, en la sección 5.1, se presentará el proceso de diseño de la interfaz. En la sección 5.2, se muestra el desarrollo de la aplicación en sí. Finalmente, en la sección 5.3, se muestran los resultados obtenidos en una prueba con usuarios finales de la aplicación.
 \end{resumen}
 
 %-------------------------------------------------------------------
-\section{Prototipos iniciales}
+\section{Diseño}
 %-------------------------------------------------------------------
-\label{cap5:sec:prototipos_iniciales}
+\label{cap5:sec:disenyo}
 
+\subsection{Prototipos iniciales}
 Cada una de nosotras diseñó un prototipo distinto para la aplicación web. Los prototipos resultantes son bastante similares entre sí. A continuación se muestran las principales secciones de la aplicación, la pantalla principal y la pantalla que muestra el resultado del análisis, y sus diferencias en los tres prototipos.
-
-\subsection{Pantalla principal}
 
 La pantalla principal en todos los casos es bastante simple, un cuadro de texto donde introducir el texto a interpretar y un botón para ejecutar el interprete (Figura \ref{fig:inicial_paloma}). Puede incluir los emoticonos que representen las distintas emociones con las que trabajamos debajo del cuadro (Figura \ref{fig:inicial_gema}) o a la derecha de este (Figura \ref{fig:inicial_elena}).
 
 \figura{Bitmap/Capitulo5/inicial_paloma}{width=.6\textwidth}{fig:inicial_paloma}{Pantalla inicial del prototipo de Paloma}
 \figura{Bitmap/Capitulo5/inicial_gema}{width=.6\textwidth}{fig:inicial_gema}{Pantalla inicial del prototipo de Gema}
 \figura{Bitmap/Capitulo5/inicial_elena}{width=.6\textwidth}{fig:inicial_elena}{Pantalla inicial del prototipo de Elena}
-
-\subsection{Pantalla de análisis}
 
 Los resultados del análisis se muestran de forma similar en los tres prototipos. Todos ellos utilizan los emoticonos para representar la emoción acompañados del porcentaje que tiene esta dentro del texto. El prototipo de Paloma (Figura \ref{fig:análisis_paloma}) resalta los emoticonos correspondientes a las emociones que están presentes en el texto y ofrece la opción de mostrar únicamente la emoción mayoritaria. Los prototipos de Elena (Figura \ref{fig:análisis_elena}) y Gema (Figura \ref{fig:análisis_gema}) muestran una frase para indicar cuál es la emoción mayoritaria y marcan visualmente las palabras del texto que transmiten la emoción que haya sido seleccionada por el usuario.
 
@@ -35,22 +32,15 @@ Los resultados del análisis se muestran de forma similar en los tres prototipos.
 \figura{Bitmap/Capitulo5/analisis_gema}{width=.6\textwidth}{fig:analisis_gema}{Pantalla de análisis del prototipo de Gema}
 
 
-%-------------------------------------------------------------------
-\section{Prototipo común}
-%-------------------------------------------------------------------
-\label{cap5:sec:prototipo_comun}
+\subsection{Prototipo común}
 
 Tras comparar los tres prototipos se llegó a uno común. El principal añadido de este prototipo es un menú de configuración (Figura \ref{fig:configuracion}) en la esquina superior derecha que permite cambiar las opciones de visualización.
 
 \figura{Bitmap/Capitulo5/configuracion}{width=.6\textwidth}{fig:configuracion}{Menú de opciones de la interfaz}
 
-\subsection{Pantalla principal}
-
 La pantalla principal por defecto (Figura \ref{fig:inicial1_final}) es prácticamente idéntica a la que proponía Gema pero puede modificarse gracias al nuevo menú de configuración para, por ejemplo, hacer que las emociones se muestren a la derecha (Figura \ref{fig:inicial2_final}).
 \figura{Bitmap/Capitulo5/inicial1_final}{width=.6\textwidth}{fig:inicial1_final}{Pantalla inicial por defecto del prototipo final}
 \figura{Bitmap/Capitulo5/inicial2_final}{width=.6\textwidth}{fig:inicial2_final}{Pantalla inicial alternativa del prototipo final}
-
-\subsection{Pantalla de análisis}
 
 A la hora de mostrar los resultados no estábamos completamente seguras de cuál era la forma más clara de mostrarlos así que añadimos una serie de opciones al menú para que el usuario elija la que le resulte más cómoda y útil. Las opciones son, básicamente: mostrar los emoticonos (Figura \ref{fig:analisis1_final}), mostrar los emoticonos y marcar las palabras del texto que transmitan las emociones seleccionadas (Figura \ref{fig:analisis2_final}), mostrar un gráfico con las emociones que estén presentes en el texto (Figura \ref{fig:analisis3_final}), mostrar sólo los emoticonos que respresenten emociones presentes en el texto (Figura \ref{fig:analisis4_final}) o mostrar únicamente el emoticono que representa la emoción mayoritaria (Figura \ref{fig:analisis5_final}). Todas estas opciones pueden ir acompañadas de los porcentajes de cada emoción (seleccionando esta opción en el menú) y mostrarse debajo del cuadro de texto o a su derecha según la preferencia del usuario.
 
@@ -63,15 +53,50 @@ Otra opción que puede ser seleccionada por el usuario es la de obtener informaci
 \figura{Bitmap/Capitulo5/analisis5_final}{width=.6\textwidth}{fig:analisis5_final}{Pantalla de análisis mostrando sólo la mayoritaria}
 \figura{Bitmap/Capitulo5/alegre_final}{width=.6\textwidth}{fig:alegre_final}{Información sobre la palabra contenta}
 
-%-------------------------------------------------------------------
-\section{Interfaz final}
-%-------------------------------------------------------------------
-\label{cap5:sec:interfaz_final}
+\subsection{Interfaz final}
 
 Tras reunirnos con la asociación Asperger Madrid, y teniéndo en cuenta la información que nos proporcionaron, acordamos un prototipo final sobre el que realizar la interfaz de la aplicación. 
 
-\subsection{Pantalla principal}
 La pantalla principal por defecto será muy similar a la propuesta en nuestro prototipo, mostrando la información por debajo del cuadro de texto. Para representar las emociones se mostrarán, por defecto, el pictograma ARASAAC correspondiente a cada una de ellas. A cada emoción le corresponderá, además, un color. Los colores por defecto son los utilizados en la película "`Del revés"': amarillo para la alegría, azul para la tristeza, rojo para el enfado y morado para el miedo. Para la sorpresa utilizaremos el color verde. El usuario podrá cambiar los colores si los que hemos elegido no le resultan claros. También podrá cambiar cómo se muestran representadas las emociones, en vez de emoticonos puede elegir ver fotografías de personas o emoticonos coloreados del color pertinente. 
 
-\subsection{Pantalla de análisis}
 Según los expertos usar porcentajes a la hora de representar la cantidad en la que cierta emoción está presente en el texto no es la mejor opción ya que no queda demasiado claro. Nos recomendaron utilizar una barra debajo de las emociones que se llenase proporcionalmente según el color de estas.
+
+%-------------------------------------------------------------------
+\section{Desarrollo}
+%-------------------------------------------------------------------
+\label{cap5:sec:desarrollo}
+
+El primer paso es desplegar los servicios web en el servidor que nos ha proporcionado la universidad. Desplegaremos la aplicación desarrollada en Django en el apache del servidor usando mod\_wsgi, un módulo de apache que le permite hospedar aplicaciones web desarrolladas en Python. 
+
+Comenzamos instalando apache y el módulo en el servidor:
+
+\begin{lstlisting}[style=DOS]
+tfgvr1718@sesat:\~\$ sudo apt-get install apache2 libapache2-mod-wsgi
+\end{lstlisting}
+
+Una vez que ambos estén instalados, habilitamos el módulo y reiniciamos apache para que tenga efecto.
+
+\begin{lstlisting}[style=DOS]
+tfgvr1718@sesat:\~\$ sudo a2enmod wsgi
+tfgvr1718@sesat:/etc/apache2\$ sudo service apache2 restart
+\end{lstlisting}
+
+Para que nuestra aplicación quede alojada en el apache hay que crear un virtualhost para ella (un dominio que apunte al directorio donde está nuestro proyecto). El virtualhost se configura creando un fichero con extensión .conf cuyo contenido se muestra en la Figura \ref{fig:conf}.
+
+\figura{Bitmap/Capitulo6/conf}{width=.8\textwidth}{fig:conf}{Contenido del archivo .conf}
+
+Cuando hemos terminado con la configuración del virtualhost sólo queda activarlo (Figura \ref{fig:activate}) y volver a reiniciar el apache.
+
+\begin{lstlisting}[style=DOS]
+tfgvr1718@sesat:/etc/apache2\$ sudo a2ensite djangoapp
+tfgvr1718@sesat:/etc/apache2\$ sudo service apache2 restart
+\end{lstlisting}
+
+\section{Desarrollo de la interfaz}
+
+%Aqui va todo lo de la web
+La interfaz se desarrolla siguiendo el prototipo final obtenido en la sección 5.3.
+
+\section{Desarrollo de la interfaz}
+
+Tuvimos la oportunidad de realizar una evaluación con usuarios finales de la aplicación y gracias a ella obtuvimos los siguientes resultados:

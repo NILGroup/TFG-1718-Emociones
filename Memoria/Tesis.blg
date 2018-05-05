@@ -10,14 +10,15 @@ A level-1 auxiliary file: Capitulos/06Capitulo6.aux
 A level-1 auxiliary file: Capitulos/07Capitulo7.aux
 A level-1 auxiliary file: Capitulos/08Capitulo8.aux
 A level-1 auxiliary file: Apendices/01ApendiceA.aux
-A level-1 auxiliary file: Apendices/02ApendiceB.aux
 A level-1 auxiliary file: Cascaras/bibliografia.aux
 The style file: TeXiS/TeXiS.bst
 A level-1 auxiliary file: Cascaras/fin.aux
 Database file #1: nuestros.bib
 Database file #2: latex.bib
 Database file #3: otros.bib
-Warning--I didn't find a database entry for "Baldasari"
+A bad cross reference---entry "Kristensen2011"
+refers to entry "10.1590/S2237-60892011000300003", which doesn't exist
+Warning--I didn't find a database entry for "10.1590/S2237-60892011000300003"
 Warning--empty journal in ANEW
 Warning--missing publisher in goertzel
 Warning--empty journal in Grefenstette06
@@ -27,7 +28,9 @@ Warning--empty journal in jtech
 Warning--empty year in jtech; set to ????
 Warning--empty journal in Lang80
 Warning--empty journal in Lang99
+Warning--empty journal in Monnier13
 Warning--missing publisher in peterson1965lasswell
 Warning--missing publisher in Picard
+Warning--empty journal in Schmidtke14
 Warning--missing publisher in ScrumManagerLibro
-(There were 13 warnings)
+(There was 1 error message)

@@ -1,60 +1,53 @@
 \babel@toc {spanish}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Flujo Scrum\relax }}{13}{figure.caption.4}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Flujo Scrum\relax }}{15}{figure.caption.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Sprint inicial que ilustra la estructura.\relax }}{19}{figure.caption.6}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Final del sprint inicial.\relax }}{20}{figure.caption.7}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Lematizaci\'on de la palabra "`alegre"' con Stemmer.\relax }}{21}{figure.caption.8}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Lematizaci\'on de la palabra "`alegre"' con Spacy.\relax }}{21}{figure.caption.9}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Tablero trello al inicio del proyecto.\relax }}{19}{figure.caption.7}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Final del sprint inicial.\relax }}{20}{figure.caption.8}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Lematizaci\'on de la palabra "`alegre"' con Stemmer.\relax }}{21}{figure.caption.9}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Lematizaci\'on de la palabra "`alegre"' con Spacy.\relax }}{21}{figure.caption.10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Vista general de la lista de palabras.\relax }}{24}{figure.caption.10}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Vista detalle de la palabra ``Alegre''.\relax }}{25}{figure.caption.11}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Respuesta al buscar los porcentajes de la palabra ``alegre''.\relax }}{25}{figure.caption.12}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Respuesta al buscar los porcentajes de una palabra que no est\'a en el diccionario.\relax }}{26}{figure.caption.13}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Respuesta al encontrar la emoci\'on consensuada.\relax }}{26}{figure.caption.14}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Respuesta si la palabra no tiene emoci\'on consensuada.\relax }}{27}{figure.caption.15}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Respuesta al encontrar la emoci\'on mayoritaria.\relax }}{27}{figure.caption.16}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Respuesta si hay dos emociones mayoritarias.\relax }}{28}{figure.caption.17}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces An\'alisis de una frase sin palabras emocionales.\relax }}{28}{figure.caption.18}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces An\'alisis de una frase con palabras alegres.\relax }}{29}{figure.caption.19}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces An\'alisis de una frase con palabras de varias emociones.\relax }}{29}{figure.caption.20}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Vista general de la lista de palabras.\relax }}{24}{figure.caption.11}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Vista detalle de la palabra ``Alegre''.\relax }}{25}{figure.caption.12}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Respuesta al buscar los grados emocionales de la palabra ``enfermedad''.\relax }}{26}{figure.caption.13}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Respuesta al buscar los porcentajes de una palabra que no est\'a en el diccionario.\relax }}{26}{figure.caption.14}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Respuesta si la palabra no tiene emoci\'on consensuada.\relax }}{27}{figure.caption.15}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Respuesta al encontrar la emoci\'on mayoritaria.\relax }}{27}{figure.caption.16}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces An\'alisis de una frase sin palabras emocionales.\relax }}{28}{figure.caption.17}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Pantalla inicial del prototipo de Paloma\relax }}{32}{figure.caption.21}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Pantalla inicial del prototipo de Gema\relax }}{32}{figure.caption.22}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Pantalla inicial del prototipo de Elena\relax }}{33}{figure.caption.23}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Pantalla de an\'alisis del prototipo de Paloma\relax }}{34}{figure.caption.24}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Pantalla de an\'alisis del prototipo de Elena\relax }}{35}{figure.caption.25}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Pantalla de an\'alisis del prototipo de Gema\relax }}{35}{figure.caption.26}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Men\'u de opciones de la interfaz\relax }}{36}{figure.caption.27}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Pantalla inicial por defecto del prototipo final\relax }}{36}{figure.caption.28}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Pantalla inicial alternativa del prototipo final\relax }}{36}{figure.caption.29}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Pantalla de an\'alisis con los porcentajes abajo\relax }}{37}{figure.caption.30}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Pantalla de an\'alisis con los porcentajes derecha y palabras marcadas\relax }}{37}{figure.caption.31}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Pantalla de an\'alisis con gr\'afico\relax }}{37}{figure.caption.32}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Pantalla de an\'alisis mostrando las emociones que aparecen\relax }}{38}{figure.caption.33}
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Pantalla de an\'alisis mostrando s\'olo la mayoritaria\relax }}{38}{figure.caption.34}
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Informaci\'on sobre la palabra contenta\relax }}{38}{figure.caption.35}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Contenido del archivo .conf\relax }}{40}{figure.caption.36}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Comando para la instalaci\'on\relax }}{40}{figure.caption.37}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Comando para la activaci\'on de mod\_wsgi\relax }}{40}{figure.caption.38}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Comando para el reinicio de apache\relax }}{40}{figure.caption.39}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Comando para activar el virtualhost\relax }}{40}{figure.caption.40}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Pantalla inicial del prototipo de Paloma\relax }}{40}{figure.caption.20}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Pantalla inicial del prototipo de Gema\relax }}{40}{figure.caption.21}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Pantalla inicial del prototipo de Elena\relax }}{41}{figure.caption.22}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Pantalla de an\'alisis del prototipo de Paloma\relax }}{42}{figure.caption.23}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Pantalla de an\'alisis del prototipo de Elena\relax }}{43}{figure.caption.24}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Pantalla de an\'alisis del prototipo de Gema\relax }}{43}{figure.caption.25}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Men\'u de opciones de la interfaz\relax }}{44}{figure.caption.26}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Pantalla inicial por defecto del prototipo final\relax }}{44}{figure.caption.27}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Pantalla inicial alternativa del prototipo final\relax }}{45}{figure.caption.28}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Pantalla de an\'alisis con los porcentajes abajo\relax }}{45}{figure.caption.29}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Pantalla de an\'alisis con los porcentajes derecha y palabras marcadas\relax }}{45}{figure.caption.30}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Pantalla de an\'alisis con gr\'afico\relax }}{46}{figure.caption.31}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Pantalla de an\'alisis mostrando las emociones que aparecen\relax }}{46}{figure.caption.32}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Pantalla de an\'alisis mostrando s\'olo la mayoritaria\relax }}{46}{figure.caption.33}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Informaci\'on sobre la palabra contenta\relax }}{47}{figure.caption.34}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Contenido del archivo .conf\relax }}{47}{figure.caption.35}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Planificaci\'on del sprint 1 (14/11/2017)\relax }}{52}{figure.caption.36}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Final del sprint 1 (28/11/2017)\relax }}{52}{figure.caption.37}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Planificaci\'on del sprint 2 (28/11/2017)\relax }}{53}{figure.caption.38}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Final del sprint 2 (19/12/2017)\relax }}{53}{figure.caption.39}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Planificaci\'on del sprint 3 (19/12/2017)\relax }}{54}{figure.caption.40}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Final del sprint 3 (09/01/2017)\relax }}{54}{figure.caption.41}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Planificaci\'on del sprint 4 (09/01/2017)\relax }}{55}{figure.caption.42}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Final del sprint 4 (21/02/2017)\relax }}{55}{figure.caption.43}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Planificaci\'on del sprint 5 (21/02/2017)\relax }}{56}{figure.caption.44}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Final del sprint 5 (07/03/2017)\relax }}{56}{figure.caption.45}
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Planificaci\'on del sprint 6 (07/03/2017)\relax }}{57}{figure.caption.46}
+\contentsline {figure}{\numberline {7.12}{\ignorespaces Final del sprint 6 (21/03/2017)\relax }}{57}{figure.caption.47}
+\contentsline {figure}{\numberline {7.13}{\ignorespaces Planificaci\'on del sprint 7 (21/03/2017)\relax }}{57}{figure.caption.48}
+\contentsline {figure}{\numberline {7.14}{\ignorespaces Final del sprint 7 (25/04/2017)\relax }}{58}{figure.caption.49}
+\contentsline {figure}{\numberline {7.15}{\ignorespaces Planificaci\'on del sprint 8 (25/04/2017)\relax }}{58}{figure.caption.50}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Planificaci\'on del sprint 1 (14/11/2017)\relax }}{56}{figure.caption.41}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Final del sprint 1 (28/11/2017)\relax }}{56}{figure.caption.42}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Planificaci\'on del sprint 2 (28/11/2017)\relax }}{57}{figure.caption.43}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Final del sprint 2 (19/12/2017)\relax }}{57}{figure.caption.44}
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Planificaci\'on del sprint 3 (19/12/2017)\relax }}{58}{figure.caption.45}
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Final del sprint 3 (09/01/2017)\relax }}{58}{figure.caption.46}
-\contentsline {figure}{\numberline {A.7}{\ignorespaces Planificaci\'on del sprint 4 (09/01/2017)\relax }}{59}{figure.caption.47}
-\contentsline {figure}{\numberline {A.8}{\ignorespaces Final del sprint 4 (21/02/2017)\relax }}{59}{figure.caption.48}
-\contentsline {figure}{\numberline {A.9}{\ignorespaces Planificaci\'on del sprint 5 (21/02/2017)\relax }}{59}{figure.caption.49}
-\contentsline {figure}{\numberline {A.10}{\ignorespaces Final del sprint 5 (07/03/2017)\relax }}{60}{figure.caption.50}
-\contentsline {figure}{\numberline {A.11}{\ignorespaces Planificaci\'on del sprint 6 (07/03/2017)\relax }}{60}{figure.caption.51}
-\contentsline {figure}{\numberline {A.12}{\ignorespaces Final del sprint 6 (21/03/2017)\relax }}{60}{figure.caption.52}
-\contentsline {figure}{\numberline {A.13}{\ignorespaces Planificaci\'on del sprint 7 (21/03/2017)\relax }}{61}{figure.caption.53}
 \addvspace {10\p@ }

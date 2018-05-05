@@ -1,4 +1,4 @@
-\begin{thebibliography}{20}
+\begin{thebibliography}{27}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Bradley y Lang(1999)}]{ANEW}
@@ -9,6 +9,26 @@
 \newblock Disponible en
   \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.306.3881&rep=rep1&type=pdf}
   (último acceso,  Marzo, 2018).
+
+\bibitem[{Ferr{\'e} et\ al.(2017)Ferr{\'e}, Guasch, Mart{\'i}nez-Garc{\'i}a,
+  Fraga y Hinojosa}]{Ferre2017}
+{\sc Ferr{\'e}, P.}, {\sc Guasch, M.}, {\sc Mart{\'i}nez-Garc{\'i}a, N.}, {\sc
+  Fraga, I.} y {\sc Hinojosa, J.~A.}
+\newblock Moved by words: Affective ratings for a set of 2,266 spanish words in
+  five discrete emotion categories.
+\newblock {\em Behavior Research Methods\/}, vol.\ 49(3), p\'aginas 1082--1094,
+  2017.
+\newblock ISSN 1554-3528.
+
+\bibitem[{Ferr{\'e} et\ al.(2012)Ferr{\'e}, Guasch, Moldovan y
+  S{\'a}nchez-Casas}]{Ferre2012}
+{\sc Ferr{\'e}, P.}, {\sc Guasch, M.}, {\sc Moldovan, C.} y {\sc
+  S{\'a}nchez-Casas, R.}
+\newblock Affective norms for 380 spanish words belonging to three different
+  semantic categories.
+\newblock {\em Behavior Research Methods\/}, vol.\ 44(2), p\'aginas 395--403,
+  2012.
+\newblock ISSN 1554-3528.
 
 \bibitem[{Fowler(2006)}]{Fowler}
 {\sc Fowler, M.}
@@ -46,10 +66,30 @@
   automatically classifying new words along semantic axes.
 \newblock 2006.
 
+\bibitem[{Guasch et\ al.(2016)Guasch, Ferr{\'e} y Fraga}]{Guasch2016}
+{\sc Guasch, M.}, {\sc Ferr{\'e}, P.} y {\sc Fraga, I.}
+\newblock Spanish norms for affective and lexico-semantic variables for 1,400
+  words.
+\newblock {\em Behavior Research Methods\/}, vol.\ 48(4), p\'aginas 1358--1369,
+  2016.
+\newblock ISSN 1554-3528.
+
 \bibitem[{Hatzivassiloglou y McKeown(1997)}]{mckeown}
 {\sc Hatzivassiloglou, V.} y {\sc McKeown, K.~R.}
 \newblock {\em Predicting the semantic orientation of adjectives\/}.
 \newblock 1997.
+
+\bibitem[{Hinojosa et\ al.(2016)Hinojosa, Mart{\'i}nez-Garc{\'i}a,
+  Villalba-Garc{\'i}a, Fern{\'a}ndez-Folgueiras, S{\'a}nchez-Carmona, Pozo y
+  Montoro}]{Hinojosa2016}
+{\sc Hinojosa, J.~A.}, {\sc Mart{\'i}nez-Garc{\'i}a, N.}, {\sc
+  Villalba-Garc{\'i}a, C.}, {\sc Fern{\'a}ndez-Folgueiras, U.}, {\sc
+  S{\'a}nchez-Carmona, A.}, {\sc Pozo, M.~A.} y {\sc Montoro, P.~R.}
+\newblock Affective norms of 875 spanish words for five discrete emotional
+  categories and two emotional dimensions.
+\newblock {\em Behavior Research Methods\/}, vol.\ 48(1), p\'aginas 272--284,
+  2016.
+\newblock ISSN 1554-3528.
 
 \bibitem[{Huettner y Subasic(2000)}]{HuettnerSubasic00}
 {\sc Huettner, A.} y {\sc Subasic, P.}
@@ -64,6 +104,15 @@
 \newblock Disponible en
   \url{http://www.jtech.ua.es/j2ee/publico/servc-web-2012-13/sesion01-apuntes.html}
   (último acceso,  Marzo, 2018).
+
+\bibitem[{Kristensen et\ al.(2011)Kristensen, Gomes, Justo y
+  Vieira}]{Kristensen2011}
+{\sc Kristensen, C.~H.}, {\sc Gomes, C. F.~A. d.~A.}, {\sc Justo, A.~R.} y {\sc
+  Vieira, K.}
+\newblock {Normas brasileiras para o Affective Norms for English Words}.
+\newblock {\em {Trends in Psychiatry and Psychotherapy}\/}, vol.\ 33, p\'aginas
+  135 -- 146, 2011.
+\newblock ISSN 2237-6089.
 
 \bibitem[{Lang(1980)}]{Lang80}
 {\sc Lang, P.}
@@ -83,6 +132,11 @@
   reasoning.
 \newblock {\em Proceedings of the 2n International Conference on Adaptive
   Hypermedia and Adaptive Web Based Systems\/}, 2002.
+
+\bibitem[{Monnier y Syssau(2013)}]{Monnier13}
+{\sc Monnier, C.} y {\sc Syssau, A.}
+\newblock Affective norms for french words (fan).
+\newblock vol.\ 46, 2013.
 
 \bibitem[{Mueller y Dyer(1985)}]{MuellerDyer85}
 {\sc Mueller, E.~T.} y {\sc Dyer, M.~G.}
@@ -120,6 +174,13 @@
 \newblock When my robot similes at me: Enabling human-robot rapport via
   real-time head gesture mimicry.
 \newblock {\em Journal on Multimodal User Interfaces\/}, 2010.
+
+\bibitem[{Schmidtke et\ al.(2014)Schmidtke, SchrÃ¶der, Jacobs y
+  Conrad}]{Schmidtke14}
+{\sc Schmidtke, D.}, {\sc SchrÃ¶der, T.}, {\sc Jacobs, A.} y {\sc Conrad, M.}
+\newblock Angst: Affective norms for german sentiment terms derived from the
+  affective norms for english words.
+\newblock vol.\ 46, 2014.
 
 \bibitem[{ScrumManager(2016)}]{ScrumManagerLibro}
 {\sc ScrumManager}.
