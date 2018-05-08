@@ -32,11 +32,11 @@
 \contentsline {section}{\numberline {4.1}Base para los servicios web}{23}{section.4.1}
 \contentsline {section}{\numberline {4.2}An\'alisis afectivo de una palabra}{25}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Lematizaci\'on}{25}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Servicio web grados emocionales de una palabra}{25}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Servicio web emoci\'on consensuada de una palabra}{26}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Servicio web emoci\'on mayoritaria de una palabra}{26}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.2}Servicio web para obtener los grados emocionales de una palabra para cada emoci\'on}{25}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Servicio web para obtener la emoci\'on consensuada de una palabra}{26}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Servicio web para obtener la emoci\'on mayoritaria de una palabra}{27}{subsection.4.2.4}
 \contentsline {section}{\numberline {4.3}An\'alisis afectivo de una frase}{27}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Obtenci\'on de palabras emocionales}{27}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}Obtenci\'on de palabras relevantes}{27}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Grados emocionales de una frase}{28}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Emoci\'on mayoritaria de una frase}{29}{subsection.4.3.3}
 \contentsline {section}{\numberline {4.4}An\'alisis afectivo de un texto}{29}{section.4.4}
@@ -81,7 +81,7 @@
 \contentsline {section}{\numberline {7.6}Sprint 6}{54}{section.7.6}
 \contentsline {section}{\numberline {7.7}Sprint 7}{54}{section.7.7}
 \contentsline {section}{\numberline {7.8}Sprint 8}{55}{section.7.8}
-\contentsline {chapter}{\numberline {8}Trabajo individual y conocimientos aplicados}{59}{chapter.8}
+\contentsline {chapter}{\numberline {8}Conocimientos Aplicados}{59}{chapter.8}
 \contentsline {section}{\numberline {8.1}Gema}{59}{section.8.1}
 \contentsline {section}{\numberline {8.2}Paloma}{59}{section.8.2}
 \contentsline {section}{\numberline {8.3}Elena}{59}{section.8.3}
@@ -111,4 +111,4 @@
 \contentsline {subsection}{\numberline {A.3.3}Blog reflexi\'on}{68}{subsection.Alph1.3.3}
 \contentsline {subsection}{\numberline {A.3.4}Blog muerte}{69}{subsection.Alph1.3.4}
 \contentsline {subsection}{\numberline {A.3.5}Blog enfado}{69}{subsection.Alph1.3.5}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{71}{appendix*.51}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{71}{appendix*.49}

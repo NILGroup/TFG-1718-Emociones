@@ -8,7 +8,7 @@
 
 \begin{resumen}
 En este capítulo se explicarán los servicios web que se han desarrollado con el fin de analizar el contenido afectivo de un texto.
-Primero, en la sección 4.1, se explica la base sobre la que trabajaran todos los servicios. En la sección 4.2, se presentarán los servicios orientados a identificar las emociones predominantes en una palabra concreta. Seguidamente, en la sección 4.3, se explica como el análisis de la palabra se aplica a determinar la emoción de una frase entera para después, en la sección 4.4, aplicar todo al análisis de un texto arbitrario completo. Finalmente, en la sección 4.5 se muestran los resultados de las pruebas realizadas sobre los servicios desarrollados.
+Primero, en la sección 4.1, se explica la base sobre la que trabajaran todos los servicios. En la sección 4.2, se presentarán los servicios orientados a identificar las emociones predominantes en una palabra concreta. Seguidamente, en la sección 4.3, se explica como el análisis de la palabra se aplica a determinar la emoción de una frase para después, en la sección 4.4, aplicar todo al análisis de un texto arbitrario completo. Finalmente, en la sección 4.5 se muestran los resultados de las pruebas realizadas sobre los servicios desarrollados.
 \end{resumen}
 
 %-------------------------------------------------------------------
@@ -51,7 +51,7 @@ Una vez que se tiene el servidor y todo el código necesario para el funcionamien
 %-------------------------------------------------------------------
 \label{cap4:sec:palabra}
 
-Hemos implementado tres servicios web diferentes para mostrar la carga afectiva de una palabra, dependiendo de la información buscada en cada momento.
+La primera tarea que resolvimos fue obtener el contenido emocional de una palabra aislada, dicho contenido emocional puede ser de tres tipos: los grados emocionales, la emoción mayoritaria y la emoción consensuada.
 
 \subsection{Lematización}
 Lo primero que tenemos que hacer para buscar cualquier palabra es obtener su lema para poder compararlo con los lemas de las palabras que tenemos almacenadas en la base de datos de nuestro servidor. Para ello, como ya hemos comentado en la sección 3.6, utilizaremos la librería Stemmer que nos proporcionará el lema mediante su método "`stemWord"'.
@@ -61,27 +61,27 @@ Lo primero que tenemos que hacer para buscar cualquier palabra es obtener su lem
 \end{lstlisting}
 	
 
-\subsection{Servicio web grados emocionales de una palabra}
-Dada una palabra, este servicio nos devuelve la información respectiva a los grados o valores de cada categoría emocional que posee. Para ello se realiza una petición \textbf{GET} al servidor, y se devuelve el resultado en formato JSON al usuario.
+\subsection{Servicio web para obtener los grados emocionales de una palabra para cada emoción}
+Dada una palabra, este servicio nos devuelve la información sobre los grados o valores de cada categoría emocional que posee. Para ello se realiza una petición \textbf{GET} al servidor, y se devuelve el resultado en formato JSON al usuario.
 
-Como entrada tendríamos la palabra de la cual queremos conocer sus emociones; existirán dos posibilidades, bien que la palabra esté en nuestro diccionario, por lo que la salida sería el grado de cada emoción (Figura \ref{fig:grados}), o bien que la palabra no exista en nuestro diccionario, que devolverá un mensaje 404 de ``NOT FOUND'' (Figura \ref{fig:notfound}).
+Como entrada tendríamos la palabra de la cual queremos conocer sus emociones. Si la palabra está en nuestro diccionario, la salida sería el grado de cada emoción. Si la palabra no existe en nuestro diccionario el servicio devolverá un mensaje 404 de ``NOT FOUND'' (Figura \ref{fig:notfound}). En la figura (Figura \ref{fig:grados}) se puede ver el JSON devuelto por el servicio para la palabra "`alegre"'.
 
-\figura{Bitmap/Capitulo4/grados}{width=.4\textwidth}{fig:grados}{Respuesta al buscar los grados emocionales de la palabra ``enfermedad''.}
+\figura{Bitmap/Capitulo4/grados}{width=.4\textwidth}{fig:grados}{JSON devuelto al buscar los grados emocionales de la palabra ``enfermedad''.}
 	
-\figura{Bitmap/Capitulo4/no_encontrada}{width=.4\textwidth}{fig:notfound}{Respuesta al buscar los porcentajes de una palabra que no está en el diccionario.}
+\figura{Bitmap/Capitulo4/no_encontrada}{width=.4\textwidth}{fig:notfound}{JSON devuelto al buscar los porcentajes de una palabra que no está en el diccionario.}
 
 
-\subsection{Servicio web emoción consensuada de una palabra}
+\subsection{Servicio web para obtener la emoción consensuada de una palabra}
 Dada una palabra, este servicio nos devuelve a través de una petición \textbf{GET} al servidor, si la palabra tiene o no emoción consensuada y en caso de tenerla cuál.  Hablamos de emoción consensuada cuando el grado o valor que tiene una palabra de una categoría emocional es 5.
 
-Como entrada tendríamos la palabra de la cual queremos conocer su emoción consensuada, mientras que la salida será la emoción consensuada en caso de tenerla o un mensaje de que no la tiene (Figura \ref{fig:noconsensuada}).
+Como entrada tendríamos la palabra de la cual queremos conocer su emoción consensuada, mientras que la salida será la emoción consensuada en caso de tenerla o un mensaje indicando que no la tiene (Figura \ref{fig:noconsensuada}).
 
 %\figura{Bitmap/Capitulo4/consensuada}{width=.4\textwidth}{fig:consensuada}{Respuesta al encontrar la emoción consensuada.}
 
-\figura{Bitmap/Capitulo4/no_consensuada}{width=.4\textwidth}{fig:noconsensuada}{Respuesta si la palabra no tiene emoción consensuada.}
+\figura{Bitmap/Capitulo4/no_consensuada}{width=.4\textwidth}{fig:noconsensuada}{JSON devuelto si la palabra no tiene emoción consensuada.}
 
-\subsection{Servicio web emoción mayoritaria de una palabra}
-De nuevo, dada una palabra el servicio nos devuelve, recibiendo una petición \textbf{GET} en el servidor, la emoción mayoritaria de una palabra. Hablamos de emoción mayoritaria cuando el grado de una emoción es mayor al del resto de emociones.
+\subsection{Servicio web para obtener la emoción mayoritaria de una palabra}
+Dada una palabra el servicio nos devuelve la emoción mayoritaria. Hablamos de emoción mayoritaria cuando el grado de una emoción es mayor al del resto de emociones.
 
 Como entrada tendríamos la palabra de la cual queremos conocer su emoción mayoritaria, mientras que la salida será la emoción mayoritaria (Figura \ref{fig:mayoritaria}) y el grado de esta que tiene la palabra.%, o mayoritarias (en caso de que haya dos con el mismo porcentaje) (Figura \ref{fig:mayoritarias}).
 
@@ -95,11 +95,11 @@ Como entrada tendríamos la palabra de la cual queremos conocer su emoción mayori
 
 El anális emocional de una frase se sustenta en los servicios web desarrollados para hallar la carga afectiva de las palabras.  
 
-Partimos de la base de que cualquier frase es, de primeras, carente de emoción así que si no contiene ningún palabra emocional el resultado será que es una frase 100\% neutral (Figura \ref{fig:analisis_neutral}). Para el resto de frases, además de los resultados del análisis emocional devolvemos la lista de palabras que nos han llevado a ellos.
+Partimos de la base de que cualquier frase es, de primeras, carente de emoción así que si no contiene ninguna palabra emocional el resultado será que es una frase 100\% neutral (Figura \ref{fig:analisis_neutral}). Para el resto de frases, además de los resultados del análisis emocional devolvemos la lista de palabras que nos han llevado a ellos.
 
 \figura{Bitmap/Capitulo4/analisis_neutral}{width=.5\textwidth}{fig:analisis_neutral}{Análisis de una frase sin palabras emocionales.}
 
-\subsection{Obtención de palabras emocionales}
+\subsection{Obtención de palabras relevantes}
 
 Comenzaremos dividiendo la frase en las palabras que la forman y procesaremos cada una de estas utilizando la herramienta SpaCy, como ya se explicó en la sección 3.5, para obtener una lista de palabras candidatas acompañadas de sus lemas. Consideraremos una palabra como candidata si su etiqueta es "`VERB"', "`ADJ"' o "`NOUN"'. Para cada una de las palabras de la lista obtenemos su información emocional mediante los servicios web explicados en el apartado anterior y, combinando los resultados obtenidos, podemos mostrar la carga afectiva de toda la frase.
 

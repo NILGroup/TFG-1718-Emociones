@@ -36,11 +36,11 @@
 \BOOKMARK [1][-]{section.4.1}{Base para los servicios web}{chapter.4}% 36
 \BOOKMARK [1][-]{section.4.2}{An\341lisis afectivo de una palabra}{chapter.4}% 37
 \BOOKMARK [2][-]{subsection.4.2.1}{Lematizaci\363n}{section.4.2}% 38
-\BOOKMARK [2][-]{subsection.4.2.2}{Servicio web grados emocionales de una palabra}{section.4.2}% 39
-\BOOKMARK [2][-]{subsection.4.2.3}{Servicio web emoci\363n consensuada de una palabra}{section.4.2}% 40
-\BOOKMARK [2][-]{subsection.4.2.4}{Servicio web emoci\363n mayoritaria de una palabra}{section.4.2}% 41
+\BOOKMARK [2][-]{subsection.4.2.2}{Servicio web para obtener los grados emocionales de una palabra para cada emoci\363n}{section.4.2}% 39
+\BOOKMARK [2][-]{subsection.4.2.3}{Servicio web para obtener la emoci\363n consensuada de una palabra}{section.4.2}% 40
+\BOOKMARK [2][-]{subsection.4.2.4}{Servicio web para obtener la emoci\363n mayoritaria de una palabra}{section.4.2}% 41
 \BOOKMARK [1][-]{section.4.3}{An\341lisis afectivo de una frase}{chapter.4}% 42
-\BOOKMARK [2][-]{subsection.4.3.1}{Obtenci\363n de palabras emocionales}{section.4.3}% 43
+\BOOKMARK [2][-]{subsection.4.3.1}{Obtenci\363n de palabras relevantes}{section.4.3}% 43
 \BOOKMARK [2][-]{subsection.4.3.2}{Grados emocionales de una frase}{section.4.3}% 44
 \BOOKMARK [2][-]{subsection.4.3.3}{Emoci\363n mayoritaria de una frase}{section.4.3}% 45
 \BOOKMARK [1][-]{section.4.4}{An\341lisis afectivo de un texto}{chapter.4}% 46
@@ -85,7 +85,7 @@
 \BOOKMARK [1][-]{section.7.6}{Sprint 6}{chapter.7}% 85
 \BOOKMARK [1][-]{section.7.7}{Sprint 7}{chapter.7}% 86
 \BOOKMARK [1][-]{section.7.8}{Sprint 8}{chapter.7}% 87
-\BOOKMARK [0][-]{chapter.8}{Trabajo individual y conocimientos aplicados}{}% 88
+\BOOKMARK [0][-]{chapter.8}{Conocimientos Aplicados}{}% 88
 \BOOKMARK [1][-]{section.8.1}{Gema}{chapter.8}% 89
 \BOOKMARK [1][-]{section.8.2}{Paloma}{chapter.8}% 90
 \BOOKMARK [1][-]{section.8.3}{Elena}{chapter.8}% 91
@@ -115,5 +115,5 @@
 \BOOKMARK [2][-]{subsection.Alph1.3.3}{Blog reflexi\363n}{section.Alph1.3}% 115
 \BOOKMARK [2][-]{subsection.Alph1.3.4}{Blog muerte}{section.Alph1.3}% 116
 \BOOKMARK [2][-]{subsection.Alph1.3.5}{Blog enfado}{section.Alph1.3}% 117
-\BOOKMARK [0][-]{appendix*.51}{Bibliograf\355a}{}% 118
+\BOOKMARK [0][-]{appendix*.49}{Bibliograf\355a}{}% 118
 \BOOKMARK [0][-]{fin.0}{Fin}{}% 119

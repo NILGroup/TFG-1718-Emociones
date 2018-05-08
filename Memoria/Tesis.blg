@@ -18,6 +18,7 @@ Database file #2: latex.bib
 Database file #3: otros.bib
 A bad cross reference---entry "Kristensen2011"
 refers to entry "10.1590/S2237-60892011000300003", which doesn't exist
+Warning--I didn't find a database entry for "Baldasari"
 Warning--I didn't find a database entry for "10.1590/S2237-60892011000300003"
 Warning--empty journal in ANEW
 Warning--missing publisher in goertzel
