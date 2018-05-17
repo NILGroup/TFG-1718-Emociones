@@ -67,53 +67,50 @@
 \BOOKMARK [2][-]{subsection.4.5.20}{Blog reflexi\363n}{section.4.5}% 67
 \BOOKMARK [2][-]{subsection.4.5.21}{Blog muerte}{section.4.5}% 68
 \BOOKMARK [2][-]{subsection.4.5.22}{Blog enfado}{section.4.5}% 69
-\BOOKMARK [0][-]{chapter.5}{Dise\361o y desarrollo de la aplicaci\363n web}{}% 70
-\BOOKMARK [1][-]{section.5.1}{Dise\361o}{chapter.5}% 71
-\BOOKMARK [2][-]{subsection.5.1.1}{Prototipos iniciales}{section.5.1}% 72
-\BOOKMARK [2][-]{subsection.5.1.2}{Prototipo com\372n}{section.5.1}% 73
-\BOOKMARK [2][-]{subsection.5.1.3}{Interfaz final}{section.5.1}% 74
-\BOOKMARK [1][-]{section.5.2}{Desarrollo}{chapter.5}% 75
-\BOOKMARK [1][-]{section.5.3}{Desarrollo de la interfaz}{chapter.5}% 76
-\BOOKMARK [1][-]{section.5.4}{Desarrollo de la interfaz}{chapter.5}% 77
-\BOOKMARK [0][-]{chapter.6}{API de la aplicaci\363n web}{}% 78
-\BOOKMARK [0][-]{chapter.7}{As\355 se hizo...}{}% 79
-\BOOKMARK [1][-]{section.7.1}{Sprint 1}{chapter.7}% 80
-\BOOKMARK [1][-]{section.7.2}{Sprint 2}{chapter.7}% 81
-\BOOKMARK [1][-]{section.7.3}{Sprint 3}{chapter.7}% 82
-\BOOKMARK [1][-]{section.7.4}{Sprint 4}{chapter.7}% 83
-\BOOKMARK [1][-]{section.7.5}{Sprint 5}{chapter.7}% 84
-\BOOKMARK [1][-]{section.7.6}{Sprint 6}{chapter.7}% 85
-\BOOKMARK [1][-]{section.7.7}{Sprint 7}{chapter.7}% 86
-\BOOKMARK [1][-]{section.7.8}{Sprint 8}{chapter.7}% 87
-\BOOKMARK [0][-]{chapter.8}{Conocimientos Aplicados}{}% 88
-\BOOKMARK [1][-]{section.8.1}{Gema}{chapter.8}% 89
-\BOOKMARK [1][-]{section.8.2}{Paloma}{chapter.8}% 90
-\BOOKMARK [1][-]{section.8.3}{Elena}{chapter.8}% 91
-\BOOKMARK [0][-]{appendix.Alph1}{Casos de prueba}{}% 92
-\BOOKMARK [1][-]{section.Alph1.1}{Cuentos}{appendix.Alph1}% 93
-\BOOKMARK [2][-]{subsection.Alph1.1.1}{Blancanieves}{section.Alph1.1}% 94
-\BOOKMARK [2][-]{subsection.Alph1.1.2}{Blancanieves y sus amigos}{section.Alph1.1}% 95
-\BOOKMARK [2][-]{subsection.Alph1.1.3}{La sirenita}{section.Alph1.1}% 96
-\BOOKMARK [2][-]{subsection.Alph1.1.4}{La bella durmiente}{section.Alph1.1}% 97
-\BOOKMARK [2][-]{subsection.Alph1.1.5}{La margarita}{section.Alph1.1}% 98
-\BOOKMARK [2][-]{subsection.Alph1.1.6}{La bella y la bestia}{section.Alph1.1}% 99
-\BOOKMARK [2][-]{subsection.Alph1.1.7}{El castillo de Bestia}{section.Alph1.1}% 100
-\BOOKMARK [2][-]{subsection.Alph1.1.8}{Cenicienta}{section.Alph1.1}% 101
-\BOOKMARK [2][-]{subsection.Alph1.1.9}{Mul\341n}{section.Alph1.1}% 102
-\BOOKMARK [2][-]{subsection.Alph1.1.10}{Pinocho}{section.Alph1.1}% 103
-\BOOKMARK [2][-]{subsection.Alph1.1.11}{Pocahontas}{section.Alph1.1}% 104
-\BOOKMARK [2][-]{subsection.Alph1.1.12}{Aladd\355n}{section.Alph1.1}% 105
-\BOOKMARK [2][-]{subsection.Alph1.1.13}{El ratoncito P\351rez}{section.Alph1.1}% 106
-\BOOKMARK [1][-]{section.Alph1.2}{Noticias}{appendix.Alph1}% 107
-\BOOKMARK [2][-]{subsection.Alph1.2.1}{Noticia asesinato}{section.Alph1.2}% 108
-\BOOKMARK [2][-]{subsection.Alph1.2.2}{Noticia nacimiento}{section.Alph1.2}% 109
-\BOOKMARK [2][-]{subsection.Alph1.2.3}{Noticia OMS}{section.Alph1.2}% 110
-\BOOKMARK [2][-]{subsection.Alph1.2.4}{Noticia politica}{section.Alph1.2}% 111
-\BOOKMARK [1][-]{section.Alph1.3}{Entradas de Blog}{appendix.Alph1}% 112
-\BOOKMARK [2][-]{subsection.Alph1.3.1}{Blog agradecimiento}{section.Alph1.3}% 113
-\BOOKMARK [2][-]{subsection.Alph1.3.2}{Blog moda}{section.Alph1.3}% 114
-\BOOKMARK [2][-]{subsection.Alph1.3.3}{Blog reflexi\363n}{section.Alph1.3}% 115
-\BOOKMARK [2][-]{subsection.Alph1.3.4}{Blog muerte}{section.Alph1.3}% 116
-\BOOKMARK [2][-]{subsection.Alph1.3.5}{Blog enfado}{section.Alph1.3}% 117
-\BOOKMARK [0][-]{appendix*.49}{Bibliograf\355a}{}% 118
-\BOOKMARK [0][-]{fin.0}{Fin}{}% 119
+\BOOKMARK [0][-]{chapter.5}{EmoTraductor}{}% 70
+\BOOKMARK [1][-]{section.5.1}{Descripci\363n del problema a resolver}{chapter.5}% 71
+\BOOKMARK [1][-]{section.5.2}{Dise\361o de la interfaz}{chapter.5}% 72
+\BOOKMARK [2][-]{subsection.5.2.1}{Primera iteraci\363n: Iteraci\363n competitiva}{section.5.2}% 73
+\BOOKMARK [2][-]{subsection.5.2.2}{Segunda iteraci\363n: Iteraci\363n con expertos}{section.5.2}% 74
+\BOOKMARK [2][-]{subsection.5.2.3}{Tercera iteraci\363n: Prototipo final}{section.5.2}% 75
+\BOOKMARK [2][-]{subsection.5.2.4}{Desarrollo de la aplicaci\363n web}{section.5.2}% 76
+\BOOKMARK [1][-]{section.5.3}{Desarrollo de la interfaz}{chapter.5}% 77
+\BOOKMARK [1][-]{section.5.4}{Resultado evaluaci\363n con usuarios finales}{chapter.5}% 78
+\BOOKMARK [0][-]{chapter.6}{As\355 se hizo...}{}% 79
+\BOOKMARK [0][-]{chapter.7}{Conocimientos Aplicados}{}% 80
+\BOOKMARK [1][-]{section.7.1}{Gema}{chapter.7}% 81
+\BOOKMARK [1][-]{section.7.2}{Paloma}{chapter.7}% 82
+\BOOKMARK [1][-]{section.7.3}{Elena}{chapter.7}% 83
+\BOOKMARK [0][-]{chapter.8}{Trabajo Individual}{}% 84
+\BOOKMARK [1][-]{section.8.1}{Gema}{chapter.8}% 85
+\BOOKMARK [1][-]{section.8.2}{Paloma}{chapter.8}% 86
+\BOOKMARK [1][-]{section.8.3}{Elena}{chapter.8}% 87
+\BOOKMARK [0][-]{appendix.Alph1}{Casos de prueba}{}% 88
+\BOOKMARK [1][-]{section.Alph1.1}{Cuentos}{appendix.Alph1}% 89
+\BOOKMARK [2][-]{subsection.Alph1.1.1}{Blancanieves}{section.Alph1.1}% 90
+\BOOKMARK [2][-]{subsection.Alph1.1.2}{Blancanieves y sus amigos}{section.Alph1.1}% 91
+\BOOKMARK [2][-]{subsection.Alph1.1.3}{La sirenita}{section.Alph1.1}% 92
+\BOOKMARK [2][-]{subsection.Alph1.1.4}{La bella durmiente}{section.Alph1.1}% 93
+\BOOKMARK [2][-]{subsection.Alph1.1.5}{La margarita}{section.Alph1.1}% 94
+\BOOKMARK [2][-]{subsection.Alph1.1.6}{La bella y la bestia}{section.Alph1.1}% 95
+\BOOKMARK [2][-]{subsection.Alph1.1.7}{El castillo de Bestia}{section.Alph1.1}% 96
+\BOOKMARK [2][-]{subsection.Alph1.1.8}{Cenicienta}{section.Alph1.1}% 97
+\BOOKMARK [2][-]{subsection.Alph1.1.9}{Mul\341n}{section.Alph1.1}% 98
+\BOOKMARK [2][-]{subsection.Alph1.1.10}{Pinocho}{section.Alph1.1}% 99
+\BOOKMARK [2][-]{subsection.Alph1.1.11}{Pocahontas}{section.Alph1.1}% 100
+\BOOKMARK [2][-]{subsection.Alph1.1.12}{Aladd\355n}{section.Alph1.1}% 101
+\BOOKMARK [2][-]{subsection.Alph1.1.13}{El ratoncito P\351rez}{section.Alph1.1}% 102
+\BOOKMARK [1][-]{section.Alph1.2}{Noticias}{appendix.Alph1}% 103
+\BOOKMARK [2][-]{subsection.Alph1.2.1}{Noticia asesinato}{section.Alph1.2}% 104
+\BOOKMARK [2][-]{subsection.Alph1.2.2}{Noticia nacimiento}{section.Alph1.2}% 105
+\BOOKMARK [2][-]{subsection.Alph1.2.3}{Noticia OMS}{section.Alph1.2}% 106
+\BOOKMARK [2][-]{subsection.Alph1.2.4}{Noticia politica}{section.Alph1.2}% 107
+\BOOKMARK [1][-]{section.Alph1.3}{Entradas de Blog}{appendix.Alph1}% 108
+\BOOKMARK [2][-]{subsection.Alph1.3.1}{Blog agradecimiento}{section.Alph1.3}% 109
+\BOOKMARK [2][-]{subsection.Alph1.3.2}{Blog moda}{section.Alph1.3}% 110
+\BOOKMARK [2][-]{subsection.Alph1.3.3}{Blog reflexi\363n}{section.Alph1.3}% 111
+\BOOKMARK [2][-]{subsection.Alph1.3.4}{Blog muerte}{section.Alph1.3}% 112
+\BOOKMARK [2][-]{subsection.Alph1.3.5}{Blog enfado}{section.Alph1.3}% 113
+\BOOKMARK [0][-]{appendix.Alph2}{Im\341genes de tableros de sprints}{}% 114
+\BOOKMARK [0][-]{appendix*.50}{Bibliograf\355a}{}% 115
+\BOOKMARK [0][-]{fin.0}{Fin}{}% 116
