@@ -1,4 +1,4 @@
-\select@language {spanish}
+\babel@toc {spanish}{}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}Estado del arte}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Emociones}{3}{section.2.1}
@@ -77,9 +77,6 @@
 \contentsline {section}{\numberline {5.4}Resultado evaluaci\'on con usuarios finales}{49}{section.5.4}
 \contentsline {chapter}{\numberline {6}As\IeC {\'\i } se hizo...}{55}{chapter.6}
 \contentsline {chapter}{\numberline {7}Conocimientos Aplicados}{59}{chapter.7}
-\contentsline {section}{\numberline {7.1}Gema}{59}{section.7.1}
-\contentsline {section}{\numberline {7.2}Paloma}{59}{section.7.2}
-\contentsline {section}{\numberline {7.3}Elena}{59}{section.7.3}
 \contentsline {chapter}{\numberline {8}Trabajo Individual}{61}{chapter.8}
 \contentsline {section}{\numberline {8.1}Gema}{61}{section.8.1}
 \contentsline {section}{\numberline {8.2}Paloma}{61}{section.8.2}
@@ -111,4 +108,4 @@
 \contentsline {subsection}{\numberline {A.3.4}Blog muerte}{71}{subsection.Alph1.3.4}
 \contentsline {subsection}{\numberline {A.3.5}Blog enfado}{71}{subsection.Alph1.3.5}
 \contentsline {chapter}{\numberline {B}Im\'agenes de tableros de sprints}{73}{appendix.Alph2}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{83}{appendix*.50}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{85}{appendix*.55}
