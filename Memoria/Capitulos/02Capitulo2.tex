@@ -8,7 +8,7 @@
 
 \begin{resumen}
 	En este capítulo se van a tratar los aspectos más importantes tanto de la computación afectiva como de las diferentes tecnologías y metodologías que se van a utilizar.
-	En primer lugar, en la sección 2.1, se da una breve explicación de lo que son las emociones y cuáles son, en la sección 2.2 se define la computación afectiva y sus posibles aplicaciones. En la sección 2.3 se explican los distintos diccionarios afectivos ya existentes que permiten la marcación emocional de textos. En la sección 2.4 se introduce la tecnología que se va a utilizar para implementar el trabajo, los servicios web. En la sección 2.5 se fijan los conceptos relacionados con la metodología Scrum, la cual hemos seguido durante todo el trabajo. Finalmente, en la sección 2.6 se explican las bases de la integración continua aplicada al desarrollo de software y cómo se va a aplicar en este trabajo.
+	En primer lugar, en la sección 2.1 se da una breve explicación de lo que son las emociones y cuáles son, en la sección 2.2 se define la computación afectiva y sus posibles aplicaciones. En la sección 2.3 se explican los distintos diccionarios afectivos ya existentes que permiten la marcación emocional de textos. En la sección 2.4 se introduce la tecnología que se va a utilizar para implementar el trabajo, los servicios web. En la sección 2.5 se fijan los conceptos relacionados con la metodología Scrum, la cual hemos seguido durante todo el trabajo. Finalmente, en la sección 2.6 se explican las bases de la integración continua aplicada al desarrollo de software y cómo se va a aplicar en este trabajo.
 
 \end{resumen}
 
@@ -20,10 +20,10 @@
 Las emociones son reacciones afectivas que surgen súbitamente ante un estímulo, duran un corto espacio de tiempo y comprenden una serie de repercusiones psicocorporales \citep{TesisVir}.
 Podríamos definir las emociones como reacciones automáticas que nuestro cuerpo experimenta ante un determinado estímulo. Sin embargo, todas ellas derivan en sentimientos más prolongados en el tiempo. Son experimentadas de manera particular por cada individuo debido a experiencias pasadas, su carácter, aprendizaje... 
 
-Existen dos formas principales para representar las emociones: categorías y dimensiones. Dentro de la multitud de categorías que existen, nos centraremos en las conocidas como categorías básicas; estas son: miedo, sorpresa, alegría, ira y tristeza.
+Existen dos formas principales para representar las emociones: categorías y dimensiones. Dentro de la multitud de categorías que existen, nos centraremos en las conocidas como categorías básicas: miedo, sorpresa, alegría, ira y tristeza.
  
 
-Las dimensiones emocionales representan aspectos esenciales de una emoción mediante dimesiones. Generalmente se utilizan tres, para formar un espacio tridimensional que permitirá identificar la emoción según los valores que tome para cada dimensión. Las dimensiones que se tienen en cuenta son las siguientes \citep{Lang99}:
+Las dimensiones emocionales representan aspectos esenciales de una emoción mediante dimensiones. Generalmente se utilizan tres, para formar un espacio tridimensional que permitirá identificar la emoción según los valores que tome para cada dimensión. Las dimensiones que se tienen en cuenta son las siguientes \citep{Lang99}:
 
 \begin{itemize}
 	\item \textbf{Evaluación}: Representa como de positiva o negativa es la emoción.
@@ -63,11 +63,11 @@ La computación afectiva tiene multitud de aplicaciones, ya que como se ha mencio
 
 \end{itemize}
 
-En este trabajo vamos a centrarnos en el último área, la accesibilidad. En particular, en facilitar a personas que padecen Trastornos del Espectro Autista (TEA) el entendimiento de las emociones de un texto, es decir, su carga emocional. Trataremos de analizar un texto de entrada para identificar las emociones predominantes y en qué medida se presentan, evitando las posibles ambigüedades que pueda haber. Las emociones con las que trataremos son las básicas: alegría, tristeza, miedo, sorpresa e ira.
-
 El funcionamiento de este tipo de sistemas se basa en identificar el estado emocional del sujeto a través de diferentes fuentes (voz, expresiones, señales fisiológicas, texto...) y procesar la información para clasificarla y aprender de ella. Clasificar la información de entrada puede resultar complicado ya que se suelen recibir varias señales diferentes a la vez, lo que hace necesario utilizar técnicas de priorización para determinar cuáles son las que más aportan a la hora de analizar y gestionar la información. Una vez identificada la emoción predominante, el sistema responde adecuándose a ella. La salida dependerá del tipo de sistema y las herramientas de las que dispone este para expresar su respuesta (colores, sonidos, emoticonos...) En casos más complejos aplicados a robótica o modelado, la salida producida es una simulación de la respuesta que produciría un ser humano ante los estímulos recibidos imitando su expresión corporal, voz o gestos faciales. Por ejemplo los robots Geminoid \footnote{http://www.geminoid.jp/en/index.html}.%(IEEE Sprectrum, 08/04/2010).
 
-En nuestro proyecto, nos centraremos en el reconocimiento de las emociones en un texto mediante marcado emocional.
+En este trabajo vamos a centrarnos en el último área, la accesibilidad. En particular, en facilitar a personas que padecen Trastornos del Espectro Autista (TEA) el entendimiento de las emociones de un texto, es decir, su carga emocional. En nuestro proyecto, nos centraremos en el reconocimiento de las emociones en un texto mediante marcado emocional. Trataremos de analizarlo de entrada para identificar las emociones predominantes y en qué medida se presentan. Las emociones con las que trataremos son las básicas: alegría, tristeza, miedo, asco y enfado.
+
+
 
 
 \subsection{Métodos para el marcado de texto emocional}
@@ -82,22 +82,20 @@ Los métodos existentes para el marcado de texto emocional podrían clasificarse e
 	Este método tiene dos problemas fundamentales: emplea tan solo las palabras sin tener en cuenta el contexto en el que se encuentran por lo que puede fallar con la aparición de las negaciones y además este tipo de métodos suelen entrenarse con un corpus lo que dificulta el desarrollo de un modelo reutilizable e independiente del dominio.
 	\item \textbf{Procesamiento estadístico}: Consiste en alimentar a un algoritmo de aprendizaje con varios textos marcados emocionalmente. Este método ha sido empleado en el proyecto de Webmind \citep{goertzel} entre otros.
 	\item \textbf{Métodos manuales}: Estos métodos implican el modelado de distintos estado emocionales en términos de modelos afectivos basados en teorías psicológicas sobre las necesidades, los deseos y las metas de los seres humanos. El modelo DAYDREAMER \citep{MuellerDyer85}, una computadora que puede generar emociones, emplea este método.
-	\item \textbf{Métodos basados en el conocimiento del mundo real}: Este método no solo mira los aspectos superficiales del texto, sino que va más allá, evalúa la calidad afectiva de la semántica subyacente que contiene el texto. Un ejemplo es el marcador llevado a cabo por Liu, Lieberman y Selker \citeyear{Liu2002}
+	\item \textbf{Métodos basados en el conocimiento del mundo real}: Este método no solo mira los aspectos superficiales del texto, sino que va más allá, evalúa la calidad afectiva de la semántica subyacente que contiene el texto. Un ejemplo es el marcador llevado a cabo por Liu, Lieberman y Selker (\citeyear{Liu2002}).
 
 \end{itemize}
 
-Las técnicas basadas en el procesamiento estadístico del lenguaje natural solo funcionan con un texto de entrada lo suficientemente extenso, los métodos manuales precisan un amplio análisis y entendimiento de los textos y hacen muy difícil la generalización y los métodos basados en el conocimiento del ``mundo real'' necesitan un amplio conocimiento denominado ``mundo real'' \citep{FranciscoGervasTSD2006}. Es por ello que en este trabajo, emplearemos el método keyword spotting, usando un diccionario con palabras emocionales que nos servirán para detectar la carga emocional del texto. En la siguiente sección analizaremos los diccionarios afectivos disponibles.
+Las técnicas basadas en el procesamiento estadístico del lenguaje natural solo funcionan con un texto de entrada lo suficientemente extenso, los métodos manuales precisan un amplio análisis y entendimiento de los textos y hacen muy difícil la generalización y los métodos basados en el conocimiento del ``mundo real'' necesitan un amplio conocimiento \citep{FranciscoGervasTSD2006}. Es por ello que en este trabajo, emplearemos el método \textit{keyword spotting}, usando un diccionario con palabras emocionales que nos servirán para detectar la carga emocional del texto. En la siguiente sección analizaremos los diccionarios afectivos disponibles.
 	
 \section{Diccionarios Afectivos}
 \label{cap2:subsec:diccionarios}
 	
-	Un diccionario afectivo es un diccionario en el que las palabras se encuentran marcadas con etiquetas afectivas. Generalmente las etiquetas son categorías emocionales o dimensiones emocionales.
-	
-	A continuación se presentan los diccionarios afectivos más representativos.
+	Un diccionario afectivo es un diccionario en el que las palabras se encuentran marcadas con etiquetas afectivas. Generalmente las etiquetas son categorías emocionales o dimensiones emocionales. A continuación se presentan los diccionarios afectivos más representativos.
 	
 \subsection{Lasswell Value Dictionary}
 	
-	El diccionario Lasswell \citep{peterson1965lasswell} clasifica una serie de palabras en inglés de manera binaria, en ocho categorías básicas (riqueza, poder, respeto, rectitud, habilidad, iluminación, afecto y bienestar) que a su vez pueden estar divididas en subcategorías (ganancias, pérdidas, participantes, fines y recintos) . Además de estas, el esquema de este diccionario distingue entre objetivos sustantivos y los elementos y atributos del proceso de distribución de valores, es decir, evaluación personal y asignación social.
+	El diccionario Lasswell \citep{peterson1965lasswell} clasifica una serie de palabras en inglés de manera binaria, en ocho categorías básicas (riqueza, poder, respeto, rectitud, habilidad, iluminación, afecto y bienestar) que a su vez pueden estar divididas en subcategorías (ganancias, pérdidas, participantes, fines y recintos). Además de estas, el esquema de este diccionario distingue entre objetivos sustantivos y los elementos y atributos del proceso de distribución de valores, es decir, evaluación personal y asignación social.
 	La clasificación social del contenido mantiene estas distinciones. 
 	El diccionario cuenta con 378 palabras de riqueza, 1266 palabras de poder, 245 palabras de respeto, 310 palabras de rectitud, 257 palabras de habilidad, 835 palabras de iluminación, 196 palabras de afecto y 487 palabras de bienestar; en total 3974 palabras.
 	Por ejemplo la palabra \textbf{\textit{ascender}} se encuentra en poder-ganancias ya que indica un aumento de poder. 
@@ -106,14 +104,14 @@ Las técnicas basadas en el procesamiento estadístico del lenguaje natural solo f
 \subsection{Diccionario de Hatzivassiloglou y Mckeown}
 	
 	Este diccionario fue creado en 1997, y marca palabras en inglés según su polaridad (positiva o negativa) de manera automatizada a través del análisis de un corpus.
-	Hatzuvassiloglou y McKeown \citeyear{mckeown} tomaron una serie de adjetivos que aparecían de manera frecuente y decidieron darles una orientación.
-	Empleando un análisis estadístico fueron capaces de obtener un diccionario de adjetivos clasificados como positivos y negativos. A través de este análisis se predice la polaridad de los adjetivos, analizándolos en pares unidos por conjunciones como: \textit{and}, \textit{or}, \textit{but}, \textit{either-or}, \textit{or} p \textit{neither-nor}.
-	Es decir, si una palabra con polaridad conocida aparece unida por la conjunción "`y"' (and en inglés) a una segunda palabra concluyo que la nueva palabra tendrá una polaridad similar. En cambio si vienen unidas por la conjunción "pero" (but en inglés) la polaridad de la nueva palabra será opuesta.
+	Hatzuvassiloglou y McKeown (\citeyear{mckeown}) tomaron una serie de adjetivos que aparecían de manera frecuente y decidieron darles una orientación.
+	Empleando un análisis estadístico fueron capaces de obtener un diccionario de adjetivos clasificados como positivos y negativos. A través de este análisis se predice la polaridad de los adjetivos, analizándolos en pares unidos por conjunciones como: \textit{and}, \textit{or}, \textit{but}, \textit{either-or}, \textit{or} o \textit{neither-nor}.
+	Es decir, sí una palabra con polaridad conocida aparece unida por la conjunción "y" ("and" en inglés) a una segunda palabra concluyo que la nueva palabra tendrá una polaridad similar. En cambio si vienen unidas por la conjunción "pero" ("but" en inglés) la polaridad de la nueva palabra será opuesta.
 	Por ejemplo, si aparece \textbf{\textit{hermosa y divertida}} y sabemos que la palabra \textbf{\textit{hermosa}} es positiva la palabra \textbf{\textit{divertida}} pasará a ser positiva también; sin embrago si aparece \textbf{\textit{hermosa pero malvada}} la palabra \textbf{\textit{malvada}} tomará la orientación de negativa.
 
 	\subsection{Diccionario de Turney y Littman}
 	
-	Turney y Littman \citeyear{TurneyLittman03} encontraron una manera más eficiente para decidir la orientación semántica de una palabra (positiva o negativa) junto con un grado (de leve a fuerte). Dado un conjunto de palabras, que previamente ellos conocían como positivas o negativas, obtuvieron con que frecuencia aparecía una palabra junto con palabras positivas o negativas. 
+	Turney y Littman (\citeyear{TurneyLittman03}) encontraron una manera más eficiente para decidir la orientación semántica de una palabra (positiva o negativa) junto con un grado (de leve a fuerte). Dado un conjunto de palabras, que previamente ellos conocían como positivas o negativas, obtuvieron con qué frecuencia aparecía una palabra junto con palabras positivas o negativas. 
 Clasificaron como positivas todas aquellas palabras que aparecían de forma más significativa con un conjunto de palabras positivas y como negativas aquellas palabras que aparecían con un conjunto de palabras negativas.
 El diccionario contiene 3596 palabras en inglés de las cuales 1614 son positivas y 1982 negativas.
 
@@ -132,12 +130,12 @@ El diccionario contiene 3596 palabras en inglés de las cuales 1614 son positivas
 	Cada palabra aparece en el diccionario una vez por cada clase afectiva a la que pertenece. La centralidad varía en las diferentes apariciones mientras que la intensidad se mantiene igual. Por ejemplo la palabra \textbf{\textit{jubiloso}} tiene una centralidad de 0.7 para felicidad y una centralidad de 0.3 para excitación, pero en ambos casos tiene la misma intensidad 0.6.
 	
 	\subsection{Diccionario de Grefenstette}
-	\citep{Grefenstette06} crearon un diccionario afectivo a partir de patrones sintácticos. Tomaron 21 verbos: \textit{appear}, \textit{appears}, \textit{appeared}, \textit{appearing}, \textit{feel}, \textit{feels}, \textit{feeling}, \textit{felt}, \textit{are}, \textit{be}, \textit{is}, \textit{was}, \textit{were}, \textit{look}, \textit{looked}, \textit{looks}, \textit{looking}, \textit{seem}, \textit{seems}, \textit{seemed}, \textit{seeming} y les añadieron uno de estos 5 adverbios: \textit{almost}, \textit{extremely}, \textit{so}, \textit{too}, \textit{very}. A partir de todas las combinaciones posibles obtuvieron 105 patrones. Buscaron los patrones en toda la web para encontrar las palabras que comúnmente aparecen a continuación de ellos y, una vez encontradas filtraban las que tuviesen un componente afectivo clasificándolas en positivas o negativas.
+	Gregory Grefenstette and Yan Qu and David A (\citeyear{Grefenstette06}) crearon un diccionario afectivo a partir de patrones sintácticos. Tomaron 21 verbos: \textit{appear}, \textit{appears}, \textit{appeared}, \textit{appearing}, \textit{feel}, \textit{feels}, \textit{feeling}, \textit{felt}, \textit{are}, \textit{be}, \textit{is}, \textit{was}, \textit{were}, \textit{look}, \textit{looked}, \textit{looks}, \textit{looking}, \textit{seem}, \textit{seems}, \textit{seemed}, \textit{seeming} y les añadieron uno de estos 5 adverbios: \textit{almost}, \textit{extremely}, \textit{so}, \textit{too}, \textit{very}. A partir de todas las combinaciones posibles obtuvieron 105 patrones. Buscaron los patrones en toda la web para encontrar las palabras que comúnmente aparecen a continuación de ellos y, una vez encontradas filtraban las que tuviesen un componente afectivo clasificándolas en positivas o negativas.
 	
 	\subsection{ANEW}
 	La Affective Norms for English Words contiene 1034 palabras inglesas medidas en términos de las dimensiones emocionales (evaluación, activación y control) \citep{ANEW}. Para obtener este diccionario, se pidió a una serie de personas que marcasen un conjunto de palabras fuera de contexto con los valores para cada una de las tres dimensiones de una emoción en una escala de 9 puntos. Para ello contaron con la ayuda del sistema de marcación SAM \citep{Lang80}. 
 	
-	En la tabla \ref{tabla:anew} podemos observar un ejemplo para la primera palabra del diccionario, \textit{"`abduction"'}.
+	En la tabla \ref{tabla:anew} podemos observar un ejemplo para la primera palabra del diccionario, \textit{"abduction"}.
 	
 	\begin{table}[htbp]
 		\begin{center}
@@ -156,21 +154,20 @@ El diccionario contiene 3596 palabras en inglés de las cuales 1614 son positivas
 	
 	\subsection{S-ANEW}
 	 Se trata de la traducción del diccionario ANEW al castellano. En él participaron 720 estudiantes de psicología que marcaron las 1034 palabras que contiene ANEW.
-	Cada palabra debía ser marcada con las dimensiones emocionales: evaluación, activación y control, en una escala de 9 puntos.
+	Cada palabra debía ser marcada con las dimensiones emocionales (evaluación, activación y control) en una escala de 9 puntos.
 	
 	Cada entrada en el diccionario contiene: un número que identifica a la palabra, de manera que esta numeración coincide con el número que dicha palabra tiene en el ANEW; la palabra inglesa (E-word), la palabra original en la base de datos ANEW; la palabra española (S-word); y las evaluaciones afectivas, los valores medios y la desviación estándar para cada dimensión emocional.
 	
 \subsection{Diccionario de Hinojosa}
 
-Este diccionario \citep{Hinojosa2016} introduce normas afectivas para las 875 palabras incluidas en la MADS (Madrid Affective Database for Spanish). La lista de palabras está compuesta por 304 verbos, 301 sustantivos, 126 adjetivos y 144 palabras que pueden ser consideradas sustantivos o adjetivos. Estas palabras han sido marcadas para dos dimensiones emocionales (valencia y activación) y cinco categorías emocionales (alegría, enfado, tristeza, miedo y asco) por 660 españoles nativos: 507 mujeres y 153 hombres. El diccionario incluye, además, la clase gramatical de la palabra, su frecuencia de aparición, su número de letras y sílabas y una serie de variables psicolingüísticas medidas de forma objetiva. El objetivo de este diccionario es complementar los más importantes que ya existían, la traducción al español del ANEW y la base de datos de Ferré, por ellos se incluyen palabras que no aparezcan en ninguno de los dos a excepción de 16 y 11 palabras respectivamente. Las 875 palabras se dividieron en 21 listas de 40 palabras y una lista de 35 palabras. Todas estas listas se subieron a internet y se distribuyó la URL aleatoriamente consiguiendo 30 valoraciones por cada una de las palabras.
-
-Los participantes tenían entre 20 y 25 minutos para rellenar dos formularios, uno para la valencia y la excitación de cada palabra en una escala SAM de 9 puntos y otro para las cinco emociones básicas en una escala del 1 al 5 (donde el 1 es \textit{para nada} y el 5 \textit{extremadamente}). Una vez obtenidos los resultados las palabras se clasifican en positivas, negativas o neutrales según su valor de valencia: de 1 a 4 son negativas, de 4 a 6 neutrales y de 6 a 9 positivas. De esta manera se obtuvieron 337 palabras negativas, 231 neutrales y 307 positivas. En cuanto a las categorías emocionales, se considera que una palabra denota una determinada emoción si tiene un valor superior a 2,5 en ella. Así se obtienen 307 palabras que denotan alegría, 84 que denotan ira, 87 que denotan tristeza, 114 que denotan miedo y 30 que denotan asco. El resto de palabras o bien denotan dos (40),tres (31) o cuatro (24) emociones.
+Este diccionario \citep{Hinojosa2016} introduce normas afectivas para las 875 palabras incluidas en la MADS (Madrid Affective Database for Spanish). La lista de palabras está compuesta por 304 verbos, 301 sustantivos, 126 adjetivos y 144 palabras que pueden ser consideradas sustantivos o adjetivos. Estas palabras han sido marcadas para dos dimensiones emocionales (valencia y activación) y cinco categorías emocionales (alegría, enfado, tristeza, miedo y asco) por 660 españoles nativos: 507 mujeres y 153 hombres. El diccionario incluye, además, la clase gramatical de la palabra, su frecuencia de aparición, su número de letras y sílabas y una serie de variables psicolingüísticas medidas de forma objetiva. El objetivo de este diccionario es complementar los más importantes que ya existían, la traducción al español del ANEW y la base de datos de Ferré y por ello se incluyen palabras que no aparezcen en ninguno de los dos. 
+Las 875 palabras se dividieron en 21 listas de 40 palabras y una lista de 35 palabras. Todas estas listas se subieron a internet y se distribuyó la URL aleatoriamente consiguiendo 30 valoraciones por cada una de las palabras. Los participantes tenían entre 20 y 25 minutos para rellenar dos formularios, uno para la valencia y la excitación de cada palabra en una escala SAM de 9 puntos y otro para las cinco emociones básicas en una escala del 1 al 5 (donde el 1 es \textit{para nada} y el 5 \textit{extremadamente}). Una vez obtenidos los resultados las palabras se clasifican en positivas, negativas o neutrales según su valor de valencia: de 1 a 4 son negativas, de 4 a 6 neutrales y de 6 a 9 positivas. De esta manera se obtuvieron 337 palabras negativas, 231 neutrales y 307 positivas. En cuanto a las categorías emocionales, se considera que una palabra denota una determinada emoción si tiene un valor superior a 2,5 en ella. Así se obtienen 307 palabras que denotan alegría, 84 que denotan ira, 87 que denotan tristeza, 114 que denotan miedo y 30 que denotan asco. El resto de palabras o bien denotan dos (40),tres (31) o cuatro (24) emociones.
 
 Por ejemplo, la palabra \textbf{abandono} tiene los siguientes valores para las categorías emocionales: 1,03 de alegría, 3,30 de ira, 4,43 de tristeza, 3,33 de miedo y 2,63 de asco. Tiene, además, un valor de valencia de 1,47 y un valor de activación de 6,47.
 
 \subsection{Diccionario de Ferré}
 
-Este diccionario \citep{Ferre2017} ofrece un gran conjunto de datos, 2266 palabras, marcadandolas únicamente con las cinco categorías emocionales utilizadas en el diccionario de Hinojosa: alegría, ira, miedo, asco y tristeza. Este es, a día de hoy, el corpus más grande usando este tipo de marcado. Las palabras con las que cuenta son las incluidas en otros tres diccionarios publicados en español: las 1034 del ANEW traducido al español,  las 380 del corpus de Ferré \citep{Ferre2012} y las 1400 del de Guasch \citep{Guasch2016}. De las 2814 obtenidas se eliminaron las repetidas y aquellas que apareciesen en el diccionario de Hinojosa obteniendo las 2266. Esta lista fue dividida en 46 listas de 50 palabras, excepto las dos últimas que son más cortas que fueron publicadas en internet y evaluadas todas ellas exáctamente por 30 participantes.
+Este diccionario \citep{Ferre2017} ofrece un gran conjunto de datos, 2266 palabras, marcándadolas únicamente con las cinco categorías emocionales utilizadas en el diccionario de Hinojosa: alegría, ira, miedo, asco y tristeza. Este es, a día de hoy, el corpus más grande usando este tipo de marcado. Las palabras con las que cuenta son las incluidas en otros tres diccionarios publicados en español: las 1034 del ANEW traducido al español,  las 380 del corpus de Ferré \citep{Ferre2012} y las 1400 del de Guasch \citep{Guasch2016}. De las 2814 obtenidas se eliminaron las repetidas y aquellas que apareciesen en el diccionario de Hinojosa obteniendo las 2266. Esta lista fue dividida en 46 listas de 50 palabras, excepto las dos últimas que son más cortas que fueron publicadas en internet y evaluadas todas ellas exáctamente por 30 participantes.
 
 En el proceso de marcado participaron 1380 personas. Tenían 15 minutos para evaluar todas las palabras de una de las listas utilizando una escala del 1 al 5 siendo el uno \textit{para nada} y el 5 \textit{extremadamente}. Las palabras que tienen un valor inferior a 2,5 para las cinco categorías se consideran neutrales mientras que las que tienen un valor superior al 2,5 en más de una categoría pertenecerán a aquella con mayor valor. Se obtuvieron 704 palabras para la categoría de alegría, 34 para la de ira, 58 para la de tristeza, 98 para la de miedo, 69 para la de asco y 856 palabras neutrales.
 	
@@ -180,14 +177,14 @@ En este caso la palabra \textbf{abandono} tiene los siguientes valores para las 
 %-------------------------------------------------------------------
 \label{cap2:sec:servicios_web}
 
-		La definición más general de Servicio Web es la que lo define como un conjunto de aplicaciones o tecnologías capaces de interoperar en la Web. Estas aplicaciones o tecnologías intercambian datos con el fin de ofrecer unos servicios. Los proveedores ofrecen sus servicios como procedimientos remotos y los usuarios solicitan un servicio llamando a estos procedimientos a través de la Web \footnote{https://www.w3c.es/Divulgacion/GuiasBreves/ServiciosWeb}. 
+		La definición más general de Servicio Web es la que lo define como un conjunto de aplicaciones o tecnologías capaces de interoperar en la Web. Estas aplicaciones o tecnologías intercambian datos con el fin de ofrecer unos servicios. Los proveedores ofrecen sus servicios como procedimientos remotos y los usuarios solicitan un servicio llamando a estos procedimientos a través de la Web\footnote{https://www.w3c.es/Divulgacion/GuiasBreves/ServiciosWeb}. 
 	
 	\subsection{Características de los Servicios Web}	
 	\label{cap2:subsec:serviciosweb}
 	
-	Un servicio web, debe poder ser accesible a través de la web. Para ello debe utilizar procotolos de transporte estándares como HTTP, y codificar los mensajes en un lenguaje estándar que pueda conocer cualquier cliente que quiera utilizar el servicio.
+	Un servicio web debe poder ser accesible a través de la web. Para ello debe utilizar procotolos de transporte estándares como HTTP, y codificar los mensajes en un lenguaje estándar que pueda conocer cualquier cliente que quiera utilizar el servicio.
 	
-	Un servicio web, además, debe contener una descripción de sí mismo. De esta forma, una aplicación podrá saber cuál es la función de un determinado servicio, un servicio web debe poder ser localizado. Deberemos tener algún mecanismo que nos permita encontrar un servicio web que realice una determinada función. De esta forma tendremos la posibilidad de que una aplicación localice el servicio que necesite de forma automática, sin tener que conocerlo previamente el usuario \footnote{http://www.jtech.ua.es/j2ee/publico/servc-web-2012-13/sesion01-apuntes.html}.
+	Un servicio web, además, debe contener una descripción de sí mismo. De esta forma, una aplicación podrá saber cuál es la función de un determinado servicio. Un servicio web debe también poder ser localizado. Deberemos tener algún mecanismo que nos permita encontrar un servicio web que realice una determinada función. De esta forma tendremos la posibilidad de que una aplicación localice el servicio que necesite de forma automática, sin tener que conocerlo previamente el usuario \footnote{http://www.jtech.ua.es/j2ee/publico/servc-web-2012-13/sesion01-apuntes.html}.
 	
 	\subsection{Tipos de Servicios Web}
 	\label{cap2:subsec:serviciosweb}
@@ -200,7 +197,7 @@ En este caso la palabra \textbf{abandono} tiene los siguientes valores para las 
 	\subsection{Arquitectura de los Servicios Web}
 	\label{cap2:subsec:serviciosweb}
 	
-	Los servicios web se componen de varias capas entre las que destacan: \footnote{https://diego.com.es/introduccion-a-los-web-services}, \footnote{http://www.jtech.ua.es/j2ee/publico/servc-web-2012-13/sesion01-apuntes.html}.
+	Los servicios web se componen de varias capas entre las que destacan\footnote{https://diego.com.es/introduccion-a-los-web-services},\footnote{http://www.jtech.ua.es/j2ee/publico/servc-web-2012-13/sesion01-apuntes.html}.
 	
 	\begin{itemize}
 		\item Servicios de transporte: Capa que se encarga de transportar los mensajes entre el servidor y el cliente. Normalmente se utiliza el protocolo HTTP para este transporte. 
@@ -218,7 +215,7 @@ En este caso la palabra \textbf{abandono} tiene los siguientes valores para las 
 		\item Fomentan los estándares y protocolos basados en texto, de tal manera que facilitan su comprensión y accesibilidad.
 		\item Permiten la combinación e integración de distintos servicios y software independientemente de su ubicación.
 		\item  Al apoyarse en HTTP, lo servicios web se pueden aprovechar de los  de seguridad firewall sin necesidad de cambiar las reglas de filtrado.
-		\item Disminuyen el tiempo de desarrollo de las aplicaciones: Gracias a la filosofía de orientación a objetos utilizada, el desarrollo se convierte más bien en una labor de composición.
+		\item Disminuyen el tiempo de desarrollo de las aplicaciones: gracias a la filosofía de orientación a objetos utilizada, el desarrollo se convierte más bien en una labor de composición.
 	\end{itemize}
 	
 	Las dos principales desventajas de los servicios web son:
@@ -256,7 +253,7 @@ En este caso la palabra \textbf{abandono} tiene los siguientes valores para las 
 	
 	
 	\begin{itemize}
-		\item \textbf{Sprint Planning}: Se trata de la reunión de planificación del sprint. Este evento consta de dos partes. En la primera parte el Product Owner presenta lo que quiere que se haga en el sprint y resuelve dudas acerca de las historias de usuario en el contenido y explica la importancia de dicha tarea para que el grupo de trabajo tenga clara la prioridad. Después, en la misma reunión, el equipo estima el tiempo que llevará desarrollar cada una de las historias de usuario propuestas para el sprint por el Product Owner y deciden cuantas van a implementar en el sprint.
+		\item \textbf{Sprint Planning}: Se trata de la reunión de planificación del sprint. Este evento consta de dos partes. En la primera parte el Product Owner presenta lo que quiere que se haga en el sprint y resuelve dudas acerca de las historias de usuario en el contenido y explica la importancia de dicha tarea para que el grupo de trabajo tenga clara la prioridad. Después, en la misma reunión, el equipo estima el tiempo que llevará desarrollar cada una de las historias de usuario propuestas para el sprint por el Product Owner y deciden cuántas van a implementar en el sprint.
 		En la segunda parte, el equipo de desarrollo divide las historias de usuario en pequeñas tareas ordenadas por prioridad en el Sprint Backlog.
 		\item \textbf{Daily Scrum}: Reunión diaria de quince minutos, de pie, donde cada componente del equipo informa sobre cómo va en sus tareas, lo que hizo el día anterior, lo que hará ese día y los problemas que ha encontrado o los que cree que se va a encontrar.
 		\item \textbf{Sprint Review}: Reunión que se realiza al concluir el sprint centrándose en el producto. Se presenta el producto creado en el sprint al Product Owner y este lo analiza y da su feedback.
@@ -273,7 +270,7 @@ En este caso la palabra \textbf{abandono} tiene los siguientes valores para las 
 %-------------------------------------------------------------------
 \label{cap2:sec:integracion}
 
-En general, las metodologías ágiles y en particular la metodología Scrum enfoca su objetivo en tener versiones funcionando del producto al finalizar cada sprint; es por esto por lo que la integración continua es vital en proyectos que empleen estas metodologías. Empleado la integración continua, los desarrolladores se aseguran de encontrar los errores a tiempo para que el producto esté listo para la entrega al cliente o para ponerlo en producción si este así lo desea.
+En general, las metodologías ágiles y en particular la metodología Scrum enfoca su objetivo en tener versiones funcionando del producto al finalizar cada sprint; es por esto por lo que la integración continua es vital en proyectos que empleen estas metodologías. Empleando la integración continua, los desarrolladores se aseguran de encontrar los errores a tiempo para que el producto esté listo para la entrega al cliente o para ponerlo en producción si este así lo desea.
 
 La integración continua \citep{Fowler}, se basa en que los desarrolladores combinen todos los cambios que realicen en el código en un repositorio común de forma periódica (cada pocas horas, al menos una vez al día), de tal forma que una vez subidos estos cambios, se ejecutan una serie de pruebas automáticas sobre estos con el fin de validarlos y detectar errores de integración tan pronto como sea posible.
 
