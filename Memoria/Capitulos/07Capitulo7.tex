@@ -1,30 +1,82 @@
-
 %---------------------------------------------------------------------
 %
-%                          Capitulo 7
+%                          Capitulo 6
 %
 %---------------------------------------------------------------------
 
-\chapter{Conocimientos Aplicados}
+\chapter{Así se hizo...}
+\label{cap7:AsiSeHizo}
 
 \begin{resumen}
-En este capítulo se explica la manera en la que se aplican los conocimientos adquiridos a lo largo de la carrera.
+Como ya se comentó en el capítulo 2, durante el proyecto se ha seguido la metodología Scrum. En este capitulo se presentan todos los sprints que han tenido lugar a lo largo del desarrollo.
+
 \end{resumen}
 
+\begin{itemize}
+	\item Sprint 1 (14/11/2017 - 28/11/2017)
 
-A lo largo de la carrera hemos tenido la oportunidad de estudiar una gran serie de asignaturas que nos han sido de gran utilidad a lo largo del desarrollo de este Trabajo de Fin de Grado.
+El primer sprint consistió mayoritariamente en investigar el estado del arte y las herramientas que vamos a utilizar y añadir la información obtenida a la memoria (Sección 2). También se comenzó a realizar el primer servicio web, obtener los grados de cada emoción para una palabra, y documentarlo (Sección 4.2.2).
 
-Para empezar, han sido fundamentales las asignaturas de Fundamentos de la Programación y Tecnología de la Programación, ya que nos han ayudado a adquirir una forma de pensar estructurada y eficiente a la hora de programar, además de enseñarnos lenguajes tan potentes con C++ o Java respectivamente. Conocer estos lenguajes nos ha hecho más fácil aprender Python, un lenguaje al que no nos habíamos enfrentado antes. La asignatura de Estructura de Datos y Algoritmos nos ha permitido ampliar nuestros conocimientos como programadoras aportándonos herramientas para poder hacer nuestros programas lo más eficientes posible lo que se puede ver reflejado en el código del proyecto.
+Al acabar el sprint quedaba por acabar el servicio y ejecutar las pruebas pertinentes sobre él.
 
-Al ser este un proyecto tan grande y realizado a lo largo de todo un año hemos tenido que ser capaces de gestionar todo lo relacionado con él: equipo, planificación, pruebas... Todos estos conocimientos los hemos obtenido en la asignatura de Ingeniería del Software donde ya tuvimos la oportunidad de llevar a cabo un proyecto anual gestionando cada parte de este siguiendo las metodologías que más se adaptaban al proyecto en cuestión. En esta asignatura también aprendimos los diferentes tipos de pruebas que existen para software (caja blanca, caja negra..) y aprendimos a aplicarlas. Otras asignaturas que nos han ayudado a diseñar y realizar las pruebas son Auditoría Informática y Evaluación de Configuraciones que nos han permitido poner a prueba tanto los servicios web como la aplicación desde distintos puntos de vista.
+	\item Sprint 2 (28/11/2017 - 19/12/2017)
+El segundo sprint consistió en terminar el servicio web que se comenzó en el sprint 1 y desarrollar uno nuevo que nos permita obtener la emoción consensuada de una palabra (Sección 4.2.3).
 
-Otro módulo muy importante de asignaturas es el compuesto por las asignaturas relacionadas con desarrollo web: Aplicaciones Web, Ampliación de Bases de Datos e Ingeniería Web. Estas asignaturas nos han aportado los conocimientos necesarios de HTML, CSS y JavaScript para poder ser capaces de desarrollar la aplicación web así como las herramientas necesarias para poder integrar esta aplicación con los servicios web mediante el uso de JQuery.
+Al acabar el sprint quedaba realizar las pruebas sobre los servicios desarollados, tanto manuales como automáticas, y resolver un problema que teníamos al subir las palabras al servidor ya que no reconocía las tildes correctamente.
 
-Antes de desarrollar la aplicación web tuvimos que diseñar su interfaz para lo que nos resultó realmente útil la asignatura de Desarrollo de Sistemas Interactivos donde aprendimos el proceso a seguir a la hora de desarrollar una aplicación. Aprendimos a diseñar prototipos como los que hemos diseñado para este proyecto y realizar evaluaciones con usuarios para probar tanto los prototipos como la aplicación, lo que también ha sido aplicado en nuestro proyecto gracias a la gente de la Asociación de Asperger Madrid.
 
-En cuanto al desarrollo de los servicios web, nos ha ayudado la asignatura de Bases de Datos para poder crear la base de datos que forma el modelo de Django y realizar las distintas consultas necesarias sobre ella. Si bien estas consultas no se hacen de forma directa por nosotras nos ayuda entender como funciona la base de datos y como se almacenan y obtienen los datos.
+	\item Sprint 3 (19/12/2017 - 09/01/2017)
+El tercer sprint consistió en realizar las pruebas sobre los servicios web que ya teníamos dejándolos así acabados, desarrollar uno nuevo que nos proporcione la emoción mayoritaria de una palabra (Sección 4.2.4) y documentar todos los servicios. Antes de añadir los servicios nuevos a la memoria tuvimos que corregirla tras una primera revisión.
+  
+Al acabar el sprint quedaba por acabar las pruebas sobre los tres servicios utilizando Jenkins para acabar así el pipeline de integración continua.
 
-Para tener todo disponible en Internet necesitábamos utilizar un servidor que nos fue proporcionado por nuestras directoras del TFG. Este servidor tenía el sistema operativo GNU/Linux que aprendimos a manejar en la asignatura de Sistemas Operativos. Para realizar el despliegue de nuestro proyecto en Apache y gestionar todo lo relacionado con el servidor nos ayudaron los conocimientos adquiridos en las asignaturas relacionadas con redes: Redes, Redes y Seguridad y Ampliación de Redes y Sistemas Operativos.
 
-Por último, en la asignatura de Ética, Legislación y Profesión aprendimos todo lo necesario sobre licencias tanto para proteger nuestro código como para saber utilizar de forma correcta el software libre desarrollado por otras personas.
+	\item Sprint 4 (09/01/2018 - 21/02/2018)
+El cuarto sprint consistió en acabar las pruebas sobre todos los servicios realizados hasta el momento y desarrollar los servicios relacionados con el análisis emocional de una frase, obtener los grados emocionales y la emoción mayoritaria (Sección 4.3).
 
+Al acabar el sprint quedaba por desarrollar y probar el servicio que nos proporcionase la emoción mayoritaria de una frase.
+
+	\item Sprint 5 (21/02/2018 - 07/03/2018)
+
+El quinto sprint consistió en terminar el servicio sobre la emoción mayoritaria de una frase, corregir la memoria tras la segunda revisión y diseñar tres prototipos, uno cada una, de la interfaz de la aplicación web a desarrollar (Sección 5.1.1).
+
+Al acabar el sprint quedaba corregir la memoria.
+
+	\item Sprint 6 (07/03/2018 - 21/03/2018)
+
+El sexto sprint consistió en terminar de corregir la memoria, revisar la codificación de los servicios y hacer ciertas modificaciones (como añadir más peso a los verbos) para depurarlos, buscar una serie de textos para usarlos como casos de prueba y generar el prototipo final para presentarselo a la Asociasión Asperger Madrid (Sección 5.1.2).
+
+Al acabar el sprint quedaba por analizar los resultados obtenidos al interpretar los casos de prueba.
+
+	\item Sprint 7 (21/03/2018 - 25/04/2018)
+
+El séptimo sprint consistió en realizar el análisis de los casos de prueba y añadirlos a la memoria (Apéndice B), desarrollar la aplicación web y documentar todo (Sección 5.2) después de haber corregido la memoria tras la tercera revisión.
+
+Al acabar el sprint quedaba añadir unos últimos detalles a la interfaz, integrar la funcionalidad para las frases y los textos ya que sólo funcionaba para palabras y documentar todo.
+
+	\item Sprint 8 (25/04/2018 - 09/05/2018)
+
+En el octavo sprint tuvimos que modificar gran parte del proyecto ya que encontramos dos nuevos diccionarios emocionales que ofrecían mejores resultados que el que estábamos utilizando. Investigamos los nuevos diccionarios y los documentamos en las secciones 3.8 y 3.9. Tuvimos que adaptar los servicios y la aplicación web para cambiar la categoría emocional "`sorpresa"' con la que estábamos trabajando por "`asco"'. También cambia la forma de presentar los resultados, ya que el diccionario con el que trabajábamos mostraba el porcentaje de certeza que se tenía de que una palabra pertenece a una categoría emocional concreta mientras que los nuevos muestran el grado del 1 al 5 de pertenencia en la categoría. Una vez realizados estos cambios había que acabar la aplicación web y documentarla. 
+
+Al acabar el sprint habíamos conseguido realizar los cambios en el diccionario y los servicios web pero al centrarnos en eso no tuvimos tiempo para acabar de depurar la aplicación web. Por eso, tanto la parte de la web como la correción de la memoria quedaron pendientes para el sprint siguiente.
+
+	\item Sprint 9 (09/05/2018 - 16/05/2018)
+	
+	El noveno sprint consistió en dejar acabada la aplicación web, tanto su interfaz como la funcionalidad y documentar todo en la memoria (Sección 5.2). También comenzamos con el desarrollo de la API en una web en vez de incluirla a la memoria ya que pensamos que es más útil de esta manera.
+	
+	Al acabar el sprint la aplicación estaba prácticamente acabada, faltaba pulir algunos detalles meramente estéticos. También faltaba documentar todo y acabar la mitad de la API.
+	
+	\item Sprint 10 (16/05/2018 - 22/05/2018)
+
+El décimo sprint consistió en terminar todos los detalles de la aplicación web antes de la evaluación con usuarios finales que iba a tener lugar el día 22 de mayo además de preparar un formulario para esta. También había que documentar el desarrollo de la aplicación en la memoria.
+
+Al acabar el sprint todo estaba acabado y procedimos a realizar la evaluación.
+
+\end{itemize}
+% Variable local para emacs, para  que encuentre el fichero maestro de
+% compilación y funcionen mejor algunas teclas rápidas de AucTeX
+%%%
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../Tesis.tex"
+%%% End:
