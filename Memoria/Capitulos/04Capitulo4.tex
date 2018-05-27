@@ -22,22 +22,6 @@ El diccionario con el que vamos a trabajar, explicado en la sección 3.2, inicial
 Los datos estarán almacenados en el servidor Django.
 \begin{itemize}
 	\item \textbf{Modelo: } Los campos que tiene el modelo para cada palabra, son: la propia palabra, el lema de esta y el porcentaje de certeza de cada una de las emociones básicas y la neutralidad. Cada una de las palabras que tenemos recogidas se encapsulan en este modelo para ser almacenadas en el servidor.
-	
-	\lstdefinestyle{python}{language=Python,}
-	
-	\begin{lstlisting}[style=python]
-class Palabra(models.Model):
-    palabra = models.CharField(max_length = 30)
-    lexema = models.CharField(max_length = 30)
-    porcenta    jes = models.CharField(validators=
-        [validate_comma_separated_integer_list], max_length = 100)
-			
-    def __str__(self):
-        return self.palabra
-					
-    class Meta:
-        ordering = ('palabra')
-	\end{lstlisting}
 	\item \textbf{Consultas: } Se realizarán mediante declaración de clases ``vista'' según las funcionalidades que requiera cada uno de los servicios web que vamos a desarrollar. Inicialmente disponemos de una vista general (Figura \ref{fig:vista_general}) que muestra la lista entera de palabras almacenadas y una vista detalle (Figura \ref{fig:vista_det}) para cada una de ellas.
 \end{itemize}
 
