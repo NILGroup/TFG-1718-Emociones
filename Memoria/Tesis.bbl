@@ -1,6 +1,13 @@
 \begin{thebibliography}{27}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
+\bibitem[{Baldasarri(2016)}]{aplicacionesCA}
+{\sc Baldasarri, S.}
+\newblock Computaci'on afectiva: tecnolog'ia y emociones ara mejorar la
+  expriencia de usuario.
+\newblock {\em Revista Institucional de la Facultad de Inform'atica Universidad
+  Nacional de La Plata (Argentina)\/}, 2016.
+
 \bibitem[{Bradley y Lang(1999)}]{ANEW}
 {\sc Bradley, M.~M.} y {\sc Lang, P.~J.}
 \newblock Affective norms for english words ({ANEW}): Instruction manual and
@@ -95,15 +102,6 @@
 {\sc Huettner, A.} y {\sc Subasic, P.}
 \newblock Fuzzy typing for document management.
 \newblock 2000.
-
-\bibitem[{Dto. de Ciencia de la Computaci'on~e
-  Inteligencia~Artificial()}]{jtech}
-{\sc Dto. de Ciencia de la Computaci'on~e Inteligencia~Artificial, U. d.~A.}
-\newblock Servicios web.
-\newblock ????
-\newblock Disponible en
-  \url{http://www.jtech.ua.es/j2ee/publico/servc-web-2012-13/sesion01-apuntes.html}
-  (último acceso,  Marzo, 2018).
 
 \bibitem[{Kristensen et\ al.(2011)Kristensen, Gomes, Justo y
   Vieira}]{Kristensen2011}
