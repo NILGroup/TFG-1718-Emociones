@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.3)  28 MAY 2018 15:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2018.5.3)  28 MAY 2018 15:57
 entering extended mode
 **./Tesis.tex
 (Tesis.tex
@@ -4312,17 +4312,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--51
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 58--59
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
@@ -5684,7 +5684,7 @@ cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm2488.pk> <C:\Users\Equipo\
 k> <C:\Users\Equipo\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Equipo\AppData\Lo
 cal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmsy10.pfb>
-Output written on Tesis.pdf (125 pages, 5425214 bytes).
+Output written on Tesis.pdf (125 pages, 5425404 bytes).
 PDF statistics:
  2389 PDF objects out of 2487 (max. 8388607)
  362 named destinations out of 1000 (max. 500000)
