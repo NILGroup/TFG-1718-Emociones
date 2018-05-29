@@ -25,7 +25,7 @@ Los datos estarán almacenados en el servidor Django.
 	\item \textbf{Consultas: } Se realizarán mediante declaración de clases ``vista'' según las funcionalidades que requiera cada uno de los servicios web que vamos a desarrollar. Inicialmente disponemos de una vista general (Figura \ref{fig:vista_general}) que muestra la lista entera de palabras almacenadas y una vista detalle (Figura \ref{fig:vista_det}) para cada una de ellas.
 \end{itemize}
 
-\figura{Bitmap/Capitulo4/vista_general}{width=.7\textwidth}{fig:vista_general}{Vista general de la lista de palabras.}
+\figura{Bitmap/Capitulo4/listaPalabrasServidor}{width=.7\textwidth}{fig:vista_general}{Vista general de la lista de palabras.}
 \figura{Bitmap/Capitulo4/vista_detalle}{width=.6\textwidth}{fig:vista_det}{Vista detalle de la palabra ``Alegre''.}
 
 
@@ -49,28 +49,28 @@ Lo primero que tenemos que hacer para buscar cualquier palabra es obtener su lem
 \subsection{Servicio web para obtener los grados emocionales de una palabra para cada emoción}
 Dada una palabra, este servicio nos devuelve la información sobre los grados o valores de cada categoría emocional que posee. Para ello se realiza una petición \textbf{GET} al servidor, y se devuelve el resultado en formato JSON al usuario.
 
-Como entrada tendríamos la palabra de la cual queremos conocer sus emociones. En la figura (Figura \ref{fig:grados}) se puede ver el JSON devuelto por el servicio para la palabra "`alegre"'. Si la palabra está en nuestro diccionario, la salida sería el grado de cada emoción. Si la palabra no existe en nuestro diccionario el servicio devolverá un mensaje 404 de ``NOT FOUND'' (Figura \ref{fig:notfound}).
+Como entrada tendríamos la palabra de la cual queremos conocer sus emociones. En la figura (Figura \ref{fig:grados}) se puede ver el JSON devuelto por el servicio para la palabra "`enfermedad"'. Si la palabra está en nuestro diccionario, la salida sería el grado de cada emoción. Si la palabra no existe en nuestro diccionario el servicio devolverá dicha palabra como si apareciese en el diccionario devolviendo para cada emoción con grado 1 neutral. (Figura \ref{fig:notfound}).
 
-\figura{Bitmap/Capitulo4/grados}{width=.4\textwidth}{fig:grados}{JSON devuelto al buscar los grados emocionales de la palabra ``enfermedad''.}
+\figura{Bitmap/Capitulo4/gradosEnfermedad}{width=.4\textwidth}{fig:grados}{JSON devuelto al buscar los grados emocionales de la palabra ``enfermedad''.}
 	
-\figura{Bitmap/Capitulo4/no_encontrada}{width=.4\textwidth}{fig:notfound}{JSON devuelto al buscar los porcentajes de una palabra que no está en el diccionario.}
+\figura{Bitmap/Capitulo4/gradosNoExiste}{width=.4\textwidth}{fig:notfound}{JSON devuelto al buscar los porcentajes de una palabra que no está en el diccionario.}
 
 
 \subsection{Servicio web para obtener la emoción consensuada de una palabra}
 Dada una palabra, este servicio nos devuelve a través de una petición \textbf{GET} al servidor si la palabra tiene o no emoción consensuada y en caso de tenerla cuál.  Hablamos de emoción consensuada cuando el grado o valor que tiene una palabra de una categoría emocional es 5.
 
-Como entrada tendríamos la palabra de la cual queremos conocer su emoción consensuada, mientras que la salida será la emoción consensuada en caso de tenerla. (Figura \ref{fig:noconsensuada}).
+Como entrada tendríamos la palabra de la cual queremos conocer su emoción consensuada, mientras que la salida será la emoción consensuada en caso de tenerla (Figura \ref{fig:noconsensuada}). Actualmente en nuestro diccionario no existe ninguna palabra con emoción consensuada.
 
 %\figura{Bitmap/Capitulo4/consensuada}{width=.4\textwidth}{fig:consensuada}{Respuesta al encontrar la emoción consensuada.}
 
-\figura{Bitmap/Capitulo4/no_consensuada}{width=.4\textwidth}{fig:noconsensuada}{JSON devuelto si la palabra no tiene emoción consensuada.}
+\figura{Bitmap/Capitulo4/noconsensuada}{width=.4\textwidth}{fig:noconsensuada}{JSON devuelto si la palabra no tiene emoción consensuada.}
 
 \subsection{Servicio web para obtener la emoción mayoritaria de una palabra}
 Dada una palabra el servicio nos devuelve la emoción mayoritaria. Hablamos de emoción mayoritaria cuando el grado de una emoción es mayor al del resto de emociones.
 
 Como entrada tendríamos la palabra de la cual queremos conocer su emoción mayoritaria, mientras que la salida será la emoción mayoritaria (Figura \ref{fig:mayoritaria}) y el grado de esta que tiene la palabra.%, o mayoritarias (en caso de que haya dos con el mismo porcentaje) (Figura \ref{fig:mayoritarias}).
 
-\figura{Bitmap/Capitulo4/mayoritaria}{width=.4\textwidth}{fig:mayoritaria}{Respuesta al encontrar la emoción mayoritaria.}
+\figura{Bitmap/Capitulo4/mayoritariaAbeja}{width=.4\textwidth}{fig:mayoritaria}{Respuesta al encontrar la emoción mayoritaria.}
 %\figura{Bitmap/Capitulo4/mayoritarias}{width=.4\textwidth}{fig:mayoritarias}{Respuesta si hay dos emociones mayoritarias.}
 
 %-------------------------------------------------------------------
@@ -80,10 +80,10 @@ Como entrada tendríamos la palabra de la cual queremos conocer su emoción mayori
 
 El anális emocional de una frase se sustenta en los servicios web desarrollados para hallar la carga afectiva de las palabras.  
 
-Partimos de la base de que cualquier frase es, de primeras, carente de emoción, así que si no contiene ninguna palabra emocional el resultado será que es una frase 100\% neutral (Figura \ref{fig:analisis_neutral}). Para el resto de frases, además de los resultados del análisis emocional devolvemos la lista de palabras que nos han llevado a ellos.
+Partimos de la base de que cualquier frase es, de primeras, carente de emoción, así que si no contiene ninguna palabra emocional el resultado será que es una frase 100\% neutral. Para el resto de frases, además de los resultados del análisis emocional devolvemos la lista de palabras que nos han llevado a ellos.
 
-\figura{Bitmap/Capitulo4/analisis_neutral}{width=.5\textwidth}{fig:analisis_neutral}{Análisis de una frase sin palabras emocionales.}
-
+%\figura{Bitmap/Capitulo4/analisis_neutral}{width=.5\textwidth}{fig:analisis_neutral}{Análisis de una frase sin palabras emocionales.}
+%(Figura \ref{fig:analisis_neutral})
 \subsection{Obtención de palabras relevantes}
 
 Comenzaremos dividiendo la frase en las palabras que la forman y procesaremos cada una de estas utilizando la herramienta SpaCy, como ya se explicó en la sección 3.5, para obtener una lista de palabras candidatas acompañadas de sus lemas. Consideraremos una palabra como candidata si su etiqueta es "`VERB"', "`ADJ"' o "`NOUN"'. Para cada una de las palabras de la lista obtenemos su información emocional mediante los servicios web explicados en el apartado anterior y, combinando los resultados obtenidos, podemos mostrar la carga afectiva de toda la frase.

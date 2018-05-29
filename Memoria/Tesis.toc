@@ -1,4 +1,4 @@
-\babel@toc {spanish}{}
+\select@language {spanish}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivaci\'on}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Objetivos}{1}{section.1.2}
@@ -33,16 +33,16 @@
 \contentsline {section}{\numberline {3.6}SpaCy y PyStemmer}{25}{section.3.6}
 \contentsline {chapter}{\numberline {4}An\'alisis del Contenido Afectivo de un Texto}{27}{chapter.4}
 \contentsline {section}{\numberline {4.1}Base para los servicios web}{27}{section.4.1}
-\contentsline {section}{\numberline {4.2}An\'alisis afectivo de una palabra}{29}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Lematizaci\'on}{29}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Servicio web para obtener los grados emocionales de una palabra para cada emoci\'on}{29}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Servicio web para obtener la emoci\'on consensuada de una palabra}{30}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Servicio web para obtener la emoci\'on mayoritaria de una palabra}{30}{subsection.4.2.4}
-\contentsline {section}{\numberline {4.3}An\'alisis afectivo de una frase}{31}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Obtenci\'on de palabras relevantes}{31}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Grados emocionales de una frase}{32}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Emoci\'on mayoritaria de una frase}{33}{subsection.4.3.3}
-\contentsline {section}{\numberline {4.4}An\'alisis afectivo de un texto}{33}{section.4.4}
+\contentsline {section}{\numberline {4.2}An\'alisis afectivo de una palabra}{28}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Lematizaci\'on}{28}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Servicio web para obtener los grados emocionales de una palabra para cada emoci\'on}{28}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Servicio web para obtener la emoci\'on consensuada de una palabra}{29}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Servicio web para obtener la emoci\'on mayoritaria de una palabra}{29}{subsection.4.2.4}
+\contentsline {section}{\numberline {4.3}An\'alisis afectivo de una frase}{29}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Obtenci\'on de palabras relevantes}{30}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Grados emocionales de una frase}{30}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Emoci\'on mayoritaria de una frase}{31}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}An\'alisis afectivo de un texto}{31}{section.4.4}
 \contentsline {chapter}{\numberline {5}EmoTraductor}{35}{chapter.5}
 \contentsline {section}{\numberline {5.1}Descripci\'on del problema a resolver}{35}{section.5.1}
 \contentsline {section}{\numberline {5.2}Dise\~no de la interfaz}{36}{section.5.2}
@@ -117,4 +117,4 @@
 \contentsline {subsection}{\numberline {A.3.4}Blog muerte}{94}{subsection.Alph1.3.4}
 \contentsline {subsection}{\numberline {A.3.5}Blog enfado}{95}{subsection.Alph1.3.5}
 \contentsline {chapter}{\numberline {B}Im\'agenes de tableros de sprints}{97}{appendix.Alph2}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{109}{appendix*.57}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{109}{appendix*.56}
