@@ -1,4 +1,4 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{24}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Baldasarri(2016)}]{aplicacionesCA}
@@ -64,14 +64,6 @@
   {\sc Ross, M.}
 \newblock {\em The Baby Webmind Project\/}.
 \newblock 2000.
-
-\bibitem[{Grefenstette et\ al.(2006)Grefenstette, Qu, Evans y
-  Shanahan}]{Grefenstette06}
-{\sc Grefenstette, G.}, {\sc Qu, Y.}, {\sc Evans, D.~A.} y {\sc Shanahan,
-  J.~G.}
-\newblock Validating the coverage of lexical resources for affect analysis and
-  automatically classifying new words along semantic axes.
-\newblock 2006.
 
 \bibitem[{Guasch et\ al.(2016)Guasch, Ferr{\'e} y Fraga}]{Guasch2016}
 {\sc Guasch, M.}, {\sc Ferr{\'e}, P.} y {\sc Fraga, I.}
@@ -147,12 +139,6 @@
 \newblock A review of affective design towards video games.
 \newblock {\em Procedia-Social and Behavioral Sciences\/}, vol.\ 51, 2012.
 
-\bibitem[{Peterson et\ al.(1965)Peterson, Brewer y
-  Lasswell}]{peterson1965lasswell}
-{\sc Peterson, R.}, {\sc Brewer, T.} y {\sc Lasswell, H.}
-\newblock {\em The Lasswell Value Dictionary\/}.
-\newblock 1965.
-
 \bibitem[{Picard(1997)}]{Picard}
 {\sc Picard, R.~W.}
 \newblock {\em Affective Computing\/}.
@@ -186,11 +172,5 @@
 \newblock 2016.
 \newblock Disponible en \url{http://scrummanager.net/files/scrum_manager.pdf}
   (último acceso,  Marzo, 2018).
-
-\bibitem[{Turney y L.Littman(2003)}]{TurneyLittman03}
-{\sc Turney, P.~D.} y {\sc L.Littman, M.}
-\newblock Measuring praise and criticism: Inference of semantic orientation
-  from association.
-\newblock {\em ACM Transactions on Information System ({T}{O}{I}{S})\/}, 2003.
 
 \end{thebibliography}

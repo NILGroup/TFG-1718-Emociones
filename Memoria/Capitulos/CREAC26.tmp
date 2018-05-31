@@ -18,9 +18,9 @@ En este capítulo se profundizará en las herramientas que utilizaremos a lo largo
 Las herramientas básicas utilizadas para el desarrollo del proyecto son:
 
 \begin{itemize}
-	\item \textbf{Repositorio:} Se utilizará un repositorio común de \textit{GitHub} cuya dirección es https://github.com/NILGroup/TFG-1718-Emociones, en él se subirán todos los cambios realizados en el código. A pesar de ser un equipo de desarrollo pequeño y estar utilizando la metodología Scrum usaremos una rama por historia de usuario.
+	\item \textbf{Repositorio:} Se utilizará un repositorio común de \textit{GitHub} cuya dirección es https://github.com/NILGroup/TFG-1718-Emociones, en el que se subirán todos los cambios realizados en el código. A pesar de ser un equipo de desarrollo pequeño y estar utilizando la metodología Scrum usaremos una rama por historia de usuario.
 	
-		\item \textbf{Pruebas automáticas:} Haremos uso de Jenkins con el fin de controlar la ejecución de pruebas y la comparación entre los resultados obtenidos y los resultados esperados. El uso de estas pruebas, nos permite incluir pruebas muy repetitivas y necesarias, dado que habrá pruebas que realizarlas de manera manual nos podrá ser muy costoso.
+		\item \textbf{Pruebas automáticas:} Haremos uso de jenkins con el fin de controlar la ejecución de pruebas y la comparación entre los resultados obtenidos y los resultados esperados. El uso de estas pruebas, nos permite incluir pruebas muy repetitivas y necesarias, dado que habrá pruebas que realizarlas de manera manual nos podrá ser muy costoso.
 \end{itemize}
 
 
@@ -57,10 +57,10 @@ Al igual que en los diccionarios en los que nos basamos, consideraremos que una 
 %-------------------------------------------------------------------
 \label{cap3:sec:django}
 
-La implementación de los servicios web desarrollados se hará utilizando Django, un framework para aplicaciones web gratuito y open source escrito en Python. Django se organiza según el patrón MVC, por lo que fomenta el desarrollo rápido y el diseño limpio y pragmático. Tiene una comunidad próspera y activa, una gran documentación y muchas opciones de soporte gratuito y de pago. El software que Django nos ayudará a escribir será completo, versátil, seguro, escalable, mantenible y portable. 
+Toda la implementación del trabajo se hará utilizando Django, un framework para aplicaciones web gratuito y open source escrito en Python. Django se organiza según el patrón MVC, por lo que fomenta el desarrollo rápido y el diseño limpio y pragmático. Tiene una comunidad próspera y activa, una gran documentación y muchas opciones de soporte gratuito y de pago. El software que Django nos ayudará a escribir será completo, versátil, seguro, escalable, mantenible y portable. 
 
-Este framework nos proporciona un servidor web, en el que se almacena la base de datos que contiene las palabras de nuestro diccionario.
-Para realizar las diferentes consultas sobre las palabras existen una serie de clases que implementan los diferentes métodos de un servicio web REST típico: \textbf{GET, POST, DELETE}. 
+Este framework nos proporciona un servidor web, en el que se almacena la base de datos que contiene las palabras con sus respectivas probabilidades para cada emoción y la neutralidad modeladas mediante su lexema y los grados de certeza para cada emoción. La base de datos permitirá hacer las consultas necesarias. 
+Para realizar las diferentes consultas sobre las palabras disponibles existen una serie de clases que implementan los diferentes métodos de un servicio web REST típico: \textbf{GET, POST, DELETE}. 
 Cada una de las diferentes clases nos aportarán una manera diferente de acceder a la información, como pueden ser: acceso a todo el diccionario de palabras, a una palabra concreta o a un campo de una palabra concreta.
 Los resultados serán devueltos en formato JSON.
 
