@@ -20,7 +20,7 @@ Las herramientas básicas utilizadas para el desarrollo del proyecto son:
 \begin{itemize}
 	\item \textbf{Repositorio:} Se utilizará un repositorio común de \textit{GitHub} cuya dirección es https://github.com/NILGroup/TFG-1718-Emociones, en él se subirán todos los cambios realizados en el código. A pesar de ser un equipo de desarrollo pequeño y estar utilizando la metodología Scrum usaremos una rama por historia de usuario. Tendremos además dos ramas adicionales, una para la memoria y otra para los prototipos.
 	
-		\item \textbf{Pruebas automáticas:} Haremos uso de Jenkins con el fin de controlar la ejecución de pruebas y la comparación entre los resultados obtenidos y los resultados esperados. Esto nos permitirá automatizar la ejecución de pruebas necesariaEl uso de estas pruebas, nos permite incluir pruebas muy repetitivas y necesarias, dado que habrá pruebas que realizarlas de manera manual nos podrá ser muy costoso.
+		\item \textbf{Pruebas automáticas:} Haremos uso de Jenkins con el fin de controlar la ejecución de pruebas y la comparación entre los resultados obtenidos y los resultados esperados. Esto nos permitirá automatizar la ejecución de pruebas necesarias a los distintos módulos que resultaría muy costoso realizar a mano.
 \end{itemize}
 
 
@@ -29,9 +29,7 @@ Las herramientas básicas utilizadas para el desarrollo del proyecto son:
 %-------------------------------------------------------------------
 \label{cap3:sec:diccionario emocional}
 
-
-%ASÍ VALE?%
-El diccionario que vamos a utilizar contiene las categorías emocionales básicas: alegría, ira, tristeza, miedo y asco. Las palabras que aparecerán marcadas son las que aparecen en el diccionario de Ferré junto con las que aparecen en el diccionario de Hinojosa, un total de 3141 palabras, como se ha mencionado en el capítulo anterior. Los valores para cada emoción serán los extraídos de ambos diccionarios y medidos de la misma manera, del 1 al 5 siendo 1 \textit{para nada} y el 5 \textit{extremadamente}.
+Nuestro objetivo es analizar texto en castellano por lo que necesitamos un diccionario afectivo que contenga palabras en castellano. Además, nos interesa que las palabras estén marcadas con un determinado valor para cada una de las categorías emocionales con las que queremos trabajar: tristeza, miedo, alegría, enfado y asco. De todos los diccionarios presentados en la sección 3.3 solamente hay dos que cumplan con ambos requisitos: el diccionario de Hinojosa y el de Ferré. Una vez decidido que íbamos a trabajar con estos diccionarios los exportamos utilizando \textit{EmoFinder}\footnote{http://www.usc.es/pcc/app/emofinder/index.php?lang=es#tab=0}, una herramienta en línea que contiene diferentes bases de datos de palabras y sus propiedades (dimensiones emocionales, categorías emocionales...). La propia herramienta nos permitió combinar ambos diccionarios en un mismo CSV del que tuvimos que solapar las columnas: las palabras que están en un diccionario no están en el otro, por lo que para cada palabra sólo tenemos que quedarnos con las cinco columnas del diccionario al que pertenecen. Obtuvimos así un diccionario afectivo compuesto por 3.141 palabras marcadas con un grado del uno al cinco, siendo uno \textit{para nada} y el 5 \textit{extremadamente}, para las cinco categorías emocionales ya comentadas.
 	
 En la Tabla \ref{tabla:diccionario} podemos ver un ejemplo de los valores obtenidos para tres de las palabras del diccionario. Cada columna representa los grados asociados a cada categoría emocional para la palabra dada.
 
@@ -50,7 +48,7 @@ En la Tabla \ref{tabla:diccionario} podemos ver un ejemplo de los valores obteni
 		\end{center}
 		\end{table}
 
-Al igual que en los diccionarios en los que nos basamos, consideraremos que una palabra pertenece a una categoría emocional únicamente cuando el valor para dicha categoría sea superior a 2,5. Por ejemplo, la palabra abandono pertenece a las categorías emocionales Tristeza, Miedo, Enfado y Asco mientras que abanico solo pertenece a la categoría emocional Alegría.
+Al igual que en los diccionarios en los que nos basamos, consideraremos que una palabra pertenece a una categoría emocional únicamente cuando el valor para dicha categoría sea superior a 2,5. Por ejemplo, la palabra abandono pertenece a las categorías emocionales Tristeza, Miedo, Enfado y Asco mientras que abanico solo pertenece a la categoría emocional Alegría. 
 
 %-------------------------------------------------------------------
 \section{Django}
@@ -71,9 +69,9 @@ Los resultados serán devueltos en formato JSON.
 
 Trello sirve para organizar proyectos y actividades. Para representar las tareas y las historias de usuario se usan tarjetas virtuales que podemos asignar a los miembros del equipo. En la Figura \ref{fig:sprint} podemos ver el tablero al inicio del proyecto.En este tablero tenemos cinco columnas: \textbf{Backlog}, \textbf{To Do}, \textbf{Sprint Backlog}, \textbf{In Progress} y \textbf{Done}. El Product Owner crea el \textbf{Backlog} del que se van sacando las historias de usuario de cada sprint. Las historias de usuario seleccionadas en la reunión de planificación para el sprint pasa a la columna \textbf{To Do} del tablero. En la Figura \ref{fig:sprint2} se puede ver un ejemplo del tablero en un estado más avanzado del proyecto. En este segundo tablero se ve como las historias de usuario han sido divididas en tareas para formar el \textbf{Sprint Backlog}, del que las tareas van saliendo en orden hacia la columna \textbf{In Progress}  cada vez que se asigna una tarea a un miembro del equipo de desarrollo. Cuando una tarea se termina pasa a la columna \textbf{Done}.
 
-	\figura{Bitmap/Capitulo3/Sprint1Plan}{width=.9\textwidth}{fig:sprint}{Tablero trello al inicio del proyecto.}
+	\figura{Bitmap/Capitulo3/Sprint1Plan}{width=\textwidth}{fig:sprint}{Tablero trello al inicio del proyecto.}
 	
-	\figura{Bitmap/Capitulo3/Sprint1Fin}{width=.9\textwidth}{fig:sprint2}{Final del sprint inicial.}
+	\figura{Bitmap/Capitulo3/Sprint1Fin}{width=\textwidth}{fig:sprint2}{Final del sprint inicial.}
 
 %-------------------------------------------------------------------
 \section{Doctest y Jenkins}
@@ -83,8 +81,7 @@ Trello sirve para organizar proyectos y actividades. Para representar las tareas
 Utilizaremos Jenkins\footnote{https://jenkins.io/doc/} para la parte de la integración continua del proyecto. Esto nos permitirá asegurarnos de que la unión de las partes desarrolladas por los diferentes miembros del equipo de desarrollo es correcta y realizar las pruebas automáticas. Esto último se llevará a cabo mediante una orden shell que Jenkins ejecutará cada vez que se detecte un cambio en el repositorio Github. La orden únicamente se encarga de ejecutar el script de pruebas que contendrá las llamadas a los diferentes programas de pruebas que se desarrollen.
 
 Los programas de pruebas utilizarán Doctest para hacer las pruebas, tanto las de unidad como las de integración. Doctest es un módulo incluido en la librería estándar de Python. Su funcionamiento se basa 
-en definir la función que se quiera probar y, dentro de un comentario al inicio de esta, poner una serie de llamadas y el resultado que se espera obtener de ellas. Tiene una función testmod que realiza las pruebas y devuelve el número de fallos y el resultado de todas las pruebas. Si el número de fallos es mayor que cero provocamos una excepción que Jenkins detectará para notificar a todo el equipo que hay algún fallo. Los resultados de las pruebas se muestran por consola al acabar y Jenkins los guardará para ayudar a encontrar el problema. Tendremos un archivo de pruebas por cada uno de los servicios web que vayamos desarrollando. Cada vez que creemos un nuevo archivo de pruebas tendremos configurar Doctest para que realice las llamadas a ese nuevo fichero.
-Teniendo en cuenta que cada módulo es utilizado por otro, las pruebas de unidad de un módulo sirven como pruebas de integración para el módulo inferior.
+en definir la función que se quiera probar y, dentro de un comentario al inicio de esta, poner una serie de llamadas y el resultado que se espera obtener de ellas. Tiene una función testmod que realiza las pruebas y devuelve el número de fallos y el resultado de todas las pruebas. Si el número de fallos es mayor que cero provocamos una excepción que Jenkins detectará para notificar a todo el equipo que hay algún fallo. Los resultados de las pruebas se muestran por consola al acabar y Jenkins los guardará para ayudar a encontrar el problema. Tendremos un archivo de pruebas por cada uno de los servicios web que vayamos desarrollando. Cada vez que se termine el desarrollo de un servicio nuevo creemos un nuevo archivo de pruebas que utilice Doctest para hacer las pruebas. Teniendo en cuenta que cada módulo es utilizado por otro, las pruebas de unidad de un módulo sirven como pruebas de integración para el módulo inferior.
 
 %-------------------------------------------------------------------
 \section{SpaCy y PyStemmer}
