@@ -91,31 +91,51 @@
 \contentsline {section}{\numberline {10.1}Gema}{83}{section.10.1}
 \contentsline {section}{\numberline {10.2}Paloma}{85}{section.10.2}
 \contentsline {section}{\numberline {10.3}Elena}{86}{section.10.3}
-\contentsline {chapter}{\numberline {A}Casos de prueba}{89}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Cuentos}{89}{section.Alph1.1}
-\contentsline {subsection}{\numberline {A.1.1}Blancanieves}{89}{subsection.Alph1.1.1}
-\contentsline {subsection}{\numberline {A.1.2}Blancanieves y sus amigos}{89}{subsection.Alph1.1.2}
-\contentsline {subsection}{\numberline {A.1.3}La sirenita}{90}{subsection.Alph1.1.3}
-\contentsline {subsection}{\numberline {A.1.4}La bella durmiente}{90}{subsection.Alph1.1.4}
-\contentsline {subsection}{\numberline {A.1.5}La margarita}{90}{subsection.Alph1.1.5}
-\contentsline {subsection}{\numberline {A.1.6}La bella y la bestia}{90}{subsection.Alph1.1.6}
-\contentsline {subsection}{\numberline {A.1.7}El castillo de Bestia}{91}{subsection.Alph1.1.7}
-\contentsline {subsection}{\numberline {A.1.8}Cenicienta}{91}{subsection.Alph1.1.8}
-\contentsline {subsection}{\numberline {A.1.9}Mul\'an}{91}{subsection.Alph1.1.9}
-\contentsline {subsection}{\numberline {A.1.10}Pinocho}{91}{subsection.Alph1.1.10}
-\contentsline {subsection}{\numberline {A.1.11}Pocahontas}{92}{subsection.Alph1.1.11}
-\contentsline {subsection}{\numberline {A.1.12}Aladd\IeC {\'\i }n}{92}{subsection.Alph1.1.12}
-\contentsline {subsection}{\numberline {A.1.13}El ratoncito P\'erez}{92}{subsection.Alph1.1.13}
-\contentsline {section}{\numberline {A.2}Noticias}{94}{section.Alph1.2}
-\contentsline {subsection}{\numberline {A.2.1}Noticia asesinato}{94}{subsection.Alph1.2.1}
-\contentsline {subsection}{\numberline {A.2.2}Noticia nacimiento}{95}{subsection.Alph1.2.2}
-\contentsline {subsection}{\numberline {A.2.3}Noticia OMS}{96}{subsection.Alph1.2.3}
-\contentsline {subsection}{\numberline {A.2.4}Noticia politica}{96}{subsection.Alph1.2.4}
-\contentsline {section}{\numberline {A.3}Entradas de Blog}{97}{section.Alph1.3}
-\contentsline {subsection}{\numberline {A.3.1}Blog agradecimiento}{97}{subsection.Alph1.3.1}
-\contentsline {subsection}{\numberline {A.3.2}Blog moda}{97}{subsection.Alph1.3.2}
-\contentsline {subsection}{\numberline {A.3.3}Blog reflexi\'on}{97}{subsection.Alph1.3.3}
-\contentsline {subsection}{\numberline {A.3.4}Blog muerte}{98}{subsection.Alph1.3.4}
-\contentsline {subsection}{\numberline {A.3.5}Blog enfado}{99}{subsection.Alph1.3.5}
-\contentsline {chapter}{\numberline {B}Im\'agenes de tableros de sprints}{101}{appendix.Alph2}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{113}{appendix*.60}
+\contentsline {chapter}{\numberline {11}Conclusiones y Trabajo futuro}{89}{chapter.11}
+\contentsline {section}{\numberline {11.1}Conclusiones}{90}{section.11.1}
+\contentsline {subsection}{\numberline {11.1.1}Motivaci\'on}{90}{subsection.11.1.1}
+\contentsline {subsection}{\numberline {11.1.2}Objetivo}{90}{subsection.11.1.2}
+\contentsline {subsection}{\numberline {11.1.3}\IeC {\textquestiondown }Qu\'e hemos realizado?}{90}{subsection.11.1.3}
+\contentsline {subsection}{\numberline {11.1.4}Evaluaci\'on}{90}{subsection.11.1.4}
+\contentsline {subsection}{\numberline {11.1.5}\IeC {\textquestiondown }Qu\'e hemos conseguido?}{90}{subsection.11.1.5}
+\contentsline {subsection}{\numberline {11.1.6}Conocimientos aplicados}{90}{subsection.11.1.6}
+\contentsline {subsection}{\numberline {11.1.7}Conocimientos adquiridos}{90}{subsection.11.1.7}
+\contentsline {section}{\numberline {11.2}Trabajo futuro}{90}{section.11.2}
+\contentsline {chapter}{\numberline {12}Conclusions and Future work}{93}{chapter.12}
+\contentsline {section}{\numberline {12.1}Conclusions}{94}{section.12.1}
+\contentsline {subsection}{\numberline {12.1.1}Motivation}{94}{subsection.12.1.1}
+\contentsline {subsection}{\numberline {12.1.2}Goals}{94}{subsection.12.1.2}
+\contentsline {subsection}{\numberline {12.1.3}What have we done?}{94}{subsection.12.1.3}
+\contentsline {subsection}{\numberline {12.1.4}Evaluation}{94}{subsection.12.1.4}
+\contentsline {subsection}{\numberline {12.1.5}What have we achieved?}{94}{subsection.12.1.5}
+\contentsline {subsection}{\numberline {12.1.6}Applied Knowledge}{94}{subsection.12.1.6}
+\contentsline {subsection}{\numberline {12.1.7}Acquired knowledge}{94}{subsection.12.1.7}
+\contentsline {section}{\numberline {12.2}Future Work}{94}{section.12.2}
+\contentsline {chapter}{\numberline {A}Casos de prueba}{97}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Cuentos}{97}{section.Alph1.1}
+\contentsline {subsection}{\numberline {A.1.1}Blancanieves}{97}{subsection.Alph1.1.1}
+\contentsline {subsection}{\numberline {A.1.2}Blancanieves y sus amigos}{97}{subsection.Alph1.1.2}
+\contentsline {subsection}{\numberline {A.1.3}La sirenita}{98}{subsection.Alph1.1.3}
+\contentsline {subsection}{\numberline {A.1.4}La bella durmiente}{98}{subsection.Alph1.1.4}
+\contentsline {subsection}{\numberline {A.1.5}La margarita}{98}{subsection.Alph1.1.5}
+\contentsline {subsection}{\numberline {A.1.6}La bella y la bestia}{98}{subsection.Alph1.1.6}
+\contentsline {subsection}{\numberline {A.1.7}El castillo de Bestia}{99}{subsection.Alph1.1.7}
+\contentsline {subsection}{\numberline {A.1.8}Cenicienta}{99}{subsection.Alph1.1.8}
+\contentsline {subsection}{\numberline {A.1.9}Mul\'an}{99}{subsection.Alph1.1.9}
+\contentsline {subsection}{\numberline {A.1.10}Pinocho}{99}{subsection.Alph1.1.10}
+\contentsline {subsection}{\numberline {A.1.11}Pocahontas}{100}{subsection.Alph1.1.11}
+\contentsline {subsection}{\numberline {A.1.12}Aladd\IeC {\'\i }n}{100}{subsection.Alph1.1.12}
+\contentsline {subsection}{\numberline {A.1.13}El ratoncito P\'erez}{100}{subsection.Alph1.1.13}
+\contentsline {section}{\numberline {A.2}Noticias}{102}{section.Alph1.2}
+\contentsline {subsection}{\numberline {A.2.1}Noticia asesinato}{102}{subsection.Alph1.2.1}
+\contentsline {subsection}{\numberline {A.2.2}Noticia nacimiento}{103}{subsection.Alph1.2.2}
+\contentsline {subsection}{\numberline {A.2.3}Noticia OMS}{104}{subsection.Alph1.2.3}
+\contentsline {subsection}{\numberline {A.2.4}Noticia politica}{104}{subsection.Alph1.2.4}
+\contentsline {section}{\numberline {A.3}Entradas de Blog}{105}{section.Alph1.3}
+\contentsline {subsection}{\numberline {A.3.1}Blog agradecimiento}{105}{subsection.Alph1.3.1}
+\contentsline {subsection}{\numberline {A.3.2}Blog moda}{105}{subsection.Alph1.3.2}
+\contentsline {subsection}{\numberline {A.3.3}Blog reflexi\'on}{105}{subsection.Alph1.3.3}
+\contentsline {subsection}{\numberline {A.3.4}Blog muerte}{106}{subsection.Alph1.3.4}
+\contentsline {subsection}{\numberline {A.3.5}Blog enfado}{107}{subsection.Alph1.3.5}
+\contentsline {chapter}{\numberline {B}Im\'agenes de tableros de sprints}{109}{appendix.Alph2}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{121}{appendix*.60}
