@@ -30,7 +30,7 @@ Las dimensiones emocionales representan los aspectos esenciales de una emoción. 
 	\item \textbf{Control}: Representa el control que tiene la emoción sobre una persona. Por ejemplo, el control de la emoción alegría es mayor que el de la emoción de tristeza.
 \end{itemize}
 
-Las categorías emocionales representan cada una de las emociones básicas de carácter universal. Existe una gran multitud de categorías emocionales, por lo que para reducir el número y hacer nuestro proyecto más fácil e intuitivo, nos centraremos en las conocidas como categorías emocionales básicas: \textit{miedo}, \textit{sorpresa}, \textit{alegría}, \textit{ira} y \textit{tristeza}, con el fin 
+Las categorías emocionales representan cada una de las emociones básicas de carácter universal y a partir de las cuales se desarrollan las emociones secundarias. Conocemos como categorías emocionales 
 % -- A modo de resumen, podríamos hablar también de las tres dimensiones de la persona que se activan a la vez y de modo indisoluble con cada emoción:
 
 %y dimensiones. Dentro de la multitud de categorías que existen, nos centraremos en las conocidas como categorías básicas: miedo, sorpresa, alegría, ira y tristeza.
@@ -57,7 +57,7 @@ Esta rama de la computación permite un avance notable en la inteligencia artific
 La computación afectiva tiene multitud de aplicaciones, ya que como se ha mencionado antes, las emociones están presentes en todos los ámbitos de la vida de una persona. A continuación presentamos algunas de las más importantes \citep{aplicacionesCA}: %(No sé qué cita es esta)
 
 \begin{itemize}
-	\item \textbf{Seguridad}: El análisis de las emociones como el estrés, el aburrimiento o la distracción puede ser muy interesante en tareas repetitivas como conducir o controlar una cinta de producción. En estos casos el ordenador puede ayudar al usuario a mantener la atención en la tarea que está desarrollando, o por ejemplo, en el caso de la conducción, frenar si el conductor se encuentra distraído y se aproxima a un coche. 
+	\item \textbf{Seguridad}: El análisis de las emociones como el estrés, el aburrimiento o la distracción puede ser muy interesante en tareas repetitivas como conducir o controlar una cinta de producción. 
 	\item \textbf{Marketing}: Poder evaluar la reacción emocional de alguien ante un anuncio o producto es una estrategia comercial que ya está siendo utilizada cada vez por más empresas.
 	\item \textbf{Salud}: Es posible inferir el nivel de estrés de una persona midiendo sus señales fisiológicas (ritmo cardiaco, respiración...) y si este nivel es demasiado alto se reaccionará en consecuencia según el tipo de sistema. 
 	\item \textbf{Entretenimiento}: La industria de los videojuegos ha crecido mucho en los últimos años e introducir las emociones en los videojuegos permite a las compañías crear juegos más adaptables y cercanos al jugador, lo que atrae a más público y mejora la experiencia de juego \citep{chinos}.
@@ -287,15 +287,6 @@ Las principales ventajas de la integración continua son:
 Lo primero para poder utilizar integración continua es tener definido un pipeline, es decir, un conjunto de fases por las que tiene que pasar el software y que están automatizadas. Se establecen criterios para que el código pase de una fase a otra y estrategias para gestionar errores que puedan surgir en las diferentes fases (control de versiones). Es importante tener bien definidas las pruebas que se van a realizar sobre cada fase y que estas puedan garantizar la máxima corrección posible sin tardar mucho, ya que se necesita un feedback rápido para poder seguir avanzando en el proceso. Cada fase es un grupo de pruebas y cada subida de código es un pipeline distinto que avanza de forma independiente por las fases. Por lo tanto se sabe en todo momento en qué punto se encuentra una versión específica. Esto permite tener una visión general de todo el proceso facilitando notablemente la detección de errores en fases y pipelines concretos.
 
 Para el correcto funcionamiento de esta práctica tiene que haber pequeñas integraciones de forma frecuente, una vez al día por ejemplo. Cuantos menos cambios haya más fácil es la integración en el producto general y solucionar los posibles errores que esta pueda generar. Cabe destacar que aunque una parte de código funcione de forma independiente no implica que vaya a funcionar al integrarlo en un programa más grande, por ello cuanto más frecuentes sean las integraciones mejor. 
-
-Con el fin de controlar este correcto funcionamiento existen dos tipos de pruebas que se realizan de manera automática, las de unidad y las de integración. 
-
-Las pruebas unitarias tienen como objetivo la verificación de la funcionalidad y estructura de cada componente individualemente una vez que ha sido codificado. Se trata de un proceso que prueba el software en unidades pequeñas, de tal manera que facilita la tarea de eliminar errores.
-
-En cambio, el objetivo de las pruebas de integración es verificar el correcto funcionamiento entre los distintos componentes que han sido probados unitariamente, con el fin de comprobar que interactúan correctamente a través de sus interfaces, tanto internas como externas, cubren la funcionalidad establecida y se ajustan a los requisitos no funcionales en las especificaciones necesarias.
-
-
-Existen muchas herramientas para la integración continua, las cuales se encargan de controlar las ejecuciones haciendo uso de otras herramientas que se encargan de realizar las compilaciones, ejecutar las pruebas y realizar los informes. Algunos de éstas son: \textit{\textbf{Jenkins}}, \textit{\textbf{Solano}}, \textit{\textbf{Bamboo}}... 
 
 
 
