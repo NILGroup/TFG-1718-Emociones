@@ -1,581 +1,153 @@
 %---------------------------------------------------------------------
 %
-%                          Capitulo 6
+%                          Capítulo 6
 %
 %---------------------------------------------------------------------
 \setlength{\parskip}{10pt}
-\chapter{Evaluación}
-\label{cap6:Evaluacion}
+\chapter{EmoTraductor}
 
 \begin{resumen}
-Una vez finalizada la implementación de todos los servicios y la interfaz web hemos realizado pruebas para valorar nuestra aplicación. Hemos hecho dos tipos de evaluaciones diferentes: evaluación del método y la evaluación de la aplicación.
+En este capítulo se explicará el proceso de diseño y desarrollo de la aplicación web para detectar las emociones contenidas en un texto.
+En la seección 6.1, se contempla el problema del que partimos para realizar esta aplicación. En la sección 6.2, se presentará el proceso de diseño de la interfaz. Finalmente, en la sección 6.3, se detalla la implementación de la aplicación final.
 \end{resumen}
 
 %-------------------------------------------------------------------
-\section{Evaluación del método}
+\section{Descripción del problema a resolver}
 %-------------------------------------------------------------------
-\label{cap6:sec:metodo}
-
-Llamamos evaluación del método a la evaluación realizada sobre la aplicación sobre los aciertos que tiene al determinar las emociones de un texto. Para esto, hemos escogido una serie de noticias, blogs y cuentos a evaluar y a raíz de estos sacar conclusiones sobre su eficacia y los puntos a mejorar.
-Los textos los podemos encontrar en el apéndice B. A continuación se muestran los resultados, para cada texto mostramos las palabras emocionales que posee, el grado de cada emoción y sus emociones mayoritarias.
-
-\subsection{Cuentos}
-
-\subsubsection{Blancanieves}
-Este cuento fue publicado por Louis Weber, Disney Enterprises, Inc.
-
-
-Lista de palabras emocionales:
-'vez', 'princesa', 'dulce', 'gentil', 'llamada', 'malvada', 'reina', 'celosa', 'belleza', 'tuvo', 'huir', 'refugió', 'casa', 'enanitos', 'reina', 'engañó', 'manzana', 'envenenada', 'llegó', 'príncipe', 'despertó', 'beso', 'vivieron', 'felices'
-
-Grado de tristeza: 1.9
-
-Grado de miedo: 2.02
-
-Grado de alegría: 3.02
-
-Grado de enfado: 1.81
-
-Grado de asco: 1.51
-
-La mayoritaria es alegría con un grado 3.02
-
-\subsubsection{Blancanieves y sus amigos}
-Este cuento fue publicado por Louis Weber, Disney Enterprises, Inc.
-
-
-Lista de palabras emocionales:
-'amable', 'gentil', 'tenía', 'amigos', 'animales', 'bosque', 'amigos', 'pequeño', 'pajarito', 'amigo', 'príncipe', 'azul', 'amigo', 'enanitos', 'mejores', 'amigos'
-
-Grado de tristeza: 1.33
-
-Grado de miedo: 1.5
-
-Grado de alegría: 4.14
-
-Grado de enfado: 1.17
-
-Grado de asco: 1.1
-
-La mayoritaria es alegría con un grado 4.14
-
-\subsubsection{La sirenita}
-Este cuento fue publicado por Louis Weber, Disney Enterprises, Inc.
-
-
-Lista de palabras emocionales:
-'sirenita', 'vivía', 'mar', 'sentía', 'fascinada', 'humanos', 'sobretodo', 'príncipe', 'pidió', 'bruja', 'mar', 'transformara', 'humana', 'estar', 'príncipe', 'besaba', 'pasarn', 'días', 'volvería', 'convertirse', 'sirena', 'magia', 'bruja', 'mar', 'separar'
-
-Grado de tristeza: 1.92
-
-Grado de miedo: 2.12
-
-Grado de alegría: 3.89
-
-Grado de enfado: 1.4
-
-Grado de asco: 1.33
-
-La mayoritaria es alegría con un grado 3.89
-
-\subsubsection{La bella durmiente}
-Este cuento fue publicado por Louis Weber, Disney Enterprises, Inc.
-
-
-Lista de palabras emocionales:
-'nació', 'princesa', 'hadas', 'buenas', 'hicieron', 'maravillosos', 'regalos', 'regalo', 'malvada', 'maldición', 'cumplir', 'años', 'princesa', 'pincharía', 'rueca', 'hadas', 'llevaron', 'vivir', 'bosque', 'Querían', 'protegerla', 'maldición', 'fuerte', 'Hizo', 'pinchara', 'dedo', 'durmiera', 'príncipe', 'rompió', 'hechizo', 'despertó'
-
-Grado de tristeza: 1.82
-
-Grado de miedo: 2.12
-
-Grado de alegría: 2.29
-
-Grado de enfado: 1.8
-
-Grado de asco: 1.26
-
-La mayoritaria es alegría con un grado 2.29
-
-\subsubsection{La margarita}
-Este texto es un fragmento de un cuento que se llama 'La margarita' cuyo autor es Hans Christian Andersen.
-
-
-Lista de palabras emocionales:
-'vez', 'casa', 'campo', 'jardín', 'lleno', 'flores', 'pintada', 'medio', 'bello', 'verde', 'césped', 'crecía', 'pequeña', 'margarita', 'sol', 'igual', 'generoso', 'pequeña', 'margarita', 'grandes', 'suntuosas', 'flores', 'jardín', 'margarita', 'crecía', 'hora', 'hora', 'mañana', 'margarita', 'recibiendo', 'calor', 'sol', 'despreocupada', 'dolerse', 'pobre', 'flor', 'insignificante', 'contenta', 'mirando', 'sol', 'escuchaba', 'alegre', 'canto', 'alondra', 'feliz', 'día', 'fiesta', 'niños', 'estaban', 'escuela', 'estudiaban', 'margarita', 'aprendía', 'conocer', 'bondad', 'calor', 'sol', 'belleza', 'rodeaba'
-
-Grado de tristeza: 1.45
-
-Grado de miedo: 1.47
-
-Grado de alegría: 3.79
-
-Grado de enfado: 1.17
-
-Grado de asco: 1.13
-
-La mayoritaria es alegría con un grado 3.79
-
-
-Fuente: http://www.cuentoscortos.com/cuentos-clasicos/la-margarita
-
-\subsubsection{La bella y la bestia}
-Este cuento fue publicado por Louis Weber, Disney Enterprises, Inc.
-
-
-Lista de palabras emocionales:
-'vivía', 'pequeña', 'aldea', 'encantaba', 'leer', 'quería', 'padre', 'desapareció', 'salió', 'buscarlo', 'encontró', 'padre', 'castillo', 'aprendieron', 'amigos', 'enamoró', 'volvió', 'convertirse', 'príncipe'
-
-Grado de tristeza: 1.62
-
-Grado de miedo: 1.87
-
-Grado de alegría: 3.9
-
-Grado de enfado: 1.37
-
-Grado de asco: 1.19
-
-La mayoritaria es alegría con un grado 3.9
-
-\subsubsection{El castillo de Bestia}
-Este cuento fue publicado por Louis Weber, Disney Enterprises, Inc.
-
-
-Lista de palabras emocionales:
-'vivía', 'castillo', 'encantado', 'dieron', 'bienvenida', 'esforzaron', 'sintiera', 'casa', 'disfrutaba', 'cenas', 'gran', 'comedor', 'castillo', 'sintió', 'feliz', 'castillo', 'hogar'
-
-Grado de tristeza: 1.11
-
-Grado de miedo: 1.13
-
-Grado de alegría: 3.14
-
-Grado de enfado: 1.0
-
-Grado de asco: 1.0
-
-La mayoritaria es alegría con un grado 3.14
-
-\subsubsection{Cenicienta}
-Este cuento fue publicado por Louis Weber, Disney Enterprises, Inc.
-
-
-Lista de palabras emocionales:
-'trabajaba', 'día', 'noche', 'pesar', 'alegre', 'divertía', 'amigos', 'ratones', 'ponía', 'contenta', 'cantaba', 'creer', 'sueños', 'hacía', 'sentirse', 'feliz'
-
-Grado de tristeza: 1.43
-
-Grado de miedo: 1.53
-
-Grado de alegría: 4.05
-
-Grado de enfado: 1.27
-
-Grado de asco: 1.16
-
-La mayoritaria es alegría con un grado 4.05
-
-\subsubsection{Mulán}
-Este cuento fue publicado por Louis Weber, Disney Enterprises, Inc.
-
-
-Lista de palabras emocionales:
-'quería', 'llevar', 'honor', 'familia', 'veces', 'difícil', 'día', 'padre', 'enteró', 'tenía', 'ir', 'guerra', 'fingió', 'muchacho', 'unió', 'ejército', 'padre', 'tuviera', 'hacerlo', 'entrenó', 'Ayudó', 'ejército', 'chino', 'ganar', 'guerra', 'familia', 'sintió', 'orgullosa'
-
-Grado de tristeza: 1.39
-
-Grado de miedo: 1.36
-
-Grado de alegría: 1.94
-
-Grado de enfado: 1.23
-
-Grado de asco: 0.96
-
-La mayoritaria es alegría con un grado 1.94
-
-\subsubsection{Pinocho}
-Este cuento fue publicado por Ediciones Orbis, S.A.
-
-
-Lista de palabras emocionales:
-'vez', 'artesano', 'labraba', 'madera', 'juguetes', 'bellos', 'tenían', 'escultor', 'maestro', 'llamaba', 'anciano', 'virtudes', 'figuraba', 'buen', 'carácter', 'envejecido', 'solo', 'día', 'sinténdose', 'viejo', 'solo', 'costumbre', 'ahuyentar', 'soledad', 'decidió', 'tallar', 'madera', 'muñeco', 'hiciera', 'compañía', 'construido', 'transformar', 'aburrimiento', 'niños', 'momentos', 'maravillosos', 'fabricaría', 'taller', 'colega', 'consiguió', 'tronco', 'pino', 'dispuso', 'fabricar', 'muñeco', 'Corta', 'talla', 'he', 'cabeza', 'nariz', 'boca', 'cuanto', 'modelar', 'boca', 'madera', 'muñeco', 'rompió', 'hablar', 'excalamndo', 'abuelito', 'Superado', 'asombro', 'maese', 'apresuró', 'completar', 'obra', 'tallado', 'muñeco', 'tronco', 'pino', 'pensó', 'llamarlo', 'reparar', 'traviesa', 'mirada', 'decidió', 'iría', 'nombre', 'cuanto', 'tuvo', 'par', 'piernas', 'madera', 'incorporó', 'salto', 'cogió', 'impulso', 'marchó'
-
-Grado de tristeza: 1.36
-
-Grado de miedo: 1.54
-
-Grado de alegría: 2.59
-
-Grado de enfado: 1.12
-
-Grado de asco: 1.0
-
-La mayoritaria es alegría con un grado 2.59
-
-\subsubsection{Pocahontas}
-Este cuento fue publicado por Louis Weber, Disney Enterprises, Inc.
-
-
-Lista de palabras emocionales:
-'Pocahontas', 'indígena', 'Amaba', 'naturaleza', 'día', 'barco', 'llegó', 'ingleses', 'codiciosos', 'malvados', 'bondadoso', 'amable', 'tribu', 'quería', 'ingleses', 'fueran', 'ingleses', 'fueron', 'barco', 'olvidarían'
-
-Grado de tristeza: 1.55
-
-Grado de miedo: 1.54
-
-Grado de alegría: 2.07
-
-Grado de enfado: 1.16
-
-Grado de asco: 0.99
-
-La mayoritaria es alegría con un grado 2.07
-
-\subsubsection{Aladdín}
-Este cuento fue publicado por Louis Weber, Disney Enterprises, Inc.
-
-
-Lista de palabras emocionales:
-'princesa', 'vivía', 'palacio', 'real', 'padre', 'quería', 'casar', 'enamorada', 'escapó', 'palacio', 'Deseaba', 'libre', 'conoció', 'bazar', 'ayuda', 'enamoraron'
-
-Grado de tristeza: 1.47
-
-Grado de miedo: 1.71
-
-Grado de alegría: 3.81
-
-Grado de enfado: 1.26
-
-Grado de asco: 1.14
-
-La mayoritaria es alegría con un grado 3.81
-
-\subsubsection{El ratoncito Pérez}
-
-Este cuento es 'La fantástica historia del Ratoncito Pérez' de Meritxell Martí y Xavier Salomó.
-
-
-Lista de palabras emocionales:
-'barrio', 'pobre', 'bosque', 'vivía', 'ratón', 'familia', 'padres', 'pasaban', 'día', 'buscando', 'rinconnes', 'pedazo', 'queso', 'alimentar', 'fiamilia', 'fácil', 'escobazo', 'trampa', 'día', 'llegaban', 'casa', 'magullados', 'vida', 'ratones', 'envidiable', 'pequeñor', 'roedor', 'lamentaba', 'nacido', 'gato', 'pantera', 'rico', 'viviría', 'barrio', 'queso', 'trampas', 'día', 'decidió', 'tenía', 'dar', 'modo', 'salir', 'pensativo', 'llegó', 'bosque', 'árboles', 'llegó', 'sonido', 'aleteo', 'anda', 'susurró', 'escondido', 'mata', 'abrió', 'ojos', 'platos', 'niña', 'acercó', 'tocar', 'suelo', 'volando', 'niña', 'presentó', 'hada', 'bosque', 'visto', 'salió', 'hipnotizado', 'saludó', 'miraba', 'alas', 'movían', 'parar', 'llamo', 'cierto', 'hada', 'ser', 'mágico', 'respondió', 'sorprendida', 'contado', 'cuento', 'hadas', 'contestó', 'padres', 'llegaban', 'acasa', 'ánimo', 'contar', 'cuentos', 'sintió', 'lástima', 'pobre', 'ratoncito', 'verdad', 'gente', 'temía', 'ratones', 'ponía', 'cosas', 'fáciles', 'hada', 'pensó', 'instantes', 'continuación', 'hizo', 'propuesta', 'asombrosa', 'ratón', 'escuchado', 'Mira', 'hacer', 'trato', 'podrías', 'traerme', 'cambio', 'haré', 'regalo', 'mágico', 'dices', 'creer', 'hacer', 'tratos', 'hada', 'seguida', 'reaccionó', 'tendría', 'traerte', 'espero', 'queso', 'hada', 'rió', 'dijo', 'esperaba', 'roedor', 'quedó', 'piedra', 'repitió', 'aturdido', 'Quieres', 'traiga', 'dientes', 'niñas', 'niños', 'mundo', 'explicó', 'Querido', 'asustes', 'niños', 'caen', 'dientes', 'leche', 'pudan', 'salirles', 'nuevos', 'resistentes', 'tendrás', 'entrar', 'casas', 'duerman', 'recoger', 'dientecitos', 'traérmelos', 'seguía', 'verlo', 'claro', 'preguntó', 'entraría', 'casas', 'fin', 'cabo', 'pequeño', 'ratón', 'sacó', 'bolso', 'llave', 'dorada', 'dijo', 'abrir', 'puertas', 'mundo', 'relamió', 'entrar', 'noche', 'gran', 'quesería', 'hada', 'leyó', 'pensaiento', 'queso', 'cambio', 'dientes', 'daré', 'cosa', 'sacó', 'bolos', 'cofre', 'madera', 'cofre', 'saldrán', 'monedas', 'regalos', 'regalos', 'niñas', 'niños', 'agradecimiento', 'llevarte', 'dientecillos', 'monedas', 'ayudar', 'ratones', 'creerlo', 'ayudante', 'hada', 'viajaría', 'mundo', 'tendría', 'gran', 'recompensa', 'quieres', 'dientes', 'hacer', 'magia', 'polvo', 'dientes', 'leche', 'lava', 'volcán', 'hago', 'pócima', 'reduce', 'objetos', 'Mezclado', 'trébol', 'hojas', 'polvo', 'hace', 'invisible', 'diente', 'agua', 'luna', 'viajar', 'sitio', 'segundo', 'hechizos', 'decir', 'sacó', 'bolso', 'puñado', 'polvo', 'sopló', 'llave', 'cofre', 'volvieron', 'diminutos', 'trato', 'hecho', 'dijo', 'ofreciendo', 'ratón', 'pequeñísima', 'llave', 'diminuto', 'cofre', 'tomó', 'chocó', 'mano', 'Trato', 'hecho', 'dijo', 'ratón', 'quedaron', 'charlando', 'anochecer', 'ratón', 'frotó', 'llave', 'indicó', 'hada', 'desapareció', 'bosque', 'noche', 'entró', 'casas', 'pequeño', 'caído', 'diente', 'despertar', 'dinete', 'desaparecido', 'lugar', 'regalo', 'noticia', 'corrió', 'pólvora', 'casas', 'niños', 'niñas', 'mundo', 'saben', 'ratoncito', 'dejan', 'dientes', 'leche', 'almohada', 'pase', 'cofre', 'mágico', 'ven', 'ratón', 'asustan'
-
-Grado de tristeza: 1.28
-
-Grado de miedo: 1.45
-
-Grado de alegría: 2.27
-
-Grado de enfado: 1.12
-
-Grado de asco: 1.03
-
-La mayoritaria es alegría con un grado 2.27
-
-\subsection{Noticias}
-
-\subsubsection{Noticia asesinato}
-
-Lista de palabras emocionales:
-'brutal', 'caso', 'violencia', 'machista', 'paraliza', 'centros', 'comerciales', 'concurridos', 'controles', 'seguridad', 'Subió', 'segunda', 'planta', 'centro', 'comercial', 'disparos', 'pecho', 'abdomen', 'dejó', 'nota', 'mostrador', 'tienda', 'trabajaba', 'esposa', 'disparó', 'cara', 'feminicidio', 'intento', 'suicidio', 'paralizó', 'lunes', 'centros', 'comerciales', 'concurridos', 'Selene', 'años', 'falleció', 'horas', 'agresor', 'sobrevivió', 'encuentra', 'grave', 'estable', 'hospital', 'capital', 'detonaciones', 'trabajadores', 'tiendas', 'clientes', 'corrieron', 'protegerse', 'resguardarse', 'hechos', 'produjeron', 'tarde', 'anodina', 'puente', 'primeras', 'versiones', 'barajaban', 'tratado', 'robo', 'zapatería', 'plaza', 'comercial', 'encuentra', 'avenidas', 'transitadas', 'icónicas', 'capital', 'autoridades', 'dieron', 'homicidio', 'local', 'iniciado', 'investigaciones', 'delito', 'homicidio', 'calificado', 'pedido', 'divorcio', 'custodia', 'hijo', 'agresor', 'preso', 'veces', 'robo', '2002', '2004', '2012', 'amenazado', 'días', 'vas', 'destruir', 'vida', 'puta', 'pasó', 'lee', 'supuesta', 'nota', 'dejó', 'feminicida', 'divulgada', 'prensa', 'mexicana', 'mujer', 'lesionada', 'manifestó', 'hombre', 'amenazado', 'causa', 'conflicto', 'pasional', 'señaló', 'policía', 'capitalina', 'país', 'asesinadas', 'mujeres', 'diario', 'violencia', 'machista', 'crímenes', 'pasionales', 'vistos', 'excusas', 'detonantes', 'atacar', 'mujeres', 'hecho', 'mujeres'
-
-Grado de tristeza: 2.28
-
-Grado de miedo: 2.4
-
-Grado de alegría: 1.78
-
-Grado de enfado: 2.13
-
-Grado de asco: 1.65
-
-La mayoritaria es Miedo con un grado 2.4
-
-
-Fuente: https://elpais.com/internacional/2018/03/20/mexico/1521567442\_844144.html
-
-\subsubsection{Noticia nacimiento}
-
-Lista de palabras emocionales:
-'madre', 'primer', 'hijo', 'sabemos', 'nombre', 'influencer', 'pronunciado', 'redes', 'sociales', 'medios', 'italianos', 'confirman', 'nacimiento', 'pequeño', 'fin', 'mamá', 'influencer', 'italiana', 'pronunciado', 'través', 'cotizadas', 'redes', 'sociales', 'portal', 'italiano', 'confirmado', 'noticia', 'italiano', 'anunciado', 'hijo', 'rapero', 'llegó', 'mundo', 'noche', 'marzo', 'italiana', 'dio', 'luz', 'hospital', 'dio', 'luz', 'través', 'parto', 'programado', 'millones', 'seguidores', 'influencer', 'apuntaban', 'últimas', 'horas', 'dando', 'luz', 'desaparición', 'redes', 'sociales', 'final', 'noticia', 'confirmaba', 'horas', 'apodando', 'redes', 'sociales', 'pequeño', 'baby', 'origen', 'padres', 'anunciaron', 'nombre', 'pequeño', 'medio', 'parto', 'adelantado', 'semanas', 'bebé', 'madre', 'encuentran', 'perfecto', 'estado', 'encargada', 'desvelar', 'sexo', 'nombre', 'primer', 'hijo', 'seguidores', 'considerada', 'influencer', 'poderosa', 'mundo', 'moda', 'dándose', 'conocer', 'gracias', 'web'
-
-Grado de tristeza: 1.63
-
-Grado de miedo: 1.8
-
-Grado de alegría: 3.09
-
-Grado de enfado: 1.38
-
-Grado de asco: 1.29
-
-La mayoritaria es alegría con un grado 3.09
-
-
-Fuente: https://www.elespanol.com/corazon/celebrities/20180320/chiara-ferragni-madre-primer-hijo-sabemos-nombre/293471460\_0.html 
-
-\subsubsection{Noticia OMS}
-
-Lista de palabras emocionales:
-'Expertos', 'recomiendan', 'declarar', 'país', 'libre', 'malaria', 'grupo', 'expertos', 'recomendó', 'declarar', 'país', 'libre', 'malaria', 'verificar', 'situación', 'enfermedad', 'terreno', 'semanas', 'informó', 'domingo', 'cartera', 'sanitaria', 'explicó', 'través', 'comunicado', 'expertos', 'comprobaron', 'país', 'suramericano', 'registran', 'casos', 'transmisión', 'local', 'malaria', 'últimos', 'años', 'sistema', 'sanitario', 'prevenir', 'eventuales', 'casos', 'enfermedad', 'recomendación', 'cierra', 'esfuerzo', 'sistema', 'sanitario', 'paraguayo', 'últimos', 'años', '2012', 'registra', 'casos', 'autóctonos', 'enfermedad', 'gran', 'logro', 'nacional', 'posibilita', 'privilegiado', 'sitial', 'primer', 'país', 'sudamericano', 'erradicar', 'enfermedad', 'indicaron', 'malaria', 'pasó', 'historia', 'registros', 'médicos', 'país', '2011', 'último', 'caso', 'registrado', 'datos', 'presentados', 'septiembre', 'fundó', 'raíz', 'brote', 'malaria', 'sufrió', '1957', '90', 'personas', 'territorio', 'país', 'contrajeran', 'enfermedad', 'paludismo', 'malaria', 'enfermedad', 'letal', 'causada', 'parásitos', 'género', 'plasmodium', 'transmiten', 'ser', 'humano', 'picadura', 'mosquitos', 'infectados', 'paludismo', 'mantiene', 'presente', 'países', 'calcula', '2016', 'fallecidos', 'mundo', 'millones', 'casos', 'datos'
-
-Grado de tristeza: 2.63
-
-Grado de miedo: 2.69
-
-Grado de alegría: 2.37
-
-Grado de enfado: 2.02
-
-Grado de asco: 1.87
-
-La mayoritaria es Miedo con un grado 2.69
-
-
-Fuente: https://www.efe.com/efe/cono-sur/destacada-cono-sur/expertos-de-la-oms-recomiendan-declarar-a-paraguay-pais-libre-malaria/50000832-3556530
-\subsubsection{Noticia política}
-
-Lista de palabras emocionales:
-'estancamiento', 'político', 'agobia', 'meses', 'llegar', 'fin', 'espera', 'parlamento', 'apruebe', 'gobierno', 'liderado', 'presidente', 'interino', 'necesitaba', 'mayoría', 'parlamento', 'escaños', 'primera', 'votación', 'realizada', 'jueves', 'logró', 'sábado', 'realiza', 'segunda', 'votación', 'necesita', 'votos', 'favor', 'contra', 'Cuenta', 'apoyo', 'legisladores', 'partido', 'centroderechista', 'dependerá', 'accedido', 'abstenerse', 'votación', 'sábado', 'diputados', 'dicho', 'votarán', 'contra', 'elegido', 'juramentado', 'rey', 'domingo', 'lunes', 'gobierno', 'convocará', 'tercera', 'elección'
-
-Grado de tristeza: 1.44
-
-Grado de miedo: 1.33
-
-Grado de alegría: 1.94
-
-Grado de enfado: 1.39
-
-Grado de asco: 1.17
-
-La mayoritaria es alegría con un grado 1.94
-
-
-Fuente: https://www.animalpolitico.com/el-pulso/crisis-politica-en-espana-podria-llegar-a-su-fin/ 
-\subsection{Blogs}
-
-\subsubsection{Blog agradecimiento}
-
-Lista de palabras emocionales:
-'vez', 'gracias', 'vez', 'dejáis', 'palabras', 'hacéis', 'merezca', 'pena', 'verdad', 'gracias', 'regalo', 'muñeca', 'especial', 'Significa', 'estáis', 'apoyáis', 'sabéis', 'ganas', 'comerme', 'mundo', 'siento', 'Os', 'dejo', 'fotos', 'paso', 'paso', 'veáis', 'detalles', 'cuidado', 'Menudo', 'trabajazo', 'solo', 'marca', 'hecho', 'vuestro', 'calor', 'Gracias', 'vosotros', 'PedrocheCampanadas', 'tienen', 'sentido', 'adoro'
-
-Grado de tristeza: 1.29
-
-Grado de miedo: 1.21
-
-Grado de alegría: 2.77
-
-Grado de enfado: 1.04
-
-Grado de asco: 0.95
-
-La mayoritaria es alegría con un grado 2.77
-
-Fuente: Twitter: @cristipedroche
-
-\subsubsection{Blog moda}
-
-Lista de palabras emocionales:
-'dejo', 'outfit', 'entretiempo', 'blanco', 'negro', 'llevo', 'blusa', 'blanca', 'volantes', 'enseñado', 'vez', 'instagram', 'combiné', 'negro', 'zapatos', 'abrigo', 'línea', 'oversize', 'paño', 'fino', 'usando', 'días', 'frío', 'calor'
-
-Grado de tristeza: 1.1
-
-Grado de miedo: 0.93
-
-Grado de alegría: 2.05
-
-Grado de enfado: 0.96
-
-Grado de asco: 0.9
-
-La mayoritaria es alegría con un grado 2.05
-
-Fuente: https://stylelovely.com/ladyaddict/2018/04/black-and-white
-
-\subsubsection{Blog reflexión}
-
-Lista de palabras emocionales:
-'bueno', 'sabéis', 'encanta', 'compartir', 'vosotros', 'pese', 'quiero', 'hablaros', 'tema', 'preocupando', 'últimas', 'semanas', 'entendéis', 'vosotros', 'autoestima', 'contestármelo', 'gente', 'critica', 'tenemos', 'supuesto', 'verdad', 'opinión', 'universales', 'forma', 'ver', 'vida', 'creo', 'verdad', 'tenga', 'autoestima', 'veo', 'negativo', 'vivido', 'situaciones', 'vida', 'determinadas', 'personas', 'seguro', 'quisiese', 'formarían', 'parte', 'vida', 'embargo', 'haciendo', 'arrepiento', 'llamar', 'quererse', 'mismo', 'diría', 'querer', 'mismo', 'Frase', 'cierto', 'recuerda', 'enseñanza', 'ama', 'prójimo', 'día', 'diferente', 'tener', 'autoestima', 'evitar', 'problemas', 'preferir', 'tener', 'trato', 'cordial', 'personas', 'importantes', 'vida', 'todas', 'formas', 'decisión', 'personal', 'injusto', 'critique', 'comente', 'quiera', 'conocer', 'persona', 'saber', 'situaciones', 'pasado', 'creo', 'tenga', 'autoestima', 'alto', 'momento', 'situaciones', 'vivimos', 'diario', 'hacer', 'suba', 'baje', 'creo', 'inteligente', 'mantener', 'autoestima', 'límites', 'persona', 'orgullosa', 'verdad', 'enfados', 'pasan', 'rápido', 'prefiero', 'pedir', 'disculpas', 'tenga', 'culpa', 'tal', 'poner', 'fin', 'discusión', 'definir', 'virtud', 'quiero', 'tengo', 'autoestima', 'baja', 'encanta', 'padres', 'enseñado', 'tipo', 'valores', 'educación', 'seguir', 'hacina', 'hagan', 'hagan', 'perdonando', 'odiar', 'guardar', 'rencor', 'consumiendo', 'personas', 'día', 'rencor', 'envidia', 'fin', 'gustaría', 'saber', 'anda', 'vuestro', 'autoestima', 'vez', 'dicho', 'tenéis', 'alto', 'bajo', 'queriendo', 'valorando', 'justa', 'medida', 'perder', 'visión', 'realidad'
-
-Grado de tristeza: 2.0
-
-Grado de miedo: 1.99
-
-Grado de alegría: 3.12
-
-Grado de enfado: 1.8
-
-Grado de asco: 1.56
-
-La mayoritaria es alegría con un grado 3.12
-
-Fuente:  http://www.martacarriedo.com/la-diary-003/
-
-\subsubsection{Blog muerte}
-
-Lista de palabras emocionales:
-'año', 'enero', 'página', 'blanco', 'llena', 'palabras', 'brotan', 'interior', 'salpicadas', 'cosas', 'contar', 'escapan', 'entendimiento', 'año', 'pasado', 'mañana', 'fría', 'cuerpos', 'separaban', 'almas', 'conectadas', 'verte', 'escucharte', 'achucharte', 'embargo', 'sentirte', 'través', 'personas', 'llegando', 'través', 'través', 'historias', 'entremezclan', 'convierten', 'lágrimas', 'vida', 'besarte', 'olerte', 'achucharte', 'forman', 'parte', 'instante'
-
-Grado de tristeza: 2.16
-
-Grado de miedo: 1.91
-
-Grado de alegría: 2.7
-
-Grado de enfado: 1.61
-
-Grado de asco: 1.33
-
-La mayoritaria es alegría con un grado 2.7
-
-
-Fuente: http://blogs.21rs.es/muertevida/
-
-\subsubsection{Blog enfado}
-
-Lista de palabras emocionales:
-
-'conocéis', 'seguido', 'redes', 'sabréis', 'críticas', 'llevado', 'aguantado', 'obvio', 'agradable', 'leer', 'mentiras', 'semana', 'semana', 'hacer', 'oídos', 'sordos', 'seguir', 'trabajo', 'familia', 'amigos', 'personajes', 'públicos', 'tenemos', 'riesgo', 'rosa', 'exponemos', 'gente', 'hable', 'regular', 'quieran', 'existe', 'tipo', 'límite', 'pone', 'nochecita', 'prensa', 'visto', 'desde', 'existe', 'límite'
-
-Grado de tristeza: 0.68
-
-Grado de miedo: 0.91
-
-Grado de alegría: 1.4
-
-Grado de enfado: 0.63
-
-Grado de asco: 0.56
-
-La mayoritaria es alegría con un grado 1.4
-
-Fuente: https://lauraescan.es/respeto/
-
-\subsection{Conclusiones}
-
-Podemos ver, como en todos los cuentos la emoción mayoritaria es alegría. Este es el resultado que esperábamos dado que son cuentos para niños y los autores no quieren reflejar tristeza, miedo, enfado o asco.
-También para el resto de artículos y blogs las emociones son las que esperábamos excepto en el blog de muerte y de enfado.
-
-En el caso del blog de muerte vemos que el resultado es alegría en vez de miedo o tristeza y esto se debe a que el EmoTraductor no entiende de contextos, en el blog una mujer recuerda el día en que perdió a uno de sus hijos y lamenta que no puede besarle o abrazarle. Estas palabras en el diccionario son alegres y al no tener en cuenta la negación asume que es un texto alegre.
-
-En el cado del blog de enfado vemos que el resultado es alegría en vez de enfado. No es un caso alarmante, ya que como se ha explicado anteriormente, el EmoTraductor tiene en cuenta las emociones por encima del 2.5 y en este caso en concreto no supera este límite ninguna de las emociones, aunque indique que la mayoritaria es la alegría, realmente la interfaz web diría que no existe ninguna emoción.
-
-
+\label{cap6:sec:problema}
+
+Según la Confederación Asperger España\footnote{https://www.asperger.es}, una de las principales dificultades a las que se enfrentan las personas con Asperger es detectar emociones y sentimientos ajenos así como dificultad para expresar los suyos propios. Esto hace que en su día a día se encuentren en situaciones en las que la correcta identificación de emociones es fundamental para integrarse socialmente. Por ejemplo a la hora de opinar en un blog es muy posible que se expresen de tal manera que no cumplan los convencionalismos sociales, es decir si les enfada lo que se haya publicado pondrán un comentario con un tono de enfado bastante elevado; también se encontrarán problemas en otras situaciones aún más normales como puede ser contestar a un correo de un jefe o un profesor pudiendo malinterpretar el tono de dicho correo y contestar de una manera incorrecta. En estos casos sería muy útil poder contar con una herramienta capaz de mostrarles las emociones del texto que están leyendo o escribiendo. Con esta herramienta podrán asegurarse de si la emoción que han extraído de un texto o si la emoción que transmite un texto que han escrito coincide con la emoción que deseaban trasmitir.
+ 
+Según la Confederación Asperger España, una de las cualidades de las personas con síndrome de Asperger es que son más eficientes en trabajos técnicos, por lo que una aplicación web les resultará fácil y útil para su día a día, al la hora de vencer la dificultad que les supone el reconocimiento correcto de las emociones. Nuestra aplicación no solo debe dar información acerca de la emoción global del texto, sino que también debe dar pistas sobre cuales son los elementos del texto que influyen en dicha emoción global. Estas pistas serán vitales si el usuario encuentra que la emoción que transmite el texto no es la deseada, pues le ayudarán a saber que tiene que cambiar para conseguir transmitir la emoción que deseada.
 %-------------------------------------------------------------------
-\section{Evaluación de la aplicación}
+\section{Diseño de la interfaz}
 %-------------------------------------------------------------------
-\label{cap6:sec:aplicacion}
+\label{cap6:sec:problema}
 
-Como ya hemos comentado anteriormente, gracias a la Asociación Asperger Madrid hemos podido probar esta aplicación con usuarios finales. Hemos realizado dos evaluaciones, una preliminar y otra final. Todo el proceso de evaluación se explica a continuación:
+Para crear la interfaz de la aplicación web hicimos tres iteraciones de diseño. Una primera iteración competitiva entre las tres integrantes del grupo, una segunda iteración con expertos de la Asociación Asperger Madrid, y una tercera iteración en la que creamos el prototipo final teniendo en cuenta los resultados de la segunda iteración. En las siguientes subsecciones explicaremos en detalle cada una de estas iteraciones.
 
-\subsection{Diseño de la evaluación}
+\subsection{Primera iteración: Iteración competitiva}
 
-Para comenzar, decidimos crear dos formularios de Google para realizar a cabo cada evaluación. Finalmente hicimos dos formularios de cada evaluación para que se hicieran dependiendo del rol que iba a tomar el evaluador en la aplicación: experto o usuario. Todos formularios eran similares con la diferencia de que en los formularios de exertos tenían que indicarnos su papel en la asociación.
+Cada una de nosotras diseñó un prototipo distinto para la aplicación web de forma independiente. El objetivo era proponer diferentes ideas sin que las ideas de una influyesen en las demás; de esta manera habría más variedad de funcionalidades así como distintos diseños para la misma funcionalidad. Una vez que los tres prototipos estuvieron listos hicimos una puesta en común para analizar los resultados. A continuación se muestra el resultado del análisis de los tres prototipos indicando sus semejanzas y diferencias.
 
-El objetivo de estas evaluaciones no era otra que conocer qué opinaban los usuarios finales de la utilidad y usabilidad de la aplicación y no tanto evaluar el método porque ya estaba evaluado con anterioridad.
+En los tres prototipos realizados, la manera de introducir el texto y la pantalla principal eran bastante semejantes, tenían un cuadro de texto donde introducir el texto a interpretar. En dos de los prototipos, además, hay un botón para ejecutar el intérprete.
+En cuanto a la forma de representar las emociones en la pantalla inicial había tres formas diferentes de hacerlo:
+\begin{itemize}
+		\item Mediante emoticonos que representaban las diferentes emociones debajo del cuadro de texto tal y como se ve en la figura \ref{fig:inicial_gema}.
+		\item Mediante emoticonos que representaban las diferentes emciones al lado derecho del texto como se puede ver en la figura \ref{fig:inicial_elena}.
+		\item No mostrando inicialmente ningún emoticono como se puede ver en la figura \ref{fig:inicial_paloma}.
+\end{itemize}
 
-La estructura de los formularios es parecida en la evaluación preliminar y en la final.
-Al comienzo teníamos textos para introducir en la aplicación, con preguntas relativas a los resultados, cuál es la emoción mayoritaria y minoritaria o qué emociones transmite el texto, para saber si los usuarios eran capaces de interpretarlos.
-A continuación, en la evaluación preliminar dejábamos libre al usuario final para que explorase todas las posibles funcionalidades de la aplicación; esto se cambió para la evaluación final dado que los usuarios en las pruebas preliminares no encontraron la opción de cambiar el color de las emociones por lo que decidimos guiarles en la evaluación final para que no se les pasase probar todas las funcionalidades.
-Después del tiempo de exploración o los cambios de colores guiados, los formularios contaban con escalas \textit{likert} para que nos dieran entre 1 y 5 cómo de útil o correcto les habían parecido algunas de las decisiones tomadas. Estas sentencias a evaluar fueron:
+\figura{Bitmap/Capitulo5/inicial_gema}{width=.9\textwidth}{fig:inicial_gema}{Pantalla inicial del prototipo de Gema}
+\figura{Bitmap/Capitulo5/inicial_elena}{width=.9\textwidth}{fig:inicial_elena}{Pantalla inicial del prototipo de Elena}
+\figura{Bitmap/Capitulo5/inicial_paloma}{width=.9\textwidth}{fig:inicial_paloma}{Pantalla inicial del prototipo de Paloma}
+
+Respecto a la manera de mostrar los resultados emocionales del texto, los tres prototipos coinciden en representarlos por emociones ilustrando cada emoción básica con un emoticono y con un valor, en procentaje, representando la intensidad de la emoción. Aún así los modelos difieren en algunos aspectos, como puede ser el marcado de la emoción mayoritaria.
+Tal y como se puede ver en el prototipo de Paloma, como se puede ver en la figura \ref{fig:analisis_paloma}, se resaltaban los emoticonos correspondientes a las emociones que están presentes en el texto. Para conocer la emoción mayoritaria había que pulsar un botón situado en la parte superior de la pantalla, la opción de mostrar únicamente la emoción mayoritaria. 
+Por otra parte, los prototipos de Elena y Gema, tal y como se puede ver en las figuras \ref{fig:analisis_elena} y \ref{fig:analisis_gema}, modificaban el valor (en porcentaje) de la intensidad de la emoción para indicar que emociones se encontraban en el texto y mostraban una frase para indicar cuál era la emoción mayoritaria. También podías seleccionar las distintas emociones pulsando sobre el emoticono y marcaban visualmente las palabras del texto que transmitían la emoción que había sido seleccionada.
+
+\figura{Bitmap/Capitulo5/analisis_paloma}{width=.9\textwidth}{fig:analisis_paloma}{Resultado del análisis emocional del prototipo de Paloma}
+\figura{Bitmap/Capitulo5/analisis_elena}{width=.9\textwidth}{fig:analisis_elena}{Resultado del análisis emocional del prototipo de Elena}
+\figura{Bitmap/Capitulo5/analisis_gema}{width=.9\textwidth}{fig:analisis_gema}{Resultado del análisis emocional del prototipo de Gema}
+
+Los tres prototipos se pueden encontrar en el Apéndice A.
+\subsection{Segunda iteración: Iteración con expertos}
+
+Tras comparar los tres prototipos se construyó uno común para que fuera analizado por expertos. La principal novedad de este prototipo respecto a los anteriores es que hemos añadido un menú de configuración para modificar la visualización de los resultados, del que hablaremos más adelante. 
+
+La pantalla principal por defecto, contiene un cuadro de texto para introducir el texto a evaluar y las emociones básicas representadas por emoticonos situadas debajo de este cuadro. Al evaluar los tres prototipos anteriores barajamos diferentes posibilidades de mostrar los resultados emocionales por lo que añadimos un menú de configuración para que los expertos pudieran orientarnos en cuál podría ser la manera útil o intuitiva. Para acceder a esta configuración, hemos añadido en la pantalla principal, que podemos ver en la figura \ref{fig:inicial1_final}, un botón en la esquina superior derecha. En este menú de configuración añadido que podemos ver en la figura \ref{fig:configuración} se muestran diferentes opciones de visualización de los resultados; estas son:
+\begin{itemize}
+	\item Ver los resultados emocionales representados por las diferentes emociones situadas a la derecha, tal y como se puede ver en la figura \ref{fig:inicial2_final}.
+	\item Ver los resultados representados por las diferentes emociones situadas debajo del cuadro de texto donde se introduce el texto a evaluar como se puede ver en la pantalla por defecto \ref{fig:inicial1_final}.
+	\item Mostrar únicamente las emociones presentes en el texto con su correspondiente emoticono como se puede ver en la figura \ref{fig:analisis4_final}.
+	\item Mostrar únicamente la emoción mayoritaria del texto con su emoticono correspondiente como se puede ver en la figura \ref{fig:analisis5_final}.
+	\item Mostrar la intensidad de las emociones con porcentajes al lado del emoticono de la emoción correspondiente como se puede ver en la pantalla por defecto, en la figura \ref{fig:incial1_final}.
+	\item Mostrar información sobre las palabras emocionales indicando su emoción y grado como se puede ver en la figura \ref{fig:alegre_final}.
+	\item Mostrar los resultados representados por un gráfico como se puede ver en la figura \ref{fig:analisis3_final}.
+\end{itemize}
+Las diferentes opciones de visualización pueden combinarse para generar la mejor opción para el usuario final.
+
+\figura{Bitmap/Capitulo5/configuracion}{width=.9\textwidth}{fig:configuracion}{Menú de configuración del prototipo de la 2ª iteración}
+\figura{Bitmap/Capitulo5/inicial1_final}{width=.9\textwidth}{fig:inicial1_final}{Pantalla inicial por defecto del segundo prototipo}
+\figura{Bitmap/Capitulo5/inicial2_final}{width=.9\textwidth}{fig:inicial2_final}{Pantalla inicial personalizada del segundo prototipo}
+\figura{Bitmap/Capitulo5/analisis1_final}{width=.9\textwidth}{fig:analisis1_final}{Pantalla de análisis con los porcentajes abajo}
+\figura{Bitmap/Capitulo5/analisis2_final}{width=.9\textwidth}{fig:analisis2_final}{Pantalla de análisis con los porcentajes derecha y palabras marcadas}
+\figura{Bitmap/Capitulo5/analisis3_final}{width=.9\textwidth}{fig:analisis3_final}{Pantalla de análisis con gráfico}
+\figura{Bitmap/Capitulo5/analisis4_final}{width=.9\textwidth}{fig:analisis4_final}{Pantalla de análisis mostrando las emociones que aparecen}
+\figura{Bitmap/Capitulo5/analisis5_final}{width=.9\textwidth}{fig:analisis5_final}{Pantalla de análisis mostrando sólo la mayoritaria}
+\figura{Bitmap/Capitulo5/alegre_final}{width=.9\textwidth}{fig:alegre_final}{Información sobre la palabra contenta}
+
+El prototipo final de esta segunda iteración puede consultarse en el Apéndice B.
+
+Una vez creado el prototipo se lo presentamos en una reunión a los expertos de Asperger Madrid.
+La reunión tuvo lugar el 22 de Marzo de 2018 en la Asociación Asperger Madrid. Acudimos las tres integrantes del grupo con nuestras directoras.
+
+Una vez allí, cuatro expertos que trabajan en la asociación probaron el prototipo y nos dieron su opinión como expertos. Las conclusiones principales que extrajimos de esta evaluación fueron:
 
 \begin{itemize}
-		\item La aplicación es fácil de usar
-		\item Me gustaría usar la aplicación en mi día a día
-		\item Recomendaría la aplicación a otras personas
-		\item Los colores asociados a las emociones por defecto son adecuados
-		\item Las imágenes asociadas a las emociones por defecto son adecuadas
-		\item Me parece útil poder cambiar los colores asociados a las emociones
-		\item Me gustaría poder cambiar las imágenes asociadas a las emociones
-		\item La barra emocional es intuitiva
-		\item Me parece útil tener información sobre las palabras con carga emocional del texto
-		\item Me parece útil tener información sobre la emoción concreta que transmiten las palabras con carga emocional del texto	
+		\item Los porcentajes pueden despistar a los usuarios potenciales de la aplicación. Sería mucho mejor mostrarlo de manera visual, con una barra dividida por emociones, cada emoción con un color y repartir esta barra proporcionalmente entre las emociones según los resultados obtenidos del texto.
+		\item Es buena idea mostrar las emociones representadas con emoticonos pero nos recomendaron usar los que proporciona ARASAAC, ya que están más familiarizados con ellos que con los que habíamos usado en el prototipo.
+		\item El texto ``neutral" para identificar la ausencia de emociones puede ser ambiguo, nos recomendaron poner un texto más claro, como por ejemplo: ``Este texto no tiene emociones" o cambiar la palabra ``neutral" por ``tranquilo".
+		\item Respecto a la posición donde colocar el resultado emocional, nos explicaron que para ellos era indiferente y que estéticamente les gustaba más que apareciera el resultado debajo del texto. Nos aconsejaron dejar fijo el lugar y no dar opción a configurarlo ya que pensaban que no iba a aportar nigún beneficio.
+		\item Los expertos nos indicaron que sería muy útil permitir cambiar el color asociado a cada emoción ya que las personas con Asperger tienen mayor probabilidad de tener sinestesia\footnote{Condición por la que se experimenta una mezcla de los sentidos. Por ejemplo, se ven colores cuando se escuchan sonidos o se sienten emociones}. Los expertos tamibén indicaron que sería muy útil poder cambiar las imágenes asociadas a las emociones por las que los usuarios finales eligiesen y que les ayudasen a identificar mejor las emociones. 
 		
 \end{itemize}
 
-Una vez concluido el diseño de los formularios, los probamos y pasamos a la realización de las evaluaciones.
+\subsection{Tercera iteración: Prototipo final}
 
-\subsection{Evaluación preliminar}
+Teniendo en cuenta las conclusiones obtenidas en la evaluación con los expertos creamos el prototipo final sobre el que realizar la interfaz de la aplicación. 
 
-La evaluación preliminar se realizó el día 22 de Mayo de 2018 en la Facultad de Informática de la Universidad Complutense de Madrid, fue realizada por cuatro de los integrantes de la Asociación Asperger Madrid, dos expertos y dos usuarios. Y asistimos tanto las integrantes del grupo como las directoras de nuestro trabajo para ir apuntando las conclusiones y resolviendo las posibles dudas a los evaluadores.
+La pantalla principal por defecto será muy similar a la propuesta en nuestro segundo prototipo, esta pantalla principal se puede ver en la figura \ref{fig:boceto_inifinal}, mostrando la información emocional por debajo del cuadro de texto. Para representar las emociones se mostrarán los pictogramas de ARASAAC correspondientes a cada una de ellas. A cada emoción le corresponderá, además, un color. Los colores por defecto son los utilizados en la película ``Del revés": amarillo para la alegría, azul para la tristeza, rojo para el enfado, morado para el miedo y verde para asco. El usuario podrá cambiar los colores si los que hemos elegido no le resultan claros. También podrá cambiar los pictogramas asociados a cada emoción por fotografías de personas o los emoticonos de WhatsApp. 
 
-En rasgos generales, el porcentaje de aciertos en las respuestas de los usuarios es de un 78.13\%, lo que nos indica que la aplicación es intuitiva y sencilla. Por otra parte, los expertos no solo valoraron la interfaz sino que algunos entendieron que tenían que valorar también los resultados del EmoTraductor por lo que su porcentaje de aciertos es bastante menor 56.25\% ya que marcaban las repuestas que ellas creían que eran las acertadas según su opinión y no sobre lo que el EmoTraductor indicaba. 
+\figura{Bitmap/Capitulo5/boceto}{width=.9\textwidth}{fig:boceto_inifinal}{Pantalla inicial de la aplicación web}
 
-A raíz de esta evaluación sacamos bastantes conclusiones que nos hicieron modificar el funcionamiento de la aplicación y el fromulario de evaluación.
+Las emociones presentes en el texto estarán representadas en una barra repartida de forma proporcional a la intensidad de la emoción en el texto tal y como se puede ver en la figura \ref{fig:barraEmocional}
 
-A nivel de aplicación: Uno de los usuarios nos preguntó el porqué de que en el cuadro derecho de la pantalla donde aparecen las palabras emocionales aparecían emociones mientras que en la barra emocional salía que era un texto tranquilo; esto nos llevó a pensar que quizá era mejor solo mostrar en negrita las palabras que tienen el mismo contenido emocional que la barra que indica el resultado global.
-Por otra parte, cuando las expertas estuvieron escribiendo sobre conflictos que habían tenido algunos de los asperger del centro hablando por WhatsApp se dieron cuenta que el EmoTraductor ponía que todas las frases eran tranquilas y no expresaban emociones; con esto decidimos modificar la manera de calcular las emociones que se mostraban en la barra a como actualmente se calcula.
+\figura{Bitmap/Capitulo5/barraEmocional}{width=.9\textwidth}{fig:barraEmocional}{Pantalla con resultado del análisis en la barra emocional de la aplicación web}
 
-A nivel de formulario: Nos dimos cuenta que cuando los evaluadores llegaban a las preguntas de la escala likert y les preguntaban por la personalización de los colores todos respondían al azar dado que no encontraron la opción solos, por lo que decidimos modificar el formulario para la siguiente evaluación añadiendo una pregunta de si han encontrado esa funcionalidad y en caso de responder que no se les explica como acceder a ella.
+El prototipo final se puede ver en el Apéndice C.
 
-Estas modificaciones se llevaron a cabo para la siguiente evaluación el día 24 de Mayo de 2018
+\section{Implementación de la aplicación final}
 
-\subsection{Evaluación final}
+El primer paso para comenzar a dar forma a nuestra aplicación web consistió en desplegar los servicios web en el servidor que nos proporcionó la universidad. Desplegamos la aplicación desarrollada en Django en el Apache del servidor usando mod\_wsgi, un módulo de Apache que le permite hospedar aplicaciones web desarrolladas en Python. 
 
-El día 24 de Mayo de 2018 en uno de los talleres de la Asociación Asperger Madrid evaluaron nuestra aplicación con todas las mejoras hechas para ver si la aplicación era mejor de esta manera. En esta evaluación participaron un experto de 26 años y siete usuarios de entre 16 y 31 años.
+Comenzamos instalando Apache y el módulo en el servidor:
 
-La evaluación consistía en lo mismo que la preliminar, los textos y las preguntas eran las mismas, aunque al variar la manera de calcular las emociones, las respuestas cambian. El primer texto se trataba de un texto 100\% alegre; el segundo texto era un texto tranquilo, sin contenido emocional; el tercer texto tenía dos emociones tristeza y miedo donde tristeza era la mayoritaria y miedo la minoritaria; el cuarto texto, a diferencia que en la evaluación preliminar tenía cuatro emociones tristeza, miedo, enfado y asco, donde la mayoritaria era enfado y la minoritaria asco. Al igual que en la evaluación preliminar también teníamos preguntas para responder con una escala likert del 1 al 5.
-A continuación se muestran los resultados obtenidos para los usuarios; después se expondrá una breve conclusión con los resultados del experto que la evaluó.
+\begin{lstlisting}[style=DOS]
+tfgvr1718@sesat:\~\$ sudo apt-get install apache2 libapache2-mod-wsgi
+\end{lstlisting}
 
-\begin{table}[htbp]
-	\begin{center}
-		\begin{tabular}{|c|c|c|}
-			\hline
-																				& Aciertos/Respuestas & Porcentajes \\ \hline
-			Emociones en el texto 1 					& 7/7 & 100\% 	\\ \hline
-			Emociones en el texto 2 					& 5/7 & 71.43\% \\ \hline
-			Emociones en el texto 3 					& 4/7 & 57.14\% \\ \hline
-			Emoción mayoritaria texto 3 			& 6/7 & 65.71\% \\ \hline
-			Emoción minoritaria texto 3 			& 4/7 & 42.86\% \\ \hline
-			Palabras emocionales del texto 3 	& 3/7 & 42.86\% \\ \hline 
-			Emociones de accidente 						& 3/7 & 42.86\% \\ \hline
-			Emociones de herida 							& 3/7 & 42.86\% \\ \hline
-			Emociones en el texto 4 					& 6/7 & 85.71\% \\ \hline
-			Emoción mayoritaria texto 4 			& 2/7 & 28.57\% \\ \hline
-			Emoción minoritaria texto 4 			& 0/7 & 0\% 		\\ \hline
-			Encontrado el cambio de color 		& 5/7 & 71.43\% \\ \hline
-		\end{tabular}
-		\caption{Resultado evaluación final I}
-		\label{tabla:evaluacionFinalI}
-	\end{center}
-\end{table} 
+Una vez que ambos estuvieron instalados, habilitamos el módulo y reiniciamos Apache.
 
-En este caso, el experto que evaluó acertó en todas las preguntas excepto en las de emociones mayoritarias y minoritarias que no apostó por ninguna. 
+\begin{lstlisting}[style=DOS]
+tfgvr1718@sesat:\~\$ sudo a2enmod wsgi
+tfgvr1718@sesat:/etc/apache2\$ sudo service apache2 restart
+\end{lstlisting}
 
-Con todos estos resultados concluimos que no es demasiado intuitivo encontrar las emociones mayoritarias y minoritarias dado el resultado en la barra emocional, ya que es complicado ver el porcentaje exacto que representa pero que si se refleja claramente las emociones que representa.
+Para que nuestra aplicación quedara alojada en Apache hubo que crear un virtualhost para ésta (un dominio que apunte al directorio donde está nuestro proyecto).
 
-A continuación veremos los resultados de las preguntas de usabilidad dando la media, la mediana y la desviación típica.
+\figura{Bitmap/Capitulo5/conf}{width=.8\textwidth}{fig:conf}{Contenido del archivo .conf}
 
-\begin{table}[htbp]
-	\begin{center}
-		\begin{tabular}{|c|c|c|c|}
-			\hline
-																								& Media & Mediana & Desviación típica \\ \hline
-			Es fácil de usar 													& 4.29 & 4 & 0.76	\\ \hline
-			Uso diario 																& 3.43 & 3 & 1.27 \\ \hline
-			Recomendación a otros											& 3.43 & 4 & 1.27 \\ \hline
-			Colores adecuados 												& 4.29 & 5 & 0.95 \\ \hline
-			Imágenes adecuadas 												& 3.71 & 4 & 1.50 \\ \hline
-			Utilidad cambiar color 										& 3.57 & 4 & 1.62 \\ \hline
-			Cambiar imágenes 													& 3.86 & 3 & 1.07 \\ \hline
-			Barra emocional intuitiva 								& 4.43 & 5 & 0.79 \\ \hline
-			Utilidad informacion de las palabras 			& 4.29 & 5 & 0.95 \\ \hline
-			Utilidad emoción concreta de las palabras	& 4.29 & 4 & 0.76	\\ \hline
-		\end{tabular}
-		\caption{Resultado evaluación finalII}
-		\label{tabla:evaluacionFinalII}
-	\end{center}
-\end{table} 
+Por último, activamos esta configuración y volvimos a reiniciar Apache.
 
-Como se puede ver en los resultados ninguno baja del 3, valor medio de la escala likert, lo que nos da una buena señal para ver que la aplicación cumple bastantes expectativas. Vamos a reflejar los de menor valor: el uso diario y la recomendación a otros; pensamos que esto puede ser así porque es una herramienta completamente nueva y nadie está acostumbrado a usar algo así antes de escribir.
-
-También añadimos una última pregunta por si querían poner alguna observación y ha habido una que nos ha llamado mucho la atención; es la siguiente: ''He tenido algunas dificultades porque no está adaptado para personas con discapacidad visual.'', lo que nos ha llevado a añadir esto al trabajo futuro.
+\begin{lstlisting}[style=DOS]
+tfgvr1718@sesat:/etc/apache2\$ sudo a2ensite djangoapp
+tfgvr1718@sesat:/etc/apache2\$ sudo service apache2 restart
+\end{lstlisting}
 
 
-% Variable local para emacs, para  que encuentre el fichero maestro de
-% compilación y funcionen mejor algunas teclas rápidas de AucTeX
-%%%
-%%% Local Variables:
-%%% mode: latex
-%%% TeX-master: "../Tesis.tex"
-%%% End:
+Una vez concluido el despliegue de los servicios en el servidor y las iteraciones de diseño de la interfaz, comenzamos a desarrollar la aplicación web para la traducción emocional usando HTML, CSS, Ajax y JavaScript.
+
+HTML es un lenguaje de marcado que nos permite el desarrollo de la interfaz de nuestra aplicación web haciendo uso de archivos .css, en los cuales especificamos el formato de la misma (colores, tamaños...). Usamos Javascript y Ajax para realizar las peticiones al servidor y tratar los datos que nos devuelve.
+
+La interfaz se desarrolló siguiendo el aspecto del prototipo final que se puede consultar en el Apéndice C.
+
+El estilo de diseño seguido en nuestra interfaz es el diseño plano: es una interfaz simple, con formas limpias y funcionales. Usamos las figuras geométricas básicas para que los objetos parezcan simples visualmente.
+
+Nuestra interfaz web se apoya principalmente en tres principios de diseño:
+Principio de proximidad: si dos elementos están juntos están relacionados. En nuestra interfaz, existen dos áreas grandes juntas (una donde se escribe y otra donde se muestra el resultado), al estar juntas entendemos que tienen relación y una vez pulsado el botón de traducir entenderemos cual es la relación. También empleamos este principio con la ayuda que aparece debajo del cuadro donde se va a escribir, al estar situados juntos, el usuario entenderá rápidamente que la ayuda es con respecto al cuadro de texto. Seguir este principio, nos parecía importante ya que facilita el aprendizaje.
+
+Principo de consistencia externa: consiste en mantener las expresiones habituales dentro de un sistema como clicks, pulsaciones, menús, atajos de teclado, elementos visuales o procedimientos. En nuestra interfaz, se pueden utilizar los atajos de teclado copiar, pegar o seleccionar. También tiene una consistencia con Google, ya que creemos que el traductor de Google es una aplicación que se utiliza mucho y con gran facilidad; si nuestra aplicación se asemeja en algunos aspectos ayudará a que el usuario sea capaz de entender la aplicación más rápido.
+
+Principio de libertad y control del usuario: El usuario debe sentir el control sobre la aplicación, haciendo que se sienta más cómodo y capaz. Nos apoyamos en este principio al crear la personalización de la interfaz de la web, haciéndoles entender a los usuarios que cada uno es capaz de controlar la aplicación y amoldarla a sus gustos.
+

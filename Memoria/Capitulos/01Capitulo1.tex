@@ -17,9 +17,9 @@
 %-------------------------------------------------------------------
 \label{cap1:sec:motivacion}
 
-En la actualidad, gracias a Internet, tenemos acceso fácil y rápido a una cantidad enorme de información a través de diversos canales: blogs, redes sociales, foros... Toda esta información nos permite ser más conscientes de nuestro entorno y así adaptarnos mejor a él, pero para ello tenemos que ser capaces de entender e interpretar de forma correcta lo que nos encontramos en la red. Tenemos que saber identificar lo útil que resulta lo que nos encontremos y en qué medida: si es una noticia importante, si es algo que ha publicado una persona que nos importa, si simplemente nos entretiene... Además, es interesante poder comprender el punto de vista de quien ha escrito lo que estamos leyendo, sobre todo en textos tan poco objetivos como blogs personales o redes sociales ya que nos aporta un contexto en el que nos resulta más fácil interpretar lo que quiere decir la persona. Esto último puede evitar conflictos o malentendidos.
+En la actualidad, gracias a Internet, vivimos rodeados de información. Tenemos acceso fácil y rápido a toda la información que necesitamos a través de diversos canales: blogs, redes sociales, sitios web, foros... Aunque no busquemos la información, esta nos acaba llegando debido a la naturaleza de la red. Tener mucha información del entorno que nos rodea es una gran ventaja ya que nos permite adaptarnos a él pero conlleva un nuevo reto: lo complicado ya no es obtener la información sino ser capaces de interpretar toda la información que recibimos de incontables fuentes y quedarnos con lo que realmente nos resulta útil. Para ello realmente no contamos con ninguna herramienta, sólo podemos confiar en nuestra capacidad de análisis textual para comprender lo que dice un texto y cómo lo dice para así darle la importancia y el significado que debería tener para nosotros.
 
-El gran problema es que no es tan fácil como parece, gran parte de las cosas se publican dando por hecho que van a ser correctamente interpretadas por todo el mundo y no es así. Hay gente, como aquellos con Trastornos del Espectro Autista (TEA), que a causa de su falta de empatía cognitiva no pueden acceder a la información en igualdad de condiciones. No entender el contexto o el tono de una persona puede llegar a alterar en gran medida el significado de un texto. Lo mismo ocurre cuando son ellos los que escriben algo ya que su dificultad para expresar sus emociones puede hacer que sean malinterpretados. Es necesario desarrollar herramientas que permitan la inclusión digital a este tipo de personas.
+Para una persona adulta con un buen conocimiento de su entorno puede resultar fácil llevar a cabo un proceso de análisis automático que le permita interpretar toda la información con la que se encuentra a lo largo de un día, pero, ¿qué pasa si alguien no tiene las capacidades necesarias para ello? Por ejemplo, la falta de empatía cognitiva que sufren las personas con Transtornos del Espectro Autista (TEA) puede llevarles a interpretar de forma errónea un texto ya que no entender el contexto o el tono de este puede alterar en gran medida su significado, sobre todo si se trata de un blog personal o un post en redes sociales. Estas dificultades a la hora de interpretar un texto generan confusiones y malentendidos impidiendo a la gente con esta discapacidad acceder a la información en igualdad de condiciones. Es necesario desarrollar herramientas que permitan la inclusión digital a estas personas. 
  
 	
 %------------------------------------------------------------------
@@ -27,60 +27,40 @@ El gran problema es que no es tan fácil como parece, gran parte de las cosas se 
 %-------------------------------------------------------------------
 \label{cap1:sec:objetivos}
 
-El objetivo principal de este trabajo es aplicar los conocimientos adquiridos durante la carrera a un proyecto grande y de impacto real. Este p
+El objetivo principal de este trabajo es implementar una serie de servicios web que permitan detectar automáticamente el grado de carga afectiva que tiene un texto. Se medirá, especificamente, el grado de intensidad que presenta para las cinco categorías emocionales básicas con las que hemos decidido trabajar: tristeza, miedo, alegría, enfado y asco. Para ello contaremos con un diccionario emocional que contará con una serie de palabras acompañadas de su lexema y cinco valores del uno al cinco (uno para cada categoría emocional). Desarrollaremos servicios para analizar palabras, frases y textos haciendo explícito el contenido afectivo en cada caso: mostrando los grados emocionales y/o la emoción mayoritaria. Una vez desarrollados los servicios los integraremos en una API para hacerlos accesibles a todo aquel que los necesite. Además, crearemos una aplicación web para que puedan ser utilizados por cualquier usuario de manera sencilla. Esta web permitirá introducir texto y mostrará los resultados de forma gráfica, utilizando emoticonos y colores para hacer explicitas las categorías emocionales que contiene el texto introducido y marcando las palabras de este que consideramos emocionales porque se pueden encontrar en nuestro diccionario. 
 
-El objetivo principal es implementar una serie de servicios web que permitan analizar emocionalmente un texto, identificando las emociones básicas que contiene y su intensidad. Estos servicios permitirán hacer más explicito el significado emocional de una palabra, una frase o un texto facilitando su interpretación. 
-
-Una vez desarrollados los servicios web los utilizaremos para llevar a cabo una API que los contenga y una aplicación web, lo que facilitará el uso de nuestro trabajo a los usuarios.
+Este trabajo es una oportunidad para aplicar todos los conocimientos adquiridos durante la carrera a un proyecto grande y de impacto real. Vamos a seguir una metodología ágil que nos permita trabajar como un equipo multidisciplinar en el que todas podamos aprender lo máximo posible mientras desarrollamos una herramienta que ayude a cualquier persona que encuentre dificultades a la hora de interpretar el contenido emocional de un texto.
 
 %------------------------------------------------------------------
 \section{Estructura de la memoria}
 %-------------------------------------------------------------------
 \label{cap1:sec:estructura}
 
-	La memoria de este trabajo contendrá un total de 11 capítulos, incluído este introductorio. A continuación se detallará el contenido de cada uno de los capítulos.
+	La memoria de este trabajo contendrá un total de doce capítulos, incluído este introductorio. A continuación se detallará el contenido de cada uno de los capítulos.
 	
 	
 	\begin{itemize}
-		\item Capítulo 2: Estado del arte
+		\item El \textbf{capítulo dos} es una traducción al inglés de este capítulo introductorio.
 		
-		En este capítulo se presentarán los aspectos más importantes de la computación afectiva. Además se introducirán los servicios web, la metodología scrum y la integración continua; tecnología y metodologías que se van a utilizar a lo largo del trabajo.
+		\item En el \textbf{capítulo tres} se presentarán los aspectos más importantes de la computación afectiva. Además se introducirán los servicios web, la metodología Scrum y la integración continua; tecnología y metodologías que se van a utilizar a lo largo del trabajo.
 		
-		\item Capítulo 3: Herramientas empleadas
+		\item En el \textbf{capítulo cuatro} se describirán las herramientas que utilizaremos a lo largo del trabajo: las herramientas básicas como el repositorio GitHub, el diccionario emocional con el que haremos el análisis, la herramienta que nos permitirá desarrollar los servicios web (Django), Trello que nos ayudará a seguir la metodología Scrum, las herramientas que utilizaremos para realizar las pruebas y la integración continua (Doctest y Jenkins) y las herramientas que usaremos para la lematización de las palabras y su filtrado (SpaCy y PyStemmer).
 		
-		En este capítulo se describirán las herramientas que utilizaremos a lo largo del trabajo: las herramientas básicas como el repositorio GitHub, el diccionario emocional con el que haremos el análisis, la herramienta que nos permitirá desarrollar los servicios web (Django), Trello que nos ayudará a seguir la metodología scrum, las herramientas que utilizaremos para realizar las pruebas y la integración continua (Doctest y Jenkins) y las herramientas que usaremos para la lematización de las palabras y su filtrado (SpaCy y PyStemmer).
+		\item En el \textbf{capítulo cinco} se detallarán cada uno de los servicios web desarrollados durante el trabajo, dedicados tanto al análisis de palabras como al de frases o textos.
 		
-		\item Capítulo 4: Análisis del Contenido Afectivo de un Texto
+		\item El \textbf{capítulo seis} detalla la aplicación web que hemos desarrollado haciendo uso de los servicios web así como el proceso de diseño de su interfaz y su desarrollo.
 		
-		En este capítulo se explica cada uno de los servicios web desarrollados durante el trabajo, dedicados tanto al análisis de palabras como al de frases o textos.
+		\item En el \textbf{capítulo siete} aparecen los resultados obtenidos tras las evaluaciones que realizamos de la aplicación: una evaluación general del método y dos evaluaciones de la aplicación con usuarios finales y expertos, una preliminar y otra final.
 		
-		\item Capítulo 5: EmoTraductor
+		\item En el \textbf{capítulo ocho} se muestra la metodología que usamos a lo largo de todo el proyecto y se comentan cada uno de los sprints llevados a cabo.
 		
-		Este capítulo detalla la aplicación web que hemos desarrollado haciendo uso de los servicios web así como el proceso de diseño de su interfaz y su desarrollo.
+		\item En el \textbf{capítulo nueve} se explica la manera en la que se han aplicado los conocimientos que hemos adquirido a lo largo de todo el grado, comentando en qué nos han ayudado las diferentes asignaturas.
 		
-		\item Capítulo 6: Evaluación
+		\item El \textbf{capítulo diez} contiene un resumen del trabajo realizado de forma individual por cada una de nosotras.
 		
-		En este capítulo aparecen los resultados obtenidos tras las evaluaciones que realizamos de la aplicación: una evaluación general del método y dos evaluaciones de la aplicación con usuarios finales, una preliminar y otra final.
+		\item En el \textbf{capítulo once} se presentan las principales conclusiones de este TFG así como las ideas que han surgido a lo largo del desarrollo o la evaluación y que pueden ser llevadas a cabo en un futuro utilizando el trabajo que hemos realizado.
 		
-		\item Capítulo 7: Así se hizo...
-		
-		En este capítulo se comentan cada uno de los sprints llevados a cabo a lo largo del desarrollo del proyecto.
-		
-		\item Capítulo 8: Conocimientos Aplicados
-		
-		En este capítulo se explica la manera en la que se han aplicado los conocimientos que hemos adquirido a lo largo de todo el grado, comentando en qué nos han ayudado las diferentes asignaturas.
-		
-		\item Capítulo 9: Trabajo Individual
-		
-		Este capítulo contiene un resumen del trabajo realizado de forma individual por cada una de nosotras.
-		
-		\item Capítulo 10: Trabajo Futuro
-		
-		En este capítulo se presentan las ideas que han surgido a lo largo del desarrollo o la evaluación y que pueden ser llevadas a cabo en un futuro utilizando el trabajo que hemos realizado.
-		
-		\item Capítulo 11: Resumen
-		
-		Este capítulo es un resumen de la memoria del Trabajo de Fin de Grado.
+		\item El \textbf{capítulo doce} es una traducción del capítulo de ``Conclusiones y Trabajo Futuro'', el once, al inglés.
 		
 	\end{itemize}
 	
