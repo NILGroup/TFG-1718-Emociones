@@ -24,7 +24,7 @@
 \contentsline {subsection}{\numberline {3.4.1}Caracter\IeC {\'\i }sticas de los Servicios Web}{17}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Tipos de Servicios Web}{18}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Arquitectura de los Servicios Web}{18}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Ventajas e inconvenientes de los servicios web}{19}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.4}Ventajas e inconvenientes de los Servicios Web}{19}{subsection.3.4.4}
 \contentsline {section}{\numberline {3.5}Scrum}{19}{section.3.5}
 \contentsline {section}{\numberline {3.6}Integraci\'on Continua}{22}{section.3.6}
 \contentsline {chapter}{\numberline {4}Herramientas empleadas}{25}{chapter.4}
@@ -138,4 +138,4 @@
 \contentsline {subsection}{\numberline {A.3.4}Blog muerte}{106}{subsection.Alph1.3.4}
 \contentsline {subsection}{\numberline {A.3.5}Blog enfado}{107}{subsection.Alph1.3.5}
 \contentsline {chapter}{\numberline {B}Im\'agenes de tableros de sprints}{109}{appendix.Alph2}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{121}{appendix*.60}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{121}{appendix*.61}

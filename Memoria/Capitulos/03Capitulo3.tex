@@ -30,7 +30,7 @@ Las dimensiones emocionales representan los aspectos esenciales de una emoción. 
 	\item \textbf{Control}: Representa el control que tiene la emoción sobre una persona. Por ejemplo, el control de la emoción alegría es mayor que el de la emoción de tristeza.
 \end{itemize}
 
-Las categorías emocionales representan cada una de las emociones básicas de carácter universal. Existe una gran multitud de categorías emocionales, por lo que para reducir el número y hacer nuestro proyecto más fácil e intuitivo, nos centraremos en las conocidas como categorías emocionales básicas: \textit{miedo}, \textit{sorpresa}, \textit{alegría}, \textit{ira} y \textit{tristeza}, con el fin 
+Las categorías emocionales representan cada una de las emociones básicas de carácter universal. Existe una gran multitud de categorías emocionales, por lo que para reducir el número y hacer nuestro proyecto más fácil e intuitivo, nos centraremos en las conocidas como categorías emocionales básicas: \textit{miedo}, \textit{sorpresa}, \textit{alegría}, \textit{ira} y \textit{tristeza}.
 % -- A modo de resumen, podríamos hablar también de las tres dimensiones de la persona que se activan a la vez y de modo indisoluble con cada emoción:
 
 %y dimensiones. Dentro de la multitud de categorías que existen, nos centraremos en las conocidas como categorías básicas: miedo, sorpresa, alegría, ira y tristeza.
@@ -58,7 +58,7 @@ La computación afectiva tiene multitud de aplicaciones, ya que como se ha mencio
 
 \begin{itemize}
 	\item \textbf{Seguridad}: El análisis de las emociones como el estrés, el aburrimiento o la distracción puede ser muy interesante en tareas repetitivas como conducir o controlar una cinta de producción. En estos casos el ordenador puede ayudar al usuario a mantener la atención en la tarea que está desarrollando, o por ejemplo, en el caso de la conducción, frenar si el conductor se encuentra distraído y se aproxima a un coche. 
-	\item \textbf{Marketing}: Poder evaluar la reacción emocional de alguien ante un anuncio o producto es una estrategia comercial que ya está siendo utilizada cada vez por más empresas.
+	\item \textbf{Marketing}: Poder evaluar la reacción emocional de alguien ante un anuncio o producto es una estrategia comercial que ya está siendo utilizada cada vez por más empresas para, por ejemplo, evaluar la respuesta emocional de las personas ante anuncios publicitarios.
 	\item \textbf{Salud}: Es posible inferir el nivel de estrés de una persona midiendo sus señales fisiológicas (ritmo cardiaco, respiración...) y si este nivel es demasiado alto se reaccionará en consecuencia según el tipo de sistema. 
 	\item \textbf{Entretenimiento}: La industria de los videojuegos ha crecido mucho en los últimos años e introducir las emociones en los videojuegos permite a las compañías crear juegos más adaptables y cercanos al jugador, lo que atrae a más público y mejora la experiencia de juego \citep{chinos}.
 	\item \textbf{Robótica}: El mayor problema de los robots diseñados para interactuar con humanos es la carencia de emociones. Algunos de ellos llegan a producir una sensación de incomodidad. Dotar a este tipo de robots de cierta ``humanidad'' no sólo haría más cómodo el tratar con ellos sino que podrían realizar tareas como el acompañamiento de personas mayores \citep{RobotSonrie}.
@@ -101,7 +101,7 @@ Las técnicas basadas en el procesamiento estadístico del lenguaje natural solo f
 	Este diccionario fue creado en 1997, y marca palabras en inglés según su polaridad (positiva o negativa) de manera automatizada a través del análisis de un corpus.
 	Hatzuvassiloglou y McKeown (\citeyear{mckeown}) tomaron una serie de adjetivos que aparecían de manera frecuente y decidieron darles una orientación empleando un análisis estadístico. Así fueron capaces de obtener un diccionario de adjetivos clasificados como positivos y negativos. 
 	A partir de los adjetivos ya clasificados se predice la polaridad de éstos, analizándolos en pares unidos por conjunciones como: \textit{and}, \textit{or}, \textit{but}, \textit{either-or}, \textit{or} o \textit{neither-nor}.
-	Es decir, sí una palabra con polaridad conocida aparece unida por la conjunción ``y" (``and" en inglés) a una segunda palabra concluyo que la nueva palabra tendrá una polaridad similar. En cambio si vienen unidas por la conjunción ``pero" (``but" en inglés) la polaridad de la nueva palabra será opuesta.
+	Es decir, sí una palabra con polaridad conocida aparece unida por la conjunción ``y'' (``and'' en inglés) a una segunda palabra concluyo que la nueva palabra tendrá una polaridad similar. En cambio si vienen unidas por la conjunción ``pero'' (``but'' en inglés) la polaridad de la nueva palabra será opuesta.
 	Por ejemplo, si aparece \textbf{\textit{hermosa y divertida}} y sabemos que la palabra \textbf{\textit{hermosa}} es positiva la palabra \textbf{\textit{divertida}} pasará a ser positiva también; sin embrago si aparece \textbf{\textit{hermosa pero malvada}} la palabra \textbf{\textit{malvada}} tomará la orientación de negativa.
 
 
@@ -123,7 +123,7 @@ Las técnicas basadas en el procesamiento estadístico del lenguaje natural solo f
 	\subsection{ANEW}
 	La Affective Norms for English Words (ANEW) contiene 1.034 palabras inglesas etiquetadas mediante las tres dimensiones emocionales (evaluación, activación y control) \citep{ANEW}. Para obtener este diccionario, se pidió a una serie de personas que marcasen un conjunto de palabras fuera de contexto con los valores para cada una de las tres dimensiones de una emoción en una escala Likert de 9 puntos. Para ello contaron con la ayuda del sistema de marcación SAM \citep{Lang80}. 
 	
-	En la tabla \ref{tabla:anew} podemos observar un ejemplo para la primera palabra del diccionario, \textit{``abduction"}.
+	En la tabla \ref{tabla:anew} podemos observar un ejemplo para la primera palabra del diccionario, \textit{``abduction''}.
 	
 	\begin{table}[htbp]
 		\begin{center}
@@ -146,7 +146,7 @@ Las técnicas basadas en el procesamiento estadístico del lenguaje natural solo f
 		
 	Cada entrada en el diccionario contiene: un número que identifica a la palabra, de manera que esta numeración coincide con el número que dicha palabra tiene en el ANEW; la palabra inglesa (E-word), la palabra original en la base de datos ANEW; la palabra española (S-word); y las evaluaciones afectivas, los valores medios y la desviación estándar para cada dimensión emocional. 
 	
-	En la tabla \ref{tabla:s-anew} podemos observar un ejemplo para la primera palabra del diccionario, \textit{``abduction"}.
+	En la tabla \ref{tabla:s-anew} podemos observar un ejemplo para la primera palabra del diccionario ANEW, \textit{``abduction''}, en su versión española.
 	
 	\begin{table}[htbp]
 		\begin{center}
@@ -154,25 +154,27 @@ Las técnicas basadas en el procesamiento estadístico del lenguaje natural solo f
 		\hline
 		Descripcion & Nº palabra & Evaluación & Activación & Control & Frecuencia \\
 		\hline 
-		abduction & 621 & 2,76 & 5,53 & 3,49 & 1 \\ \hline
+		rapto & 621 & 1,37 & 1,97 & 1,69 & 4,29 \\ \hline
 		\end{tabular}
-		\caption{Primera palabra del ANEW y sus campos}
+		\caption{Primera palabra del ANEW en el S-ANEW y sus campos}
 		\label{tabla:s-anew}
 		\end{center}
 		\end{table}
+		
 \subsection{Diccionario de Hinojosa}
 
 Este diccionario \citep{Hinojosa2016} introduce normas afectivas para 875 palabras incluidas en la MADS (Madrid Affective Database for Spanish): 304 verbos, 301 sustantivos, 126 adjetivos y 144 palabras que pueden ser consideradas sustantivos o adjetivos. El objetivo de este diccionario es complementar los más importantes que ya existían, la traducción al español del ANEW y la base de datos de Ferré y por ello se incluyen palabras que no aparecen en ninguno de los dos. Estas palabras han sido marcadas para dos dimensiones emocionales (valencia y activación) y cinco categorías emocionales (alegría, enfado, tristeza, miedo y asco).
 En la marcación participaron 660 personas y cada palabra fue marcada por 30 personas. Para marcar las dimensiones se empleó una escala Likert de 9 puntos y para cada una de las emociones básicas se empleó una escala del 1 al 5 (donde 1 es \textit{para nada} y 5 \textit{extremadamente}). El diccionario incluye, además, la clase gramatical de la palabra, su frecuencia de aparición, su número de letras y sílabas y una serie de variables psicolingüísticas medidas de forma objetiva.  
 Una vez marcadas las palabras, éstas se clasifican en positivas, negativas o neutrales según su valor de valencia: de 1 a 4 son negativas, de 4 a 6 neutrales y de 6 a 9 positivas. De esta manera se obtuvieron 337 palabras negativas, 231 neutrales y 307 positivas. En cuanto a las categorías emocionales, se considera que una palabra denota una determinada emoción si tiene asignado un valor superior a 2,5 para dicha emoción. Así se obtienen 307 palabras que denotan alegría, 84 que denotan ira, 87 que denotan tristeza, 114 que denotan miedo y 30 que denotan asco. El resto de palabras o bien denotan dos emociones(40),tres emociones(31) o cuatro emociones(24).
 
-Por ejemplo, la palabra \textbf{abandono} tiene los siguientes valores para las categorías emocionales: 1,03 de alegría, 3,30 de ira, 4,43 de tristeza, 3,33 de miedo y 2,63 de asco. Tiene, además, un valor de valencia de 1,47 y un valor de activación de 6,47. Como se puede apreciar los valores obtenido en este diccionario para la palabra abandono son bastantes similares a los obtenidos por el diccionario de Ferré para la misma palabra.
+Por ejemplo, la palabra \textbf{abandono} tiene los siguientes valores para las categorías emocionales: 1,03 de alegría, 3,30 de ira, 4,43 de tristeza, 3,33 de miedo y 2,63 de asco. Tiene, además, un valor de valencia de 1,47 y un valor de activación de 6,47. 
 
 \subsection{Diccionario de Ferré}
 
 Este diccionario \citep{Ferre2017} está compuesto por 2.266 palabras, marcadas con las cinco categorías emocionales utilizadas en el diccionario de Hinojosa: alegría, ira, miedo, asco y tristeza. Las palabras con las que cuenta son las incluidas en otros tres diccionarios publicados en español: S-ANEW,  el Corpus de Ferré \citep{Ferre2012} y el de Guasch \citep{Guasch2016}. De las 2814 obtenidas se eliminaron las repetidas y aquellas que apareciesen en el diccionario de Hinojosa obteniendo las 2266. En el proceso de marcado participaron 1.380 personas. Para cada palabra debían asignar un valor de 1 a 5 para cada emoción básica, siendo el uno \textit{para nada} y el 5 \textit{extremadamente}. Las palabras que tienen un valor inferior a 2,5 para las cinco categorías se consideran neutrales mientras que las que tienen un valor superior al 2,5 en más de una categoría pertenecerán a aquella con mayor valor. Se obtuvieron 704 palabras para la categoría de alegría, 34 para la de ira, 58 para la de tristeza, 98 para la de miedo, 69 para la de asco y 856 palabras neutrales.
 	
-En este caso la palabra \textbf{abandono} tiene los siguientes valores para las cinco categorías emocionales: 1,03 de alegría, 2,83 de ira, 4,30 de tristeza, 3,33 de miedo y 1,77 de asco. 
+En este caso la palabra \textbf{abandono} tiene los siguientes valores para las cinco categorías emocionales: 1,03 de alegría, 2,83 de ira, 4,30 de tristeza, 3,33 de miedo y 1,77 de asco. Como se puede apreciar los valores obtenidos en este diccionario para la palabra abandono son bastantes similares a los obtenidos por el diccionario de Hinojosa para la misma palabra.
+
 %-------------------------------------------------------------------
 \section{Servicios Web}
 %-------------------------------------------------------------------
@@ -207,7 +209,7 @@ En este caso la palabra \textbf{abandono} tiene los siguientes valores para las 
 		\item Servicios de descubrimiento: Capa encargada del registro centralizado de servicios, permitiendo que estos sean anunciados y localizados. Para ello se utiliza el protocolo UDDI, el cual define la especificación para construir un directorio distribuido de servicios web, donde los datos se almacenan en XML. Este registro también almacena información sobre las organizaciones que los proporcionan, la categoría en la que se encuentran, y sus instrucciones de uso. 
 		\end{itemize}
 	
-	\subsection{Ventajas e inconvenientes de los servicios web}
+	\subsection{Ventajas e inconvenientes de los Servicios Web}
 	\label{cap3:subsec:serviciosweb}
 	
 	Las principales ventajas de los servicios web son las siguientes:
@@ -232,7 +234,7 @@ En este caso la palabra \textbf{abandono} tiene los siguientes valores para las 
 	
 	Scrum es una metodología ágil para gestionar el desarrollo de software. Fue definida por \textit{Ikujiro Nonaka} e \textit{Hirotaka Takeuchi} a principios de los 80 \citep{ScrumManagerLibro}.
 	
-	Scrum divide el trabajo en diferentes unidades llamadas \textsl{sprints},  que tienen una duración preestablecida de entre dos y cuatro semanas obteniendo siempre al final una versión del software con nuevas prestaciones listas para ser usadas. En cada \textsl{sprint} se ajusta la funcionalidad y se añaden nuevas prestaciones priorizando aquellas que aporten más valor al producto \footnote{https://www.softeng.es/es-es/empresa/metodologias-de-trabajo/metodologia-scrum/proceso-roles-de-scrum.html} 
+	Scrum divide el trabajo en diferentes unidades llamadas \textsl{sprints},  que tienen una duración preestablecida de entre dos y cuatro semanas obteniendo siempre al final una versión del software con nuevas prestaciones listas para ser usadas. En cada \textsl{sprint} se ajusta la funcionalidad y se añaden nuevas prestaciones priorizando aquellas que aporten más valor al producto.\footnote{https://www.softeng.es/es-es/empresa/metodologias-de-trabajo/metodologia-scrum/proceso-roles-de-scrum.html} 
 	
 	Esta metodología hace mucho énfasis en el <<equipo de trabajo>>. Este equipo está formado por diferentes roles:
 	
@@ -286,6 +288,8 @@ Las principales ventajas de la integración continua son:
 
 Lo primero para poder utilizar integración continua es tener definido un pipeline, es decir, un conjunto de fases por las que tiene que pasar el software y que están automatizadas. Se establecen criterios para que el código pase de una fase a otra y estrategias para gestionar errores que puedan surgir en las diferentes fases (control de versiones). Es importante tener bien definidas las pruebas que se van a realizar sobre cada fase y que estas puedan garantizar la máxima corrección posible sin tardar mucho, ya que se necesita un feedback rápido para poder seguir avanzando en el proceso. Cada fase es un grupo de pruebas y cada subida de código es un pipeline distinto que avanza de forma independiente por las fases. Por lo tanto se sabe en todo momento en qué punto se encuentra una versión específica. Esto permite tener una visión general de todo el proceso facilitando notablemente la detección de errores en fases y pipelines concretos.
 
+\figura{Bitmap/Capitulo2/pipeline}{width=.9\textwidth}{fig:pipeline}{Ejemplo de un pipeline sencillo.} 
+
 Para el correcto funcionamiento de esta práctica tiene que haber pequeñas integraciones de forma frecuente, una vez al día por ejemplo. Cuantos menos cambios haya más fácil es la integración en el producto general y solucionar los posibles errores que esta pueda generar. Cabe destacar que aunque una parte de código funcione de forma independiente no implica que vaya a funcionar al integrarlo en un programa más grande, por ello cuanto más frecuentes sean las integraciones mejor. 
 
 Con el fin de controlar este correcto funcionamiento existen dos tipos de pruebas que se realizan de manera automática, las de unidad y las de integración. 
@@ -294,6 +298,7 @@ Las pruebas unitarias tienen como objetivo la verificación de la funcionalidad y
 
 En cambio, el objetivo de las pruebas de integración es verificar el correcto funcionamiento entre los distintos componentes que han sido probados unitariamente, con el fin de comprobar que interactúan correctamente a través de sus interfaces, tanto internas como externas, cubren la funcionalidad establecida y se ajustan a los requisitos no funcionales en las especificaciones necesarias.
 
+Un ejemplo de un pipeline es el que se puede observar en la figura \ref{fig:pipeline}. En él se observa como la primera fase recibe la nueva versión que va a comenzar a recorrer el pipeline en orden y pasando automáticamente de una fase a otra. Primero se compilará el código, después se ejecutarán sobre él las pruebas unitarias diseñadas y, una vez acabadas, comenzarán las pruebas de integración que darán lugar a un reporte con los resultados obtenidos. Finalmente, si no se ha detenido el flujo a causa de un error, la nueva versión se desplegará actualizando así el sistema.
 
 Existen muchas herramientas para la integración continua, las cuales se encargan de controlar las ejecuciones haciendo uso de otras herramientas que se encargan de realizar las compilaciones, ejecutar las pruebas y realizar los informes. Algunos de éstas son: \textit{\textbf{Jenkins}}, \textit{\textbf{Solano}}, \textit{\textbf{Bamboo}}... 
 
