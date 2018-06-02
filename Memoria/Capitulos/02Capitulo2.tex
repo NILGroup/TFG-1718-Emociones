@@ -7,8 +7,8 @@
 \chapter{Introduction}
 
 \begin{resumen}
-	In this chapter we are going to make an introduction to the work that we are going to present.
-	First, section 2.1 will explain what the work consists of. Then, section 2.2 will discuss the main difficulties we have faced and the decisions that have been taken to address them. Finally, section 2.3 will present the structure of the work.
+	In this chapter we are going to make an introduction to the project that we are going to present.
+	First, in section 2.1 the motivation of this project will be explained. Then, in section 2.2 our goals will be introduced. And finally, in section 2.3 the structure of the project will be presented.
 
 \end{resumen}
 
@@ -17,9 +17,9 @@
 %-------------------------------------------------------------------
 \label{cap2:sec:motivacion}
 
-At present, thanks to the Internet, we live surrounded by information. We have easy and fast access to all the information we need through various channels: blogs, social networks, websites, forums ... Even if we do not look for information, it just comes to us due to the nature of the network. Having a lot of information about the environment that surrounds us is a great advantage since it allows us to adapt to it but it involves a new challenge: the complicated thing is not to obtain the information but to be able to interpret all the information we receive from countless sources and keep that really is useful to us For this we really do not have any tool, we can only rely on our capacity of textual analysis to understand what a text says and how it says it in order to give it the importance and meaning it should have for us.
+Nowadays, thanks to the Internet, we live surrounded by information. We have easy and fast access to all the information we need through various channels: blogs, social networks, websites, forums... Even if we do not look for information, it just comes to us due to the nature of the network. Having a lot of information about the environment that surrounds us is a great advantage since it allows us to adapt to it but it involves a new challenge: the complicated thing is not to obtain the information but to be able to interpret all the information we receive from countless sources and keep only what is really meaningful. We do not really have any tool which can help us with that, we can only rely on our capacity of textual analysis to understand what a text is saying and how it says it in order to give that text the importance and meaning it should have for us.
 
-For an adult with a good knowledge of their environment can be easy to carry out an automatic analysis process that allows you to interpret all the information with which it is throughout a day, but what happens if someone does not have the necessary capabilities for it? For example, the lack of cognitive empathy suffered by people with Autism Spectrum Disorders (ASD) can lead them to misinterpret a text since not understanding the context or the tone of it can greatly alter its meaning, especially if it is a personal blog or a post on social networks. These difficulties when interpreting a text generate confusion and misunderstandings preventing people with this disability access to information on equal terms. It is necessary to develop tools that allow digital inclusion to these people.
+For someone with a good knowledge of their environment can be easy to carry out an automatic analysis process that allows him to interpret all the information he receives throughout a day. But, what happens if someone does not have the necessary capabilities for it? For example, the lack of cognitive empathy suffered by people with Autism Spectrum Disorders (ASD) can lead them to misinterpret a text since not understanding the context or the tone of it can greatly alter its meaning, especially if it is a personal blog or a post on social networks. These difficulties when interpreting a text generate confusion and misunderstandings impeding people with this disability to have an equal terms access to information. It is necessary to develop tools that allow digital inclusion to these people.
  
 	
 %------------------------------------------------------------------
@@ -27,37 +27,37 @@ For an adult with a good knowledge of their environment can be easy to carry out
 %-------------------------------------------------------------------
 \label{cap2:sec:objetivos}
 
-The main objective of this work is to implement a series of web services that automatically detect the degree of affective load that a text has. It will be measured, specifically, the degree of intensity that presents for the five basic emotional categories with which we have decided to work: sadness, fear, joy, anger and disgust. For this we will have an emotional dictionary that will have a series of words accompanied by its lexeme and five values ??from one to five (one for each emotional category). We will develop services to analyze words, phrases and texts making explicit the affective content in each case: showing the emotional degrees and / or the majority emotion. Once the services are developed, we will integrate them into an API to make them accessible to everyone who needs them. In addition, we will create a web application so that they can be used by any user in a simple way. This website will allow you to enter text and display the results graphically, using emoticons and colors to make explicit the emotional categories contained in the text entered and marking the words that we consider emotional because they can be found in our dictionary.
+The main goal of this project is to implement a series of web services which can be able to detect the affective weight of a text. Specifically, we will be measuring the degree of intensity for the five basic emotional categories which we have decided to work with: sadness, fear, joy, anger and disgust. We will have the help of an emotional dictionary that will have a series of words accompanied by its lexeme and five values from one to five (one for each emotional category). We will develop services to analyze words, phrases and texts making explicit the affective content in each case: showing the emotional degrees and the major emotion. Once the services are developed, we will integrate them into an API to make them accessible to everyone who needs them. In addition, we will create a web application so our services will can be easily anyone. This website will allow an user to enter a text and it would display the results graphically, using emoticons and colors to make explicit the emotional categories contained in the text and marking the words that we consider emotional within it.
 
-This work is an opportunity to apply all the knowledge acquired during the race to a large project with real impact. We will follow an agile methodology that allows us to work as a multidisciplinary team in which we can all learn as much as possible while developing a tool that helps anyone who finds difficulties when interpreting the emotional content of a text.
+This project is an opportunity to apply all the knowledge acquired during the degree to a large project with real impact. We will follow an agile methodology that allows us to work as a multidisciplinary team in which we can all learn as much as possible while developing a tool that helps anyone who finds difficulties when interpreting the emotional content of a text.
 %------------------------------------------------------------------
-\section{Memoir Structure}
+\section{Project's Structure}
 %-------------------------------------------------------------------
 \label{cap2:sec:estructura}
 
-	The memoir of this work will contain a total of twelve chapters, including this introductory one. Next, the content of each of the chapters will be detailed.
+	The memoir of this project will contain twelve chapters, including this introductory one. Now, the content of each of the chapters will be detailed.
 	
 	
 	\begin{itemize}
 		\item The \textbf{chapter one} is the original introduction in Spanish.
 		
-		\item In the \textbf{chapter three} the most important aspects of affective computing will be presented. In addition, web services, the Scrum methodology and continuous integration will be introduced; technology and methodologies that will be used throughout the work.
+		\item In the \textbf{chapter three} the most important aspects of affective computing will be presented. In addition, web services, the Scrum methodology and continuous integration will be introduced. Those are the technology and methodologies that will be used throughout the project.
 		
-		\item In the \textbf{chapter four} will describe the tools that we will use throughout the work: the basic tools such as the GitHub repository, the emotional dictionary with which we will do the analysis, the tool that will allow us to develop web services (Django) , Trello that will help us to follow the Scrum methodology, the tools that we will use to carry out the tests and the continuous integration (Doctest and Jenkins) and the tools that we will use for the lemmatization of the words and their filtering (SpaCy and PyStemmer).
+		\item In the \textbf{chapter four} the tools that we will use throughout the work will be described: the basic tools such as the GitHub repository, the emotional dictionary with which we will do the analysis, the tool that will allow us to develop web services (Django), Trello that will help us to follow the Scrum methodology, the tools that we will use to carry out the tests and the continuous integration (Doctest and Jenkins) and the tools that we will use for the lemmatization of the words and their filtering (SpaCy and PyStemmer).
 		
-		\item In the \textbf{chapter five} will be detailed each one of the web services developed during the work, dedicated both to the analysis of words as well as to sentences or texts.
+		\item In the \textbf{chapter five} each one of the web services developed during the project will be detailed: those which analize words and those which analize sentences or texts.
 		
 		\item The \textbf{chapter six} details the web application that we have developed using the web services as well as the process of designing its interface and its development.
 		
-		\item In the \textbf{chapter seven} appear the results obtained after the evaluations we made of the application: a general evaluation of the method and two evaluations of the application with end users and experts, a preliminary and a final one.
+		\item In the \textbf{chapter seven} you will see the results obtained after the evaluations we made with the application: a general evaluation of the method and two evaluations of the application with end users and experts, one preliminary and a final one.
 		
 		\item The \textbf{chapter eight} shows the methodology we use throughout the project and comments on each of the sprints carried out.
 		
-		\item The \textbf{chapter nine} explains the way in which the knowledge we have acquired has been applied throughout the grade, commenting on how the different subjects have helped us.
+		\item The \textbf{chapter nine} explains the way in which the knowledge we have acquired throughout the grade has been applied, commenting how the different subjects have helped us.
 
 		\item The \textbf{chapter ten} contains a summary of the work done individually by each one of us.
 		
-		\item In the \textbf{chapter eleven} the main conclusions of this TFG are presented as well as the ideas that have arisen throughout the development or evaluation and that can be carried out in the future using the work we have done.
+		\item In the \textbf{chapter eleven} the main conclusions of this FDP (Final Degree Project) are presented as well as the ideas that have arisen throughout the development or evaluation and that can be carried out in the future using the work we have done.
 		
 		\item The \textbf{chapter twelve} is a translation of the chapter "Conclusions and Future Work", the eleventh, into English.
 		
