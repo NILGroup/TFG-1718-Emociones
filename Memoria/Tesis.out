@@ -42,14 +42,14 @@
 \BOOKMARK [1][-]{section.5.1}{Base para los servicios web}{chapter.5}% 42
 \BOOKMARK [1][-]{section.5.2}{An\341lisis afectivo de una palabra}{chapter.5}% 43
 \BOOKMARK [2][-]{subsection.5.2.1}{Lematizaci\363n}{section.5.2}% 44
-\BOOKMARK [2][-]{subsection.5.2.2}{Servicio web para obtener los grados emocionales de una palabra para cada emoci\363n}{section.5.2}% 45
-\BOOKMARK [2][-]{subsection.5.2.3}{Servicio web para obtener la emoci\363n consensuada de una palabra}{section.5.2}% 46
-\BOOKMARK [2][-]{subsection.5.2.4}{Servicio web para obtener la emoci\363n mayoritaria de una palabra}{section.5.2}% 47
-\BOOKMARK [1][-]{section.5.3}{An\341lisis afectivo de una frase}{chapter.5}% 48
-\BOOKMARK [2][-]{subsection.5.3.1}{Obtenci\363n de palabras relevantes}{section.5.3}% 49
-\BOOKMARK [2][-]{subsection.5.3.2}{Grados emocionales de una frase}{section.5.3}% 50
-\BOOKMARK [2][-]{subsection.5.3.3}{Emoci\363n mayoritaria de una frase}{section.5.3}% 51
-\BOOKMARK [1][-]{section.5.4}{An\341lisis afectivo de un texto}{chapter.5}% 52
+\BOOKMARK [2][-]{subsection.5.2.2}{Servicio web para obtener los grados para cada emoci\363n de una palabra}{section.5.2}% 45
+\BOOKMARK [2][-]{subsection.5.2.3}{Servicio web para obtener la emoci\363n mayoritaria de una palabra}{section.5.2}% 46
+\BOOKMARK [1][-]{section.5.3}{An\341lisis afectivo de una frase}{chapter.5}% 47
+\BOOKMARK [2][-]{subsection.5.3.1}{Obtenci\363n de palabras relevantes}{section.5.3}% 48
+\BOOKMARK [2][-]{subsection.5.3.2}{Grados emocionales finales de una frase}{section.5.3}% 49
+\BOOKMARK [2][-]{subsection.5.3.3}{Emoci\363n mayoritaria de una frase}{section.5.3}% 50
+\BOOKMARK [1][-]{section.5.4}{An\341lisis afectivo de un texto}{chapter.5}% 51
+\BOOKMARK [1][-]{section.5.5}{API EmoTraductor}{chapter.5}% 52
 \BOOKMARK [0][-]{chapter.6}{EmoTraductor}{}% 53
 \BOOKMARK [1][-]{section.6.1}{Descripci\363n del problema a resolver}{chapter.6}% 54
 \BOOKMARK [1][-]{section.6.2}{Dise\361o de la interfaz}{chapter.6}% 55
@@ -117,5 +117,5 @@
 \BOOKMARK [2][-]{subsection.Alph1.3.4}{Blog muerte}{section.Alph1.3}% 117
 \BOOKMARK [2][-]{subsection.Alph1.3.5}{Blog enfado}{section.Alph1.3}% 118
 \BOOKMARK [0][-]{appendix.Alph2}{Im\341genes de tableros de sprints}{}% 119
-\BOOKMARK [0][-]{appendix*.95}{Bibliograf\355a}{}% 120
+\BOOKMARK [0][-]{appendix*.101}{Bibliograf\355a}{}% 120
 \BOOKMARK [0][-]{fin.0}{Fin}{}% 121
