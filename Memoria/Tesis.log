@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.9)  2 JUN 2018 14:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.9)  2 JUN 2018 15:37
 entering extended mode
 **./Tesis.tex
 (Tesis.tex
@@ -4772,82 +4772,134 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 7.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 32.
+(babel)             in language append on input line 27.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 32.
+(babel)             in language append on input line 27.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 32.
+(babel)             in language append on input line 27.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 32.
+(babel)             in language append on input line 27.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 32.
+(babel)             in language append on input line 27.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 32.
+(babel)             in language append on input line 27.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 32.
+(babel)             in language append on input line 27.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 32.
+(babel)             in language append on input line 27.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 32.
+(babel)             in language append on input line 27.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 32.
+(babel)             in language append on input line 27.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 32.
+(babel)             in language append on input line 27.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 32.
+(babel)             in language append on input line 27.
 [85]
-LaTeX Info: Redefining \. on input line 60.
-LaTeX Info: Redefining \% on input line 60.
+LaTeX Info: Redefining \. on input line 39.
+LaTeX Info: Redefining \% on input line 39.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 60.
+(babel)             in language append on input line 39.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 60.
+(babel)             in language append on input line 39.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 60.
+(babel)             in language append on input line 39.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 60.
+(babel)             in language append on input line 39.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 60.
+(babel)             in language append on input line 39.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 60.
+(babel)             in language append on input line 39.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 60.
+(babel)             in language append on input line 39.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 60.
+(babel)             in language append on input line 39.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 60.
+(babel)             in language append on input line 39.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 60.
+(babel)             in language append on input line 39.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 60.
+(babel)             in language append on input line 39.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 60.
- [86])
+(babel)             in language append on input line 39.
+ [86]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 174.
+(babel)             in language append on input line 68.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 174.
+(babel)             in language append on input line 68.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 174.
+(babel)             in language append on input line 68.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 174.
+(babel)             in language append on input line 68.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 174.
+(babel)             in language append on input line 68.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 174.
+(babel)             in language append on input line 68.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 174.
+(babel)             in language append on input line 68.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 174.
+(babel)             in language append on input line 68.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 174.
+(babel)             in language append on input line 68.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 174.
+(babel)             in language append on input line 68.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 174.
+(babel)             in language append on input line 68.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 174.
+(babel)             in language append on input line 68.
  [87]
+LaTeX Info: Redefining \. on input line 88.
+LaTeX Info: Redefining \% on input line 88.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 88.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 88.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 88.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 88.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 88.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 88.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 88.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 88.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 88.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 88.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 88.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 88.
+ [88])
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 174.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 174.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 174.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 174.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 174.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 174.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 174.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 174.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 174.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 174.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 174.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 174.
+ [89]
 \openout2 = `Capitulos/09Capitulo9.aux'.
 
  (Capitulos/09Capitulo9.tex
@@ -4875,7 +4927,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 8.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 8.
- [88
+ [90
 
 
 
@@ -4917,7 +4969,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 20.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 20.
-[89]
+[91]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 32.
@@ -4946,7 +4998,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 32.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 32.
- [90])
+ [92])
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 175.
 Package babel Info: Redefining spanish shorthand >>
@@ -4972,7 +5024,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 175.
 
-[91]
+[93]
 \openout2 = `Capitulos/10Capitulo10.aux'.
 
  (Capitulos/10Capitulo10.tex
@@ -5000,7 +5052,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 8.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 8.
- [92
+ [94
 
 
 
@@ -5054,7 +5106,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 27.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 27.
-[93]
+[95]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 37.
 Package babel Info: Redefining spanish shorthand >>
@@ -5096,7 +5148,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 42.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 42.
- [94]
+ [96]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 50.
@@ -5125,7 +5177,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 50.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 50.
- [95]
+ [97]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 56.
 Package babel Info: Redefining spanish shorthand >>
@@ -5165,7 +5217,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 65.
 
-[96])
+[98])
 LaTeX Info: Redefining \. on input line 176.
 LaTeX Info: Redefining \% on input line 176.
 Package babel Info: Redefining spanish shorthand <<
@@ -5192,7 +5244,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 176.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 176.
- [97]
+ [99]
 \openout2 = `Capitulos/11Capitulo11.aux'.
 
  (Capitulos/11Capitulo11.tex
@@ -5220,7 +5272,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 8.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 8.
- [98
+ [100
 
 
 
@@ -5286,7 +5338,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 25.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 25.
-[99]
+[101]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 26.
 Package babel Info: Redefining spanish shorthand >>
@@ -5361,7 +5413,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 52.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 52.
- [100]
+ [102]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 56.
 Package babel Info: Redefining spanish shorthand >>
@@ -5405,7 +5457,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 63.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 63.
-[101]
+[103]
 Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
@@ -5464,7 +5516,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 85.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 85.
- [102]
+ [104]
 Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
@@ -5516,7 +5568,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 177.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 177.
- [103]
+ [105]
 \openout2 = `Capitulos/12Capitulo12.aux'.
 
  (Capitulos/12Capitulo12.tex
@@ -5544,7 +5596,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 7.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 7.
- [104
+ [106
 
 
 
@@ -5702,7 +5754,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 52.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 52.
- [105]
+ [107]
 Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
@@ -5738,7 +5790,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 62.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 62.
-[106]
+[108]
 Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
@@ -5802,7 +5854,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 83.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 83.
- [107]
+ [109]
 Underfull \hbox (badness 10000) in paragraph at lines 86--87
 
  []
@@ -5839,7 +5891,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 178.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 178.
- [108]
+ [110]
 \openout2 = `Apendices/01ApendiceA.aux'.
 
  (Apendices/01ApendiceA.tex
@@ -5928,7 +5980,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 32.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 32.
-[109
+[111
 
 
 
@@ -6010,7 +6062,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 47.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 47.
- [110]
+ [112]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 48.
 Package babel Info: Redefining spanish shorthand >>
@@ -6074,7 +6126,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 61.
 
-[111]
+[113]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 61.
 Package babel Info: Redefining spanish shorthand >>
@@ -6137,7 +6189,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 84.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 84.
- [112]
+ [114]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Info: Redefining \. on input line 112.
@@ -6166,7 +6218,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 112.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 112.
- [113]
+ [115]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 124.
 Package babel Info: Redefining spanish shorthand >>
@@ -6218,7 +6270,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 133.
 
-[114]
+[116]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 136.
 Package babel Info: Redefining spanish shorthand >>
@@ -6272,7 +6324,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 145.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 145.
- [115]
+ [117]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 146.
 Package babel Info: Redefining spanish shorthand >>
@@ -6326,7 +6378,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 157.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 157.
- [116]
+ [118]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 157.
 Package babel Info: Redefining spanish shorthand >>
@@ -6390,7 +6442,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 177.
 
-[117]
+[119]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 178.
 Package babel Info: Redefining spanish shorthand >>
@@ -6442,7 +6494,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 182.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 182.
- [118]
+ [120]
 LaTeX Info: Redefining \. on input line 182.
 LaTeX Info: Redefining \% on input line 182.
 Package babel Info: Redefining spanish shorthand <<
@@ -6469,7 +6521,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 182.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 182.
- [119]
+ [121]
 \openout2 = `Apendices/02ApendiceB.aux'.
 
  (Apendices/02ApendiceB.tex
@@ -6497,7 +6549,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 7.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 7.
- [120
+ [122
 
 
 
@@ -6515,196 +6567,196 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 7.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 7.
-<Imagenes/Bitmap/Capitulo7/inicio_s1.png, id=1622, 904.88063pt x 475.02469pt>
-File: Imagenes/Bitmap/Capitulo7/inicio_s1.png Graphic file (type png)
-<use Imagenes/Bitmap/Capitulo7/inicio_s1.png>
-Package pdftex.def Info: Imagenes/Bitmap/Capitulo7/inicio_s1.png  used on input
+<Imagenes/Bitmap/Apendices/inicio_s1.png, id=1631, 904.88063pt x 475.02469pt>
+File: Imagenes/Bitmap/Apendices/inicio_s1.png Graphic file (type png)
+<use Imagenes/Bitmap/Apendices/inicio_s1.png>
+Package pdftex.def Info: Imagenes/Bitmap/Apendices/inicio_s1.png  used on input
  line 14. on input line 14.
 Package pdftex.def Info: Requested size: 323.9978pt x 170.08096pt on input line
  14.
-<Imagenes/Bitmap/Capitulo7/final_s1.png, id=1623, 830.35219pt x 705.38531pt>
-File: Imagenes/Bitmap/Capitulo7/final_s1.png Graphic file (type png)
-<use Imagenes/Bitmap/Capitulo7/final_s1.png>
-Package pdftex.def Info: Imagenes/Bitmap/Capitulo7/final_s1.png  used on input 
+<Imagenes/Bitmap/Apendices/final_s1.png, id=1632, 830.35219pt x 705.38531pt>
+File: Imagenes/Bitmap/Apendices/final_s1.png Graphic file (type png)
+<use Imagenes/Bitmap/Apendices/final_s1.png>
+Package pdftex.def Info: Imagenes/Bitmap/Apendices/final_s1.png  used on input 
 line 15. on input line 15.
 Package pdftex.def Info: Requested size: 323.9978pt x 275.22832pt on input line
  15.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagenes/Bitmap/Capitulo7/inicio_s2.png, id=1624, 828.84656pt x 720.44156pt>
-File: Imagenes/Bitmap/Capitulo7/inicio_s2.png Graphic file (type png)
-<use Imagenes/Bitmap/Capitulo7/inicio_s2.png>
-Package pdftex.def Info: Imagenes/Bitmap/Capitulo7/inicio_s2.png  used on input
+<Imagenes/Bitmap/Apendices/inicio_s2.png, id=1633, 828.84656pt x 720.44156pt>
+File: Imagenes/Bitmap/Apendices/inicio_s2.png Graphic file (type png)
+<use Imagenes/Bitmap/Apendices/inicio_s2.png>
+Package pdftex.def Info: Imagenes/Bitmap/Apendices/inicio_s2.png  used on input
  line 17. on input line 17.
 Package pdftex.def Info: Requested size: 323.9978pt x 281.61966pt on input line
  17.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagenes/Bitmap/Capitulo7/final_s2.png, id=1625, 983.17313pt x 479.54156pt>
-File: Imagenes/Bitmap/Capitulo7/final_s2.png Graphic file (type png)
-<use Imagenes/Bitmap/Capitulo7/final_s2.png>
-Package pdftex.def Info: Imagenes/Bitmap/Capitulo7/final_s2.png  used on input 
+<Imagenes/Bitmap/Apendices/final_s2.png, id=1634, 983.17313pt x 479.54156pt>
+File: Imagenes/Bitmap/Apendices/final_s2.png Graphic file (type png)
+<use Imagenes/Bitmap/Apendices/final_s2.png>
+Package pdftex.def Info: Imagenes/Bitmap/Apendices/final_s2.png  used on input 
 line 18. on input line 18.
 Package pdftex.def Info: Requested size: 323.9978pt x 158.02968pt on input line
  18.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagenes/Bitmap/Capitulo7/inicio_s3.png, id=1626, 983.17313pt x 478.03593pt>
-File: Imagenes/Bitmap/Capitulo7/inicio_s3.png Graphic file (type png)
-<use Imagenes/Bitmap/Capitulo7/inicio_s3.png>
-Package pdftex.def Info: Imagenes/Bitmap/Capitulo7/inicio_s3.png  used on input
+<Imagenes/Bitmap/Apendices/inicio_s3.png, id=1635, 983.17313pt x 478.03593pt>
+File: Imagenes/Bitmap/Apendices/inicio_s3.png Graphic file (type png)
+<use Imagenes/Bitmap/Apendices/inicio_s3.png>
+Package pdftex.def Info: Imagenes/Bitmap/Apendices/inicio_s3.png  used on input
  line 20. on input line 20.
 Package pdftex.def Info: Requested size: 323.9978pt x 157.53351pt on input line
  20.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagenes/Bitmap/Capitulo7/final_s3.png, id=1627, 950.80219pt x 660.21657pt>
-File: Imagenes/Bitmap/Capitulo7/final_s3.png Graphic file (type png)
-<use Imagenes/Bitmap/Capitulo7/final_s3.png>
-Package pdftex.def Info: Imagenes/Bitmap/Capitulo7/final_s3.png  used on input 
+<Imagenes/Bitmap/Apendices/final_s3.png, id=1636, 950.80219pt x 660.21657pt>
+File: Imagenes/Bitmap/Apendices/final_s3.png Graphic file (type png)
+<use Imagenes/Bitmap/Apendices/final_s3.png>
+Package pdftex.def Info: Imagenes/Bitmap/Apendices/final_s3.png  used on input 
 line 21. on input line 21.
 Package pdftex.def Info: Requested size: 323.9978pt x 224.97437pt on input line
  21.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagenes/Bitmap/Capitulo7/inicio_s4.png, id=1628, 948.54375pt x 658.71094pt>
-File: Imagenes/Bitmap/Capitulo7/inicio_s4.png Graphic file (type png)
-<use Imagenes/Bitmap/Capitulo7/inicio_s4.png>
-Package pdftex.def Info: Imagenes/Bitmap/Capitulo7/inicio_s4.png  used on input
+<Imagenes/Bitmap/Apendices/inicio_s4.png, id=1637, 948.54375pt x 658.71094pt>
+File: Imagenes/Bitmap/Apendices/inicio_s4.png Graphic file (type png)
+<use Imagenes/Bitmap/Apendices/inicio_s4.png>
+Package pdftex.def Info: Imagenes/Bitmap/Apendices/inicio_s4.png  used on input
  line 23. on input line 23.
 Package pdftex.def Info: Requested size: 323.9978pt x 224.99402pt on input line
  23.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagenes/Bitmap/Capitulo7/final_s4.png, id=1629, 949.29657pt x 660.21657pt>
-File: Imagenes/Bitmap/Capitulo7/final_s4.png Graphic file (type png)
-<use Imagenes/Bitmap/Capitulo7/final_s4.png>
-Package pdftex.def Info: Imagenes/Bitmap/Capitulo7/final_s4.png  used on input 
+<Imagenes/Bitmap/Apendices/final_s4.png, id=1638, 949.29657pt x 660.21657pt>
+File: Imagenes/Bitmap/Apendices/final_s4.png Graphic file (type png)
+<use Imagenes/Bitmap/Apendices/final_s4.png>
+Package pdftex.def Info: Imagenes/Bitmap/Apendices/final_s4.png  used on input 
 line 24. on input line 24.
 Package pdftex.def Info: Requested size: 323.9978pt x 225.32695pt on input line
  24.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagenes/Bitmap/Capitulo7/inicio_s5.png, id=1630, 923.70094pt x 445.665pt>
-File: Imagenes/Bitmap/Capitulo7/inicio_s5.png Graphic file (type png)
-<use Imagenes/Bitmap/Capitulo7/inicio_s5.png>
-Package pdftex.def Info: Imagenes/Bitmap/Capitulo7/inicio_s5.png  used on input
+<Imagenes/Bitmap/Apendices/inicio_s5.png, id=1639, 923.70094pt x 445.665pt>
+File: Imagenes/Bitmap/Apendices/inicio_s5.png Graphic file (type png)
+<use Imagenes/Bitmap/Apendices/inicio_s5.png>
+Package pdftex.def Info: Imagenes/Bitmap/Apendices/inicio_s5.png  used on input
  line 26. on input line 26.
 Package pdftex.def Info: Requested size: 323.9978pt x 156.3183pt on input line 
 26.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagenes/Bitmap/Capitulo7/final_s5.png, id=1631, 949.29657pt x 646.66594pt>
-File: Imagenes/Bitmap/Capitulo7/final_s5.png Graphic file (type png)
-<use Imagenes/Bitmap/Capitulo7/final_s5.png>
-Package pdftex.def Info: Imagenes/Bitmap/Capitulo7/final_s5.png  used on input 
+<Imagenes/Bitmap/Apendices/final_s5.png, id=1640, 949.29657pt x 646.66594pt>
+File: Imagenes/Bitmap/Apendices/final_s5.png Graphic file (type png)
+<use Imagenes/Bitmap/Apendices/final_s5.png>
+Package pdftex.def Info: Imagenes/Bitmap/Apendices/final_s5.png  used on input 
 line 27. on input line 27.
 Package pdftex.def Info: Requested size: 323.9978pt x 220.70222pt on input line
  27.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagenes/Bitmap/Capitulo7/inicio_s6.png, id=1632, 947.79094pt x 647.41875pt>
-File: Imagenes/Bitmap/Capitulo7/inicio_s6.png Graphic file (type png)
-<use Imagenes/Bitmap/Capitulo7/inicio_s6.png>
-Package pdftex.def Info: Imagenes/Bitmap/Capitulo7/inicio_s6.png  used on input
+<Imagenes/Bitmap/Apendices/inicio_s6.png, id=1641, 947.79094pt x 647.41875pt>
+File: Imagenes/Bitmap/Apendices/inicio_s6.png Graphic file (type png)
+<use Imagenes/Bitmap/Apendices/inicio_s6.png>
+Package pdftex.def Info: Imagenes/Bitmap/Apendices/inicio_s6.png  used on input
  line 29. on input line 29.
 Package pdftex.def Info: Requested size: 323.9978pt x 221.31479pt on input line
  29.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagenes/Bitmap/Capitulo7/final_s6.png, id=1633, 947.03813pt x 648.17157pt>
-File: Imagenes/Bitmap/Capitulo7/final_s6.png Graphic file (type png)
-<use Imagenes/Bitmap/Capitulo7/final_s6.png>
-Package pdftex.def Info: Imagenes/Bitmap/Capitulo7/final_s6.png  used on input 
+<Imagenes/Bitmap/Apendices/final_s6.png, id=1642, 947.03813pt x 648.17157pt>
+File: Imagenes/Bitmap/Apendices/final_s6.png Graphic file (type png)
+<use Imagenes/Bitmap/Apendices/final_s6.png>
+Package pdftex.def Info: Imagenes/Bitmap/Apendices/final_s6.png  used on input 
 line 30. on input line 30.
 Package pdftex.def Info: Requested size: 323.9978pt x 221.75017pt on input line
  30.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagenes/Bitmap/Capitulo7/inicio_s7.png, id=1634, 949.29657pt x 620.3175pt>
-File: Imagenes/Bitmap/Capitulo7/inicio_s7.png Graphic file (type png)
-<use Imagenes/Bitmap/Capitulo7/inicio_s7.png>
-Package pdftex.def Info: Imagenes/Bitmap/Capitulo7/inicio_s7.png  used on input
+<Imagenes/Bitmap/Apendices/inicio_s7.png, id=1643, 949.29657pt x 620.3175pt>
+File: Imagenes/Bitmap/Apendices/inicio_s7.png Graphic file (type png)
+<use Imagenes/Bitmap/Apendices/inicio_s7.png>
+Package pdftex.def Info: Imagenes/Bitmap/Apendices/inicio_s7.png  used on input
  line 32. on input line 32.
 Package pdftex.def Info: Requested size: 323.9978pt x 211.7097pt on input line 
 32.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagenes/Bitmap/Capitulo7/final_s7.png, id=1635, 942.52126pt x 587.19376pt>
-File: Imagenes/Bitmap/Capitulo7/final_s7.png Graphic file (type png)
-<use Imagenes/Bitmap/Capitulo7/final_s7.png>
-Package pdftex.def Info: Imagenes/Bitmap/Capitulo7/final_s7.png  used on input 
+<Imagenes/Bitmap/Apendices/final_s7.png, id=1644, 942.52126pt x 587.19376pt>
+File: Imagenes/Bitmap/Apendices/final_s7.png Graphic file (type png)
+<use Imagenes/Bitmap/Apendices/final_s7.png>
+Package pdftex.def Info: Imagenes/Bitmap/Apendices/final_s7.png  used on input 
 line 33. on input line 33.
 Package pdftex.def Info: Requested size: 323.9978pt x 201.84735pt on input line
  33.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagenes/Bitmap/Capitulo7/inicio_s8.png, id=1636, 942.52126pt x 585.68813pt>
-File: Imagenes/Bitmap/Capitulo7/inicio_s8.png Graphic file (type png)
-<use Imagenes/Bitmap/Capitulo7/inicio_s8.png>
-Package pdftex.def Info: Imagenes/Bitmap/Capitulo7/inicio_s8.png  used on input
+<Imagenes/Bitmap/Apendices/inicio_s8.png, id=1645, 942.52126pt x 585.68813pt>
+File: Imagenes/Bitmap/Apendices/inicio_s8.png Graphic file (type png)
+<use Imagenes/Bitmap/Apendices/inicio_s8.png>
+Package pdftex.def Info: Imagenes/Bitmap/Apendices/inicio_s8.png  used on input
  line 35. on input line 35.
 Package pdftex.def Info: Requested size: 323.9978pt x 201.32979pt on input line
  35.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagenes/Bitmap/Capitulo7/final_s8.png, id=1637, 1051.67906pt x 690.32906pt>
-File: Imagenes/Bitmap/Capitulo7/final_s8.png Graphic file (type png)
-<use Imagenes/Bitmap/Capitulo7/final_s8.png>
-Package pdftex.def Info: Imagenes/Bitmap/Capitulo7/final_s8.png  used on input 
+<Imagenes/Bitmap/Apendices/final_s8.png, id=1646, 1051.67906pt x 690.32906pt>
+File: Imagenes/Bitmap/Apendices/final_s8.png Graphic file (type png)
+<use Imagenes/Bitmap/Apendices/final_s8.png>
+Package pdftex.def Info: Imagenes/Bitmap/Apendices/final_s8.png  used on input 
 line 36. on input line 36.
 Package pdftex.def Info: Requested size: 323.9978pt x 212.67256pt on input line
  36.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagenes/Bitmap/Capitulo7/inicio_s9.png, id=1638, 1048.66782pt x 687.31781pt>
-File: Imagenes/Bitmap/Capitulo7/inicio_s9.png Graphic file (type png)
-<use Imagenes/Bitmap/Capitulo7/inicio_s9.png>
-Package pdftex.def Info: Imagenes/Bitmap/Capitulo7/inicio_s9.png  used on input
+<Imagenes/Bitmap/Apendices/inicio_s9.png, id=1647, 1048.66782pt x 687.31781pt>
+File: Imagenes/Bitmap/Apendices/inicio_s9.png Graphic file (type png)
+<use Imagenes/Bitmap/Apendices/inicio_s9.png>
+Package pdftex.def Info: Imagenes/Bitmap/Apendices/inicio_s9.png  used on input
  line 38. on input line 38.
 Package pdftex.def Info: Requested size: 323.9978pt x 212.35316pt on input line
  38.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagenes/Bitmap/Capitulo7/final_s9.png, id=1639, 1048.66782pt x 688.82344pt>
-File: Imagenes/Bitmap/Capitulo7/final_s9.png Graphic file (type png)
-<use Imagenes/Bitmap/Capitulo7/final_s9.png>
-Package pdftex.def Info: Imagenes/Bitmap/Capitulo7/final_s9.png  used on input 
+<Imagenes/Bitmap/Apendices/final_s9.png, id=1648, 1048.66782pt x 688.82344pt>
+File: Imagenes/Bitmap/Apendices/final_s9.png Graphic file (type png)
+<use Imagenes/Bitmap/Apendices/final_s9.png>
+Package pdftex.def Info: Imagenes/Bitmap/Apendices/final_s9.png  used on input 
 line 39. on input line 39.
 Package pdftex.def Info: Requested size: 323.9978pt x 212.81834pt on input line
  39.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-File: Imagenes/Bitmap/Capitulo7/final_s9.png Graphic file (type png)
-<use Imagenes/Bitmap/Capitulo7/final_s9.png>
-Package pdftex.def Info: Imagenes/Bitmap/Capitulo7/final_s9.png  used on input 
+File: Imagenes/Bitmap/Apendices/final_s9.png Graphic file (type png)
+<use Imagenes/Bitmap/Apendices/final_s9.png>
+Package pdftex.def Info: Imagenes/Bitmap/Apendices/final_s9.png  used on input 
 line 41. on input line 41.
 Package pdftex.def Info: Requested size: 323.9978pt x 212.81834pt on input line
  41.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Imagenes/Bitmap/Capitulo7/final_s10.png, id=1640, 1047.16219pt x 686.565pt>
-File: Imagenes/Bitmap/Capitulo7/final_s10.png Graphic file (type png)
-<use Imagenes/Bitmap/Capitulo7/final_s10.png>
-Package pdftex.def Info: Imagenes/Bitmap/Capitulo7/final_s10.png  used on input
+<Imagenes/Bitmap/Apendices/final_s10.png, id=1649, 1047.16219pt x 686.565pt>
+File: Imagenes/Bitmap/Apendices/final_s10.png Graphic file (type png)
+<use Imagenes/Bitmap/Apendices/final_s10.png>
+Package pdftex.def Info: Imagenes/Bitmap/Apendices/final_s10.png  used on input
  line 42. on input line 42.
 Package pdftex.def Info: Requested size: 323.9978pt x 212.42438pt on input line
  42.
@@ -6736,7 +6788,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 183.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 183.
- [121 <./Imagenes/Bitmap/Capitulo7/inicio_s1.png>]
+ [123 <./Imagenes/Bitmap/Apendices/inicio_s1.png>]
 LaTeX Info: Redefining \. on input line 183.
 LaTeX Info: Redefining \% on input line 183.
 Package babel Info: Redefining spanish shorthand <<
@@ -6763,7 +6815,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 183.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 183.
- [122 <./Imagenes/Bitmap/Capitulo7/final_s1.png>]
+ [124 <./Imagenes/Bitmap/Apendices/final_s1.png>]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 183.
 Package babel Info: Redefining spanish shorthand >>
@@ -6788,7 +6840,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 183.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 183.
- [123 <./Imagenes/Bitmap/Capitulo7/inicio_s2.png> <./Imagenes/Bitmap/Capitulo7/
+ [125 <./Imagenes/Bitmap/Apendices/inicio_s2.png> <./Imagenes/Bitmap/Apendices/
 final_s2.png>]
 LaTeX Info: Redefining \. on input line 183.
 LaTeX Info: Redefining \% on input line 183.
@@ -6816,7 +6868,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 183.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 183.
- [124 <./Imagenes/Bitmap/Capitulo7/inicio_s3.png> <./Imagenes/Bitmap/Capitulo7/
+ [126 <./Imagenes/Bitmap/Apendices/inicio_s3.png> <./Imagenes/Bitmap/Apendices/
 final_s3.png>]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 183.
@@ -6842,7 +6894,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 183.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 183.
- [125 <./Imagenes/Bitmap/Capitulo7/inicio_s4.png> <./Imagenes/Bitmap/Capitulo7/
+ [127 <./Imagenes/Bitmap/Apendices/inicio_s4.png> <./Imagenes/Bitmap/Apendices/
 final_s4.png>]
 LaTeX Info: Redefining \. on input line 183.
 LaTeX Info: Redefining \% on input line 183.
@@ -6870,7 +6922,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 183.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 183.
- [126 <./Imagenes/Bitmap/Capitulo7/inicio_s5.png> <./Imagenes/Bitmap/Capitulo7/
+ [128 <./Imagenes/Bitmap/Apendices/inicio_s5.png> <./Imagenes/Bitmap/Apendices/
 final_s5.png>]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 183.
@@ -6897,7 +6949,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 183.
 
-[127 <./Imagenes/Bitmap/Capitulo7/inicio_s6.png> <./Imagenes/Bitmap/Capitulo7/f
+[129 <./Imagenes/Bitmap/Apendices/inicio_s6.png> <./Imagenes/Bitmap/Apendices/f
 inal_s6.png>]
 LaTeX Info: Redefining \. on input line 183.
 LaTeX Info: Redefining \% on input line 183.
@@ -6925,7 +6977,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 183.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 183.
- [128 <./Imagenes/Bitmap/Capitulo7/inicio_s7.png> <./Imagenes/Bitmap/Capitulo7/
+ [130 <./Imagenes/Bitmap/Apendices/inicio_s7.png> <./Imagenes/Bitmap/Apendices/
 final_s7.png>]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 183.
@@ -6951,7 +7003,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 183.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 183.
- [129 <./Imagenes/Bitmap/Capitulo7/inicio_s8.png> <./Imagenes/Bitmap/Capitulo7/
+ [131 <./Imagenes/Bitmap/Apendices/inicio_s8.png> <./Imagenes/Bitmap/Apendices/
 final_s8.png>]
 LaTeX Info: Redefining \. on input line 183.
 LaTeX Info: Redefining \% on input line 183.
@@ -6979,7 +7031,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 183.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 183.
- [130 <./Imagenes/Bitmap/Capitulo7/inicio_s9.png> <./Imagenes/Bitmap/Capitulo7/
+ [132 <./Imagenes/Bitmap/Apendices/inicio_s9.png> <./Imagenes/Bitmap/Apendices/
 final_s9.png>]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 183.
@@ -7005,7 +7057,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 183.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 183.
- [131 <./Imagenes/Bitmap/Capitulo7/final_s10.png>]
+ [133 <./Imagenes/Bitmap/Apendices/final_s10.png>]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 187.
 Package babel Info: Redefining spanish shorthand >>
@@ -7030,7 +7082,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 187.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 187.
- [132
+ [134
 
 
 ]
@@ -7073,7 +7125,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 76.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 76.
- [133
+ [135
 
 
 ]
@@ -7107,7 +7159,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 161.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 161.
-[134]
+[136]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 164.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
@@ -7140,7 +7192,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 193.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 193.
- [135]
+ [137]
 \openout2 = `Cascaras/fin.aux'.
 
 
@@ -7181,7 +7233,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 48.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 48.
- [136
+ [138
 
 
 ])
@@ -7214,9 +7266,9 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 230.
  ) 
 Here is how much of TeX's memory you used:
- 11845 strings out of 493312
- 185710 string characters out of 3138897
- 286956 words of memory out of 3000000
+ 11848 strings out of 493312
+ 185752 string characters out of 3138897
+ 286959 words of memory out of 3000000
  14324 multiletter control sequences out of 15000+200000
  25111 words of font info for 51 fonts, out of 3000000 for 9000
  1379 hyphenation exceptions out of 8191
@@ -7246,9 +7298,9 @@ X\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk> <C:\Users\Paloma\AppData\
 Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\Palo
 ma\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx2074.pk><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Tesis.pdf (154 pages, 5846890 bytes).
+Output written on Tesis.pdf (156 pages, 5851176 bytes).
 PDF statistics:
- 2699 PDF objects out of 2984 (max. 8388607)
- 440 named destinations out of 1000 (max. 500000)
+ 2707 PDF objects out of 2984 (max. 8388607)
+ 442 named destinations out of 1000 (max. 500000)
  1274 words of extra memory for PDF output out of 10000 (max. 10000000)
 
