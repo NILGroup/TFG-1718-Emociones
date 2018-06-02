@@ -1,4 +1,4 @@
-\babel@toc {spanish}{}
+\select@language {spanish}
 \contentsline {chapter}{Agradecimientos}{\es@scroman {v}}{chapter*.1}
 \contentsline {chapter}{Resumen/Summary}{\es@scroman {vii}}{chapter*.2}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}{chapter.1}
@@ -109,31 +109,17 @@
 \contentsline {subsection}{\numberline {12.1.6}Applied Knowledge}{114}{subsection.12.1.6}
 \contentsline {subsection}{\numberline {12.1.7}Acquired knowledge}{114}{subsection.12.1.7}
 \contentsline {section}{\numberline {12.2}Future Work}{114}{section.12.2}
-\contentsline {chapter}{\numberline {A}Casos de prueba}{117}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Cuentos}{117}{section.Alph1.1}
-\contentsline {subsection}{\numberline {A.1.1}Blancanieves}{117}{subsection.Alph1.1.1}
-\contentsline {subsection}{\numberline {A.1.2}Blancanieves y sus amigos}{117}{subsection.Alph1.1.2}
-\contentsline {subsection}{\numberline {A.1.3}La sirenita}{118}{subsection.Alph1.1.3}
-\contentsline {subsection}{\numberline {A.1.4}La bella durmiente}{118}{subsection.Alph1.1.4}
-\contentsline {subsection}{\numberline {A.1.5}La margarita}{118}{subsection.Alph1.1.5}
-\contentsline {subsection}{\numberline {A.1.6}La bella y la bestia}{118}{subsection.Alph1.1.6}
-\contentsline {subsection}{\numberline {A.1.7}El castillo de Bestia}{119}{subsection.Alph1.1.7}
-\contentsline {subsection}{\numberline {A.1.8}Cenicienta}{119}{subsection.Alph1.1.8}
-\contentsline {subsection}{\numberline {A.1.9}Mul\'an}{119}{subsection.Alph1.1.9}
-\contentsline {subsection}{\numberline {A.1.10}Pinocho}{119}{subsection.Alph1.1.10}
-\contentsline {subsection}{\numberline {A.1.11}Pocahontas}{120}{subsection.Alph1.1.11}
-\contentsline {subsection}{\numberline {A.1.12}Aladd\IeC {\'\i }n}{120}{subsection.Alph1.1.12}
-\contentsline {subsection}{\numberline {A.1.13}El ratoncito P\'erez}{120}{subsection.Alph1.1.13}
-\contentsline {section}{\numberline {A.2}Noticias}{122}{section.Alph1.2}
-\contentsline {subsection}{\numberline {A.2.1}Noticia asesinato}{122}{subsection.Alph1.2.1}
-\contentsline {subsection}{\numberline {A.2.2}Noticia nacimiento}{123}{subsection.Alph1.2.2}
-\contentsline {subsection}{\numberline {A.2.3}Noticia OMS}{124}{subsection.Alph1.2.3}
-\contentsline {subsection}{\numberline {A.2.4}Noticia politica}{124}{subsection.Alph1.2.4}
-\contentsline {section}{\numberline {A.3}Entradas de Blog}{125}{section.Alph1.3}
-\contentsline {subsection}{\numberline {A.3.1}Blog agradecimiento}{125}{subsection.Alph1.3.1}
-\contentsline {subsection}{\numberline {A.3.2}Blog moda}{125}{subsection.Alph1.3.2}
-\contentsline {subsection}{\numberline {A.3.3}Blog reflexi\'on}{125}{subsection.Alph1.3.3}
-\contentsline {subsection}{\numberline {A.3.4}Blog muerte}{126}{subsection.Alph1.3.4}
-\contentsline {subsection}{\numberline {A.3.5}Blog enfado}{127}{subsection.Alph1.3.5}
-\contentsline {chapter}{\numberline {B}Im\'agenes de tableros de sprints}{129}{appendix.Alph2}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{141}{appendix*.101}
+\contentsline {chapter}{\numberline {A}Prototipos iteraci\'on competitiva}{117}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Prototipo de Gema}{117}{section.Alph1.1}
+\contentsline {section}{\numberline {A.2}Prototipo de Elena}{128}{section.Alph1.2}
+\contentsline {section}{\numberline {A.3}Prototipo de Paloma}{140}{section.Alph1.3}
+\contentsline {chapter}{\numberline {B}Prototipo segunda iteracion}{151}{appendix.Alph2}
+\contentsline {chapter}{\numberline {C}Prototipo final}{179}{appendix.Alph3}
+\contentsline {chapter}{\numberline {D}Formularios evaluaci\'on preliminar}{181}{appendix.Alph4}
+\contentsline {section}{\numberline {D.1}Formulario preliminar usuarios finales}{181}{section.Alph4.1}
+\contentsline {section}{\numberline {D.2}Formulario preliminar expertos}{188}{section.Alph4.2}
+\contentsline {chapter}{\numberline {E}Formularios evaluaci\'on final}{195}{appendix.Alph5}
+\contentsline {section}{\numberline {E.1}Formulario final usuarios finales}{195}{section.Alph5.1}
+\contentsline {section}{\numberline {E.2}Formulario final expertos}{203}{section.Alph5.2}
+\contentsline {chapter}{\numberline {F}Im\'agenes de tableros de sprints}{211}{appendix.Alph6}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{223}{appendix*.101}
