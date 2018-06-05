@@ -128,6 +128,9 @@ Una vez que tenemos la suma de los grados para cada una de las categorías emocio
 		\end{center}
 \end{table}
 
+Teniendo en cuenta que no hay ninguna palabra totalmente carente de emoción (con todos sus grados a uno) en nuestro diccionario, si alguna de las palabras que se procesan a la hora de realizar estos cálculos tiene todos sus grados a uno sabremos que es una palabra que no está en nuestro diccionario y no la tendremos en cuenta: restaremos uno al número de palabras emocionales que hay en la frase. Por ejemplo, si tenemos que analizar la frase ``He quedado con mi madre para tomar un té.'' ésta tiene tres palabras emocionales: ``quedado'', ``madre'' y ``té''. La palabra ``té'' no está en nuestro diccionario así que el número de palabras emocionales se reduciría a dos y, por lo tanto, se dividirían las sumas obtenidas entre este nuevo valor.
+
+ 
 \subsection{Emoción mayoritaria de una frase}
 Para hallar la emoción mayoritaria de una frase necesitamos primero obtener los grados finales para cada categoría emocional, es decir hacemos uso del servicio web explicado en la sección 5.3.2. Necesitamos estos grados ya que es la única manera de saber cuál de ellos es el mayor. Una vez que los tenemos, comparamos sus valores y nos quedamos con el más grande. Por ejemplo, la frase ``Me gustan las naranjas'' tiene los siguientes grados finales:
 
@@ -169,6 +172,7 @@ Analizar un texto consiste, básicamente, en partirlo en frases y obtener la carg
 
 Las frases se obtienen partiendo el texto cada vez que se encuentre un ``.''. Una vez que se tienen todas las frases del texto hay que realizar un análisis más profundo ya que las frases interrogativas y las exclamativas al no acabar en un punto no están debidamente separadas, aparecen unidas a otra frase. Por lo tanto, tenemos que realizar una segunda partición que se aplicará a cada una de las frases obtenidas. En esta ocasión la frase se partirá cada vez que se encuentre un signo de exclamación o de interrogación. De esta manera ya tenemos todas las frases que forman el texto. A cada frase le asignaremos un tipo: enunciativa, interrogativa o exclamativa y según su tipo tendrá más o menos peso dentro del análisis. Las exclamativas tienen el doble de peso que las enunciativas mientras que las interrogativas tienen la mitad. 
 
+\subsection{Grados emocionales finales de un texto}
 El análisis afectivo se realiza siguiendo un procedimiento bastante similar al seguido a la hora de analizar las frases. En este caso, obtenemos los grados emocionales finales para cada una de las frases mediante el servicio web dedicado a ello (ver sección 5.3.2) y los sumamos teniendo en cuenta el peso de cada frase: si es enunciativa se suman los grados tal cual, si es exclamativa antes de sumar los grados se multiplican por dos y si es interrogativa antes de sumar los grados se dividen entre dos. Una vez tenemos la suma se dividen los valores obtenidos entre el número de frases que tiene el texto. Por ejemplo, consideremos el siguiente texto:
 
 ``Ayer ví a tu hermano. ¡Qué guapo está! ¿Cuándo ha vuelto de Londrés?''
@@ -179,7 +183,7 @@ Frase 1: Ayer ví a tu hermano.
 
 Frase 2: ¡Qué guapo está!
 
-Frase 3: ¿Cuándo ha vuelto de Londrés?
+Frase 3: ¿Cuándo ha vuelto de Paris?
 
 En la tabla \ref{tabla:analisis_texto} se puede observar el proceso análisis. Primero obtenemos los grados finales para cada frase, después los adaptamos al peso de la frase y sumamos todos los pesos para, finalmente, dividir los valores obtenidos entre el número de frases, en este caso tres. La tercera frase es carente de emoción, no contiene ninguna palabra emocional que esté en nuestro diccionario, por ello se le asignan ceros a los grados emocionales ya que si tuviesen valores podría alterar la media realizada. El texto resulta ser alegre en un grado de 3,95. 
 
@@ -204,14 +208,37 @@ En la tabla \ref{tabla:analisis_texto} se puede observar el proceso análisis. Pr
 		\end{center}
 \end{table}
 
-Para calcular la emoción mayoritaria de un texto hay que obtener sus grados finales y compararlos para quedarnos con el mayor. En el caso del texto que hemos utilizado de ejemplo la emoción mayoritaria es alegría con un grado de 3,95. No hemos considerado la posibilidad de que haya más de una emoción mayoritaria en un texto debido a la poca probabilidad de que esto ocurra.
+\subsection{Emoción mayoritaria de un texto}
+Para calcular la emoción mayoritaria de un texto hay que obtener sus grados finales y compararlos para quedarnos con el mayor. Este servicio es, por lo tanto, el equivalente del descrito en la sección 5.3.3 pero aplicado a textos. Por ejemplo, si el texto que queremos analizar es: ``Me he encontrado con Ana esta mañana. Me ha dicho que su madre está mejor. Me alegro mucho por ella.'' el servicio presentado en la sección 5.4.1 nos devuelve los grados que se pueden ver en la figura \ref{fig:gradostxt}. Se ve que la emoción mayoritaria del texto es alegría con un grado de 4,26. Podemos ver que esta es precisamente la información que devuelve el servicio para la emoción mayoritaria de un texto en la figura \ref{fig:maytxt} y que la forma en la que se muestra es idéntica a la del servicio para la emoción mayoritaria de una frase.
+
+\figura{Bitmap/Capitulo4/gradostxt}{width=0.6\textwidth}{fig:gradostxt}{Respuesta JSON para los grados de un texto.}
+\figura{Bitmap/Capitulo4/maytxt}{width=0.6\textwidth}{fig:gradostxt}{Respuesta JSON para la emoción mayoritaria de un texto.}
+
+No hemos considerado la posibilidad de que haya más de una emoción mayoritaria en un texto debido a la poca probabilidad de que esto ocurra.
+
+\subsection{Palabras emocionales de un texto}
+Este es el servicio que utilizará la aplicación web que vamos a desarrollar. Se encarga de combinar los resultados devueltos por el servicio de la sección 5.4.1, los grados emocionales finales de un texto, con una lista de las palabras emocionales que contiene el texto. Esta lista se obtiene juntando las listas de palabras emocionales de todas las frases que componen el texto. Por ejemplo, para el texto ``Luis es un chico muy agradable. No me gusta verle tan triste.'' los grados emocionales finales que obtenemos con el servicio correspondiente son:
+
+Tristeza: 1,98
+
+Miedo: 1,57
+
+Alegría: 3,17
+
+Enfado: 1,40
+
+Asco: 1,22
+
+Además de esta lista de grados se devuelve la lista de palabras que han llevado al resultado obtenido (Figura \ref{fig:pal}). Esta lista nos servirá para marcar las palabras emocionales dentro del texto a la hora de hacer el análisis.
+
+\figura{Bitmap/Capitulo4/p}{width=0.6\textwidth}{fig:pal}{Respuesta JSON que contiene la lista de palabras emocionales.}
 
 %-------------------------------------------------------------------
 \section{API EmoTraductor}
 %-------------------------------------------------------------------
 \label{cap5:sec:api}
 
-Con el objetivo de facilitar a los desarrolladores el uso de todos nuestros servicios hemos creado un API\footnote{http://sesat.fdi.ucm.es/apiEmoTraductor/}. Cuanta más gente tenga acceso a los servicios más beneficio tendrán estos para todos. Para ello es muy importante que exista esta API ya que nos permite contener una breve explicación de cada uno de los servicios junto la URL de su petición, la información sobre la respuesta que devuelve y varios ejemplos. La estructura que tiene nuestra API se puede apreciar en la figura \ref{fig:api}. Como se puede observar los servicios están divididos en cuatro bloques. El primer bloque contiene los servicios desarrollados para las palabras, el segundo contiene los servicios desarrollados para las frases, el tercero contiene aquellos desarrollados para los textos y el último contiene un par de servicios extra: uno que devuelve los grados emocionales y la emoción mayoritaria a la vez y otro que es el que utilizaremos en la aplicación web que devuelve los grados emocionales finales de un texto junto a la lista de palabras emocionales que han llevado a dicho resultado.
+Con el objetivo de facilitar a los desarrolladores el uso de todos nuestros servicios hemos creado un API\footnote{http://sesat.fdi.ucm.es/apiEmoTraductor/}. Cuanta más gente tenga acceso a los servicios más beneficio tendrán estos para todos. Para ello es muy importante que exista esta API ya que nos permite contener una breve explicación de cada uno de los servicios junto la URL de su petición, la información sobre la respuesta que devuelve y varios ejemplos. La estructura que tiene nuestra API se puede apreciar en la figura \ref{fig:api}. Como se puede observar los servicios están divididos en cuatro bloques. El primer bloque contiene los servicios desarrollados para las palabras, el segundo contiene los servicios desarrollados para las frases y el último contiene aquellos desarrollados para los textos.
 
 \figura{Bitmap/Capitulo4/api}{width=0.8\textwidth}{fig:api}{Estructura general de la API.}
 

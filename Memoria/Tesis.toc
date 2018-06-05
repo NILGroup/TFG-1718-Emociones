@@ -43,57 +43,60 @@
 \contentsline {subsection}{\numberline {5.3.2}Grados emocionales finales de una frase}{37}{subsection.5.3.2}
 \contentsline {subsection}{\numberline {5.3.3}Emoci\'on mayoritaria de una frase}{40}{subsection.5.3.3}
 \contentsline {section}{\numberline {5.4}An\'alisis afectivo de un texto}{41}{section.5.4}
-\contentsline {section}{\numberline {5.5}API EmoTraductor}{42}{section.5.5}
-\contentsline {chapter}{\numberline {6}EmoTraductor}{45}{chapter.6}
-\contentsline {section}{\numberline {6.1}Descripci\'on del problema a resolver}{45}{section.6.1}
-\contentsline {section}{\numberline {6.2}Dise\~no de la interfaz}{46}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Primera iteraci\'on: Iteraci\'on competitiva}{46}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Segunda iteraci\'on: Iteraci\'on con expertos}{48}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Tercera iteraci\'on: Prototipo final}{51}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Implementaci\'on de la aplicaci\'on final}{53}{section.6.3}
-\contentsline {chapter}{\numberline {7}Evaluaci\'on}{61}{chapter.7}
-\contentsline {section}{\numberline {7.1}Evaluaci\'on del m\'etodo}{61}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Cuentos}{61}{subsection.7.1.1}
-\contentsline {subsubsection}{\numberline {7.1.1.1}Blancanieves}{62}{subsubsection.7.1.1.1}
-\contentsline {subsubsection}{\numberline {7.1.1.2}Blancanieves y sus amigos}{62}{subsubsection.7.1.1.2}
-\contentsline {subsubsection}{\numberline {7.1.1.3}La sirenita}{62}{subsubsection.7.1.1.3}
-\contentsline {subsubsection}{\numberline {7.1.1.4}La bella durmiente}{63}{subsubsection.7.1.1.4}
-\contentsline {subsubsection}{\numberline {7.1.1.5}La margarita}{63}{subsubsection.7.1.1.5}
-\contentsline {subsubsection}{\numberline {7.1.1.6}La bella y la bestia}{64}{subsubsection.7.1.1.6}
-\contentsline {subsubsection}{\numberline {7.1.1.7}El castillo de Bestia}{64}{subsubsection.7.1.1.7}
-\contentsline {subsubsection}{\numberline {7.1.1.8}Cenicienta}{65}{subsubsection.7.1.1.8}
-\contentsline {subsubsection}{\numberline {7.1.1.9}Mul\'an}{65}{subsubsection.7.1.1.9}
-\contentsline {subsubsection}{\numberline {7.1.1.10}Pinocho}{66}{subsubsection.7.1.1.10}
-\contentsline {subsubsection}{\numberline {7.1.1.11}Pocahontas}{66}{subsubsection.7.1.1.11}
-\contentsline {subsubsection}{\numberline {7.1.1.12}Aladd\IeC {\'\i }n}{67}{subsubsection.7.1.1.12}
-\contentsline {subsubsection}{\numberline {7.1.1.13}El ratoncito P\'erez}{67}{subsubsection.7.1.1.13}
-\contentsline {subsection}{\numberline {7.1.2}Noticias}{70}{subsection.7.1.2}
-\contentsline {subsubsection}{\numberline {7.1.2.1}Noticia asesinato}{70}{subsubsection.7.1.2.1}
-\contentsline {subsubsection}{\numberline {7.1.2.2}Noticia nacimiento}{71}{subsubsection.7.1.2.2}
-\contentsline {subsubsection}{\numberline {7.1.2.3}Noticia OMS}{72}{subsubsection.7.1.2.3}
-\contentsline {subsubsection}{\numberline {7.1.2.4}Noticia pol\IeC {\'\i }tica}{72}{subsubsection.7.1.2.4}
-\contentsline {subsection}{\numberline {7.1.3}Blogs}{73}{subsection.7.1.3}
-\contentsline {subsubsection}{\numberline {7.1.3.1}Blog agradecimiento}{73}{subsubsection.7.1.3.1}
-\contentsline {subsubsection}{\numberline {7.1.3.2}Blog moda}{74}{subsubsection.7.1.3.2}
-\contentsline {subsubsection}{\numberline {7.1.3.3}Blog reflexi\'on}{74}{subsubsection.7.1.3.3}
-\contentsline {subsubsection}{\numberline {7.1.3.4}Blog muerte}{75}{subsubsection.7.1.3.4}
-\contentsline {subsubsection}{\numberline {7.1.3.5}Blog enfado}{76}{subsubsection.7.1.3.5}
-\contentsline {subsubsection}{\numberline {7.1.3.6}Conclusiones}{76}{subsubsection.7.1.3.6}
-\contentsline {section}{\numberline {7.2}Evaluaci\'on de la aplicaci\'on}{77}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Dise\~no de la evaluaci\'on}{77}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Evaluaci\'on preliminar}{80}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Evaluaci\'on final}{81}{subsection.7.2.3}
-\contentsline {chapter}{\numberline {8}As\IeC {\'\i } se hizo...}{91}{chapter.8}
-\contentsline {chapter}{\numberline {9}Conocimientos Aplicados y Aprendidos}{97}{chapter.9}
-\contentsline {chapter}{\numberline {10}Trabajo Individual}{101}{chapter.10}
-\contentsline {section}{\numberline {10.1}Gema}{101}{section.10.1}
-\contentsline {section}{\numberline {10.2}Paloma}{103}{section.10.2}
-\contentsline {section}{\numberline {10.3}Elena}{104}{section.10.3}
-\contentsline {chapter}{\numberline {11}Conclusiones y Trabajo futuro}{107}{chapter.11}
-\contentsline {section}{\numberline {11.1}Conclusiones}{107}{section.11.1}
-\contentsline {section}{\numberline {11.2}Trabajo futuro}{109}{section.11.2}
-\contentsline {chapter}{\numberline {12}Conclusions and Future work}{113}{chapter.12}
-\contentsline {section}{\numberline {12.1}Conclusions}{113}{section.12.1}
-\contentsline {section}{\numberline {12.2}Future Work}{115}{section.12.2}
-\contentsline {chapter}{\numberline {A}Im\'agenes de tableros de sprints}{117}{appendix.Alph1}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{129}{appendix*.106}
+\contentsline {subsection}{\numberline {5.4.1}Grados emocionales finales de un texto}{41}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Emoci\'on mayoritaria de un texto}{42}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Palabras emocionales de un texto}{43}{subsection.5.4.3}
+\contentsline {section}{\numberline {5.5}API EmoTraductor}{44}{section.5.5}
+\contentsline {chapter}{\numberline {6}EmoTraductor}{47}{chapter.6}
+\contentsline {section}{\numberline {6.1}Descripci\'on del problema a resolver}{47}{section.6.1}
+\contentsline {section}{\numberline {6.2}Dise\~no de la interfaz}{48}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Primera iteraci\'on: Iteraci\'on competitiva}{48}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Segunda iteraci\'on: Iteraci\'on con expertos}{50}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Tercera iteraci\'on: Prototipo final}{54}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Implementaci\'on de la aplicaci\'on final}{55}{section.6.3}
+\contentsline {chapter}{\numberline {7}Evaluaci\'on}{63}{chapter.7}
+\contentsline {section}{\numberline {7.1}Evaluaci\'on del m\'etodo}{63}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Cuentos}{63}{subsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.1.1}Blancanieves}{64}{subsubsection.7.1.1.1}
+\contentsline {subsubsection}{\numberline {7.1.1.2}Blancanieves y sus amigos}{64}{subsubsection.7.1.1.2}
+\contentsline {subsubsection}{\numberline {7.1.1.3}La sirenita}{64}{subsubsection.7.1.1.3}
+\contentsline {subsubsection}{\numberline {7.1.1.4}La bella durmiente}{65}{subsubsection.7.1.1.4}
+\contentsline {subsubsection}{\numberline {7.1.1.5}La margarita}{65}{subsubsection.7.1.1.5}
+\contentsline {subsubsection}{\numberline {7.1.1.6}La bella y la bestia}{66}{subsubsection.7.1.1.6}
+\contentsline {subsubsection}{\numberline {7.1.1.7}El castillo de Bestia}{66}{subsubsection.7.1.1.7}
+\contentsline {subsubsection}{\numberline {7.1.1.8}Cenicienta}{67}{subsubsection.7.1.1.8}
+\contentsline {subsubsection}{\numberline {7.1.1.9}Mul\'an}{67}{subsubsection.7.1.1.9}
+\contentsline {subsubsection}{\numberline {7.1.1.10}Pinocho}{68}{subsubsection.7.1.1.10}
+\contentsline {subsubsection}{\numberline {7.1.1.11}Pocahontas}{68}{subsubsection.7.1.1.11}
+\contentsline {subsubsection}{\numberline {7.1.1.12}Aladd\IeC {\'\i }n}{69}{subsubsection.7.1.1.12}
+\contentsline {subsubsection}{\numberline {7.1.1.13}El ratoncito P\'erez}{69}{subsubsection.7.1.1.13}
+\contentsline {subsection}{\numberline {7.1.2}Noticias}{72}{subsection.7.1.2}
+\contentsline {subsubsection}{\numberline {7.1.2.1}Noticia asesinato}{72}{subsubsection.7.1.2.1}
+\contentsline {subsubsection}{\numberline {7.1.2.2}Noticia nacimiento}{73}{subsubsection.7.1.2.2}
+\contentsline {subsubsection}{\numberline {7.1.2.3}Noticia OMS}{74}{subsubsection.7.1.2.3}
+\contentsline {subsubsection}{\numberline {7.1.2.4}Noticia pol\IeC {\'\i }tica}{74}{subsubsection.7.1.2.4}
+\contentsline {subsection}{\numberline {7.1.3}Blogs}{75}{subsection.7.1.3}
+\contentsline {subsubsection}{\numberline {7.1.3.1}Blog agradecimiento}{75}{subsubsection.7.1.3.1}
+\contentsline {subsubsection}{\numberline {7.1.3.2}Blog moda}{76}{subsubsection.7.1.3.2}
+\contentsline {subsubsection}{\numberline {7.1.3.3}Blog reflexi\'on}{76}{subsubsection.7.1.3.3}
+\contentsline {subsubsection}{\numberline {7.1.3.4}Blog muerte}{77}{subsubsection.7.1.3.4}
+\contentsline {subsubsection}{\numberline {7.1.3.5}Blog enfado}{78}{subsubsection.7.1.3.5}
+\contentsline {subsubsection}{\numberline {7.1.3.6}Conclusiones}{78}{subsubsection.7.1.3.6}
+\contentsline {section}{\numberline {7.2}Evaluaci\'on de la aplicaci\'on}{79}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Dise\~no de la evaluaci\'on}{79}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Evaluaci\'on preliminar}{82}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Evaluaci\'on final}{83}{subsection.7.2.3}
+\contentsline {chapter}{\numberline {8}As\IeC {\'\i } se hizo...}{93}{chapter.8}
+\contentsline {chapter}{\numberline {9}Conocimientos Aplicados y Aprendidos}{99}{chapter.9}
+\contentsline {chapter}{\numberline {10}Trabajo Individual}{103}{chapter.10}
+\contentsline {section}{\numberline {10.1}Gema}{103}{section.10.1}
+\contentsline {section}{\numberline {10.2}Paloma}{105}{section.10.2}
+\contentsline {section}{\numberline {10.3}Elena}{106}{section.10.3}
+\contentsline {chapter}{\numberline {11}Conclusiones y Trabajo futuro}{109}{chapter.11}
+\contentsline {section}{\numberline {11.1}Conclusiones}{109}{section.11.1}
+\contentsline {section}{\numberline {11.2}Trabajo futuro}{111}{section.11.2}
+\contentsline {chapter}{\numberline {12}Conclusions and Future work}{115}{chapter.12}
+\contentsline {section}{\numberline {12.1}Conclusions}{115}{section.12.1}
+\contentsline {section}{\numberline {12.2}Future Work}{117}{section.12.2}
+\contentsline {chapter}{\numberline {A}Im\'agenes de tableros de sprints}{119}{appendix.Alph1}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{131}{appendix*.109}

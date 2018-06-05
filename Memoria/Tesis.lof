@@ -17,64 +17,67 @@
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Respuesta cuando se pide la mayoritaria de una palabra que no est\'a en el diccionario.\relax }}{39}{figure.caption.24}
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Respuesta JSON para una frase con una emoci\'on mayoritaria.\relax }}{40}{figure.caption.27}
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Respuesta JSON para una frase con dos emociones mayoritarias.\relax }}{41}{figure.caption.28}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Estructura general de la API.\relax }}{43}{figure.caption.30}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Ejemplos mostrados del servicio web de los grados para las categor\IeC {\'\i }as emocionales de una palabra.\relax }}{44}{figure.caption.31}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Respuesta JSON para los grados de un texto.\relax }}{43}{figure.caption.30}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Respuesta JSON para la emoci\'on mayoritaria de un texto.\relax }}{43}{figure.caption.31}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Respuesta JSON que contiene la lista de palabras emocionales.\relax }}{44}{figure.caption.32}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Estructura general de la API.\relax }}{44}{figure.caption.33}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Ejemplos mostrados del servicio web de los grados para las categor\IeC {\'\i }as emocionales de una palabra.\relax }}{45}{figure.caption.34}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Pantalla inicial del prototipo de Gema\relax }}{47}{figure.caption.32}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Pantalla inicial del prototipo de Elena\relax }}{48}{figure.caption.33}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Pantalla inicial del prototipo de Paloma\relax }}{49}{figure.caption.34}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Resultado del an\'alisis emocional del prototipo de Paloma\relax }}{50}{figure.caption.35}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Resultado del an\'alisis emocional del prototipo de Elena\relax }}{51}{figure.caption.36}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Resultado del an\'alisis emocional del prototipo de Gema\relax }}{52}{figure.caption.37}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Men\'u de configuraci\'on del prototipo de la 2\IeC {\textordfeminine } iteraci\'on\relax }}{53}{figure.caption.38}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Pantalla inicial por defecto del segundo prototipo\relax }}{54}{figure.caption.39}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Pantalla inicial personalizada del segundo prototipo\relax }}{55}{figure.caption.40}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Pantalla de an\'alisis con los porcentajes abajo\relax }}{56}{figure.caption.41}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Pantalla de an\'alisis con los porcentajes derecha y palabras marcadas\relax }}{56}{figure.caption.42}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Pantalla de an\'alisis con gr\'afico\relax }}{57}{figure.caption.43}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Pantalla de an\'alisis mostrando las emociones que aparecen\relax }}{57}{figure.caption.44}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Pantalla de an\'alisis mostrando s\'olo la mayoritaria\relax }}{58}{figure.caption.45}
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Informaci\'on sobre la palabra contenta\relax }}{58}{figure.caption.46}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Pantalla inicial de la aplicaci\'on web\relax }}{59}{figure.caption.47}
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Pantalla con resultado del an\'alisis en la barra emocional de la aplicaci\'on web\relax }}{59}{figure.caption.48}
-\contentsline {figure}{\numberline {6.18}{\ignorespaces Contenido del archivo .conf\relax }}{59}{figure.caption.49}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Pantalla inicial del prototipo de Gema\relax }}{49}{figure.caption.35}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Pantalla inicial del prototipo de Elena\relax }}{50}{figure.caption.36}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Pantalla inicial del prototipo de Paloma\relax }}{51}{figure.caption.37}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Resultado del an\'alisis emocional del prototipo de Paloma\relax }}{52}{figure.caption.38}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Resultado del an\'alisis emocional del prototipo de Elena\relax }}{53}{figure.caption.39}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Resultado del an\'alisis emocional del prototipo de Gema\relax }}{54}{figure.caption.40}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Men\'u de configuraci\'on del prototipo de la 2\IeC {\textordfeminine } iteraci\'on\relax }}{55}{figure.caption.41}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Pantalla inicial por defecto del segundo prototipo\relax }}{56}{figure.caption.42}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Pantalla inicial personalizada del segundo prototipo\relax }}{57}{figure.caption.43}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Pantalla de an\'alisis con los porcentajes abajo\relax }}{58}{figure.caption.44}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Pantalla de an\'alisis con los porcentajes derecha y palabras marcadas\relax }}{59}{figure.caption.45}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Pantalla de an\'alisis con gr\'afico\relax }}{59}{figure.caption.46}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Pantalla de an\'alisis mostrando las emociones que aparecen\relax }}{60}{figure.caption.47}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Pantalla de an\'alisis mostrando s\'olo la mayoritaria\relax }}{60}{figure.caption.48}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Informaci\'on sobre la palabra contenta\relax }}{61}{figure.caption.49}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Pantalla inicial de la aplicaci\'on web\relax }}{61}{figure.caption.50}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Pantalla con resultado del an\'alisis en la barra emocional de la aplicaci\'on web\relax }}{62}{figure.caption.51}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Contenido del archivo .conf\relax }}{62}{figure.caption.52}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Resultado emociones presentes en el texto 3\relax }}{82}{figure.caption.73}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Resultado emociones presentes en el texto 4\relax }}{83}{figure.caption.74}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Resultado de las palabras emocionales del texto 3\relax }}{84}{figure.caption.75}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Resultado de la afirmaci\'on ``La aplicaci\'on es f\'acil de usar".\relax }}{84}{figure.caption.76}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Resultado de la afirmaci\'on ``Me gustar\IeC {\'\i }a usar la aplicaci\'on en mi d\IeC {\'\i }a a d\IeC {\'\i }a".\relax }}{85}{figure.caption.77}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Resultado de la afirmaci\'on ``Recomendar\IeC {\'\i }a la aplicaci\'on a otras personas".\relax }}{85}{figure.caption.78}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Resultado de la afirmaci\'on ``Los colores asociados a las emociones por defecto son adecuados".\relax }}{86}{figure.caption.79}
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Resultado de la afirmaci\'on ``Las im\'agenes asociadas a las emociones por defecto son adecuadas".\relax }}{86}{figure.caption.80}
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Resultados de la afirmaci\'on ``Me parece \'util poder cambiar los colores asociados a las emociones".\relax }}{87}{figure.caption.81}
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Resultados de la afirmaci\'on ``Me gustar\IeC {\'\i }a poder cambiar las im\'agenes asociadas a las emociones".\relax }}{87}{figure.caption.82}
-\contentsline {figure}{\numberline {7.11}{\ignorespaces Resultados de la afirmaci\'on ``La barra emocional es intuitiva".\relax }}{88}{figure.caption.83}
-\contentsline {figure}{\numberline {7.12}{\ignorespaces Resultados de la afirmaci\'on ``Me parece \'util tener informaci\'on sobre las palabras con carga emocional del texto".\relax }}{88}{figure.caption.84}
-\contentsline {figure}{\numberline {7.13}{\ignorespaces Resultados de la afirmaci\'on ``Me parece \'util tener informaci\'on sobre la emoci\'on conreta que transmiten las palabras con carga emocional del texto".\relax }}{89}{figure.caption.85}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Resultado emociones presentes en el texto 3\relax }}{84}{figure.caption.76}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Resultado emociones presentes en el texto 4\relax }}{85}{figure.caption.77}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Resultado de las palabras emocionales del texto 3\relax }}{86}{figure.caption.78}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Resultado de la afirmaci\'on ``La aplicaci\'on es f\'acil de usar''.\relax }}{86}{figure.caption.79}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Resultado de la afirmaci\'on ``Me gustar\IeC {\'\i }a usar la aplicaci\'on en mi d\IeC {\'\i }a a d\IeC {\'\i }a''.\relax }}{87}{figure.caption.80}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Resultado de la afirmaci\'on ``Recomendar\IeC {\'\i }a la aplicaci\'on a otras personas''.\relax }}{87}{figure.caption.81}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Resultado de la afirmaci\'on ``Los colores asociados a las emociones por defecto son adecuados''.\relax }}{88}{figure.caption.82}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Resultado de la afirmaci\'on ``Las im\'agenes asociadas a las emociones por defecto son adecuadas''.\relax }}{88}{figure.caption.83}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Resultados de la afirmaci\'on ``Me parece \'util poder cambiar los colores asociados a las emociones''.\relax }}{89}{figure.caption.84}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Resultados de la afirmaci\'on ``Me gustar\IeC {\'\i }a poder cambiar las im\'agenes asociadas a las emociones''.\relax }}{89}{figure.caption.85}
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Resultados de la afirmaci\'on ``La barra emocional es intuitiva''.\relax }}{90}{figure.caption.86}
+\contentsline {figure}{\numberline {7.12}{\ignorespaces Resultados de la afirmaci\'on ``Me parece \'util tener informaci\'on sobre las palabras con carga emocional del texto''.\relax }}{90}{figure.caption.87}
+\contentsline {figure}{\numberline {7.13}{\ignorespaces Resultados de la afirmaci\'on ``Me parece \'util tener informaci\'on sobre la emoci\'on conreta que transmiten las palabras con carga emocional del texto''.\relax }}{91}{figure.caption.88}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Planificaci\'on del sprint 1 (14/11/2017)\relax }}{117}{figure.caption.86}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Final del sprint 1 (28/11/2017)\relax }}{118}{figure.caption.87}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Planificaci\'on del sprint 2 (28/11/2017)\relax }}{119}{figure.caption.88}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Final del sprint 2 (19/12/2017)\relax }}{119}{figure.caption.89}
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Planificaci\'on del sprint 3 (19/12/2017)\relax }}{120}{figure.caption.90}
-\contentsline {figure}{\numberline {A.6}{\ignorespaces Final del sprint 3 (09/01/2017)\relax }}{120}{figure.caption.91}
-\contentsline {figure}{\numberline {A.7}{\ignorespaces Planificaci\'on del sprint 4 (09/01/2018)\relax }}{121}{figure.caption.92}
-\contentsline {figure}{\numberline {A.8}{\ignorespaces Final del sprint 4 (21/02/2018)\relax }}{121}{figure.caption.93}
-\contentsline {figure}{\numberline {A.9}{\ignorespaces Planificaci\'on del sprint 5 (21/02/2018)\relax }}{122}{figure.caption.94}
-\contentsline {figure}{\numberline {A.10}{\ignorespaces Final del sprint 5 (07/03/2018)\relax }}{122}{figure.caption.95}
-\contentsline {figure}{\numberline {A.11}{\ignorespaces Planificaci\'on del sprint 6 (07/03/2018)\relax }}{123}{figure.caption.96}
-\contentsline {figure}{\numberline {A.12}{\ignorespaces Final del sprint 6 (21/03/2018)\relax }}{123}{figure.caption.97}
-\contentsline {figure}{\numberline {A.13}{\ignorespaces Planificaci\'on del sprint 7 (21/03/2018)\relax }}{124}{figure.caption.98}
-\contentsline {figure}{\numberline {A.14}{\ignorespaces Final del sprint 7 (25/04/2018)\relax }}{124}{figure.caption.99}
-\contentsline {figure}{\numberline {A.15}{\ignorespaces Planificaci\'on del sprint 8 (25/04/2017)\relax }}{125}{figure.caption.100}
-\contentsline {figure}{\numberline {A.16}{\ignorespaces Final del sprint 8 (09/05/2017)\relax }}{125}{figure.caption.101}
-\contentsline {figure}{\numberline {A.17}{\ignorespaces Planificaci\'on del sprint 9 (09/05/2017)\relax }}{126}{figure.caption.102}
-\contentsline {figure}{\numberline {A.18}{\ignorespaces Final del sprint 9 (16/05/2017)\relax }}{126}{figure.caption.103}
-\contentsline {figure}{\numberline {A.19}{\ignorespaces Planificaci\'on del sprint 10 (16/05/2017)\relax }}{127}{figure.caption.104}
-\contentsline {figure}{\numberline {A.20}{\ignorespaces Final del sprint 10 (22/05/2017)\relax }}{127}{figure.caption.105}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Planificaci\'on del sprint 1 (14/11/2017)\relax }}{119}{figure.caption.89}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Final del sprint 1 (28/11/2017)\relax }}{120}{figure.caption.90}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Planificaci\'on del sprint 2 (28/11/2017)\relax }}{121}{figure.caption.91}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Final del sprint 2 (19/12/2017)\relax }}{121}{figure.caption.92}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Planificaci\'on del sprint 3 (19/12/2017)\relax }}{122}{figure.caption.93}
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Final del sprint 3 (09/01/2017)\relax }}{122}{figure.caption.94}
+\contentsline {figure}{\numberline {A.7}{\ignorespaces Planificaci\'on del sprint 4 (09/01/2018)\relax }}{123}{figure.caption.95}
+\contentsline {figure}{\numberline {A.8}{\ignorespaces Final del sprint 4 (21/02/2018)\relax }}{123}{figure.caption.96}
+\contentsline {figure}{\numberline {A.9}{\ignorespaces Planificaci\'on del sprint 5 (21/02/2018)\relax }}{124}{figure.caption.97}
+\contentsline {figure}{\numberline {A.10}{\ignorespaces Final del sprint 5 (07/03/2018)\relax }}{124}{figure.caption.98}
+\contentsline {figure}{\numberline {A.11}{\ignorespaces Planificaci\'on del sprint 6 (07/03/2018)\relax }}{125}{figure.caption.99}
+\contentsline {figure}{\numberline {A.12}{\ignorespaces Final del sprint 6 (21/03/2018)\relax }}{125}{figure.caption.100}
+\contentsline {figure}{\numberline {A.13}{\ignorespaces Planificaci\'on del sprint 7 (21/03/2018)\relax }}{126}{figure.caption.101}
+\contentsline {figure}{\numberline {A.14}{\ignorespaces Final del sprint 7 (25/04/2018)\relax }}{126}{figure.caption.102}
+\contentsline {figure}{\numberline {A.15}{\ignorespaces Planificaci\'on del sprint 8 (25/04/2017)\relax }}{127}{figure.caption.103}
+\contentsline {figure}{\numberline {A.16}{\ignorespaces Final del sprint 8 (09/05/2017)\relax }}{127}{figure.caption.104}
+\contentsline {figure}{\numberline {A.17}{\ignorespaces Planificaci\'on del sprint 9 (09/05/2017)\relax }}{128}{figure.caption.105}
+\contentsline {figure}{\numberline {A.18}{\ignorespaces Final del sprint 9 (16/05/2017)\relax }}{128}{figure.caption.106}
+\contentsline {figure}{\numberline {A.19}{\ignorespaces Planificaci\'on del sprint 10 (16/05/2017)\relax }}{129}{figure.caption.107}
+\contentsline {figure}{\numberline {A.20}{\ignorespaces Final del sprint 10 (22/05/2017)\relax }}{129}{figure.caption.108}
