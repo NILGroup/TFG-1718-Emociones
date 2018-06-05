@@ -1,6 +1,4 @@
 \babel@toc {spanish}{}
-\contentsline {chapter}{Agradecimientos}{\es@scroman {v}}{chapter*.1}
-\contentsline {chapter}{Resumen/Summary}{\es@scroman {vii}}{chapter*.2}
 \contentsline {chapter}{\numberline {1}Introducci\'on}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivaci\'on}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Objetivos}{2}{section.1.2}
@@ -21,11 +19,11 @@
 \contentsline {subsection}{\numberline {3.3.5}Diccionario de Hinojosa}{16}{subsection.3.3.5}
 \contentsline {subsection}{\numberline {3.3.6}Diccionario de Ferr\'e}{16}{subsection.3.3.6}
 \contentsline {section}{\numberline {3.4}Servicios Web}{17}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Caracter\IeC {\'\i }sticas de los Servicios Web}{17}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.1}Caracter\IeC {\'\i }sticas de los Servicios Web}{18}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Tipos de Servicios Web}{18}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Arquitectura de los Servicios Web}{18}{subsection.3.4.3}
 \contentsline {subsection}{\numberline {3.4.4}Ventajas e inconvenientes de los Servicios Web}{19}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}Scrum}{19}{section.3.5}
+\contentsline {section}{\numberline {3.5}Scrum}{20}{section.3.5}
 \contentsline {section}{\numberline {3.6}Integraci\'on Continua}{22}{section.3.6}
 \contentsline {chapter}{\numberline {4}Herramientas empleadas}{25}{chapter.4}
 \contentsline {section}{\numberline {4.1}Herramientas b\'asicas}{25}{section.4.1}
@@ -97,17 +95,5 @@
 \contentsline {chapter}{\numberline {12}Conclusions and Future work}{113}{chapter.12}
 \contentsline {section}{\numberline {12.1}Conclusions}{113}{section.12.1}
 \contentsline {section}{\numberline {12.2}Future Work}{115}{section.12.2}
-\contentsline {chapter}{\numberline {A}Prototipos iteraci\'on competitiva}{117}{appendix.Alph1}
-\contentsline {section}{\numberline {A.1}Prototipo de Gema}{117}{section.Alph1.1}
-\contentsline {section}{\numberline {A.2}Prototipo de Elena}{128}{section.Alph1.2}
-\contentsline {section}{\numberline {A.3}Prototipo de Paloma}{140}{section.Alph1.3}
-\contentsline {chapter}{\numberline {B}Prototipo segunda iteracion}{151}{appendix.Alph2}
-\contentsline {chapter}{\numberline {C}Prototipo final}{179}{appendix.Alph3}
-\contentsline {chapter}{\numberline {D}Formularios evaluaci\'on preliminar}{181}{appendix.Alph4}
-\contentsline {section}{\numberline {D.1}Formulario preliminar usuarios finales}{181}{section.Alph4.1}
-\contentsline {section}{\numberline {D.2}Formulario preliminar expertos}{188}{section.Alph4.2}
-\contentsline {chapter}{\numberline {E}Formularios evaluaci\'on final}{195}{appendix.Alph5}
-\contentsline {section}{\numberline {E.1}Formulario final usuarios finales}{195}{section.Alph5.1}
-\contentsline {section}{\numberline {E.2}Formulario final expertos}{203}{section.Alph5.2}
-\contentsline {chapter}{\numberline {F}Im\'agenes de tableros de sprints}{211}{appendix.Alph6}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{223}{appendix*.101}
+\contentsline {chapter}{\numberline {A}Im\'agenes de tableros de sprints}{117}{appendix.Alph1}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{129}{appendix*.106}

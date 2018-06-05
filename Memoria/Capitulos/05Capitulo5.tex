@@ -61,7 +61,7 @@ Como ya hemos comentado, lo primero que tenemos que hacer para obtener el conten
 \subsection{Servicio web para obtener los grados para cada emoción de una palabra}
 Dada una palabra, este servicio nos devuelve la información sobre los grados o valores de cada categoría emocional que posee. Para ello se realiza una petición \textbf{GET}\footnote{http://sesat.fdi.ucm.es/apiEmoTraductor/\#palabraGrados} al servidor añadiendo el comando ``gradosEmo?palabra=\textit{palabra\_buscada}'', y se devuelve el resultado en formato JSON al usuario.
 
-Como entrada tendríamos la palabra de la cual queremos conocer sus emociones. En la figura (Figura \ref{fig:grados}) se puede ver el JSON devuelto por el servicio para la palabra ``enfermedad'' así como la petición GET que se realiza. Si la palabra está en nuestro diccionario, la salida sería el grado de cada emoción. Si la palabra no existe en nuestro diccionario el servicio devolverá dicha palabra como si apareciese en el diccionario devolviendo para cada emoción el grado uno, considerado neutral al ser el valor mínimo que puede tener el grado (Figura \ref{fig:notfound}).
+Como entrada tendríamos la palabra de la cual queremos conocer sus emociones. En la figura (Figura \ref{fig:grados}) se puede ver el JSON devuelto por el servicio para la palabra ``enfermedad'' así como la petición GET que se realiza. Si la palabra está en nuestro diccionario, la salida sería el grado de cada emoción. Si la palabra no existe en nuestro diccionario el servicio devolverá dicha palabra como si apareciese en el diccionario devolviendo para cada emoción el grado uno, considerado neutral al ser el valor mínimo que puede tener el grado (Figura \ref{fig:notfound}). Es decir, tratamos a las palabras que no están en nuestro diccionario como carentes de emoción.
 
 \figura{Bitmap/Capitulo4/gradosEnfermedad}{width=0.6\textwidth}{fig:grados}{JSON devuelto al buscar los grados emocionales de la palabra ``enfermedad''.}
 	
@@ -70,11 +70,11 @@ Como entrada tendríamos la palabra de la cual queremos conocer sus emociones. En
 \subsection{Servicio web para obtener la emoción mayoritaria de una palabra}
 Dada una palabra el servicio nos devuelve la emoción mayoritaria. La emoción mayoritaria será aquella que tiene el mayor grado asociado, como ya hemos comentado. Para ello se realiza una petición \textbf{GET}\footnote{http://sesat.fdi.ucm.es/apiEmoTraductor/\#palabraMayor} al servidor añadiendo el comando ``mayoritariaEmo?palabra=\textit{palabra\_buscada}'', y se devuelve el resultado en formato JSON al usuario.
 
-Como entrada tendríamos la palabra de la cual queremos conocer su emoción mayoritaria, mientras que la salida será la emoción o emociones (si hay dos) mayoritarias y el grado asociado para la palabra. En la figura \ref{fig:mayoritaria} podemos observar lo que se devuelve cuando hay única emoción mayoritaria mientras que en la figura \ref{fig:mayoritarias} aparece el ejemplo comentado anteriormente de ``tormenta'' que tiene más de una emoción mayoritaria. En el caso de que la palabra no se haya encontrado en el diccionario se devolverá una lista vacía de emociones ya que no hay y el grado cero (Figura \ref{mayoritariasno}).
+Como entrada tendríamos la palabra de la cual queremos conocer su emoción mayoritaria, mientras que la salida será la emoción o emociones (si hay dos) mayoritarias y el grado asociado para la palabra. En la figura \ref{fig:mayoritaria} podemos observar lo que se devuelve cuando hay única emoción mayoritaria mientras que en la figura \ref{fig:mayoritarias} aparece el ejemplo comentado anteriormente de ``tormenta'' que tiene más de una emoción mayoritaria. En el caso de que la palabra no se haya encontrado en el diccionario se devolverá una lista vacía de emociones ya que no hay y el grado cero (Figura \ref{fig:mno}).
 
 \figura{Bitmap/Capitulo4/mayoritariaAbeja}{width=0.6\textwidth}{fig:mayoritaria}{Respuesta al encontrar la emoción mayoritaria.}
 \figura{Bitmap/Capitulo4/mayoritarias}{width=0.6\textwidth}{fig:mayoritarias}{Respuesta si hay dos emociones mayoritarias.}
-\figura{Bitmap/Capitulo4/mayoritariasNo}{width=0.6\textwidth}{fig:mayoritariasno}{Respuesta cuando se pide la mayoritaria de una palabra que no está en el diccionario.}
+\figura{Bitmap/Capitulo4/mayoritariasNo}{width=0.6\textwidth}{fig:mno}{Respuesta cuando se pide la mayoritaria de una palabra que no está en el diccionario.}
 
 %-------------------------------------------------------------------
 \section{Análisis afectivo de una frase}
