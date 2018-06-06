@@ -23,7 +23,7 @@ Una vez que tenemos el diccionario definitivo necesitamos almacenarlo en algún s
 Los campos que tiene el modelo para cada palabra son los mismos que en el diccionario: la propia palabra, el lema de ésta y un valor del uno al cinco para cada una de las cinco categorías básicas. Los grados se guardarán en una lista de cinco enteros del 100 al 500, esto nos facilitará obtener todos los grados a la vez. Decidimos guardar los números como enteros porque las listas que proporciona Django para los modelos son de enteros, cada vez que se realice una consulta se dividirán los valores entre 100 obteniendo los valores reales. El modelo se define en un fichero Python y permite que cada una de las palabras que tenemos recogidas se encapsulen en este modelo para ser almacenadas en el servidor.
 
 Django utiliza un fichero Python para declarar una serie de ``vistas'' que servirán para realizar las consultas necesarias sobre la base de datos. Cada vez que necesitemos alguna información específica se creará una nueva vista en la que se especifique la información que necesitamos de la base de datos y el tratamiento que esta recibirá así como la salida que se producirá. Inicialmente disponemos de una vista general (Figura \ref{fig:vista_general}) que muestra la lista entera de palabras almacenadas con el valor de todos sus campos y una vista detalle (Figura \ref{fig:vista_det}) para cada una de ellas en la que sólo se muestran los campos de esa palabra en particular.
-\end{itemize}
+
 
 \figura{Bitmap/Capitulo4/listaPalabrasServidor}{width=0.7\textwidth}{fig:vista_general}{Vista general de la lista de palabras del diccionario almacenado en Django.}
 \figura{Bitmap/Capitulo4/vista_detalle}{width=0.6\textwidth}{fig:vista_det}{Vista detalle de la palabra ``Alegre''.}
@@ -48,7 +48,7 @@ La primera tarea a resolver fue obtener el contenido emocional de una palabra ai
 		\hline 
 		abejas & 1,17 & 3,47 & 1,37 & 2,0 & 2,2 \\
 		\end{tabular}
-		\caption{Grados emocionales de la palabra "`abejas"'.}
+		\caption{Grados emocionales de la palabra ``abejas".}
 		\label{tabla:abejaEmocion}
 		\end{center}
 \end{table}
@@ -57,15 +57,16 @@ La primera tarea a resolver fue obtener el contenido emocional de una palabra ai
 	
 	\begin{table}[htbp]
 		\begin{center}
-		\begin{tabular}{|l|l|l|l|l|l|}
-		\hline
-		 & Tisteza & Miedo & Alegría & Enfado & Asco \\
-		\hline 
-		tormenta & 2,52 & 2,52 & 1,53 & 1,5 & 1,2 \\ \hline
-		madre & 1,86 & 1,52 & 4,79 & 1,48 & 1,0 \\ \hline
-		\end{tabular}
-		\caption{Grados emocionales de las palabras ``tormenta" y ``madre"'.}
-		\label{tabla:analisis_alegre}
+			\begin{tabular}{|l|l|l|l|l|l|}
+				\hline
+				& Tisteza & Miedo & Alegría & Enfado & Asco \\
+				\hline 
+				tormenta & 2,52 & 2,52 & 1,53 & 1,5 & 1,2 \\ \hline
+				madre & 1,86 & 1,52 & 4,79 & 1,48 & 1,0 \\ \hline
+			\end{tabular}
+					\caption{Grados emocionales de las palabras ``tormenta" y ``madre".}
+
+			\label{tabla:analisis_alegre}
 		\end{center}
 \end{table}
 \end{itemize}
@@ -78,9 +79,9 @@ Como ya hemos comentado, lo primero que tenemos que hacer para obtener el conten
 \subsection{Servicio web para obtener los grados para cada emoción de una palabra}
 Dada una palabra, este servicio nos devuelve la información sobre los grados o valores en cada categoría emocional. Para ello se realiza la siguiente peticion:
 
-http://sesat.fdi.ucm.es/emociones/palabra/gradosEmo?palabra=\textit{palabra_buscada}
+http://sesat.fdi.ucm.es/emociones/palabra/gradosEmo?palabra=\textit{palabra\_buscada}
 
-Cambiando \textit{palabra_buscada} por la palabra correspondiente. Por ejemplo: si quisiéramos buscar la palabra ``enfermedad" pondríamos lo siguiente:
+Cambiando \textit{palabra\_buscada} por la palabra correspondiente. Por ejemplo: si quisiéramos buscar la palabra ``enfermedad" pondríamos lo siguiente:
 
 http://sesat.fdi.ucm.es/emociones/palabra/gradosEmo?palabra=enfermedad
 
@@ -93,15 +94,15 @@ En la figura (Figura \ref{fig:grados}) se puede ver el JSON de respuesta para la
 \subsection{Servicio web para obtener la emoción mayoritaria de una palabra}
 Dada una palabra el servicio nos devuelve la emoción mayoritaria. La emoción mayoritaria será aquella que tiene el mayor grado asociado, como ya hemos comentado. Para ello se realiza la siguiente petición:
 
-http://sesat.fdi.ucm.es/emociones/palabra/mayoritariaEmo?palabra=\textit{palabra_buscada}
+http://sesat.fdi.ucm.es/emociones/palabra/mayoritariaEmo?palabra=\textit{palabra\_buscada}
 
-Cambiando \textit{palabra_buscada} por la palabra correspondiente. Por ejemplo: si quisiéramos buscar la palabra ``tormenta" pondríamos lo siguiente:
+Cambiando \textit{palabra\_buscada} por la palabra correspondiente. Por ejemplo: si quisiéramos buscar la palabra ``tormenta" pondríamos lo siguiente:
 
 http://sesat.fdi.ucm.es/emociones/palabra/mayoritariaEmo?palabra=tormenta
 
 Como entrada tendríamos la palabra, en este caso ``tormenta", y nos devolvería lo que podemos ver en la figura \ref{fig:mayoritarias2}.
-En caso de que la palabra buscada tenga una emoción mayoritaria, el resultado será como el que podemos ver en la figura \ref{fig:mayoritaria}, respuesta para la petición con ``abejas" como \textit{palabra_buscada}.
-En el caso de que la palabra no se haya encontrado en el diccionario se devolverá una lista vacía de emociones ya que no hay y el grado cero, como podemos ver en la figura \ref{fig:mno}, respuesta para la petición con ``te" como \textit{palabra_buscada}.
+En caso de que la palabra buscada tenga una emoción mayoritaria, el resultado será como el que podemos ver en la figura \ref{fig:mayoritaria}, respuesta para la petición con ``abejas" como \textit{palabra\_buscada}.
+En el caso de que la palabra no se haya encontrado en el diccionario se devolverá una lista vacía de emociones ya que no hay y el grado cero, como podemos ver en la figura \ref{fig:mno}, respuesta para la petición con ``te" como \textit{palabra`\_buscada}.
 
 \figura{Bitmap/Capitulo4/mayoritarias}{width=0.6\textwidth}{fig:mayoritarias2}{Respuesta si hay dos emociones mayoritarias.}
 \figura{Bitmap/Capitulo4/mayoritariaAbeja}{width=0.6\textwidth}{fig:mayoritaria}{Respuesta al encontrar la emoción mayoritaria.}
@@ -132,9 +133,9 @@ Una vez que tenemos la suma de los grados para cada una de las categorías emocio
 		\hline 
 		alegre & 1,1 & 1,23 & 4,83 & 1,1 & 1,03 \\ \hline
 		feliz & 1,1 & 1,2 & 4,63 & 1,0 & 1,0 \\ \hline
-		\textit{Suma & 2,2 & 2,43 & 9,46 & 2,1 & 2,03} \\ \hline
-		\textit{Palabras & \multicolumn{5}{|c|}{2}} \\ \hline
-		\textbf{Valor final & 1,1 & 1,21 & 4,73 & 1,05 & 1,02} \\ \hline
+		\textit{Suma} & \textit{2,2} & \textit{2,43} & \textit{9,46} & \textit{2,1} & \textit{2,03} \\ \hline
+		\textit{Palabras} & \multicolumn{5}{|c|}{\textit{2}} \\ \hline
+		\textbf{Valor final} & \textbf{1,1} & \textbf{1,21} & \textbf{4,73} & \textbf{1,05} & \textbf{1,02} \\ \hline
 		\end{tabular}
 		\caption{Resultado del anális de la frase "`Estoy alegre y feliz"'.}
 		\label{tabla:analisis_alegre}
@@ -151,9 +152,9 @@ Una vez que tenemos la suma de los grados para cada una de las categorías emocio
 		\hline 
 		alegre & 1,1 & 1,23 & 4,83 & 1,1 & 1,03 \\ \hline
 		triste & 4,47 & 2,17 & 1,03 & 2,06 & 1,5 \\ \hline
-		\textit{Suma & 5,57 & 3,4 & 5,86 & 3,16 & 2,53} \\ \hline
-		\textit{Palabras & \multicolumn{5}{|c|}{2} }\\ \hline
-		\textbf{Valor final & 2.78 & 1,7 & 2,93 & 1,58 & 1,26 }\\ \hline
+		\textit{Suma} & \textit{5,57} & \textit{3,4} & \textit{5,86} & \textit{3,16} & \textit{2,53} \\ \hline
+		\textit{Palabras} & \multicolumn{5}{|c|}{\textit{2}} \\ \hline
+		\textbf{Valor final} & \textbf{2.78} & \textbf{1,7} & \textbf{2,93} & \textbf{1,58} & \textbf{1,26} \\ \hline
 		\end{tabular}
 		\caption{Resultado del análisis de la frase "`Estoy alegre y triste"'.}
 		\label{tabla:analisis_bipolar}
@@ -280,7 +281,7 @@ Con el objetivo de facilitar a los desarrolladores el uso de todos nuestros serv
 Cada servicio aparece acompañado de una etiqueta ``(ver más)'' que lleva a una sección dedicada al servicio en cuestión. En esta sección aparece toda la información necesaria para comprender qué hace el servicio, qué recibe y qué devuelve. Aparece también el tipo de servicio que es (GET o POST), sus parámetros, la URL que hay que utilizar para acceder a él y algunos ejemplos de peticiones y respuestas. En las figuras \ref{fig:apiEj} y \ref{fig:apiEj2}, podemos ver toda la información proporcionada sobre el servicio de grados de una palabra.
 
 \figura{Bitmap/Capitulo4/apiEj}{width=0.6\textwidth}{fig:apiEj}{Información mostrada en la api para el servicio de obtener los grados para las categorías emocionales de una palabra.}
-\figuta{Bitmap/Capitulo4/apiEj2}{width=0.6\textwidth}{fig:apiEj2}{Ejemplos mostrados en la api para el servicio de obtener los grados para las categorías emocionales de una palabra.}
+\figura{Bitmap/Capitulo4/apiEj2}{width=0.6\textwidth}{fig:apiEj2}{Ejemplos mostrados en la api para el servicio de obtener los grados para las categorías emocionales de una palabra.}
 
 Esta API es pública y seguirá ampliándose con los servicios que se desarrollen más allá de este TFG. 
 % Variable local para emacs, para  que encuentre el fichero maestro de
