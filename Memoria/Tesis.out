@@ -55,8 +55,8 @@
 \BOOKMARK [1][-]{section.6.1}{Descripci\363n del problema a resolver}{chapter.6}% 55
 \BOOKMARK [1][-]{section.6.2}{Dise\361o de la interfaz}{chapter.6}% 56
 \BOOKMARK [2][-]{subsection.6.2.1}{Primera iteraci\363n: Iteraci\363n competitiva}{section.6.2}% 57
-\BOOKMARK [2][-]{subsection.6.2.2}{Segunda iteraci\363n: Iteraci\363n con expertos}{section.6.2}% 58
-\BOOKMARK [2][-]{subsection.6.2.3}{Tercera iteraci\363n: Prototipo final}{section.6.2}% 59
+\BOOKMARK [2][-]{subsection.6.2.2}{Segunda iteraci\363n: Evaluaci\363n con expertos}{section.6.2}% 58
+\BOOKMARK [2][-]{subsection.6.2.3}{Versi\363n final de la interfaz}{section.6.2}% 59
 \BOOKMARK [1][-]{section.6.3}{Implementaci\363n de la aplicaci\363n final}{chapter.6}% 60
 \BOOKMARK [0][-]{chapter.7}{Evaluaci\363n}{}% 61
 \BOOKMARK [1][-]{section.7.1}{Evaluaci\363n del m\351todo}{chapter.7}% 62
@@ -80,5 +80,5 @@
 \BOOKMARK [1][-]{section.12.1}{Conclusions}{chapter.12}% 80
 \BOOKMARK [1][-]{section.12.2}{Future Work}{chapter.12}% 81
 \BOOKMARK [0][-]{appendix.Alph1}{Im\341genes de tableros de sprints}{}% 82
-\BOOKMARK [0][-]{appendix*.109}{Bibliograf\355a}{}% 83
+\BOOKMARK [0][-]{appendix*.108}{Bibliograf\355a}{}% 83
 \BOOKMARK [0][-]{fin.0}{Fin}{}% 84

@@ -16,14 +16,14 @@
 \contentsline {subsection}{\numberline {3.3.2}Clairvoyance Affect Lexicon}{14}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}ANEW}{14}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}S-ANEW}{15}{subsection.3.3.4}
-\contentsline {subsection}{\numberline {3.3.5}Diccionario de Hinojosa}{16}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.5}Diccionario de Hinojosa}{15}{subsection.3.3.5}
 \contentsline {subsection}{\numberline {3.3.6}Diccionario de Ferr\'e}{16}{subsection.3.3.6}
 \contentsline {section}{\numberline {3.4}Servicios Web}{17}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Caracter\IeC {\'\i }sticas de los Servicios Web}{18}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.1}Caracter\IeC {\'\i }sticas de los Servicios Web}{17}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Tipos de Servicios Web}{18}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Arquitectura de los Servicios Web}{18}{subsection.3.4.3}
 \contentsline {subsection}{\numberline {3.4.4}Ventajas e inconvenientes de los Servicios Web}{19}{subsection.3.4.4}
-\contentsline {section}{\numberline {3.5}Scrum}{20}{section.3.5}
+\contentsline {section}{\numberline {3.5}Scrum}{19}{section.3.5}
 \contentsline {section}{\numberline {3.6}Integraci\'on Continua}{22}{section.3.6}
 \contentsline {chapter}{\numberline {4}Herramientas empleadas}{25}{chapter.4}
 \contentsline {section}{\numberline {4.1}Herramientas b\'asicas}{25}{section.4.1}
@@ -51,9 +51,9 @@
 \contentsline {section}{\numberline {6.1}Descripci\'on del problema a resolver}{47}{section.6.1}
 \contentsline {section}{\numberline {6.2}Dise\~no de la interfaz}{48}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Primera iteraci\'on: Iteraci\'on competitiva}{48}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Segunda iteraci\'on: Iteraci\'on con expertos}{50}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Tercera iteraci\'on: Prototipo final}{54}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Implementaci\'on de la aplicaci\'on final}{55}{section.6.3}
+\contentsline {subsection}{\numberline {6.2.2}Segunda iteraci\'on: Evaluaci\'on con expertos}{53}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Versi\'on final de la interfaz}{59}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Implementaci\'on de la aplicaci\'on final}{60}{section.6.3}
 \contentsline {chapter}{\numberline {7}Evaluaci\'on}{63}{chapter.7}
 \contentsline {section}{\numberline {7.1}Evaluaci\'on del m\'etodo}{63}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Cuentos}{63}{subsection.7.1.1}
@@ -99,4 +99,4 @@
 \contentsline {section}{\numberline {12.1}Conclusions}{115}{section.12.1}
 \contentsline {section}{\numberline {12.2}Future Work}{117}{section.12.2}
 \contentsline {chapter}{\numberline {A}Im\'agenes de tableros de sprints}{119}{appendix.Alph1}
-\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{131}{appendix*.109}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{131}{appendix*.108}

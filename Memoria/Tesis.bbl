@@ -1,4 +1,4 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{23}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{Baldasarri(2016)}]{aplicacionesCA}
@@ -103,12 +103,6 @@
 \newblock {\em {Trends in Psychiatry and Psychotherapy}\/}, vol.\ 33, p\'aginas
   135 -- 146, 2011.
 \newblock ISSN 2237-6089.
-
-\bibitem[{Lang(1980)}]{Lang80}
-{\sc Lang, P.}
-\newblock Behavioral treatment and bio-behavioral assessment: Computer
-  applications.
-\newblock 1980.
 
 \bibitem[{Lang et\ al.(1999)Lang, Bradley y Chuthbert}]{Lang99}
 {\sc Lang, P.}, {\sc Bradley, M.} y {\sc Chuthbert, B.}
