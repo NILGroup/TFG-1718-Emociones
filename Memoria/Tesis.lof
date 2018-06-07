@@ -15,14 +15,14 @@
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Respuesta si hay dos emociones mayoritarias.\relax }}{38}{figure.caption.24}
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Respuesta al encontrar la emoci\'on mayoritaria.\relax }}{38}{figure.caption.25}
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Respuesta cuando se pide la mayoritaria de una palabra que no est\'a en el diccionario.\relax }}{39}{figure.caption.26}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Respuesta JSON para una frase con una emoci\'on mayoritaria.\relax }}{40}{figure.caption.30}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Respuesta JSON para una frase con una emoci\'on mayoritaria.\relax }}{41}{figure.caption.30}
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Respuesta JSON para una frase con dos emociones mayoritarias.\relax }}{41}{figure.caption.32}
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Respuesta JSON para los grados de un texto.\relax }}{43}{figure.caption.34}
 \contentsline {figure}{\numberline {5.11}{\ignorespaces Respuesta JSON para la emoci\'on mayoritaria de un texto.\relax }}{43}{figure.caption.35}
 \contentsline {figure}{\numberline {5.12}{\ignorespaces Respuesta JSON que contiene la lista de palabras emocionales.\relax }}{44}{figure.caption.37}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Estructura general de la API.\relax }}{44}{figure.caption.38}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Estructura general de la API.\relax }}{45}{figure.caption.38}
 \contentsline {figure}{\numberline {5.14}{\ignorespaces Informaci\'on mostrada en la api para el servicio de obtener los grados para las categor\IeC {\'\i }as emocionales de una palabra.\relax }}{45}{figure.caption.39}
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Ejemplos mostrados en la api para el servicio de obtener los grados para las categor\IeC {\'\i }as emocionales de una palabra.\relax }}{45}{figure.caption.40}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Ejemplos mostrados en la api para el servicio de obtener los grados para las categor\IeC {\'\i }as emocionales de una palabra.\relax }}{46}{figure.caption.40}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Pantalla inicial del prototipo de Gema\relax }}{49}{figure.caption.41}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Pantalla inicial del prototipo de Elena\relax }}{49}{figure.caption.42}

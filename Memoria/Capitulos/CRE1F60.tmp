@@ -64,9 +64,9 @@ La primera tarea a resolver fue obtener el contenido emocional de una palabra ai
 				tormenta & 2,52 & 2,52 & 1,53 & 1,5 & 1,2 \\ \hline
 				madre & 1,86 & 1,52 & 4,79 & 1,48 & 1,0 \\ \hline
 			\end{tabular}
-					\caption{Grados emocionales de las palabras ``tormenta'' y ``madre".}
+					\caption{Grados emocionales de las palabras ``tormenta" y ``madre".}
 
-			\label{tabla:mayoritarias}
+			\label{tabla:analisis_alegre}
 		\end{center}
 \end{table}
 \end{itemize}
@@ -188,7 +188,7 @@ Al igual que ocurría en el caso de las palabras puede haber más de una emoción m
 	\begin{center}
 	\begin{tabular}{|l|l|l|l|l|l|}
 	\hline
-	 Tristeza & Miedo & Alegría & Enfado & Asco \\
+	 Tisteza & Miedo & Alegría & Enfado & Asco \\
 	\hline 
 	3,2 & 3,33 & 1,07 & 3,3 & 2,57 \\ \hline
 	\end{tabular}
@@ -227,7 +227,7 @@ En la tabla \ref{tabla:analisis_texto} se puede observar el proceso de análisis 
 		\begin{center}
 		\begin{tabular}{|l|l|l|l|l|l|}
 		\hline
-		 & Tristeza & Miedo & Alegría & Enfado & Asco \\
+		 & Tisteza & Miedo & Alegría & Enfado & Asco \\
 		\hline 
 		Frase 1 & 1,47 & 1,1 & 4,3 & 1,47 & 1,1  \\ \hline
 		Enunciativa(x1) & 1,47 & 1,1 & 4,3 & 1,47 & 1,1 \\ \hline
@@ -237,7 +237,7 @@ En la tabla \ref{tabla:analisis_texto} se puede observar el proceso de análisis 
 		Interrogativa(/2) & 0 & 0 & 0 & 0 & 0 \\ \hline
 		Suma frases & 2,59 & 3,64 & 11,84 & 3,81 & 2,24 \\ \hline
 		Nº de frases & \multicolumn{5}{|c|}{3} \\ \hline
-		Valor final del texto & 0.86 & 1,21 & 3,95 & 1,27 & 0.75 \\ \hline
+		Valor final delt exto & 0.86 & 1,21 & 3,95 & 1,27 & 0.75 \\ \hline
 		\end{tabular}
 		\caption{Resultado del análisis del texto.}
 		\label{tabla:analisis_texto}
@@ -248,7 +248,7 @@ En la tabla \ref{tabla:analisis_texto} se puede observar el proceso de análisis 
 Para calcular la emoción mayoritaria de un texto hay que obtener sus grados finales y compararlos para quedarnos con el mayor. Este servicio es, por lo tanto, el equivalente del descrito en la sección 5.3.3 pero aplicado a textos. Por ejemplo, si el texto que queremos analizar es: ``Me he encontrado con Ana esta mañana. Me ha dicho que su madre está mejor. Me alegro mucho por ella.'' el servicio presentado en la sección 5.4.1 nos devuelve los grados que se pueden ver en la figura \ref{fig:gradostxt}. Se ve que la emoción mayoritaria del texto es alegría con un grado de 4,26. Podemos ver que esta es precisamente la información que devuelve el servicio para la emoción mayoritaria de un texto en la figura \ref{fig:maytxt} y que la forma en la que se muestra es idéntica a la del servicio para la emoción mayoritaria de una frase.
 
 \figura{Bitmap/Capitulo4/gradostxt}{width=0.6\textwidth}{fig:gradostxt}{Respuesta JSON para los grados de un texto.}
-\figura{Bitmap/Capitulo4/maytxt}{width=0.6\textwidth}{fig:maytxt}{Respuesta JSON para la emoción mayoritaria de un texto.}
+\figura{Bitmap/Capitulo4/maytxt}{width=0.6\textwidth}{fig:gradostxt}{Respuesta JSON para la emoción mayoritaria de un texto.}
 
 \subsection{Palabras emocionales de un texto}
 Este servicio se encarga de combinar los resultados devueltos por el servicio de la sección 5.4.1, los grados emocionales finales de un texto, con una lista de las palabras emocionales que contiene el texto. Esta lista se obtiene juntando las listas de palabras emocionales de todas las frases que componen el texto. Por ejemplo, para el texto ``Luis es un chico muy agradable. No me gusta verle tan triste.'' los grados emocionales finales que obtenemos con el servicio correspondiente son:
@@ -257,7 +257,7 @@ Este servicio se encarga de combinar los resultados devueltos por el servicio de
 	\begin{center}
 	\begin{tabular}{|l|l|l|l|l|l|}
 	\hline
-	 Tristeza & Miedo & Alegría & Enfado & Asco \\
+	 Tisteza & Miedo & Alegría & Enfado & Asco \\
 	\hline 
 	1,98 & 1,57 & 3,17 & 1,4 & 1,22 \\ \hline
 	\end{tabular}

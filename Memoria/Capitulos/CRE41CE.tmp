@@ -66,7 +66,7 @@ La primera tarea a resolver fue obtener el contenido emocional de una palabra ai
 			\end{tabular}
 					\caption{Grados emocionales de las palabras ``tormenta'' y ``madre".}
 
-			\label{tabla:mayoritarias}
+			\label{tabla:analisis_alegre}
 		\end{center}
 \end{table}
 \end{itemize}
@@ -248,7 +248,7 @@ En la tabla \ref{tabla:analisis_texto} se puede observar el proceso de análisis 
 Para calcular la emoción mayoritaria de un texto hay que obtener sus grados finales y compararlos para quedarnos con el mayor. Este servicio es, por lo tanto, el equivalente del descrito en la sección 5.3.3 pero aplicado a textos. Por ejemplo, si el texto que queremos analizar es: ``Me he encontrado con Ana esta mañana. Me ha dicho que su madre está mejor. Me alegro mucho por ella.'' el servicio presentado en la sección 5.4.1 nos devuelve los grados que se pueden ver en la figura \ref{fig:gradostxt}. Se ve que la emoción mayoritaria del texto es alegría con un grado de 4,26. Podemos ver que esta es precisamente la información que devuelve el servicio para la emoción mayoritaria de un texto en la figura \ref{fig:maytxt} y que la forma en la que se muestra es idéntica a la del servicio para la emoción mayoritaria de una frase.
 
 \figura{Bitmap/Capitulo4/gradostxt}{width=0.6\textwidth}{fig:gradostxt}{Respuesta JSON para los grados de un texto.}
-\figura{Bitmap/Capitulo4/maytxt}{width=0.6\textwidth}{fig:maytxt}{Respuesta JSON para la emoción mayoritaria de un texto.}
+\figura{Bitmap/Capitulo4/maytxt}{width=0.6\textwidth}{fig:gradostxt}{Respuesta JSON para la emoción mayoritaria de un texto.}
 
 \subsection{Palabras emocionales de un texto}
 Este servicio se encarga de combinar los resultados devueltos por el servicio de la sección 5.4.1, los grados emocionales finales de un texto, con una lista de las palabras emocionales que contiene el texto. Esta lista se obtiene juntando las listas de palabras emocionales de todas las frases que componen el texto. Por ejemplo, para el texto ``Luis es un chico muy agradable. No me gusta verle tan triste.'' los grados emocionales finales que obtenemos con el servicio correspondiente son:

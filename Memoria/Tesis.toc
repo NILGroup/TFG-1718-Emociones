@@ -34,18 +34,18 @@
 \contentsline {section}{\numberline {4.6}SpaCy y PyStemmer}{29}{section.4.6}
 \contentsline {chapter}{\numberline {5}An\'alisis del Contenido Afectivo de un Texto}{31}{chapter.5}
 \contentsline {section}{\numberline {5.1}Base para los servicios web}{31}{section.5.1}
-\contentsline {section}{\numberline {5.2}An\'alisis afectivo de una palabra}{32}{section.5.2}
+\contentsline {section}{\numberline {5.2}An\'alisis afectivo de una palabra}{33}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Lematizaci\'on}{35}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Servicio web para obtener los grados para cada emoci\'on de una palabra}{35}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Servicio web para obtener la emoci\'on mayoritaria de una palabra}{35}{subsection.5.2.3}
-\contentsline {section}{\numberline {5.3}An\'alisis afectivo de una frase}{36}{section.5.3}
+\contentsline {subsection}{\numberline {5.2.3}Servicio web para obtener la emoci\'on mayoritaria de una palabra}{36}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.3}An\'alisis afectivo de una frase}{37}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Obtenci\'on de palabras relevantes}{37}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Grados emocionales finales de una frase}{38}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.2}Grados emocionales finales de una frase}{39}{subsection.5.3.2}
 \contentsline {subsection}{\numberline {5.3.3}Emoci\'on mayoritaria de una frase}{40}{subsection.5.3.3}
 \contentsline {section}{\numberline {5.4}An\'alisis afectivo de un texto}{41}{section.5.4}
 \contentsline {subsection}{\numberline {5.4.1}Grados emocionales finales de un texto}{42}{subsection.5.4.1}
 \contentsline {subsection}{\numberline {5.4.2}Emoci\'on mayoritaria de un texto}{43}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Palabras emocionales de un texto}{43}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.3}Palabras emocionales de un texto}{44}{subsection.5.4.3}
 \contentsline {section}{\numberline {5.5}API EmoTraductor}{44}{section.5.5}
 \contentsline {chapter}{\numberline {6}EmoTraductor}{47}{chapter.6}
 \contentsline {section}{\numberline {6.1}Descripci\'on del problema a resolver}{47}{section.6.1}
